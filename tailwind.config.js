@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
+  ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -9,7 +13,7 @@ export default {
       }
     },
     fontFamily: {
-      Poppins: ["Poppins"],
+      Poppins: ["Poppins, sans-serif"],
     },
     container: {
       padding: "2rem",
