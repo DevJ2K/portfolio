@@ -12,12 +12,16 @@
 
           <button class="rounded-lg border-2 border-accent-color px-4 py-2 text-center text-base font-bold text-primary transition-colors hover:bg-black/40 dark:border-accent-color-dark dark:text-primary-dark">Open Resume</button>
 
-        <div class="flex flex-row gap-16">
+        <div class="flex w-full flex-row justify-around">
           <div class=" rounded-full border p-2">
             <GithubSvg color="text-white" size="w-6" />
           </div>
-          <GithubSvg color="text-white" size="w-6" />
-          <GithubSvg color="text-white" size="w-6" />
+          <div class=" rounded-full border p-2">
+            <LinkedinSvg color="text-white" size="w-6" />
+          </div>
+          <div class=" rounded-full border p-2">
+            <EmailSvg color="text-white" size="w-6" />
+          </div>
         </div>
     </main>
   </div>
@@ -26,4 +30,6 @@
 <script setup>
 import BackgroundSpotlight from '../../components/BackgroundSpotlight.vue'
 import GithubSvg from '../../components/logos/GithubSvg.vue'
+import EmailSvg from '../../components/logos/EmailSvg.vue'
+import LinkedinSvg from '../../components/logos/LinkedinSvg.vue'
 </script>
