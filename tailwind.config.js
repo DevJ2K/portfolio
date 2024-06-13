@@ -16,8 +16,17 @@ export default {
       Poppins: ["Poppins, sans-serif"],
     },
     container: {
+      marginLeft: "auto",
+      marginRight: "auto",
+      width: "100%",
       padding: "2rem",
       center: true,
+      screens: {
+        'sm': '100%',
+        'md': '100%',
+        'lg': '48rem',
+        'xl': '48rem'
+      }
     }
   },
   plugins: [],

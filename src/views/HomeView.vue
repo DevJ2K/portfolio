@@ -1,6 +1,7 @@
 <template>
-  <main class="container flex w-full">
+  <main class="flex w-full flex-col">
     <PresentationView/>
+    <AboutView/>
   </main>
   <!-- <div>
     <h1 class=" bg-blue-400">Portfolio</h1>
@@ -9,5 +10,6 @@
 
 <script setup>
 import PresentationView from './home/PresentationView.vue'
+import AboutView from './home/AboutView.vue'
 </script>
 
