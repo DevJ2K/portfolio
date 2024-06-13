@@ -1,7 +1,7 @@
 <template>
-  <div class="relative h-screen w-full">
+  <div class="relative h-screen w-full flex">
     <BackgroundSpotlight color="bg-gray-950" />
-    <main class="container flex h-screen flex-col items-center justify-center gap-10">
+    <main class=" container z-10 flex h-screen flex-col items-center justify-center gap-10">
         <div class="text-center">
           <h1 class="text-5xl font-extrabold text-primary dark:text-primary-dark">Hello, I'm Theo Ajavon</h1>
           <h2 class="text-4xl font-bold text-accent-color dark:text-accent-color-dark">Software Engineer & Swift Developer</h2>
