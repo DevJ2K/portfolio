@@ -27,8 +27,8 @@ export default {
       screens: {
         'sm': '100%',
         'md': '100%',
-        'lg': '48rem',
-        'xl': '48rem'
+        'lg': '1100px', // 48rem
+        'xl': '1100px'
       }
     }
   },

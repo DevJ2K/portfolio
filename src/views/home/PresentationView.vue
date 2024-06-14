@@ -1,25 +1,25 @@
 <template>
-  <div class="relative h-screen w-full flex">
+  <div class="relative flex h-screen w-full">
     <BackgroundSpotlight color="bg-gray-950" />
     <main class=" container z-10 flex h-screen flex-col items-center justify-center gap-10">
         <div class="text-center">
-          <h1 class="text-5xl font-extrabold text-primary dark:text-primary-dark">Hello, I'm Theo Ajavon</h1>
-          <h2 class="text-4xl font-bold text-accent-color dark:text-accent-color-dark">Software Engineer & Swift Developer</h2>
+          <h1 class="text-5xl font-extrabold text-primary dark:text-primary-dark max-md:text-4xl">Hello, I'm Theo Ajavon</h1>
+          <h2 class="text-4xl font-bold text-accent-color dark:text-accent-color-dark max-md:text-3xl">Software Engineer & Swift Developer</h2>
         </div>
-        <p class="text-center text-base font-semibold text-primary dark:text-primary-dark">Voluptate irure consectetur exercitation esse labore occaecat Lorem laborum
+        <p class="text-center text-xl font-semibold text-primary dark:text-primary-dark max-md:text-base">Voluptate irure consectetur exercitation esse labore occaecat Lorem laborum
           occaecat nisi dolore sint ad ea. Quis voluptate sunt in ipsum eu est aute sunt sunt minim incididunt
           reprehenderit. Ipsum aliquip id nostrud duis cupidatat.</p>
 
-          <button class="rounded-lg border-2 border-accent-color px-4 py-2 text-center text-base font-bold text-primary transition-colors hover:bg-black/40 dark:border-accent-color-dark dark:text-primary-dark">Open Resume</button>
+          <button class="rounded-lg border-2 border-accent-color bg-black/40 px-4 py-2 text-center text-base font-bold text-primary transition-colors hover:bg-black/60 active:bg-black/40 active:transition-none dark:border-accent-color-dark dark:text-primary-dark">Open Resume</button>
 
         <div class="flex w-full flex-row justify-around">
-          <div class=" rounded-full border p-2">
+          <div class="cursor-pointer rounded-full border p-2 opacity-100 transition-colors hover:bg-black/40 hover:opacity-90">
             <GithubSvg color="text-white" size="w-6" />
           </div>
-          <div class=" rounded-full border p-2">
+          <div class="cursor-pointer rounded-full border p-2 opacity-100 transition-colors hover:bg-black/40 hover:opacity-90">
             <LinkedinSvg color="text-white" size="w-6" />
           </div>
-          <div class=" rounded-full border p-2">
+          <div class="cursor-pointer rounded-full border p-2 opacity-100 transition-colors hover:bg-black/40 hover:opacity-90">
             <EmailSvg color="text-white" size="w-6" />
           </div>
         </div>
