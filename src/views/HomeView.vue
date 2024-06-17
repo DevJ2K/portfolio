@@ -1,5 +1,6 @@
 <template>
-  <main class="flex w-full flex-col">
+  <main class="flex w-full flex-col items-center">
+    <NavigationBar/>
     <PresentationView/>
     <AboutView/>
   </main>
@@ -11,5 +12,6 @@
 <script setup>
 import PresentationView from './home/PresentationView.vue'
 import AboutView from './home/AboutView.vue'
+import NavigationBar from '@/components/NavigationBar.vue';
 </script>
 
