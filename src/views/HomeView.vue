@@ -1,8 +1,8 @@
 <template>
   <main class="flex w-full flex-col items-center">
-    <NavigationBar/>
-    <PresentationView/>
+    <!-- <NavigationBar/> -->
     <AboutView/>
+    <PresentationView/>
   </main>
   <!-- <div>
     <h1 class=" bg-blue-400">Portfolio</h1>
