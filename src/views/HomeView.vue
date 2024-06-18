@@ -1,6 +1,6 @@
 <template>
   <main class="flex w-full flex-col items-center">
-    <!-- <NavigationBar/> -->
+    <NavigationBar/>
     <PresentationView/>
     <AboutView/>
   </main>

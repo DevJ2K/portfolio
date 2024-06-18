@@ -14,7 +14,10 @@
 
 			<!-- Content -->
 			<h2 class="mb-1 text-xl font-bold text-primary">{{ itemDate }}</h2>
-			<p class="text-primary">{{ content }}</p>
+			<p v-if="gradientText" class="bg-gradient-to-b from-primary bg-clip-text text-transparent">{{ content }}</p>
+			<p v-else class="text-primary">
+				{{ content }}
+			</p>
 		</div>
 	</div>
 </template>
@@ -28,6 +31,10 @@ defineProps({
 	content: {
 		type: String,
 		default: "Lorem mollit velit consequat ea commodo sunt cupidatat ipsum veniam qui elit. Ex eiusmod consequat sit proident officia elit et eiusmod officia reprehenderit proident. Culpa et ea et duis officia incididunt ut quis est. Ipsum fugiat nulla ea incididunt magna magna voluptate nostrud ullamco deserunt do cillum. Pariatur Lorem quis consequat ipsum."
+	},
+	gradientText: {
+		type: Boolean,
+		default: false
 	}
 })
 </script>

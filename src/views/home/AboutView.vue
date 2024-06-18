@@ -12,16 +12,17 @@
 
 				<AboutCard item-date="2022" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 
-				<AboutCard item-date="End 2022" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
+				<AboutCard :gradient-text="!viewMoreAbout" item-date="End 2022" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 
-				<AboutCard item-date="2023" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
+				<AboutCard v-show="viewMoreAbout" item-date="2023" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 
-				<AboutCard item-date="November 2023" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
+				<AboutCard v-show="viewMoreAbout" item-date="November 2023" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 
-				<AboutCard item-date="Mars 2024" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
+				<AboutCard v-show="viewMoreAbout" item-date="Mars 2024" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 
-				<AboutCard item-date="Now" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
+				<AboutCard v-show="viewMoreAbout" item-date="Now" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 			</div>
+			<button class=" rounded-lg border px-4 py-2 text-primary" @click="toggleViewMoreAbout()">{{viewMoreAbout ? 'Hide' : 'View more'}}</button>
 		</main>
 	</div>
 </template>
@@ -29,4 +30,11 @@
 <script setup>
 import BackgroundSpotlight from '../../components/BackgroundSpotlight.vue'
 import AboutCard from '../../components/AboutCard.vue'
+import { ref } from 'vue';
+
+const viewMoreAbout = ref(null);
+
+const toggleViewMoreAbout = () => {
+	viewMoreAbout.value = !viewMoreAbout.value;
+};
 </script>
