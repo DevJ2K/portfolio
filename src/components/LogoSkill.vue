@@ -1,7 +1,7 @@
 <template>
-	<div class="flex flex-col items-center justify-center gap-2 rounded-md border bg-black/15 p-2">
-		<logo size="w-20 md:w-20 h-14"/>
-		<h3 class="font-semibold">{{ techName }}</h3>
+	<div class="flex flex-col items-center justify-center gap-2 rounded-lg border bg-black/15 p-2">
+		<logo size="w-16 h-10 md:w-20 md:h-14"/>
+		<h3 class="text-xs font-semibold sm:text-sm">{{ techName }}</h3>
 	</div>
 </template>
 
