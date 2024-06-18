@@ -2,10 +2,10 @@
 	<div class="relative flex h-screen w-full">
 		<BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl" />
 		<main class=" container z-10 flex h-screen flex-col items-center justify-center gap-10 text-primary dark:text-primary-dark">
-			<h1>Skills</h1>
-			<div>
-				<h3>Programming languages</h3>
-				<div class="flex flex-row gap-3">
+			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
+			<div class="flex flex-col items-center justify-center">
+				<h3 class=" mb-6 text-xl font-medium">Programming languages</h3>
+				<div class="grid grid-cols-2 flex-row gap-3 md:flex">
 					<LogoSkill :logo="SwiftSvg" tech-name="Swift"/>
 					<LogoSkill :logo="PythonSvg" tech-name="Python"/>
 					<LogoSkill :logo="CSvg" tech-name="C"/>
