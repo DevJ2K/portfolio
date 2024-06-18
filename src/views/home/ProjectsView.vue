@@ -5,10 +5,21 @@
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
 
 			<div class="flex flex-col items-center justify-center">
-				<h3 class=" mb-4 text-center text-sm font-medium sm:text-xl">Latest Projects</h3>
+				<h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Latest Projects</h3>
 				<!-- <div class="grid grid-cols-3 flex-row gap-3 sm:flex"> -->
-				<div class="flex flex-wrap justify-center gap-4 md:gap-10">
-					<ProjectCard/>
+				<div class="flex flex-wrap justify-center gap-4">
+					<ProjectCard :tags="['Firebase', 'Real-time data', 'Community']"/>
+					<ProjectCard :tags="['Firebase', 'Auth0', 'Message']"/>
+				</div>
+			</div>
+
+			<div class="flex flex-col items-center justify-center">
+				<h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Highlighted Projects</h3>
+				<!-- <div class="grid grid-cols-3 flex-row gap-3 sm:flex"> -->
+				<div class="flex flex-wrap justify-center gap-4">
+					<ProjectCard :tags="['3D', 'API']"/>
+					<ProjectCard :tags="['TestFlight', 'Storage']"/>
+					<ProjectCard :tags="['POO', 'Scrapping', 'Database']"/>
 				</div>
 			</div>
 
