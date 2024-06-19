@@ -2,7 +2,7 @@
 	<div class="relative flex min-h-screen w-full">
 		<BackgroundSpotlight rotate="bg-gradient-to-br"/>
 		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-primary-dark">
-			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
+			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Projects</h1>
 
 			<div class="flex flex-col items-center justify-center">
 				<h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Latest Projects</h3>

@@ -1,8 +1,8 @@
 <template>
 	<div class="relative flex min-h-screen w-full">
-		<BackgroundSpotlight rotate="bg-gradient-to-br"/>
+		<BackgroundSpotlight rotate="bg-gradient-to-bl"/>
 		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-primary-dark">
-			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
+			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Contact</h1>
 			<h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3>
 			<div class="flex w-full flex-row justify-between">
 				<SocialLogo :logo="GithubSvg" name="DevJ2K"/>
@@ -11,7 +11,7 @@
 				<SocialLogo :logo="MaltSvg" name="theoajavon"/>
 				<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com"/>
 			</div>
-			<div class="w-1/2 border-t-[1px]  opacity-30"></div>
+			<div class="w-1/2 border-t  opacity-30"></div>
 
 			<div class="flex flex-col gap-6">
 				<div class="flex flex-col items-center gap-1">
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 
-			<div class="flex flex-row items-center justify-center gap-2 rounded-md border px-4 py-2 shadow-xl">
+			<div class="flex cursor-pointer flex-row items-center justify-center gap-2 rounded-md border px-4 py-2 shadow-xl">
 				<i class="fa-regular fa-paper-plane"></i>
 				<h3>Send</h3>
 			</div>
