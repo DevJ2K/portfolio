@@ -1,7 +1,7 @@
 <template>
 	<div class="relative flex min-h-screen w-full">
 		<BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl" />
-		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-primary-dark">
+		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-d-primary">
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
 			<div class="flex flex-col items-center justify-center">
 				<h3 class=" mb-4 text-center text-sm font-medium sm:text-xl">Programming languages</h3>

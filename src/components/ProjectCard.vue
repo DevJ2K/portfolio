@@ -10,7 +10,7 @@
 		<div class="flex size-full flex-col items-center justify-between gap-4">
 			<div class="flex flex-wrap gap-3">
 				<div v-for="tag in tags" :key="tag"
-					class=" rounded-xl bg-accent-color px-4 py-2 text-xs font-bold dark:bg-accent-color-dark/40 border ">{{ tag }}
+					class=" rounded-xl border bg-accent-color px-4 py-2 text-xs font-bold dark:bg-d-accent-color/40 ">{{ tag }}
 				</div>
 			</div>
 			<a class=" flex flex-row items-center justify-center gap-2 rounded-md bg-accent-color px-3 py-2 text-base font-bold text-primary"

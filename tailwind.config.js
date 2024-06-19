@@ -8,14 +8,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary": "#FDD1EA",
-        "primary-dark": "#FDD1EA",
-
         "bg": "#FFEBE6",
-        "bg-dark": "#000000",
+        "d-bg": "#000000",
+
+        "primary": "#FDD1EA",
+        "d-primary": "#FDD1EA",
+
+        "border": "#FFF",
+        "d-border": "#FFF",
 
         "accent-color": "#B658C4",
-        "accent-color-dark": "#B658C4"
+        "d-accent-color": "#B658C4"
       }
     },
     fontFamily: {

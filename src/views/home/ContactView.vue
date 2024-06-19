@@ -1,7 +1,7 @@
 <template>
 	<div class="relative flex min-h-screen w-full">
 		<BackgroundSpotlight rotate="bg-gradient-to-bl"/>
-		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-primary-dark">
+		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-d-primary">
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Contact</h1>
 			<h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3>
 			<div class="flex w-full flex-row justify-between">
@@ -16,19 +16,19 @@
 			<div class="flex flex-col gap-6">
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">Name</h3>
-					<input class=" rounded-md border bg-black p-2" type="text" maxlength="30">
+					<input class="block w-full rounded-md border bg-black p-2 text-sm" type="text" maxlength="30">
 				</div>
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">Email</h3>
-					<input class=" rounded-md border bg-black p-2" type="text">
+					<input class="block w-full rounded-md border bg-black p-2 text-sm" type="text">
 				</div>
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">Phone</h3>
-					<input class=" rounded-md border bg-black p-2" type="text" maxlength="20">
+					<input class="block w-full rounded-md border bg-black p-2 text-sm" type="text" maxlength="20">
 				</div>
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">How can I help you ?</h3>
-					<textarea class=" h-28 w-full rounded-md border bg-black"></textarea>
+					<textarea class="block w-full rounded-md border bg-black p-1 text-sm" rows="4"></textarea>
 				</div>
 			</div>
 
