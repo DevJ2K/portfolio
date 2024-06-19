@@ -5,9 +5,8 @@
 
 		<!-- <div class=" absolute left-0 top-0 h-[450vh] w-36 origin-top-left rotate-[-30deg] bg-accent-color/60 dark:bg-accent-color-dark/60 md:rotate-[-35deg]  lg:rotate-[-50deg]"></div> -->
 
-		<div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-black from-40% via-accent-color via-50% to-black to-60%`">
+		<div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-bg from-40% via-accent-color via-50% to-bg to-60% dark:from-bg-dark dark:from-40% dark:via-accent-color-dark dark:via-50% dark:to-bg-dark dark:to-60%`">
 		</div>
-
 		<div class=" absolute left-0 top-0 size-full backdrop-blur-2xl"></div>
 	</div>
 </template>

@@ -10,7 +10,10 @@ export default {
       colors: {
         "primary": "#FDD1EA",
         "primary-dark": "#FDD1EA",
-        // "secondary": "#330071",
+
+        "bg": "#FFEBE6",
+        "bg-dark": "#000000",
+
         "accent-color": "#B658C4",
         "accent-color-dark": "#B658C4"
       }

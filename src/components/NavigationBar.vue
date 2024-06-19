@@ -8,16 +8,63 @@
 				<h3 class=" font-bold text-primary">DevJ2K</h3>
 			</div>
 			<ul class="flex flex-row gap-8 text-lg font-semibold text-primary">
-				<li>About</li>
-				<li>Skills</li>
-				<li>Projects</li>
-				<li>Contact</li>
-				<li><i class="fa-regular fa-moon"></i></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#" @click="switchColorMode">
+					<i v-if="darkMode" class="fa-regular fa-moon"></i>
+					<i v-else class="fa-regular fa-sun"></i>
+				</a></li>
 			</ul>
 		</div>
 	</div>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const darkMode = ref(null);
+
+const initMode = () => {
+	let savingMode = localStorage.getItem("dark-mode");
+	let appPage = document.getElementById("mainApp");
+	if (!savingMode) {
+		console.log("Aucun mode par defaut !");
+		localStorage.setItem("dark-mode", "true");
+		darkMode.value = true;
+	} else {
+		if (savingMode == 'true') {
+			darkMode.value = true;
+			appPage.classList.add('dark');
+		} else {
+			darkMode.value = false;
+			appPage.classList.remove('dark');
+		}
+	}
+}
+
+initMode();
+
+const switchColorMode = () => {
+	initMode();
+	let appPage = document.getElementById("mainApp");
+	// console.log("Current mode => " + darkMode.value);
+	if (darkMode.value == true) {
+		localStorage.setItem("dark-mode", "false");
+		appPage.classList.remove('dark');
+	} else {
+		localStorage.setItem("dark-mode", "true");
+		appPage.classList.add('dark');
+	}
+	darkMode.value = !darkMode.value;
+}
 // const imgUrl = new URL('../assets/images/j2klogo.png', import.meta.url).href
+// if (lightSwitch.checked) {
+//         document.documentElement.classList.add('dark');
+//         localStorage.setItem('dark-mode', true);
+//       } else {
+//         document.documentElement.classList.remove('dark');
+//         localStorage.setItem('dark-mode', false);
+//       }
 </script>
