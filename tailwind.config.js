@@ -17,6 +17,9 @@ export default {
         "border": "#FFF",
         "d-border": "#FFF",
 
+        "border-hover": "#FFF",
+        "d-border-hover": "#FFF",
+
         "accent-color": "#B658C4",
         "d-accent-color": "#B658C4"
       }
