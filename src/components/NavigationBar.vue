@@ -7,7 +7,22 @@
 				</div>
 				<h3 class=" font-bold text-primary">DevJ2K</h3>
 			</div>
-			<ul class="flex flex-row gap-8 text-lg font-semibold text-primary">
+			<ul class=" flex flex-row gap-8 text-lg font-semibold text-primary max-md:hidden">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#" @click="switchColorMode">
+					<i v-if="darkMode" class="fa-regular fa-moon"></i>
+					<i v-else class="fa-regular fa-sun"></i>
+				</a></li>
+			</ul>
+			<div class=" cursor-pointer text-lg font-semibold text-primary md:hidden" @click="toggleMenu">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+		<div v-if="displayMenu" class="md:hidden absolute top-0 mt-24 w-full">
+			<ul class=" flex flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-primary">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Skills</a></li>
 				<li><a href="#">Projects</a></li>
@@ -25,6 +40,7 @@
 import { ref } from 'vue';
 
 const darkMode = ref(null);
+const displayMenu = ref(null);
 
 const initMode = () => {
 	let savingMode = localStorage.getItem("dark-mode");
@@ -59,12 +75,9 @@ const switchColorMode = () => {
 	}
 	darkMode.value = !darkMode.value;
 }
-// const imgUrl = new URL('../assets/images/j2klogo.png', import.meta.url).href
-// if (lightSwitch.checked) {
-//         document.documentElement.classList.add('dark');
-//         localStorage.setItem('dark-mode', true);
-//       } else {
-//         document.documentElement.classList.remove('dark');
-//         localStorage.setItem('dark-mode', false);
-//       }
+
+const toggleMenu = () => {
+	displayMenu.value = !displayMenu.value;
+}
+
 </script>
