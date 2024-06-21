@@ -7,7 +7,7 @@
 
 		<div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-bg from-40% via-accent-color via-50% to-bg to-60% dark:from-d-bg dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-bg dark:to-60%`">
 		</div>
-		<div class=" absolute left-0 top-0 size-full backdrop-blur-2xl"></div>
+		<div class=" absolute left-0 top-0 size-full backdrop-blur-3xl"></div>
 	</div>
 </template>
 

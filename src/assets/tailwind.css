@@ -20,14 +20,9 @@
 	@apply h-24;
 	/* background: #fff; */
 	@apply backdrop-blur-md;
-	@apply bg-black/70;
+	@apply bg-black/50;
 	@apply shadow-2xl;
 	/* color: #000; */
-}
-
-.line-bottom {
-	position: absolute;
-	background-color: red;
 }
 
 @tailwind utilities;
