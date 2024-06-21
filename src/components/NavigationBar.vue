@@ -1,12 +1,13 @@
 <template>
-	<div class="fixed top-0 z-50 flex h-24 w-full bg-black/40 backdrop-blur-md">
+	<!-- <div id="navBar" class="fixed top-0 z-50 flex w-full transition duration-1000 ease-in-out"> -->
+	<div id="navBar" class="my-scroll-nav">
 		<div class="container flex items-center justify-between">
-			<div class="flex flex-row items-center gap-4">
+			<a class="flex flex-row items-center gap-4" href="#">
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
 					<img src="../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 				</div>
 				<h3 class=" text-2xl font-bold text-black drop-shadow-[0_0.2px_1.0px_rgba(255,255,255,1)]">DevJ2K</h3>
-			</div>
+			</a>
 			<ul class=" flex flex-row gap-8 text-lg font-semibold text-primary max-md:hidden">
 				<li><a href="#about">About</a></li>
 				<li><a href="#skills">Skills</a></li>
@@ -82,5 +83,17 @@ const switchColorMode = () => {
 const toggleMenu = () => {
 	displayMenu.value = !displayMenu.value;
 }
+
+const updateNavbar = () => {
+	// console.log("HEREEEEE");
+	var navBar = document.getElementById("navBar");
+	// console.log(navBar);
+	navBar.classList.toggle("my-scroll-nav-active", window.scrollY > 0);
+	// navBar.classList.toggle("my-scroll-nav", window.scrollY <= 0);
+}
+
+window.addEventListener("scroll", updateNavbar);
+
+// updateNavbar();
 
 </script>
