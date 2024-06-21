@@ -3,10 +3,10 @@
     <NavigationBar/>
 
     <PresentationView/>
-    <AboutView/>
-    <SkillView/>
-    <ProjectsView/>
-    <ContactView/>
+    <AboutView id="about"/>
+    <SkillView id="skills"/>
+    <ProjectsView id="projects"/>
+    <ContactView id="contact"/>
     <CustomFooter/>
   </main>
   <!-- <div>

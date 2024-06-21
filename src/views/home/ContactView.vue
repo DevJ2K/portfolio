@@ -1,7 +1,8 @@
 <template>
-	<div class="relative flex min-h-screen w-full">
+	<div class="relative flex flex-col min-h-screen w-full">
 		<BackgroundSpotlight rotate="bg-gradient-to-bl"/>
-		<main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-9 text-primary dark:text-d-primary">
+		<div class=" h-28 w-full"></div>
+		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-primary dark:text-d-primary">
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Contact</h1>
 			<h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3>
 			<div class="flex w-full flex-row justify-between">

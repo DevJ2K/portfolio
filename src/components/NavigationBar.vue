@@ -5,32 +5,35 @@
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
 					<img src="../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 				</div>
-				<h3 class=" font-bold text-primary">DevJ2K</h3>
+				<h3 class=" text-2xl font-bold text-black drop-shadow-[0_0.2px_1.0px_rgba(255,255,255,1)]">DevJ2K</h3>
 			</div>
 			<ul class=" flex flex-row gap-8 text-lg font-semibold text-primary max-md:hidden">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#" @click="switchColorMode">
-					<i v-if="darkMode" class="fa-regular fa-moon"></i>
-					<i v-else class="fa-regular fa-sun"></i>
-				</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li>
+					<a @click="switchColorMode">
+						<i v-if="darkMode" class="fa-regular fa-moon"></i>
+						<i v-else class="fa-regular fa-sun"></i>
+					</a>
+				</li>
 			</ul>
-			<div class=" cursor-pointer text-lg font-semibold text-primary md:hidden" @click="toggleMenu">
+			<div class=" cursor-pointer text-2xl font-semibold text-primary md:hidden" @click="toggleMenu">
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</div>
-		<div v-if="displayMenu" class="md:hidden absolute top-0 mt-24 w-full">
-			<ul class=" flex flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-primary">
+		<div v-if="displayMenu" class="absolute top-0 mt-24 w-full md:hidden">
+			<ul
+				class=" flex flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-primary">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Skills</a></li>
 				<li><a href="#">Projects</a></li>
 				<li><a href="#">Contact</a></li>
-				<li><a href="#" @click="switchColorMode">
-					<i v-if="darkMode" class="fa-regular fa-moon"></i>
-					<i v-else class="fa-regular fa-sun"></i>
-				</a></li>
+				<li><a @click="switchColorMode">
+						<i v-if="darkMode" class="fa-regular fa-moon"></i>
+						<i v-else class="fa-regular fa-sun"></i>
+					</a></li>
 			</ul>
 		</div>
 	</div>
