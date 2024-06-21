@@ -9,10 +9,30 @@
 				<h3 class=" text-2xl font-bold text-black drop-shadow-[0_0.2px_1.0px_rgba(255,255,255,1)]">DevJ2K</h3>
 			</a>
 			<ul class=" flex flex-row gap-8 text-lg font-semibold text-primary max-md:hidden">
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li class="group relative w-max">
+					<a href="#about">About</a>
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+
+				</li>
+				<li class="group relative w-max">
+					<a href="#skills">Skills</a>
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+
+				</li>
+				<li class="group relative w-max">
+					<a href="#projects">Projects</a>
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+
+				</li>
+				<li class="group relative w-max">
+					<a href="#contact">Contact</a>
+					<span
+						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+
+				</li>
 				<li>
 					<a @click="switchColorMode">
 						<i v-if="darkMode" class="fa-regular fa-moon"></i>

@@ -25,4 +25,9 @@
 	/* color: #000; */
 }
 
+.line-bottom {
+	position: absolute;
+	background-color: red;
+}
+
 @tailwind utilities;
