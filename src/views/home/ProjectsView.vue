@@ -1,6 +1,6 @@
 <template>
 	<div class="relative flex min-h-screen w-full flex-col">
-		<BackgroundSpotlight rotate="bg-gradient-to-br" bg-nb="bg-2"/>
+		<BackgroundSpotlight rotate="bg-gradient-to-br" bg-nb="2" />
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-primary dark:text-d-primary">
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Projects</h1>

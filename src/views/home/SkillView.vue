@@ -1,6 +1,6 @@
 <template>
 	<div class="relative flex min-h-screen w-full flex-col">
-		<BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl" />
+		<BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl" bg-nb="1" />
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center  gap-9 text-primary dark:text-d-primary">
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>

@@ -35,8 +35,8 @@
 				</li>
 				<li>
 					<a @click="switchColorMode">
-						<i v-if="darkMode" class="fa-regular fa-moon"></i>
-						<i v-else class="fa-regular fa-sun"></i>
+						<i v-if="darkMode" class="fa-regular fa-sun"></i>
+						<i v-else class="fa-regular fa-moon"></i>
 					</a>
 				</li>
 			</ul>
@@ -52,9 +52,9 @@
 				<li><a href="#">Projects</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a @click="switchColorMode">
-						<i v-if="darkMode" class="fa-regular fa-moon"></i>
-						<i v-else class="fa-regular fa-sun"></i>
-					</a></li>
+					<i v-if="darkMode" class="fa-regular fa-sun"></i>
+					<i v-else class="fa-regular fa-moon"></i>
+				</a></li>
 			</ul>
 		</div>
 	</div>

@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       colors: { // PLUM
-        "bg-1": "#FEFCFF",
+        "bg-1": "#FEF7FB",
         "d-bg-1": "#181118",
 
-        "bg-2": "#FDF7FD",
+        "bg-2": "#FBEBFB",
         "d-bg-2": "#201320",
 
         "primary": "#FDD1EA",
@@ -43,6 +43,11 @@ export default {
         'xl': '1100px'
       }
     }
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['dark'],
+    },
   },
   plugins: [],
 }
