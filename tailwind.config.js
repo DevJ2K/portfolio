@@ -7,9 +7,12 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      colors: {
-        "bg": "#FFEBE6",
-        "d-bg": "#000000",
+      colors: { // PLUM
+        "bg-1": "#FEFCFF",
+        "d-bg-1": "#181118",
+
+        "bg-2": "#FDF7FD",
+        "d-bg-2": "#201320",
 
         "primary": "#FDD1EA",
         "d-primary": "#FDD1EA",

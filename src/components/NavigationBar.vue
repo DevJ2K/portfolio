@@ -89,7 +89,6 @@ initMode();
 const switchColorMode = () => {
 	initMode();
 	let appPage = document.getElementById("mainApp");
-	// console.log("Current mode => " + darkMode.value);
 	if (darkMode.value == true) {
 		localStorage.setItem("dark-mode", "false");
 		appPage.classList.remove('dark');
@@ -98,6 +97,7 @@ const switchColorMode = () => {
 		appPage.classList.add('dark');
 	}
 	darkMode.value = !darkMode.value;
+	console.log("Current mode => " + darkMode.value);
 }
 
 const toggleMenu = () => {
