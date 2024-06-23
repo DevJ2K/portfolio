@@ -14,22 +14,22 @@
 			</div>
 			<div class="w-1/2 border-t  opacity-30"></div>
 
-			<div class="flex flex-col gap-6">
+			<div class="flex w-3/4 flex-col gap-6">
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">Name</h3>
-					<input class="block w-full rounded-md border bg-black p-2 text-sm" type="text" maxlength="30">
+					<input class="block w-full rounded-md border bg-bg-2 p-2 text-sm dark:bg-d-bg-2" type="text" maxlength="30">
 				</div>
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">Email</h3>
-					<input class="block w-full rounded-md border bg-black p-2 text-sm" type="text">
+					<input class="block w-full rounded-md border bg-bg-2 p-2 text-sm dark:bg-d-bg-2" type="text">
 				</div>
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">Phone</h3>
-					<input class="block w-full rounded-md border bg-black p-2 text-sm" type="text" maxlength="20">
+					<input class="block w-full rounded-md border bg-bg-2 p-2 text-sm dark:bg-d-bg-2" type="text" maxlength="20">
 				</div>
 				<div class="flex flex-col items-center gap-1">
 					<h3 class=" text-lg font-semibold">How can I help you ?</h3>
-					<textarea class="block w-full rounded-md border bg-black p-1 text-sm" rows="4"></textarea>
+					<textarea class="block w-full rounded-md border bg-bg-2 p-1 text-sm dark:bg-d-bg-2" rows="4"></textarea>
 				</div>
 			</div>
 
