@@ -1,10 +1,10 @@
 <template>
-	<div class="flex max-w-xs flex-col items-start justify-start gap-4 rounded-lg border bg-black/15 p-4 shadow-md">
-		<div class="flex flex-row items-center justify-center gap-2">
+	<div class="group flex max-w-xs flex-col items-start justify-start gap-4 rounded-lg border bg-black/15 p-4 shadow-md">
+		<div class="relative flex flex-row items-center justify-center gap-2">
 			<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 			<h1 class="text-sm font-bold">{{ skill }}</h1>
+			<!-- <p class="absolute top-0 z-50 w-32 rounded-md border bg-black p-2 text-xs opacity-0 transition-all group-hover:opacity-100">{{ description }}</p> -->
 		</div>
-		<!-- <p class=" text-xs">{{ description }}</p> -->
 	</div>
 </template>
 
