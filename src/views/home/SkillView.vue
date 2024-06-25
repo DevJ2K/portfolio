@@ -53,6 +53,7 @@
 							<LogoSkill :logo="FlutterSvg" tech-name="Flutter"/>
 							<LogoSkill :logo="VueSvg" tech-name="Vue"/>
 							<LogoSkill :logo="TailwindSvg" tech-name="Tailwind"/>
+							<LogoSkill :logo="SeleniumSvg" tech-name="Selenium"/>
 						</div>
 					</div>
 
@@ -62,6 +63,7 @@
 						<h3 class=" mb-4 text-sm font-medium sm:text-xl">Database</h3>
 						<div class="flex flex-wrap justify-center gap-4 md:gap-10">
 							<LogoSkill :logo="FirebaseSvg" tech-name="Firebase"/>
+							<LogoSkill :logo="SqliteSvg" tech-name="Sqlite"/>
 						</div>
 					</div>
 
@@ -86,7 +88,10 @@ import JavascriptSvg from '@/components/logos/skills/JavascriptSvg.vue';
 import FlutterSvg from '@/components/logos/skills/FlutterSvg.vue';
 import VueSvg from '@/components/logos/skills/VueSvg.vue';
 import TailwindSvg from '@/components/logos/skills/TailwindSvg.vue';
+import SeleniumSvg from '@/components/logos/skills/SeleniumSvg.vue';
 
 import FirebaseSvg from '@/components/logos/skills/FirebaseSvg.vue';
+import SqliteSvg from '@/components/logos/skills/SqliteSvg.vue';
+
 import SkillCard from '@/components/SkillCard.vue';
 </script>

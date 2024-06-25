@@ -1,5 +1,5 @@
 <template>
-	<div class="group flex  flex-col items-start justify-start gap-4 rounded-lg border bg-black/15 p-4 shadow-md">
+	<div class="group flex  flex-col items-center justify-center gap-4 rounded-lg border bg-black/15 p-4 shadow-md">
 		<div class="relative flex flex-row items-center justify-center gap-2">
 			<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 			<h1 class="text-sm font-bold">{{ skill }}</h1>
