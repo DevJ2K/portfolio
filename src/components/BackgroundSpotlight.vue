@@ -9,7 +9,7 @@
     <!-- <div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-bg-${bgNb} from-40% via-accent-color via-50% to-bg-${bgNb} to-60% dark:from-d-bg-${bgNb} dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-bg-${bgNb} dark:to-60%`"></div> -->
 
     <!-- <div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-bg-${bgNb} from-40% via-accent-color via-50% to-bg-${bgNb} to-60% dark:from-d-bg-${bgNb} dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-bg-${bgNb} dark:to-60%`"></div> -->
-    <!-- <div class="absolute left-0 top-0 h-[60%] w-full -rotate-45 bg-gradient-to-r from-bg from-40% via-accent-color via-50% to-bg to-60% dark:from-d-bg dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-bg dark:to-60%"></div> -->
+    <!-- <div class="from-bg to-bg dark:from-d-bg dark:to-d-bg absolute left-0 top-0 h-3/5 w-full -rotate-45 bg-gradient-to-r from-40% via-accent-color via-50% to-60% dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-60%"></div> -->
 
     <!-- <div class="relative flex size-full items-center justify-center">
       <div class="size-4/12 rounded-full bg-accent-color/40"></div>

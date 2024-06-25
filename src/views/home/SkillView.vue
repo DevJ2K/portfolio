@@ -6,7 +6,7 @@
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
 			<div class="flex w-full flex-col items-center justify-center">
 				<h3 class=" mb-4 text-center text-sm font-medium sm:text-xl">Soft skills</h3>
-				<div class="container flex flex-wrap items-center justify-center gap-3">
+				<div class="container mb-4 flex flex-wrap items-center justify-center gap-3">
 					<SkillCard skill="API" description="Adipisicing irure proident culpa nostrud sit ipsum exercitation excepteur in officia ex. Aute irure ut elit ipsum eu ea dolor Lorem velit. Consequat veniam sint velit pariatur quis. Consectetur eiusmod laboris quis magna amet." icon="fa-solid fa-cube"/>
 
 					<SkillCard skill="Unit Test" description="Ad enim exercitation aliqua nulla ea ipsum ea incididunt dolor. Excepteur eu in nisi id commodo voluptate. Ea reprehenderit sunt in ipsum enim. Ipsum officia et commodo occaecat." icon="fa-solid fa-vials"/>
@@ -24,6 +24,8 @@
 					<SkillCard skill="Problem solving " description="Laborum deserunt consectetur adipisicing aute anim sint non excepteur enim elit ipsum magna excepteur. Do duis dolor labore velit dolore sunt tempor quis culpa magna laboris." icon="fa-solid fa-square-check"/> <!-- Search by Apple -->
 
 				</div>
+				<div class="mb-4 w-11/12 border opacity-25"></div>
+
 				<div class="container z-10 flex min-h-screen flex-col items-center  gap-9 text-primary dark:text-d-primary">
 					<div class="flex flex-col items-center justify-center">
 						<h3 class=" mb-4 text-center text-sm font-medium sm:text-xl">Programming languages</h3>
