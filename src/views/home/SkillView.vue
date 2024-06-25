@@ -6,22 +6,28 @@
 			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
 			<div class="flex w-full flex-col items-center justify-center">
 				<h3 class=" mb-4 text-center text-sm font-medium sm:text-xl">Soft skills</h3>
-				<div class="container mb-4 flex flex-wrap items-center justify-center gap-3">
-					<SkillCard skill="API" description="Adipisicing irure proident culpa nostrud sit ipsum exercitation excepteur in officia ex. Aute irure ut elit ipsum eu ea dolor Lorem velit. Consequat veniam sint velit pariatur quis. Consectetur eiusmod laboris quis magna amet." icon="fa-solid fa-cube"/>
+				<div class="container mb-4 flex flex-col items-center justify-center gap-3">
+					<div class=" grid w-full grid-cols-3 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
+						<SkillCard skill="API" icon="fa-solid fa-cube"/>
 
-					<SkillCard skill="Unit Test" description="Ad enim exercitation aliqua nulla ea ipsum ea incididunt dolor. Excepteur eu in nisi id commodo voluptate. Ea reprehenderit sunt in ipsum enim. Ipsum officia et commodo occaecat." icon="fa-solid fa-vials"/>
+						<SkillCard skill="Unit Test" icon="fa-solid fa-vials"/>
 
-					<SkillCard skill="Clean Code" description="Dolore pariatur exercitation do Lorem magna proident. Eiusmod incididunt tempor eu ut labore fugiat aute adipisicing. Sint culpa sunt aliquip et." icon="fa-solid fa-spray-can-sparkles"/>
+						<SkillCard skill="Peer To Peer Learning" icon="fa-solid fa-users"/>
+					</div>
 
-					<SkillCard skill="Peer To Peer Learning" description="Laborum deserunt consectetur adipisicing aute anim sint non excepteur enim elit ipsum magna excepteur. Do duis dolor labore velit dolore sunt tempor quis culpa magna laboris." icon="fa-solid fa-users"/>
+					<div class=" grid w-full grid-cols-2 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
+						<SkillCard skill="Oriented Object Programming" icon="fa-solid fa-diagram-project"/> <!-- Search by Apple -->
 
-					<SkillCard skill="Oriented Object Programming" description="Laborum deserunt consectetur adipisicing aute anim sint non excepteur enim elit ipsum magna excepteur. Do duis dolor labore velit dolore sunt tempor quis culpa magna laboris." icon="fa-solid fa-diagram-project"/> <!-- Search by Apple -->
+						<SkillCard skill="Data structures and algorithms" icon="fa-solid fa-database"/> <!-- Search by Apple -->
+					</div>
 
-					<SkillCard skill="Data structures and algorithms" description="Laborum deserunt consectetur adipisicing aute anim sint non excepteur enim elit ipsum magna excepteur. Do duis dolor labore velit dolore sunt tempor quis culpa magna laboris." icon="fa-solid fa-database"/> <!-- Search by Apple -->
+					<div class=" grid w-full grid-cols-3 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
+						<SkillCard skill="Debugging" icon="fa-solid fa-bug"/> <!-- Search by Apple -->
 
-					<SkillCard skill="Debugging" description="Laborum deserunt consectetur adipisicing aute anim sint non excepteur enim elit ipsum magna excepteur. Do duis dolor labore velit dolore sunt tempor quis culpa magna laboris. " icon="fa-solid fa-bug"/> <!-- Search by Apple -->
+						<SkillCard skill="Clean Code" icon="fa-solid fa-spray-can-sparkles"/>
 
-					<SkillCard skill="Problem solving " description="Laborum deserunt consectetur adipisicing aute anim sint non excepteur enim elit ipsum magna excepteur. Do duis dolor labore velit dolore sunt tempor quis culpa magna laboris." icon="fa-solid fa-square-check"/> <!-- Search by Apple -->
+						<SkillCard skill="Problem solving" icon="fa-solid fa-square-check"/> <!-- Search by Apple -->
+					</div>
 
 				</div>
 				<div class="mb-4 w-11/12 border opacity-25"></div>
