@@ -32,10 +32,25 @@
 				</div>
 				<div class="mb-4 w-11/12 border opacity-25"></div>
 
-				<div class="container z-10 flex min-h-screen flex-col items-center  gap-9 text-primary dark:text-d-primary">
+				<div class="z-10 flex w-full flex-wrap items-center justify-center gap-3 text-primary dark:text-d-primary">
+					<LogoSkill :logo="SwiftSvg" tech-name="Swift"/>
+					<LogoSkill :logo="PythonSvg" tech-name="Python"/>
+					<LogoSkill :logo="CSvg" tech-name="C"/>
+					<LogoSkill :logo="CplusplusSvg" tech-name="C++"/>
+					<LogoSkill :logo="JavascriptSvg" tech-name="Javascript"/>
+
+					<LogoSkill :logo="FlutterSvg" tech-name="Flutter"/>
+					<LogoSkill :logo="VueSvg" tech-name="Vue"/>
+					<LogoSkill :logo="TailwindSvg" tech-name="Tailwind"/>
+					<LogoSkill :logo="SeleniumSvg" tech-name="Selenium"/>
+
+					<LogoSkill :logo="FirebaseSvg" tech-name="Firebase"/>
+					<LogoSkill :logo="SqliteSvg" tech-name="Sqlite"/>
+				</div>
+
+				<!-- <div class="container z-10 flex min-h-screen flex-col items-center  gap-9 text-primary dark:text-d-primary">
 					<div class="flex flex-col items-center justify-center">
 						<h3 class=" mb-4 text-center text-sm font-medium sm:text-xl">Programming languages</h3>
-						<!-- <div class="grid grid-cols-3 flex-row gap-3 sm:flex"> -->
 						<div class="flex flex-wrap justify-center gap-4 md:gap-10">
 							<LogoSkill :logo="SwiftSvg" tech-name="Swift"/>
 							<LogoSkill :logo="PythonSvg" tech-name="Python"/>
@@ -68,7 +83,7 @@
 					</div>
 
 					<div class="w-[6%] border opacity-25"></div>
-				</div>
+				</div> -->
 			</div>
 		</main>
 	</div>
