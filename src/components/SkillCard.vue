@@ -4,7 +4,7 @@
 			<div class="relative flex flex-row items-center justify-center gap-2">
 				<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 				<h1 class="text-sm font-bold">{{ skill }}</h1>
-				<p :id="skill" class="absolute top-0 z-50 rounded-md border bg-black p-2 text-xs transition-all" style="opacity: 0; visibility: hidden;">{{ description }}</p>
+				<p :id="skill+'_tooltip'" class="absolute top-0 z-50 rounded-md border bg-black p-2 text-xs transition-all" style="opacity: 0; visibility: hidden;">{{ description }}</p>
 			</div>
 		</div>
 	<!-- </div> -->
@@ -29,14 +29,14 @@ const props = defineProps({
 
 const displayParagraph = () => {
 	// console.log("Display paragraph !");
-	document.getElementById(props.skill).style.visibility = 'visible';
-	document.getElementById(props.skill).style.opacity = 1;
+	document.getElementById(props.skill + '_tooltip').style.visibility = 'visible';
+	document.getElementById(props.skill + '_tooltip').style.opacity = 1;
 }
 
 const hideParagraph = () => {
 	// console.log("Hide paragraph !");
-	document.getElementById(props.skill).style.opacity = 0;
-	document.getElementById(props.skill).style.visibility = 'hidden';
+	document.getElementById(props.skill + '_tooltip').style.opacity = 0;
+	document.getElementById(props.skill + '_tooltip').style.visibility = 'hidden';
 }
 
 // const myDiv = document.getElementById("myDiv");

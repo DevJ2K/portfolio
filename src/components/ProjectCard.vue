@@ -7,25 +7,16 @@
 			<h1 class=" text-xl font-bold max-sm:text-lg">{{ title }}</h1>
 		</div>
 		<p class=" text-sm font-medium">{{ description }}</p>
-		<div class="flex size-full flex-col items-center justify-between gap-4">
-			<div class="flex flex-wrap gap-3">
+		<div class="flex size-full flex-col items-center justify-center gap-4">
+			<div class="flex flex-wrap justify-center gap-3">
 				<div v-for="tag in tags" :key="tag"
-					class=" rounded-xl border bg-accent-color px-4 py-2 text-xs font-bold dark:bg-d-accent-color/40 ">{{ tag }}
+					class=" rounded-xl border bg-accent-color px-4 py-2 text-xs font-bold shadow-lg dark:bg-d-accent-color/40">{{ tag }}
 				</div>
 			</div>
-			<a class=" flex flex-row items-center justify-center gap-2 rounded-md bg-accent-color px-3 py-2 text-base font-bold text-primary"
+			<a class="group flex flex-row items-center justify-center rounded-md bg-accent-color px-3 py-2 text-base font-bold text-primary transition-all hover:bg-accent-color/70"
 				:href="projectLink" target="_blank">
-				<p class=" truncate">View more</p><i class="fa-solid fa-arrow-right"></i>
+				<p class=" mr-2 truncate transition-all group-hover:mr-2">View more</p><i class="fa-solid fa-arrow-right"></i>
 			</a>
-
-			<!--
-			<a href="#" class="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Read more
-        <svg class="ms-2 size-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a> -->
-
 		</div>
 	</div>
 </template>

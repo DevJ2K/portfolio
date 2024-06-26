@@ -4,8 +4,9 @@
 		<div class=" h-28 w-full"></div>
 		<main class="container z-10 flex min-h-screen w-full flex-col items-center">
 			<h1 class="text-3xl text-primary underline decoration-accent-color underline-offset-8 dark:text-d-primary">About</h1>
+			<div class="h-6 w-full"></div>
 			<div
-				class="relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent md:before:mx-auto md:before:translate-x-0">
+				class="relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-slate-300 before:via-slate-300 before:to-transparent md:before:mx-auto md:before:translate-x-0">
 
 				<AboutCard item-date="September 2020" content="Adipisicing excepteur fugiat proident et aliquip. Aute sunt ut cupidatat est in enim laborum laborum."/>
 

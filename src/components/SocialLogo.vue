@@ -3,7 +3,7 @@
 		<div class="rounded-full border p-2 bg-black/15">
 			<logo size="w-6 h-6"/>
 		</div>
-		<!-- <h3 class="text-xs font-semibold sm:text-sm">{{ name }}</h3> -->
+		<!-- <h3 class="absolute text-xs font-semibold sm:text-sm">{{ name }}</h3> -->
 	</div>
 </template>
 
