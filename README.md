@@ -1,5 +1,16 @@
-# portefolio_vuejs
+# Portfolio
 
+## Todo
+- Find color theme
+- Background color
+- Light and Dark Mode
+- Hover effects on each button
+- Adding Firebase
+- Suspense effect on project card
+- Contact page working
+- Animation on appear
+
+##
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
