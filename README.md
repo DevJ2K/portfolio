@@ -2,6 +2,7 @@
 
 ## Todo
 - Find color theme
+- Navigation bar in < breakpoint Md
 - Background color
 - Light and Dark Mode
 - Hover effects on each button
