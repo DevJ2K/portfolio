@@ -21,7 +21,7 @@
 	/* background: #fff; */
 	@apply backdrop-blur-xl;
 	@apply bg-white/50;
-	@apply dark:bg-black/60;
+	@apply dark:bg-black/50;
 	@apply shadow-2xl;
 	/* color: #000; */
 }
