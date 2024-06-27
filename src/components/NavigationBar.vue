@@ -6,7 +6,7 @@
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
 					<img src="../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 				</div>
-				<h3 class=" text-2xl font-bold text-black drop-shadow-[0_0.2px_1.0px_rgba(255,255,255,1)]">DevJ2K</h3>
+				<h3 class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
 			<ul class=" flex flex-row gap-8 text-lg font-semibold text-primary max-md:hidden">
 				<li class="group relative w-max">
