@@ -33,6 +33,7 @@
 	@apply text-center text-base font-bold;
 
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
+	@apply hover:text-white;
 
 	@apply transition-all active:transition-none ;
 

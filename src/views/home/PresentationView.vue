@@ -1,6 +1,6 @@
 <template>
   <div class="relative flex min-h-screen w-full">
-    <BackgroundSpotlight color="bg-gray-950" bg-nb="1" />
+    <BackgroundSpotlight color="bg-gray-950" />
     <main class=" container z-10 flex min-h-screen flex-col items-center justify-center gap-10">
         <div class="text-center">
           <h1 class="text-5xl font-extrabold text-high-contrast-text dark:text-d-high-contrast-text max-md:text-4xl">Hello, I'm Theo Ajavon</h1>
