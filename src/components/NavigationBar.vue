@@ -8,7 +8,7 @@
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
 					<img src="../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 				</div>
-				<h3 id="devj2kText" class="text-outline-dark text-2xl font-black text-transparent">DevJ2K</h3>
+				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
 			<ul class=" flex flex-row gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
@@ -89,25 +89,25 @@ const initMode = () => {
 
 initMode();
 
-window.addEventListener("load", function() {
-	updateOutlineText();
-})
+// window.addEventListener("load", function() {
+// 	updateOutlineText();
+// })
 
-const updateOutlineText = () => {
-	initMode();
-	console.log('Displaying DevJ2K !');
-	let devj2kText = document.getElementById("devj2kText");
-	if (devj2kText == null) {
-		return ;
-	}
-	if (darkMode.value == true) {
-		devj2kText.classList.add('text-outline-dark');
-		devj2kText.classList.remove('text-outline-light');
-	} else {
-		devj2kText.classList.add('text-outline-light');
-		devj2kText.classList.remove('text-outline-dark');
-	}
-}
+// const updateOutlineText = () => {
+// 	initMode();
+// 	console.log('Displaying DevJ2K !');
+// 	let devj2kText = document.getElementById("devj2kText");
+// 	if (devj2kText == null) {
+// 		return ;
+// 	}
+// 	if (darkMode.value == true) {
+// 		devj2kText.classList.add('text-outline-dark');
+// 		devj2kText.classList.remove('text-outline-light');
+// 	} else {
+// 		devj2kText.classList.add('text-outline-light');
+// 		devj2kText.classList.remove('text-outline-dark');
+// 	}
+// }
 
 const switchColorMode = () => {
 	initMode();
@@ -120,7 +120,7 @@ const switchColorMode = () => {
 		appPage.classList.add('dark');
 	}
 	darkMode.value = !darkMode.value;
-	updateOutlineText();
+	// updateOutlineText();
 	console.log("Current mode => " + darkMode.value);
 }
 

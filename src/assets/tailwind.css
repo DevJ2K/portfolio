@@ -45,8 +45,15 @@
 	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
   }
 
+.text-outline {
+	-webkit-text-stroke-width: 0.6px;
+	-webkit-text-stroke-color: #000;
+}
+.dark .text-outline {
+	-webkit-text-stroke-color: #fff;
+}
 
-.text-outline-dark {
+/* .text-outline-dark {
 	-webkit-text-stroke-width: 0.6px;
 	-webkit-text-stroke-color: #fff;
 }
@@ -55,5 +62,19 @@
 	-webkit-text-stroke-color: #000;
 }
 
+.test {
+	color: blue;
+}
+
+.dark .test {
+	color: red;
+} */
+
+.tab-title {
+	@apply text-3xl;
+	@apply text-high-contrast-text dark:text-d-high-contrast-text;
+	@apply underline underline-offset-8;
+	@apply decoration-accent-color dark:decoration-d-accent-color;
+}
 
 @tailwind utilities;
