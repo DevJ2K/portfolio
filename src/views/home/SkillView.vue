@@ -2,8 +2,8 @@
 	<div class="relative flex min-h-screen w-full flex-col">
 		<BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl"/>
 		<div class=" h-28 w-full"></div>
-		<main class=" container z-10 flex min-h-screen flex-col items-center  gap-9 text-primary dark:text-d-primary">
-			<h1 class="text-3xl underline decoration-accent-color underline-offset-8">Skills</h1>
+		<main class=" container z-10 flex min-h-screen flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
+			<h1 class="tab-title">Skills</h1>
 
 			<div class="flex flex-col gap-8">
 				<fieldset class="flex w-full items-center justify-center rounded-lg border bg-accent-color/15 px-6 py-4">
