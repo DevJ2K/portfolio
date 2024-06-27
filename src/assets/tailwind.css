@@ -36,7 +36,7 @@
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
 	@apply hover:text-white;
 
-	@apply transition-all active:transition-none ;
+	@apply transition-all active:transition-none;
 
 	@apply hover:bg-d-hover-accent-color;
 	@apply dark:hover:bg-hover-accent-color;
@@ -52,6 +52,27 @@
 .dark .text-outline {
 	-webkit-text-stroke-color: #fff;
 }
+
+.view-more-btn {
+	@apply flex flex-row items-center justify-center gap-2;
+	@apply font-medium;
+	@apply rounded-lg;
+	@apply border;
+	@apply px-4 py-2;
+	@apply text-high-contrast-text dark:text-d-high-contrast-text;
+	@apply hover:text-white;
+
+	@apply transition-all active:transition-none;
+
+	@apply hover:bg-d-hover-accent-color;
+	@apply dark:hover:bg-hover-accent-color;
+
+	@apply border-accent-color hover:border-d-hover-accent-color;
+	@apply dark:border-d-accent-color dark:hover:border-hover-accent-color;
+
+	/* @apply focus:border-red-500; */
+}
+
 
 /* .text-outline-dark {
 	-webkit-text-stroke-width: 0.6px;
