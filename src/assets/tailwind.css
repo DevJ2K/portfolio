@@ -22,7 +22,8 @@
 	@apply backdrop-blur-xl;
 	@apply bg-white/50;
 	@apply dark:bg-black/50;
-	@apply shadow-2xl;
+	@apply shadow-lg;
+	@apply dark:shadow-2xl;
 	/* color: #000; */
 }
 
