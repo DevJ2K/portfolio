@@ -19,8 +19,9 @@
 .my-scroll-nav-active {
 	@apply h-24;
 	/* background: #fff; */
-	@apply backdrop-blur-md;
-	@apply bg-black/50;
+	@apply backdrop-blur-xl;
+	@apply bg-white/50;
+	@apply dark:bg-black/60;
 	@apply shadow-2xl;
 	/* color: #000; */
 }
@@ -45,9 +46,14 @@
   }
 
 
-.text-outline {
+.text-outline-dark {
 	-webkit-text-stroke-width: 0.6px;
-	-webkit-text-stroke-color: #FFF;
+	-webkit-text-stroke-color: #fff;
 }
+.text-outline-light {
+	-webkit-text-stroke-width: 0.6px;
+	-webkit-text-stroke-color: #000;
+}
+
 
 @tailwind utilities;
