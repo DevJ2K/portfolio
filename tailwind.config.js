@@ -33,11 +33,15 @@ export default {
         "hover-ui-border": "#CF91D8", // 8. Hovered UI element border
         "d-hover-ui-border": "#92549C",
 
-        "solid-bg": "#AB4ABA", // 9. Solid backgrounds
-        "d-solid-bg": "#AB4ABA",
+        // "solid-bg": "#AB4ABA", // 9. Solid backgrounds
+        // "d-solid-bg": "#AB4ABA",
+        "accent-color": "#AB4ABA",
+        "d-accent-color": "#AB4ABA",
 
-        "hover-solid-bg": "#A144AF", // 10. Hovered solid backgrounds
-        "d-hover-solid-bg": "#B658C4",
+        // "hover-solid-bg": "#A144AF", // 10. Hovered solid backgrounds
+        // "d-hover-solid-bg": "#B658C4",
+        "hover-accent-color": "#A144AF", // 10. Hovered solid backgrounds
+        "d-hover-accent-color": "#B658C4",
 
         "low-contrast-text": "#953EA3", // 11. Low-contrast text
         "d-low-contrast-text": "#E796F3",
@@ -68,8 +72,8 @@ export default {
         "border-hover": "#FFF",
         "d-border-hover": "#FFF",
 
-        "accent-color": "#B658C4",
-        "d-accent-color": "#B658C4"
+        // "accent-color": "#B658C4",
+        // "d-accent-color": "#B658C4"
       }
     },
     fontFamily: {

@@ -18,8 +18,8 @@
     </div> -->
     <div class="absolute left-0 top-0 size-full backdrop-blur-3xl"></div>
   </div>
-  <div class="hidden bg-bg-1 dark:bg-d-bg-1"></div>
-  <div class="hidden bg-bg-2 dark:bg-d-bg-2"></div>
+  <div class="hidden bg-app-bg dark:bg-d-app-bg"></div>
+  <div class="hidden bg-subtle-bg dark:bg-d-subtle-bg"></div>
 </template>
 
 <script setup>

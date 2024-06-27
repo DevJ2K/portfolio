@@ -8,13 +8,13 @@
 
 			<!-- Line with dot -->
 			<div class="mb-3 flex flex-row items-center justify-center md:group-even:flex-row-reverse">
-				<div class=" size-2 overflow-hidden rounded-full border-2 bg-primary"></div>
-				<div class=" h-px w-full bg-accent-color"></div>
+				<div class=" bg-primary size-2 overflow-hidden rounded-full border-2"></div>
+				<div class=" bg-accent-color h-px w-full"></div>
 			</div>
 
 			<!-- Content -->
-			<h2 class="mb-1 text-xl font-bold text-primary">{{ itemDate }}</h2>
-			<p v-if="gradientText" class="bg-gradient-to-b from-primary bg-clip-text text-transparent">{{ content }}</p>
+			<h2 class="text-primary mb-1 text-xl font-bold">{{ itemDate }}</h2>
+			<p v-if="gradientText" class="from-primary bg-gradient-to-b bg-clip-text text-transparent">{{ content }}</p>
 			<p v-else class="text-primary">
 				{{ content }}
 			</p>

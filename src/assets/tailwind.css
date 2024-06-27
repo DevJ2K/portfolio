@@ -25,6 +25,25 @@
 	/* color: #000; */
 }
 
+.open-resume-btn {
+	@apply rounded-2xl;
+	@apply shadow-lg;
+	@apply border-2;
+	@apply px-6 py-3;
+	@apply text-center text-base font-bold;
+
+	@apply text-high-contrast-text dark:text-d-high-contrast-text;
+
+	@apply transition-all active:transition-none ;
+
+	@apply hover:bg-d-hover-accent-color;
+	@apply dark:hover:bg-hover-accent-color;
+
+	@apply border-accent-color hover:border-hover-accent-color;
+	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
+  }
+
+
 .text-outline {
 	-webkit-text-stroke-width: 0.6px;
 	-webkit-text-stroke-color: #FFF;

@@ -8,7 +8,7 @@
 				</div>
 				<h3 class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
-			<ul class=" flex flex-row gap-8 text-lg font-semibold text-primary max-md:hidden">
+			<ul class=" flex flex-row gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
 					<a href="#about">About</a>
 					<span
