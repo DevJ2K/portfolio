@@ -6,7 +6,7 @@
 			<h1 class="tab-title">Skills</h1>
 
 			<div class="flex flex-col gap-8">
-				<fieldset class="flex w-full items-center justify-center rounded-lg border bg-accent-color/15 px-6 py-4">
+				<fieldset class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md dark:border-d-subtle-border dark:bg-d-subtle-bg">
 					<legend class=" m-auto px-1 text-lg font-semibold">Technical Skills</legend> <!-- rounded-md border-->
 
 					<div class=" flex w-full flex-col items-center justify-center gap-4">
@@ -32,7 +32,7 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="flex w-full items-center justify-center rounded-lg border bg-accent-color/15 px-6 py-4">
+				<fieldset class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md dark:border-d-subtle-border dark:bg-d-subtle-bg">
 					<legend class=" m-auto px-1 text-lg font-semibold">Programming Languages</legend>
 					<div class="flex w-full flex-wrap justify-center gap-6">
 						<LogoSkill :logo="SwiftSvg" tech-name="Swift" />
@@ -43,7 +43,7 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="flex w-full items-center justify-center rounded-lg border bg-accent-color/15 px-6 py-4">
+				<fieldset class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md dark:border-d-subtle-border dark:bg-d-subtle-bg">
 					<legend class=" m-auto px-1 text-lg font-semibold">Frameworks & Librairies</legend>
 					<div class="flex w-full flex-wrap justify-center gap-6">
 						<LogoSkill :logo="FlutterSvg" tech-name="Flutter" />
@@ -53,7 +53,7 @@
 					</div>
 				</fieldset>
 
-				<fieldset class="flex w-full items-center justify-center rounded-lg border bg-accent-color/15 p-3">
+				<fieldset class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md dark:border-d-subtle-border dark:bg-d-subtle-bg">
 					<legend class=" m-auto px-1 text-lg font-semibold">Databases</legend>
 					<div class="flex w-full flex-wrap justify-center gap-6">
 						<LogoSkill :logo="FirebaseSvg" tech-name="Firebase" />

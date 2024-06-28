@@ -1,6 +1,7 @@
 <template>
 	<!-- <div> -->
-		<div class="group flex  cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border bg-black/15 p-4 shadow-md" @mouseover="displayParagraph" @mouseout="hideParagraph">
+		<div class="group flex cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border border-subtle-border bg-ui-bg p-4 shadow-md transition-colors hover:border-hover-ui-border dark:border-d-subtle-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border">
+			<!-- @mouseover="displayParagraph" @mouseout="hideParagraph" -->
 			<div class="relative flex flex-row items-center justify-center gap-2">
 				<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 				<h1 class="text-sm font-bold">{{ skill }}</h1>
