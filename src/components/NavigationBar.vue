@@ -12,25 +12,25 @@
 			</a>
 			<ul class=" flex flex-row gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
-					<a href="#about">About</a>
+					<a href="#about" class="transition-all group-hover:text-black dark:group-hover:text-white">About</a>
 					<span
 						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a href="#skills">Skills</a>
+					<a href="#skills" class="transition-all group-hover:text-black dark:group-hover:text-white">Skills</a>
 					<span
 						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a href="#projects">Projects</a>
+					<a href="#projects" class="transition-all group-hover:text-black dark:group-hover:text-white">Projects</a>
 					<span
 						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a href="#contact">Contact</a>
+					<a href="#contact" class="transition-all group-hover:text-black dark:group-hover:text-white">Contact</a>
 					<span
 						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
 
