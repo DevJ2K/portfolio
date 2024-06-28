@@ -1,5 +1,5 @@
 <template>
-	<div class="group cursor-pointer rounded-full border border-ui-border p-3 shadow-lg transition-colors hover:border-transparent hover:bg-accent-color dark:border-d-ui-border dark:hover:border-transparent dark:hover:bg-d-accent-color">
+	<div class="group cursor-pointer rounded-full border border-ui-border p-3 shadow-lg transition-all hover:border-transparent hover:bg-accent-color hover:shadow-xl dark:border-d-ui-border dark:hover:border-transparent dark:hover:bg-d-accent-color">
 			<logo :size="size" color="text-high-contrast-text dark:text-d-high-contrast-text group-hover:text-white"/>
 		<!-- <h3 class="absolute text-xs font-semibold sm:text-sm">{{ name }}</h3> -->
 	</div>

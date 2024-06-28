@@ -4,7 +4,7 @@
 			<div class="relative flex flex-row items-center justify-center gap-2">
 				<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 				<h1 class="text-sm font-bold">{{ skill }}</h1>
-				<p :id="skill+'_tooltip'" class="absolute top-0 z-50 rounded-md border border-subtle-border bg-subtle-bg p-2 text-sm font-medium shadow-lg transition-all dark:border-d-subtle-border min-w-28 dark:bg-d-subtle-bg" style="opacity: 0; visibility: hidden;">{{ description }}</p>
+				<p :id="skill+'_tooltip'" class="absolute top-0 z-50 rounded-md border border-subtle-border bg-subtle-bg p-2 text-sm font-medium shadow-lg transition-all dark:border-d-subtle-border dark:bg-d-subtle-bg sm:min-w-40 md:min-w-60 lg:min-w-72" style="opacity: 0; visibility: hidden;">{{ description }}</p>
 			</div>
 		</div>
 	<!-- </div> -->
