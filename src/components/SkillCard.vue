@@ -1,11 +1,10 @@
 <template>
 	<!-- <div> -->
-		<div class="group flex cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border border-subtle-border bg-ui-bg p-4 shadow-md transition-colors hover:border-hover-ui-border dark:border-d-subtle-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border">
-			<!-- @mouseover="displayParagraph" @mouseout="hideParagraph" -->
+		<div class="group flex cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border border-subtle-border bg-ui-bg p-4 shadow-md transition-colors hover:border-hover-ui-border dark:border-d-subtle-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border" @mouseover="displayParagraph" @mouseout="hideParagraph">
 			<div class="relative flex flex-row items-center justify-center gap-2">
 				<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 				<h1 class="text-sm font-bold">{{ skill }}</h1>
-				<p :id="skill+'_tooltip'" class="absolute top-0 z-50 rounded-md border bg-black p-2 text-xs transition-all" style="opacity: 0; visibility: hidden;">{{ description }}</p>
+				<p :id="skill+'_tooltip'" class="absolute top-0 z-50 rounded-md border border-subtle-border bg-subtle-bg p-2 text-sm font-medium shadow-lg transition-all dark:border-d-subtle-border min-w-28 dark:bg-d-subtle-bg" style="opacity: 0; visibility: hidden;">{{ description }}</p>
 			</div>
 		</div>
 	<!-- </div> -->
@@ -20,7 +19,7 @@ const props = defineProps({
 	description: {
 		type: String,
 		// default: "Ea reprehenderit nisi nostrud in officia commodo Lorem aliquip cillum nisi do eiusmod consectetur Lorem. Culpa minim in reprehenderit magna quis nisi dolor. Nisi velit ex cillum eu."
-		default: "ahetihbieihe. bitibtehibhthb. bieiebiebiheibebhi. betjewrghiwrhwrhgio. wrgihiwrghirwg",
+		default: "Minim commodo cupidatat ipsum culpa adipisicing adipisicing proident ipsum ea duis duis id laboris incididunt. Officia proident dolore commodo aliquip ipsum. Minim anim pariatur qui do elit Lorem sit incididunt.",
 	},
 	icon: {
 		type: String,
