@@ -1,6 +1,6 @@
 <template>
-	<a class="select-none" :href="projectLink" target="_blank">
-		<div class=" flex max-w-xs flex-col items-start justify-start gap-4 rounded-2xl border border-ui-border bg-ui-bg p-6 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-ui-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border">
+	<!-- <a class="select-none" :href="projectLink" target="_blank"> -->
+		<div class=" flex max-w-xs cursor-pointer flex-col items-start justify-start gap-4 rounded-2xl border border-ui-border bg-ui-bg p-6 shadow-md transition-all hover:border-hover-ui-border hover:bg-hover-ui-bg hover:shadow-lg dark:border-d-ui-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border dark:hover:bg-d-hover-ui-bg" v-on:click="openLink()">
 			<div class="flex flex-row items-center justify-center gap-4">
 				<div class="size-12 overflow-hidden rounded-2xl bg-white shadow max-sm:size-14">
 					<img src="../assets/projectsIcon/tododev_logo.png" alt="" class=" size-full object-cover">
@@ -21,11 +21,11 @@
 				</a> -->
 			</div>
 		</div>
-	</a>
+	<!-- </a> -->
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
 	icon: {
 		type: String,
 		default: "../assets/projectsIcon/tododev_logo.png"
@@ -47,4 +47,8 @@ defineProps({
 		default: "http://www.google.com"
 	}
 })
+
+const openLink = () => {
+	window.open(props.projectLink, 'blank');
+}
 </script>
