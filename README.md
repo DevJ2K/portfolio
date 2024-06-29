@@ -2,8 +2,9 @@
 
 ## Todo
 - Find color theme
-- Navigation bar in < breakpoint Md
+- Add shiny effect on the background
 - Background color
+- Navigation bar in < breakpoint Md
 - Light and Dark Mode
 - Hover effects on each button
 - Adding Firebase

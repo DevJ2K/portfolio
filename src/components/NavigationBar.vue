@@ -10,7 +10,7 @@
 				</div>
 				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
-			<ul class=" flex flex-row gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
+			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
 					<a href="#about" class="transition-all group-hover:text-black dark:group-hover:text-white">About</a>
 					<span
@@ -37,8 +37,10 @@
 				</li>
 				<li>
 					<a @click="switchColorMode">
-						<i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
-						<i v-else class="fa-regular fa-moon cursor-pointer"></i>
+						<!-- <i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
+						<i v-else class="fa-regular fa-moon cursor-pointer"></i> -->
+						<SunIcon v-if="darkMode" class="size-4 cursor-pointer fill-current"/>
+						<MoonIcon v-else class="size-4 cursor-pointer"/>
 					</a>
 				</li>
 			</ul>
@@ -54,8 +56,10 @@
 				<li><a href="#">Projects</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a @click="switchColorMode">
-					<i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
-					<i v-else class="fa-regular fa-moon cursor-pointer"></i>
+					<!-- <SunIcon/>
+					<MoonIcon/> -->
+					<SunIcon v-if="darkMode" class="size-4 cursor-pointer"/>
+					<MoonIcon v-else class="size-4 cursor-pointer"/>
 				</a></li>
 			</ul>
 		</div>
@@ -63,6 +67,7 @@
 </template>
 
 <script setup>
+import { MoonIcon, SunIcon } from '@radix-icons/vue';
 import { ref } from 'vue';
 
 const darkMode = ref(null);
