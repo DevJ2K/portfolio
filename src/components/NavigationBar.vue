@@ -42,13 +42,13 @@
 					</a>
 				</li>
 			</ul>
-			<div class=" cursor-pointer text-2xl font-semibold text-primary md:hidden" @click="toggleMenu">
+			<div class=" cursor-pointer text-2xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:hidden" @click="toggleMenu">
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</div>
 		<div v-if="displayMenu" class="absolute top-0 mt-24 w-full md:hidden">
 			<ul
-				class=" flex flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-primary">
+				class=" flex flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Skills</a></li>
 				<li><a href="#">Projects</a></li>

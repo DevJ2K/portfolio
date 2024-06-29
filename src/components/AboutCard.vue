@@ -11,7 +11,7 @@
 
 			<!-- Line with dot -->
 			<!-- <div class="mb-3 flex flex-row items-center justify-center md:group-even:flex-row-reverse">
-				<div class=" size-2 overflow-hidden rounded-full border-2 bg-primary"></div>
+				<div class=" size-2 overflow-hidden rounded-full border-2 bg-ui-bg"></div>
 				<div class=" h-px w-full bg-accent-color"></div>
 			</div> -->
 

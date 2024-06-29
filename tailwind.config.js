@@ -48,32 +48,6 @@ export default {
 
         "high-contrast-text": "#53195D", // 12. High-contrast text
         "d-high-contrast-text": "#F4D4F4",
-
-
-
-
-
-
-
-
-        "bg-1": "#FEF7FB",
-        "d-bg-1": "#181118",
-
-        "bg-2": "#FBEBFB",
-        "d-bg-2": "#201320",
-
-
-        "primary": "#FDD1EA",
-        "d-primary": "#FDD1EA",
-
-        "border": "#FFF",
-        "d-border": "#FFF",
-
-        "border-hover": "#FFF",
-        "d-border-hover": "#FFF",
-
-        // "accent-color": "#B658C4",
-        // "d-accent-color": "#B658C4"
       }
     },
     fontFamily: {

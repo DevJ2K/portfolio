@@ -2,7 +2,7 @@
 	<div class="relative flex min-h-screen w-full flex-col">
 		<BackgroundSpotlight rotate="bg-gradient-to-bl"/>
 		<div class=" h-28 w-full"></div>
-		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-primary dark:text-d-primary">
+		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9">
 			<h1 class="tab-title">Contact</h1>
 			<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3> -->
 			<fieldset class="flex w-3/4 flex-row items-center justify-around rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
