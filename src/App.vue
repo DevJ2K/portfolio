@@ -1,5 +1,5 @@
 <template>
-  <div id="mainApp" class="dark font-Poppins">
+  <div>
     <RouterView/>
   </div>
 </template>

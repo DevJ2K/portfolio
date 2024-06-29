@@ -94,28 +94,19 @@
 	z-index: 100;
 }
 
-/* .text-outline-dark {
-	-webkit-text-stroke-width: 0.6px;
-	-webkit-text-stroke-color: #fff;
-}
-.text-outline-light {
-	-webkit-text-stroke-width: 0.6px;
-	-webkit-text-stroke-color: #000;
-}
-
-.test {
-	color: blue;
-}
-
-.dark .test {
-	color: red;
-} */
-
 .tab-title {
 	@apply text-3xl;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
 	@apply underline underline-offset-8;
 	@apply decoration-accent-color dark:decoration-d-accent-color;
+}
+
+body {
+	@apply bg-app-bg;
+}
+
+body.dark {
+	@apply bg-d-app-bg;
 }
 
 @tailwind utilities;
