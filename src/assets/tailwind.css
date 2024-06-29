@@ -20,8 +20,8 @@
 	@apply h-24;
 	/* background: #fff; */
 	@apply backdrop-blur-xl;
-	@apply bg-white/50;
-	@apply dark:bg-black/50;
+	@apply bg-app-bg/60;
+	@apply dark:bg-d-app-bg/60;
 	@apply shadow-lg;
 	@apply dark:shadow-2xl;
 	/* color: #000; */
