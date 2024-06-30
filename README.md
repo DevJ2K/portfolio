@@ -1,9 +1,11 @@
 # Portfolio
 
 ## Todo
-- Find color theme
-- Add shiny effect on the background
-- Background color
+- Responsive font size
+- Make projects card more attractive
+- Add sphere or stars on background to create an atmosphere + gradient effect
+- Add shiny effect on the background + simulate lights ( + try tiles background )
+- Find color theme + background color
 - Navigation bar in < breakpoint Md
 - Light and Dark Mode
 - Hover effects on each button

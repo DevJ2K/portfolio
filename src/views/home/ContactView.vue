@@ -20,7 +20,7 @@
 
 
 			<fieldset class="flex w-3/4 flex-col items-center justify-center gap-6 rounded-lg border border-subtle-border bg-subtle-bg py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
-					<legend class=" m-auto px-1 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text">Your information</legend>
+					<legend class=" m-auto px-1 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text">Get In Touch</legend>
 
 			<div class="flex w-3/4 flex-col items-end gap-6">
 				<div class="flex w-full flex-col items-start gap-1">
