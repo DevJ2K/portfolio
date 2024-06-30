@@ -39,8 +39,8 @@
 
 	@apply transition-all active:transition-none;
 
-	@apply hover:bg-d-hover-accent-color;
-	@apply dark:hover:bg-hover-accent-color;
+	@apply hover:bg-hover-accent-color;
+	@apply dark:hover:bg-d-hover-accent-color;
 
 	@apply border-accent-color hover:border-hover-accent-color;
 	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
@@ -65,11 +65,13 @@
 
 	@apply transition-all active:transition-none;
 
-	@apply hover:bg-d-hover-accent-color;
-	@apply dark:hover:bg-hover-accent-color;
+	/* @apply bg-accent-color; */
 
-	@apply border-accent-color hover:border-d-hover-accent-color;
-	@apply dark:border-d-accent-color dark:hover:border-hover-accent-color;
+	@apply hover:bg-hover-accent-color;
+	@apply dark:hover:bg-d-hover-accent-color;
+
+	@apply border-accent-color hover:border-hover-accent-color;
+	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
 
 	/* @apply focus:border-red-500; */
 }
