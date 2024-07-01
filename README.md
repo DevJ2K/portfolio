@@ -1,19 +1,19 @@
 # Portfolio
 
 ## Todo
-- Responsive font size
-- Add dots on timeline AboutView + change line width
-- Make projects card more attractive
-- Add sphere or stars on background to create an atmosphere + gradient effect
-- Add shiny effect on the background + simulate lights ( + try tiles background )
-- Find color theme + background color
-- Navigation bar in < breakpoint Md
-- Light and Dark Mode
-- Hover effects on each button
-- Adding Firebase
-- Suspense effect on project card
-- Contact page working
-- Animation on appear
+- [x] Responsive font size
+- [ ] Add dots on timeline AboutView + change line width
+- [ ] Make projects card more attractive
+- [ ] Add sphere or stars on background to create an atmosphere + gradient effect
+- [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
+- [ ] Find color theme + background color
+- [ ] Navigation bar in < breakpoint Md
+- [ ] Light and Dark Mode
+- [ ] Hover effects on each button
+- [ ] Adding Firebase
+- [ ] Suspense effect on project card
+- [ ] Contact page working
+- [ ] Animation on appear
 
 ##
 This template should help get you started developing with Vue 3 in Vite.
