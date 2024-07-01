@@ -6,7 +6,7 @@
 			<h1 class="tab-title">About</h1>
 			<div class="h-12 w-full"></div>
 			<div
-				class="relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-high-contrast-text before:via-high-contrast-text before:to-transparent dark:before:from-d-high-contrast-text dark:before:via-d-high-contrast-text md:before:mx-auto md:before:translate-x-0">
+				:class="'relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text md:before:mx-auto md:before:translate-x-0' + (!viewMoreAbout ? ' before:to-transparent' : ' before:to-low-contrast-text dark:before:to-d-low-contrast-text')">
 
 				<AboutCard item-date="September 2020" content="Adipisicing excepteur fugiat proident et aliquip. Aute sunt ut cupidatat est in enim laborum laborum."/>
 
