@@ -56,8 +56,8 @@
 
 .view-more-btn {
 	@apply flex flex-row items-center justify-center gap-2;
-	@apply font-medium;
-	@apply rounded-lg;
+	@apply font-medium text-base;
+	@apply rounded-xl;
 	@apply border;
 	@apply px-4 py-2;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
@@ -101,6 +101,16 @@
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
 	@apply underline underline-offset-8;
 	@apply decoration-accent-color dark:decoration-d-accent-color;
+	/* @apply uppercase; */
+	@apply font-medium;
+}
+
+.skill-fieldset {
+	@apply flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border;
+}
+
+.custom-legend {
+	@apply m-auto px-2 text-xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text;
 }
 
 body {
