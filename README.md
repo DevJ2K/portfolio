@@ -2,7 +2,7 @@
 
 ## Todo
 - [x] Responsive font size
-- [ ] Add dots on timeline AboutView + change line width
+- [x] Add dots on timeline AboutView + change line width
 - [ ] Make projects card more attractive
 - [ ] Add sphere or stars on background to create an atmosphere + gradient effect
 - [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
