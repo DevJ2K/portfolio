@@ -121,4 +121,22 @@ body.dark {
 	@apply bg-d-app-bg;
 }
 
+.project-card-btn {
+	@apply flex size-full flex-row items-center justify-center gap-1.5 rounded-xl cursor-pointer shadow-md hover:shadow-xl p-2 border transition-all;
+}
+
+.project-card-btn-outline {
+	@apply bg-ui-bg dark:bg-d-ui-bg;
+	@apply border-accent-color dark:border-d-accent-color;
+	@apply hover:bg-hover-accent-color dark:hover:bg-d-hover-accent-color;
+	@apply hover:border-transparent;
+}
+
+.project-card-btn-fill {
+	@apply border-transparent;
+	@apply bg-accent-color dark:bg-d-accent-color;
+	@apply hover:bg-hover-accent-color dark:hover:bg-d-hover-accent-color;
+}
+
+
 @tailwind utilities;

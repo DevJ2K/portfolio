@@ -85,8 +85,8 @@ export default {
 
         // "hover-solid-bg": "#A144AF", // 10. Hovered solid backgrounds
         // "d-hover-solid-bg": "#B658C4",
-        "hover-accent-color": "#3358D4", // 10. Hovered solid backgrounds
-        "d-hover-accent-color": "#B658C4",
+        "hover-accent-color": "#2348C3", // 10. Hovered solid backgrounds
+        "d-hover-accent-color": "#943DA0",
 
         "low-contrast-text": "#3A5BC7", // 11. Low-contrast text
         "d-low-contrast-text": "#E796F3",
