@@ -3,7 +3,8 @@
 ## Todo
 - [x] Responsive font size
 - [x] Add dots on timeline AboutView + change line width
-- [ ] Make projects card more attractive
+- [x] Make projects card more attractive
+- [ ] Fix responsive on iPhone SE and check others
 - [ ] Add sphere or stars on background to create an atmosphere + gradient effect
 - [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
 - [ ] Find color theme + background color
