@@ -3,7 +3,7 @@
 		<BackgroundSpotlight rotate="bg-gradient-to-br" bg-color="subtle-bg" />
 		<div class=" h-28 w-full"></div>
 		<main class="container z-10 flex min-h-screen w-full flex-col items-center">
-			<h1 class="tab-title">About</h1>
+			<h1 id="viewMoreScrollIntoView" class="tab-title">About</h1>
 			<div class="h-12 w-full"></div>
 			<div
 				:class="'relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text md:before:mx-auto md:before:translate-x-0' + (!viewMoreAbout ? ' before:to-transparent' : ' before:to-low-contrast-text dark:before:to-d-low-contrast-text')">
@@ -40,5 +40,8 @@ const viewMoreAbout = ref(null);
 
 const toggleViewMoreAbout = () => {
 	viewMoreAbout.value = !viewMoreAbout.value;
+	if (viewMoreAbout.value == false) {
+		document.getElementById("viewMoreScrollIntoView").scrollIntoView();
+	}
 };
 </script>
