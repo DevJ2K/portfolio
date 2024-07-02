@@ -24,17 +24,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="h-px w-full bg-ui-border/50 dark:bg-d-ui-border/50"></div>
-			<div class="flex w-full flex-col items-center justify-center gap-2 p-3 md:flex-row">
+			<div>
+				<div class="h-px w-full bg-ui-border/50 dark:bg-d-ui-border/50"></div>
+				<div class="flex w-full flex-col items-center justify-center gap-2 p-3 md:flex-row">
 
-				<div class="project-card-btn project-card-btn-outline group">
-					<RedirectionSvg color="font-medium text-high-contrast-text group-hover:text-white dark:text-d-high-contrast-text h-4 w-4"/>
-					<h3 class=" text-nowrap text-sm font-medium text-high-contrast-text group-hover:text-white dark:text-d-high-contrast-text">View Project</h3>
-				</div>
+					<div class="project-card-btn project-card-btn-outline group">
+						<RedirectionSvg color="font-medium text-high-contrast-text group-hover:text-white dark:text-d-high-contrast-text h-4 w-4"/>
+						<h3 class=" text-nowrap text-sm font-medium text-high-contrast-text group-hover:text-white dark:text-d-high-contrast-text">View Project</h3>
+					</div>
 
-				<div class="project-card-btn project-card-btn-fill">
-						<GithubSvg color="text-white dark:text-white h-4 w-4"/>
-						<h3 class="text-white dark:text-white">GitHub</h3>
+					<div class="project-card-btn project-card-btn-fill">
+							<GithubSvg color="text-white dark:text-white h-4 w-4"/>
+							<h3 class="text-sm text-white dark:text-white">GitHub</h3>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,8 +1,8 @@
 <template>
-	<div class="relative flex min-h-screen w-full flex-col">
+	<div class="relative flex w-full flex-col">
 		<BackgroundSpotlight rotate="bg-gradient-to-br" bg-color="subtle-bg" />
 		<div class=" h-28 w-full"></div>
-		<main class="container z-10 flex min-h-screen w-full flex-col items-center">
+		<main class="container z-10 flex w-full flex-col items-center">
 			<h1 id="viewMoreScrollIntoView" class="tab-title">About</h1>
 			<div class="h-12 w-full"></div>
 			<div

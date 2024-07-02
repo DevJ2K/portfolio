@@ -66,6 +66,32 @@
 	@apply transition-all active:transition-none;
 
 	/* @apply bg-accent-color; */
+	@apply shadow-md hover:shadow-xl;
+
+	@apply hover:bg-hover-accent-color;
+	@apply dark:hover:bg-d-hover-accent-color;
+
+	@apply border-accent-color hover:border-hover-accent-color;
+	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
+
+	/* @apply focus:border-red-500; */
+}
+
+
+.view-more-project-btn {
+	@apply flex flex-row items-center justify-center gap-2;
+	@apply font-medium text-base;
+	@apply rounded-xl;
+	@apply border;
+	@apply px-8 py-2;
+	@apply mt-6;
+	@apply shadow-md hover:shadow-xl;
+	@apply text-high-contrast-text dark:text-d-high-contrast-text;
+	@apply hover:text-white;
+
+	@apply transition-all active:transition-none;
+
+	/* @apply bg-accent-color; */
 
 	@apply hover:bg-hover-accent-color;
 	@apply dark:hover:bg-d-hover-accent-color;
