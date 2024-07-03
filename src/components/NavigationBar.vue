@@ -2,7 +2,55 @@
 
 <template>
 	<!-- <div id="navBar" class="fixed top-0 z-50 flex w-full transition duration-1000 ease-in-out"> -->
+
+
+
 	<div id="navBar" class="my-scroll-nav">
+
+		<div v-if="displayMenu" class="absolute top-0 h-screen w-full md:hidden">
+			<ul
+				class=" flex size-full flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text">
+
+				<li class="group relative w-max">
+					<a href="#about" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">About</a>
+					<span
+						class="animate-underline"></span>
+
+				</li>
+
+				<li class="group relative w-max">
+					<a href="#skills" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">Skills</a>
+					<span
+						class="animate-underline"></span>
+
+				</li>
+
+				<li class="group relative w-max">
+					<a href="#projects" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">Projects</a>
+					<span
+						class="animate-underline"></span>
+
+				</li>
+
+				<li class="group relative w-max">
+					<a href="#contact" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">Contact</a>
+					<span
+						class="animate-underline"></span>
+
+				</li>
+
+
+
+
+				<li><a @click="switchColorMode">
+					<!-- <SunIcon/>
+					<MoonIcon/> -->
+					<SunIcon v-if="darkMode" class="size-4 cursor-pointer"/>
+					<MoonIcon v-else class="size-4 cursor-pointer"/>
+				</a></li>
+			</ul>
+		</div>
+
 		<div class="container flex items-center justify-between">
 			<a class="flex flex-row items-center gap-4" href="#">
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
@@ -14,25 +62,25 @@
 				<li class="group relative w-max">
 					<a href="#about" class="transition-all group-hover:text-black dark:group-hover:text-white">About</a>
 					<span
-						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
 					<a href="#skills" class="transition-all group-hover:text-black dark:group-hover:text-white">Skills</a>
 					<span
-						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
 					<a href="#projects" class="transition-all group-hover:text-black dark:group-hover:text-white">Projects</a>
 					<span
-						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
 					<a href="#contact" class="transition-all group-hover:text-black dark:group-hover:text-white">Contact</a>
 					<span
-						class="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color"></span>
+						class="animate-underline"></span>
 
 				</li>
 				<li>
@@ -49,21 +97,6 @@
 				<NavHamburger/>
 			</div>
 			<!-- </div> -->
-		</div>
-		<div v-if="displayMenu" class="absolute top-0 mt-24 w-full md:hidden">
-			<ul
-				class=" flex flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a @click="switchColorMode">
-					<!-- <SunIcon/>
-					<MoonIcon/> -->
-					<SunIcon v-if="darkMode" class="size-4 cursor-pointer"/>
-					<MoonIcon v-else class="size-4 cursor-pointer"/>
-				</a></li>
-			</ul>
 		</div>
 	</div>
 </template>

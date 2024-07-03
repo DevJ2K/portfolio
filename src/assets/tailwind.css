@@ -207,6 +207,9 @@ body.dark {
 	box-shadow: rgba(0, 0, 0, 0.30) 1px 1px 4px 0px;
 }
 
+.animate-underline {
+	@apply absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color;
+}
 
 /* HAMBURGER MENU */
 
