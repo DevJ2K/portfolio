@@ -2,7 +2,7 @@
 	<!-- <a class="select-none" :href="projectLink" target="_blank"> -->
 
 
-		<div class="flex max-w-xs flex-col justify-between overflow-hidden rounded-2xl border border-ui-border bg-ui-bg shadow-lg dark:border-d-ui-border dark:bg-d-ui-bg sm:hidden">
+		<div class="flex max-w-xs flex-col justify-between overflow-hidden rounded-2xl border border-ui-border bg-ui-bg shadow-lg dark:border-d-ui-border dark:bg-d-ui-bg  b_project_card:hidden">
 			<div>
 				<div>
 					<img :src="previewImage" alt="" class="cursor-pointer"  v-on:click="openLink()">
@@ -41,14 +41,14 @@
 			</div>
 		</div>
 
-	<div class="custom-shadow-lg 768px:hidden flex w-full flex-row overflow-hidden rounded-2xl border-subtle-border bg-subtle-bg dark:border-d-subtle-border dark:bg-d-ui-bg">
+	<div class="custom-shadow-lg hidden w-full flex-row overflow-hidden rounded-2xl border-subtle-border bg-subtle-bg dark:border-d-subtle-border dark:bg-d-ui-bg b_project_card:flex">
 		<div class="w-full">
 			<img :src="previewImage" :alt="title + '_img'" class=" size-full cursor-pointer object-cover" v-on:click="openLink()">
 		</div>
 		<div class="flex flex-col items-start gap-4 p-4">
 			<div class="flex flex-col gap-4">
 
-				<h1 class=" text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text sm:text-xl">{{ title }}</h1>
+				<h1 class=" text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text sm:text-2xl">{{ title }}</h1>
 
 				<p class=" text-sm font-normal  text-high-contrast-text dark:text-d-high-contrast-text">{{ description }}</p>
 

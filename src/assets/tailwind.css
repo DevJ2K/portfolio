@@ -157,7 +157,7 @@ body.dark {
 }
 
 .project-card-btn-2 {
-	@apply flex h-full flex-row items-center justify-center gap-1.5 rounded-2xl cursor-pointer custom-shadow-lg hover:shadow-xl py-2 px-3 border-2 transition-all font-medium;
+	@apply flex h-full flex-row items-center justify-center gap-1.5 rounded-2xl cursor-pointer custom-shadow-lg hover:shadow-lg py-2 px-3 border-2 transition-all font-medium;
 }
 
 .project-card-btn-outline {
