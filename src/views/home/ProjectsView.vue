@@ -9,9 +9,9 @@
 				<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Featured Projects</h3> -->
 				<!-- <div class="grid grid-cols-3 flex-row gap-3 sm:flex"> -->
 				<div class="flex flex-wrap justify-center gap-6">
-					<ProjectCard2 :tags="['Firebase', 'Real-time data', 'Community']"/>
-					<ProjectCard2 :tags="['Firebase', 'Auth0', 'Message']"/>
-					<ProjectCard2 :tags="['3D', 'API']"/>
+					<ProjectCard :tags="['Firebase', 'Real-time data', 'Community']"/>
+					<ProjectCard :tags="['Firebase', 'Auth0', 'Message']"/>
+					<ProjectCard :tags="['3D', 'API']"/>
 					<!-- <ProjectCard :tags="['3D', 'API']"/>
 					<ProjectCard :tags="['TestFlight', 'Storage']"/>
 					<ProjectCard :tags="['POO', 'Scrapping', 'Database']"/> -->
@@ -55,7 +55,6 @@
 <script setup>
 import BackgroundSpotlight from '@/components/BackgroundSpotlight.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
-import ProjectCard2 from '@/components/ProjectCard2.vue';
 
 
 </script>
