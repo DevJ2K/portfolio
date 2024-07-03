@@ -8,11 +8,11 @@
 			<fieldset class="flex w-full flex-row items-center justify-around rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
 				<legend class="custom-legend">Social Networks</legend>
 			<!-- <div class="flex w-3/4 flex-row justify-between"> -->
-				<SocialLogo :logo="GithubSvg" name="DevJ2K"/>
-				<SocialLogo :logo="LinkedinSvg" name="Théo Ajavon"/>
-				<SocialLogo :logo="InstagramSvg" name="devj2k"/>
-				<SocialLogo :logo="MaltSvg" name="theoajavon"/>
-				<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com"/>
+				<SocialLogo :logo="GithubSvg" name="DevJ2K" size="contact-view-logo"/>
+				<SocialLogo :logo="LinkedinSvg" name="Théo Ajavon" size="contact-view-logo"/>
+				<SocialLogo :logo="InstagramSvg" name="devj2k" size="contact-view-logo"/>
+				<SocialLogo :logo="MaltSvg" name="theoajavon" size="contact-view-logo"/>
+				<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="contact-view-logo"/>
 			<!-- </div> -->
 			</fieldset>
 
