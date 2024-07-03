@@ -20,16 +20,16 @@
 			</div> -->
 
 			<!-- Content -->
-			<h2 class=" mb-1 text-lg font-bold text-high-contrast-text dark:text-d-high-contrast-text">{{ itemDate }}</h2>
-			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-sm text-transparent dark:from-d-low-contrast-text">{{ content }}</p>
+			<h2 class=" mb-1 font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
+			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-xs text-transparent dark:from-d-low-contrast-text sm:text-sm">{{ content }}</p>
 		</div>
 		<!-- <div v-if="gradientText" class="w-[calc(100%-4rem)] rounded-xl border border-ui-border bg-gradient-to-b from-ui-bg to-transparent p-4 dark:border-d-ui-border dark:from-d-ui-bg md:w-[calc(50%-2.5rem)]">
 			<h2 class=" mb-1 text-xl font-bold text-high-contrast-text dark:text-d-high-contrast-text">{{ itemDate }}</h2>
 			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-transparent dark:from-d-low-contrast-text">{{ content }}</p>
 		</div> -->
 		<div v-else class="w-[calc(100%-4rem)] rounded-xl border border-ui-border bg-ui-bg p-4 dark:border-d-ui-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)]">
-			<h2 class=" mb-1 text-lg font-bold text-high-contrast-text dark:text-d-high-contrast-text">{{ itemDate }}</h2>
-			<p class="text-sm text-low-contrast-text dark:text-d-low-contrast-text">
+			<h2 class=" mb-1 font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
+			<p class="text-xs text-low-contrast-text dark:text-d-low-contrast-text sm:text-sm">
 				{{ content }}
 			</p>
 		</div>
