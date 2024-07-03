@@ -24,19 +24,19 @@
 
 			<div class="flex w-3/4 flex-col items-end gap-6">
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">Name*</h3>
+					<h3 class="form-input-name">Name</h3>
 					<input class="form-input" type="text" maxlength="30">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">Email*</h3>
+					<h3 class="form-input-name">Email</h3>
 					<input  class="form-input" type="text">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">Phone</h3>
-					<input class="form-input" type="text" maxlength="20">
+					<h3 class="form-input-name">Subject</h3>
+					<input class="form-input" type="text">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">How can I help you ?*</h3>
+					<h3 class="form-input-name">How can I help you ?</h3>
 					<textarea class="form-input" rows="4" minlength="50" maxlength="2000"></textarea>
 				</div>
 
