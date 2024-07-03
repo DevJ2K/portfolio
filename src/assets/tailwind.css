@@ -8,6 +8,7 @@
 	@apply h-32;
 	@apply w-full;
 	@apply flex;
+	@apply justify-center items-center;
 	@apply z-50;
 	color: #FFF;
 	/* height: 30px; */
@@ -211,7 +212,8 @@ body.dark {
 
 .hamburger-bar {
 	/* 0.5 5 */
-	@apply h-1 w-8 rounded-full bg-white transition-all duration-300;
+	@apply h-1 w-8 rounded-full transition-all duration-300;
+	@apply bg-high-contrast-text dark:bg-d-high-contrast-text;
 }
 
 @tailwind utilities;

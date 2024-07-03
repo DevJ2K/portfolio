@@ -44,9 +44,11 @@
 					</a>
 				</li>
 			</ul>
-			<div class=" cursor-pointer text-2xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:hidden" @click="toggleMenu">
-				<i class="fa-solid fa-bars"></i>
+			<!-- <div class=" cursor-pointer text-2xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:hidden" @click="toggleMenu"> -->
+			<div class="cursor-pointer md:hidden" @click="toggleMenu">
+				<NavHamburger/>
 			</div>
+			<!-- </div> -->
 		</div>
 		<div v-if="displayMenu" class="absolute top-0 mt-24 w-full md:hidden">
 			<ul
@@ -69,6 +71,7 @@
 <script setup>
 import { MoonIcon, SunIcon } from '@radix-icons/vue';
 import { ref } from 'vue';
+import NavHamburger from './NavHamburger.vue';
 
 const darkMode = ref(null);
 const displayMenu = ref(null);
@@ -130,7 +133,18 @@ const switchColorMode = () => {
 }
 
 const toggleMenu = () => {
+	const bar1 = document.getElementById('hamburger-bar-1');
+	const bar2 = document.getElementById('hamburger-bar-2');
+	const bar3 = document.getElementById('hamburger-bar-3');
 	displayMenu.value = !displayMenu.value;
+	// Bar 1
+	bar1.classList.toggle('rotate-45', displayMenu.value);
+	bar1.classList.toggle('translate-y-2.5', displayMenu.value);
+	// Bar 2
+	bar2.classList.toggle('scale-x-0', displayMenu.value);
+	// Bar 3
+	bar3.classList.toggle('-rotate-45', displayMenu.value);
+	bar3.classList.toggle('-translate-y-2.5', displayMenu.value);
 }
 
 const updateNavbar = () => {
