@@ -206,4 +206,12 @@ body.dark {
 	box-shadow: rgba(0, 0, 0, 0.30) 1px 1px 4px 0px;
 }
 
+
+/* HAMBURGER MENU */
+
+.hamburger-bar {
+	/* 0.5 5 */
+	@apply h-1 w-8 rounded-full bg-white transition-all duration-300;
+}
+
 @tailwind utilities;
