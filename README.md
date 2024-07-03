@@ -4,12 +4,12 @@
 - [x] Responsive font size
 - [x] Add dots on timeline AboutView + change line width
 - [x] Make projects card more attractive
-- [ ] Fix responsive on iPhone SE and check others
+- [x] Fix responsive on iPhone SE and check others
 - [ ] Add sphere or stars on background to create an atmosphere + gradient effect
 - [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
 - [ ] Find color theme + background color
 - [ ] Navigation bar in < breakpoint Md
-- [ ] Light and Dark Mode
+- [x] Light and Dark Mode
 - [ ] Hover effects on each button
 - [ ] Adding Firebase
 - [ ] Suspense effect on project card
