@@ -1,6 +1,6 @@
 <template>
 	<!-- <div> -->
-		<div class="group flex cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border border-subtle-border bg-ui-bg p-4 shadow-md transition-colors hover:border-hover-ui-border dark:border-d-subtle-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border" @mouseover="displayParagraph" @mouseout="hideParagraph">
+		<div class="group flex cursor-pointer flex-col items-center justify-center gap-4 rounded-lg border border-subtle-border bg-ui-bg p-4 shadow-md transition-colors hover:border-hover-ui-border dark:border-d-subtle-border dark:bg-d-ui-bg dark:hover:border-d-hover-ui-border" @mouseover="displaySkillParagraph" @mouseout="hideSkillParagraph">
 			<div class="relative flex flex-row items-center justify-center gap-2">
 				<i :class="icon" class="text-lg font-bold max-sm:text-lg"></i>
 				<h1 class="text-xs font-bold sm:text-sm">{{ skill }}</h1>
@@ -27,20 +27,20 @@ const props = defineProps({
 	}
 });
 
-const displayParagraph = () => {
+const displaySkillParagraph = () => {
 	// console.log("Display paragraph !");
 	document.getElementById(props.skill + '_tooltip').style.visibility = 'visible';
 	document.getElementById(props.skill + '_tooltip').style.opacity = 1;
 }
 
-const hideParagraph = () => {
+const hideSkillParagraph = () => {
 	// console.log("Hide paragraph !");
 	document.getElementById(props.skill + '_tooltip').style.opacity = 0;
 	document.getElementById(props.skill + '_tooltip').style.visibility = 'hidden';
 }
 
 // const myDiv = document.getElementById("myDiv");
-// myDiv.addEventListener("mouseover", displayParagraph);
-// myDiv.addEventListener("mouseleave", hideParagraph);
+// myDiv.addEventListener("mouseover", displaySkillParagraph);
+// myDiv.addEventListener("mouseleave", hideSkillParagraph);
 </script>
 
