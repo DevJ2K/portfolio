@@ -5,9 +5,9 @@
 
     <!-- <div class="absolute left-1/2 top-1/2 h-2/5 w-5/6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-hover-ui-bg opacity-50 dark:bg-d-hover-ui-bg"></div> -->
 
-    <div class="absolute left-0 top-[33%] h-2/5 w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ui-bg opacity-80 dark:bg-d-ui-bg"></div>
+    <div class="absolute left-0 top-[33%] h-2/5 w-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ui-bg opacity-50 dark:bg-d-ui-bg"></div>
 
-    <div class="absolute right-0 top-[66%] h-2/5 w-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-ui-bg opacity-80 dark:bg-d-ui-bg"></div>
+    <div class="absolute right-0 top-[66%] h-2/5 w-1/2 -translate-y-1/2 translate-x-1/2 rounded-full bg-ui-bg opacity-50 dark:bg-d-ui-bg"></div>
 
     <div class="absolute left-0 top-0 size-full backdrop-blur-3xl"></div>
 	</div>

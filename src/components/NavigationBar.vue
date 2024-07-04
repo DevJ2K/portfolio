@@ -9,7 +9,7 @@
 
 		<div id="navMenu" class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
 			<ul
-				class=" flex size-full flex-col items-center justify-center gap-16 bg-subtle-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-subtle-bg dark:text-d-high-contrast-text">
+				class=" flex size-full flex-col items-center justify-center gap-16 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
 
 				<li class="group relative w-max">
 					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">About</a>

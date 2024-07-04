@@ -1,14 +1,10 @@
 <template>
-	<!-- particles.js container -->
 	<div id="particles-js" class=" absolute h-full"></div>
-	<!-- stats - count particles -->
-	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
-	 <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
 </template>
 
 <script setup>
-window.addEventListener("load", function () {
-    particlesJS("particles-js", {
+const display_particles = () => {
+	particlesJS("particles-js", {
         "particles": {
             "number": {
                 "value": 200,
@@ -136,6 +132,11 @@ window.addEventListener("load", function () {
     //     requestAnimationFrame(update);
     // };
     // requestAnimationFrame(update);
-});
+}
+window.addEventListener("load", display_particles);
+// const divParticles = document.getElementById("particles-js");
+// if (divParticles != null) {
+// 	display_particles();
+// }
 
 </script>
