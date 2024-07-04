@@ -61,7 +61,7 @@
 	@apply flex flex-row items-center justify-center gap-2;
 	@apply font-medium text-base;
 	@apply rounded-xl;
-	@apply border;
+	@apply border-2;
 	@apply px-4 py-2;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
 	@apply hover:text-white;
@@ -87,7 +87,7 @@
 	@apply flex flex-row items-center justify-center gap-2;
 	@apply font-medium text-base;
 	@apply rounded-xl;
-	@apply border;
+	@apply border-2;
 	@apply px-8 py-2;
 	@apply mt-6;
 	@apply shadow-md hover:shadow-xl;

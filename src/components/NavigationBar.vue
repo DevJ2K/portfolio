@@ -41,8 +41,8 @@
 
 				<li class="flex size-8 items-center justify-center">
 					<a @click="switchColorMode">
-					<SunIcon v-if="darkMode" class="size-6 cursor-pointer fill-current transition-all hover:size-7"/>
-					<MoonIcon v-else class="size-6 cursor-pointer fill-current transition-all hover:size-7"/>
+					<SunIcon v-if="darkMode" class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-7 "/>
+					<MoonIcon v-else class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear  hover:size-7"/>
 				</a>
 			</li>
 			</ul>
@@ -84,8 +84,8 @@
 					<a @click="switchColorMode">
 						<!-- <i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
 						<i v-else class="fa-regular fa-moon cursor-pointer"></i> -->
-						<SunIcon v-if="darkMode" class="size-4 cursor-pointer fill-current transition-all hover:size-5"/>
-						<MoonIcon v-else class="size-4 cursor-pointer fill-current transition-all hover:size-5"/>
+						<SunIcon v-if="darkMode" class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear  hover:size-5"/>
+						<MoonIcon v-else class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-5"/>
 					</a>
 				</li>
 			</ul>

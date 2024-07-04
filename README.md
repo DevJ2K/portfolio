@@ -5,6 +5,7 @@
 - [x] Add dots on timeline AboutView + change line width
 - [x] Make projects card more attractive
 - [x] Fix responsive on iPhone SE and check others
+- [x] Margin between each tab
 - [ ] Add sphere or stars on background to create an atmosphere + gradient effect
 - [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
 - [ ] Find color theme + background color
