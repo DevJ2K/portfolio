@@ -1,6 +1,7 @@
 <template>
 	<div class="relative flex min-h-screen w-full flex-col">
-		<BackgroundSpotlight rotate="bg-gradient-to-br" bg-color="subtle-bg" />
+		<!-- <BackgroundSpotlight rotate="bg-gradient-to-br" bg-color="subtle-bg" /> -->
+		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-low-contrast-text dark:text-d-low-contrast-text ">
 			<h1 class="tab-title">Projects</h1>
@@ -54,7 +55,7 @@
 </template>
 
 <script setup>
-import BackgroundSpotlight from '@/components/BackgroundSpotlight.vue';
+import BgTab from '@/components/background/BgTab.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 
 

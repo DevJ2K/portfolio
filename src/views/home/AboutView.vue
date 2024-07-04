@@ -1,6 +1,8 @@
 <template>
 	<div class="relative flex w-full flex-col">
-		<BackgroundSpotlight rotate="bg-gradient-to-br" bg-color="subtle-bg" />
+		<!-- <BackgroundSpotlight rotate="bg-gradient-to-br" bg-color="subtle-bg" /> -->
+		<!-- <BackgroundWithLights/> -->
+		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class="container z-10 flex w-full flex-col items-center">
 			<h1 id="viewMoreScrollIntoView" class="tab-title">About</h1>
@@ -8,7 +10,7 @@
 			<div
 				:class="'relative before:absolute before:inset-0 before:ml-6 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text md:before:mx-auto md:before:translate-x-0' + (!viewMoreAbout ? ' before:to-transparent' : ' before:to-low-contrast-text dark:before:to-d-low-contrast-text')">
 
-				<AboutCard item-date="September 2020" content="Adipisicing excepteur fugiat proident et aliquip. Aute sunt ut cupidatat est in enim laborum laborum."/>
+				<AboutCard item-date="Now" content="Adipisicing excepteur fugiat proident et aliquip. Aute sunt ut cupidatat est in enim laborum laborum."/>
 
 				<AboutCard item-date="2021" content="Elit aute laboris proident deserunt culpa amet occaecat fugiat qui dolor. Exercitation ut consectetur excepteur duis duis. Officia sit qui irure ut eiusmod."/>
 
@@ -33,9 +35,9 @@
 </template>
 
 <script setup>
-import BackgroundSpotlight from '../../components/BackgroundSpotlight.vue'
 import AboutCard from '../../components/AboutCard.vue'
 import { ref } from 'vue';
+import BgTab from '@/components/background/BgTab.vue';
 
 const viewMoreAbout = ref(null);
 

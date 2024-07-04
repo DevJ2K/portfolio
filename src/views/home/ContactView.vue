@@ -1,6 +1,7 @@
 <template>
 	<div class="relative flex min-h-screen w-full flex-col">
-		<BackgroundSpotlight rotate="bg-gradient-to-bl"/>
+		<!-- <BackgroundSpotlight rotate="bg-gradient-to-bl"/> -->
+		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9">
 			<h1 class="tab-title">Contact</h1>
@@ -55,11 +56,11 @@
 </template>
 
 <script setup>
-import BackgroundSpotlight from '@/components/BackgroundSpotlight.vue';
 import GithubSvg from '@/components/logos/GithubSvg.vue';
 import LinkedinSvg from '@/components/logos/LinkedinSvg.vue';
 import InstagramSvg from '@/components/logos/InstagramSvg.vue'
 import MaltSvg from '@/components/logos/MaltSvg.vue';
 import EmailSvg from '@/components/logos/EmailSvg.vue';
 import SocialLogo from '@/components/SocialLogo.vue';
+import BgTab from '@/components/background/BgTab.vue';
 </script>

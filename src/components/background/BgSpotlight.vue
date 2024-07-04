@@ -1,7 +1,7 @@
 <template>
   <!-- <div :class="`absolute top-0 left-0 w-full h-screen -z-10 ${color}`"></div> -->
   <div
-    class="absolute size-full overflow-hidden"
+    class="absolute size-full overflow-hidden "
   >
     <!-- <div :class="`absolute top-0 left-0 w-full h-[100%] bg-${bgColor} dark:bg-d-${bgColor} `"></div> -->
     <div :class="`absolute top-0 left-0 w-full h-[100%] dark:bg-d-${bgColor} `"></div>
@@ -18,7 +18,9 @@
     <!-- <div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-bg-${bgNb} from-40% via-accent-color via-50% to-bg-${bgNb} to-60% dark:from-d-bg-${bgNb} dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-bg-${bgNb} dark:to-60%`"></div> -->
 
     <!-- <div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-bg-${bgNb} from-40% via-accent-color via-50% to-bg-${bgNb} to-60% dark:from-d-bg-${bgNb} dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-bg-${bgNb} dark:to-60%`"></div> -->
-    <!-- <div class="from-bg to-bg dark:from-d-bg dark:to-d-bg absolute left-0 top-0 size-full -rotate-45 bg-gradient-to-r from-40% via-accent-color via-50% to-60% dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-60%"></div> -->
+    <div class="absolute left-0 top-0 size-full bg-gradient-to-bl from-app-bg from-40% via-accent-color via-50% to-app-bg to-60% dark:from-d-app-bg dark:from-40% dark:via-d-accent-color dark:via-50% dark:to-d-app-bg dark:to-60%"></div>
+
+    <!-- <div class="absolute left-0 top-0 size-full bg-red-500"></div> -->
 
     <!-- <div :class="`absolute left-0 top-0 h-[${lineSize}] w-full ${rotate} from-black from-40% via-accent-color via-50% to-black to-60%`">
 		</div> -->
@@ -43,7 +45,7 @@ defineProps({
   },
   lineSize: {
     type: String,
-    default: "100%",
+    default: "100vh",
   },
   rotate: {
     type: String,

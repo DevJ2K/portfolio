@@ -1,6 +1,7 @@
 <template>
 	<div class="relative flex min-h-screen w-full flex-col">
-		<BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl"/>
+		<!-- <BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl"/> -->
+		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
 			<h1 class="tab-title">Skills</h1>
@@ -68,7 +69,6 @@
 </template>
 
 <script setup>
-import BackgroundSpotlight from '@/components/BackgroundSpotlight.vue';
 import LogoSkill from '@/components/LogoSkill.vue';
 import SkillCard from '@/components/SkillCard.vue';
 
@@ -86,5 +86,6 @@ import SeleniumSvg from '@/components/logos/skills/SeleniumSvg.vue';
 
 import FirebaseSvg from '@/components/logos/skills/FirebaseSvg.vue';
 import SqliteSvg from '@/components/logos/skills/SqliteSvg.vue';
+import BgTab from '@/components/background/BgTab.vue';
 
 </script>
