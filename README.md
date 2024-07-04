@@ -6,8 +6,9 @@
 - [x] Make projects card more attractive
 - [x] Fix responsive on iPhone SE and check others
 - [x] Margin between each tab
-- [ ] Add sphere or stars on background to create an atmosphere + gradient effect
-- [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
+- [x] Add sphere or stars on background to create an atmosphere + gradient effect
+- [x] Add shiny effect on the background + simulate lights ( + try tiles background )
+- [ ] Add real text + redirection (href)
 - [ ] Find color theme + background color
 - [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
