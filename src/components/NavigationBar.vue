@@ -147,15 +147,24 @@ initMode();
 // 	}
 // }
 
+const replaceParticlesColor = (newHex) => {
+	// eslint-disable-next-line no-undef
+	pJSDom[0].pJS.particles.color.value = newHex;
+	// eslint-disable-next-line no-undef
+	pJSDom[0].pJS.fn.particlesRefresh();
+}
+
 const switchColorMode = () => {
 	initMode();
 	let appPage = document.getElementById("mainApp");
 	if (darkMode.value == true) {
 		localStorage.setItem("dark-mode", "false");
 		appPage.classList.remove('dark');
+		replaceParticlesColor('#0000ff');
 	} else {
 		localStorage.setItem("dark-mode", "true");
 		appPage.classList.add('dark');
+		replaceParticlesColor('#ffffff');
 	}
 	darkMode.value = !darkMode.value;
 	// updateOutlineText();

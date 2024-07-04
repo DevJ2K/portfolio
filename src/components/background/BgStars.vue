@@ -1,5 +1,6 @@
 <template>
-	<div id="particles-js" class=" absolute h-full"></div>
+	<div id="particles-js" class=" absolute size-full"></div>
+	<!-- <div id="particles-js-dark" class=" absolute hidden size-full dark:flex"></div> -->
 </template>
 
 <script setup>
