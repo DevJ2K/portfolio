@@ -39,12 +39,12 @@
 
 				</li>
 
-				<li><a @click="switchColorMode">
-					<!-- <SunIcon/>
-					<MoonIcon/> -->
-					<SunIcon v-if="darkMode" class="size-6 cursor-pointer"/>
-					<MoonIcon v-else class="size-6 cursor-pointer"/>
-				</a></li>
+				<li class="flex size-8 items-center justify-center">
+					<a @click="switchColorMode">
+					<SunIcon v-if="darkMode" class="size-6 cursor-pointer fill-current transition-all hover:size-7"/>
+					<MoonIcon v-else class="size-6 cursor-pointer fill-current transition-all hover:size-7"/>
+				</a>
+			</li>
 			</ul>
 		</div>
 
@@ -80,12 +80,12 @@
 						class="animate-underline"></span>
 
 				</li>
-				<li>
+				<li  class="flex size-6 items-center justify-center">
 					<a @click="switchColorMode">
 						<!-- <i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
 						<i v-else class="fa-regular fa-moon cursor-pointer"></i> -->
-						<SunIcon v-if="darkMode" class="size-4 cursor-pointer fill-current"/>
-						<MoonIcon v-else class="size-4 cursor-pointer"/>
+						<SunIcon v-if="darkMode" class="size-4 cursor-pointer fill-current transition-all hover:size-5"/>
+						<MoonIcon v-else class="size-4 cursor-pointer fill-current transition-all hover:size-5"/>
 					</a>
 				</li>
 			</ul>
