@@ -7,52 +7,49 @@
 
 	<div id="navBar" class="my-scroll-nav">
 
-		<div v-if="displayMenu" class="absolute top-0 h-screen w-full md:hidden">
+		<div id="navMenu" class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
 			<ul
-				class=" flex size-full flex-col items-center justify-center gap-8 bg-blue-500 py-4 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text">
+				class=" flex size-full flex-col items-center justify-center gap-16 bg-ui-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-ui-bg dark:text-d-high-contrast-text">
 
 				<li class="group relative w-max">
-					<a href="#about" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">About</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">About</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 
 				<li class="group relative w-max">
-					<a href="#skills" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">Skills</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('skills')">Skills</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 
 				<li class="group relative w-max">
-					<a href="#projects" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">Projects</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('projects')">Projects</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 
 				<li class="group relative w-max">
-					<a href="#contact" class="transition-all group-hover:text-black dark:group-hover:text-white" @click="toggleMenu">Contact</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('contact')">Contact</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
-
-
-
 
 				<li><a @click="switchColorMode">
 					<!-- <SunIcon/>
 					<MoonIcon/> -->
-					<SunIcon v-if="darkMode" class="size-4 cursor-pointer"/>
-					<MoonIcon v-else class="size-4 cursor-pointer"/>
+					<SunIcon v-if="darkMode" class="size-6 cursor-pointer"/>
+					<MoonIcon v-else class="size-6 cursor-pointer"/>
 				</a></li>
 			</ul>
 		</div>
 
 		<div class="container flex items-center justify-between">
-			<a class="flex flex-row items-center gap-4" href="#">
+			<a class=" flex cursor-pointer flex-row items-center gap-4" @click="navigateTo('mainApp', false)">
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
 					<img src="../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 				</div>
@@ -60,25 +57,25 @@
 			</a>
 			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
-					<a href="#about" class="transition-all group-hover:text-black dark:group-hover:text-white">About</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">About</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a href="#skills" class="transition-all group-hover:text-black dark:group-hover:text-white">Skills</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('skills')">Skills</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a href="#projects" class="transition-all group-hover:text-black dark:group-hover:text-white">Projects</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('projects')">Projects</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a href="#contact" class="transition-all group-hover:text-black dark:group-hover:text-white">Contact</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('contact')">Contact</a>
 					<span
 						class="animate-underline"></span>
 
@@ -93,7 +90,7 @@
 				</li>
 			</ul>
 			<!-- <div class=" cursor-pointer text-2xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:hidden" @click="toggleMenu"> -->
-			<div class="cursor-pointer md:hidden" @click="toggleMenu">
+			<div class="z-[1] size-fit cursor-pointer md:hidden" @click="toggleMenu">
 				<NavHamburger/>
 			</div>
 			<!-- </div> -->
@@ -166,10 +163,15 @@ const switchColorMode = () => {
 }
 
 const toggleMenu = () => {
+	const mainApp = document.getElementById('mainApp');
+
 	const bar1 = document.getElementById('hamburger-bar-1');
 	const bar2 = document.getElementById('hamburger-bar-2');
 	const bar3 = document.getElementById('hamburger-bar-3');
+	const navMenu = document.getElementById('navMenu');
 	displayMenu.value = !displayMenu.value;
+
+	// mainApp.classList.toggle('overflow-hidden', displayMenu.value);
 	// Bar 1
 	bar1.classList.toggle('rotate-45', displayMenu.value);
 	bar1.classList.toggle('translate-y-2.5', displayMenu.value);
@@ -178,6 +180,9 @@ const toggleMenu = () => {
 	// Bar 3
 	bar3.classList.toggle('-rotate-45', displayMenu.value);
 	bar3.classList.toggle('-translate-y-2.5', displayMenu.value);
+
+	navMenu.classList.toggle('-translate-x-full', !displayMenu.value);
+
 }
 
 const updateNavbar = () => {
@@ -186,6 +191,19 @@ const updateNavbar = () => {
 	// console.log(navBar);
 	navBar.classList.toggle("my-scroll-nav-active", window.scrollY > 0);
 	// navBar.classList.toggle("my-scroll-nav", window.scrollY <= 0);
+}
+
+const navigateTo = (id, hideMenu = true) => {
+	if (hideMenu) {
+		toggleMenu();
+	}
+	console.log('Go to : ' + id);
+	const view = document.getElementById(id);
+	if (view != null) {
+		view.scrollIntoView({
+			behavior: 'smooth'
+		});
+	}
 }
 
 window.addEventListener("scroll", updateNavbar);

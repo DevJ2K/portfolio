@@ -8,7 +8,7 @@
 - [ ] Add sphere or stars on background to create an atmosphere + gradient effect
 - [ ] Add shiny effect on the background + simulate lights ( + try tiles background )
 - [ ] Find color theme + background color
-- [ ] Navigation bar in < breakpoint Md
+- [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
 - [ ] Hover effects on each button
 - [ ] Adding Firebase

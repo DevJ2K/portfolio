@@ -1,7 +1,7 @@
 <template>
 	<!-- <i class="fa-solid fa-bars"></i> -->
 
-	<div class="flex size-12 items-center justify-center">
+	<div class="flex size-fit items-center justify-center">
 
 		<div class="grid justify-items-center gap-1.5">
 			<div id="hamburger-bar-1" class="hamburger-bar"></div>

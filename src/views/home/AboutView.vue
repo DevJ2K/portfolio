@@ -41,7 +41,9 @@ const viewMoreAbout = ref(null);
 const toggleViewMoreAbout = () => {
 	viewMoreAbout.value = !viewMoreAbout.value;
 	if (viewMoreAbout.value == false) {
-		document.getElementById("viewMoreScrollIntoView").scrollIntoView();
+		document.getElementById("viewMoreScrollIntoView").scrollIntoView({
+			behavior: 'smooth'
+		});
 	}
 };
 </script>
