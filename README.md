@@ -11,7 +11,7 @@
 - [ ] Find color theme + background color
 - [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
-- [ ] Hover effects on each button
+- [x] Hover effects on each button
 - [ ] Adding Firebase
 - [ ] Suspense effect on project card
 - [ ] Contact page working
