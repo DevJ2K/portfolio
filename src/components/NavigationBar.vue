@@ -198,6 +198,9 @@ const updateNavbar = () => {
 	// console.log("HEREEEEE");
 	var navBar = document.getElementById("navBar");
 	// console.log(navBar);
+	if (navBar == null) {
+		return ;
+	}
 	navBar.classList.toggle("my-scroll-nav-active", window.scrollY > 0);
 	// navBar.classList.toggle("my-scroll-nav", window.scrollY <= 0);
 }

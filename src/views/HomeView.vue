@@ -1,8 +1,6 @@
 <template>
   <main class="relative flex size-full flex-col items-center">
     <NavigationBar/>
-
-
     <PresentationView/>
     <AboutView id="about"/>
     <SkillView id="skills"/>
@@ -25,5 +23,14 @@ import ProjectsView from './home/ProjectsTab.vue'
 import ContactView from './home/ContactTab.vue';
 import CustomFooter from './home/CustomFooter.vue';
 import BgStars from '@/components/background/BgStars.vue';
+
+import { onMounted } from 'vue';
+
+onMounted(() => {
+	console.log("Home is mounted !");
+  if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
+		pJSDom[0].pJS.fn.particlesRefresh();
+	}
+})
 </script>
 
