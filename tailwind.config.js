@@ -58,45 +58,6 @@ export default {
       //   "d-high-contrast-text": "#F4D4F4",
       // }
 
-
-      // colors: {
-      //   // PLUM
-      //   "app-bg": "#2A1E5C", // 1. App background
-      //   "d-app-bg": "#0B032D",
-
-      //   "subtle-bg": "#38227A", // 2. Subtle background
-      //   "d-subtle-bg": "#1E0F45",
-
-      //   "ui-bg": "#4C2C9C", // 3. UI element background
-      //   "d-ui-bg": "#2B155D",
-
-      //   "hover-ui-bg": "#5733AA", // 4. Hovered UI element background
-      //   "d-hover-ui-bg": "#371B6D",
-
-      //   "active-ui-bg": "#6638B8", // 5. Active / Selected UI element background
-      //   "d-active-ui-bg": "#441F7D",
-
-      //   "subtle-border": "#7851CC", // 6. Subtle borders and separators
-      //   "d-subtle-border": "#532E91",
-
-      //   "ui-border": "#9069E0", // 7. UI element border and focus rings
-      //   "d-ui-border": "#6A3DB1",
-
-      //   "hover-ui-border": "#A580F4", // 8. Hovered UI element border
-      //   "d-hover-ui-border": "#8546D4",
-
-      //   "accent-color": "#FF5F7E", // 9. Solid backgrounds
-      //   "d-accent-color": "#FF5F7E",
-
-      //   "hover-accent-color": "#FF2D5A", // 10. Hovered solid backgrounds
-      //   "d-hover-accent-color": "#FF4D7A",
-
-      //   "low-contrast-text": "#FFB6C1", // 11. Low-contrast text
-      //   "d-low-contrast-text": "#FFD1DC",
-
-      //   "high-contrast-text": "#F4E4F4", // 12. High-contrast text
-      //   "d-high-contrast-text": "#FFE4F1",
-      // }
       // colors: {
       //   // PLUM
       //   "app-bg": "#E0F7FA", // 1. App background
@@ -158,20 +119,58 @@ export default {
 
       colors: {
         // PLUM
-        "app-bg": "#FFFAF1", // 1. App background (crème léger)
-        "subtle-bg": "#FFE0B3", // 2. Subtle background (abricot doux)
-        "ui-bg": "#FFD1A3", // 3. UI element background (pêche pâle)
-        "hover-ui-bg": "#FFC38B", // 4. Hovered UI element background (orange clair)
-        "active-ui-bg": "#FFB074", // 5. Active / Selected UI element background (orange pastel)
-        "subtle-border": "#FFAB67", // 6. Subtle borders and separators (orange léger)
-        "ui-border": "#FF9854", // 7. UI element border and focus rings (orange doux)
-        "hover-ui-border": "#FF863E", // 8. Hovered UI element border (orange vif)
-        "accent-color": "#FF704D", // 9. Solid backgrounds (corail)
-        "hover-accent-color": "#FF5A36", // 10. Hovered solid backgrounds (rouge orangé)
-        "low-contrast-text": "#A65C35", // 11. Low-contrast text (brun clair)
-        "high-contrast-text": "#5A2B1F", // 12. High-contrast text (brun foncé)
+        // "app-bg": "#FFFAF1", // 1. App background (crème léger)
+        // "subtle-bg": "#FFE0B3", // 2. Subtle background (abricot doux)
+        // "ui-bg": "#FFD1A3", // 3. UI element background (pêche pâle)
+        // "hover-ui-bg": "#FFC38B", // 4. Hovered UI element background (orange clair)
+        // "active-ui-bg": "#FFB074", // 5. Active / Selected UI element background (orange pastel)
+        // "subtle-border": "#FFAB67", // 6. Subtle borders and separators (orange léger)
+        // "ui-border": "#FF9854", // 7. UI element border and focus rings (orange doux)
+        // "hover-ui-border": "#FF863E", // 8. Hovered UI element border (orange vif)
+        // "accent-color": "#FF704D", // 9. Solid backgrounds (corail)
+        // "hover-accent-color": "#FF5A36", // 10. Hovered solid backgrounds (rouge orangé)
+        // "low-contrast-text": "#A65C35", // 11. Low-contrast text (brun clair)
+        // "high-contrast-text": "#5A2B1F", // 12. High-contrast text (brun foncé)
 
-        // Dark theme colors (unchanged)
+
+
+
+
+
+        // "app-bg": "#FDFDFE", // 1. App background
+        // "subtle-bg": "#F7F9FF", // 2. Subtle background
+        // "ui-bg": "#EDF2FE", // 3. UI element background
+        // "hover-ui-bg": "#E1E9FF", // 4. Hovered UI element background
+        // "active-ui-bg": "#D2DEFF", // 5. Active / Selected UI element background
+        // "subtle-border": "#C1D0FF", // 6. Subtle borders and separators
+        // "ui-border": "#ABBDF9", // 7. UI element border and focus rings
+        // "hover-ui-border": "#8DA4EF", // 8. Hovered UI element border
+        // "accent-color": "#3E63DD",
+        // "hover-accent-color": "#2348C3", // 10. Hovered solid backgrounds
+        // "low-contrast-text": "#3A5BC7", // 11. Low-contrast text
+        // "high-contrast-text": "#1F2D5C", // 12. High-contrast text
+
+
+
+
+        // Cool background
+        // #FFD4CE | #FEECFF
+
+      "app-bg": "#FEECFF", // 1. App background
+      "subtle-bg": "#FEF2FF", // 2. Subtle background
+      "ui-bg": "#FDEAFF", // 3. UI element background
+      "hover-ui-bg": "#F8DAFB", // 4. Hovered UI element background
+      "active-ui-bg": "#FCDEFF", // 5. Active / Selected UI element background
+      "subtle-border": "#FBC7FF", // 6. Subtle borders and separators
+      "ui-border": "#F788FF", // 7. UI element border and focus ring
+      "hover-ui-border": "#F792FF", // 8. Hovered UI element border
+      "accent-color": "#EC64F4", // 9. Solid backgrounds
+      "hover-accent-color": "#DC40E5", // 10. Hovered solid backgrounds
+      "low-contrast-text": "#83008A", // 11. Low-contrast text
+      "high-contrast-text": "#5B0060", // 12. High-contrast text
+
+
+        // Dark theme colors
         "d-app-bg": "#0B032D",
         "d-subtle-bg": "#1E0F45",
         "d-ui-bg": "#2B155D",

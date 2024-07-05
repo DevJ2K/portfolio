@@ -160,7 +160,7 @@ const switchColorMode = () => {
 	if (darkMode.value == true) {
 		localStorage.setItem("dark-mode", "false");
 		appPage.classList.remove('dark');
-		replaceParticlesColor('#0000ff');
+		replaceParticlesColor('#EC00FF');
 	} else {
 		localStorage.setItem("dark-mode", "true");
 		appPage.classList.add('dark');
@@ -172,7 +172,6 @@ const switchColorMode = () => {
 }
 
 const toggleMenu = () => {
-	const mainApp = document.getElementById('mainApp');
 
 	const bar1 = document.getElementById('hamburger-bar-1');
 	const bar2 = document.getElementById('hamburger-bar-2');
@@ -180,6 +179,7 @@ const toggleMenu = () => {
 	const navMenu = document.getElementById('navMenu');
 	displayMenu.value = !displayMenu.value;
 
+	// const mainApp = document.getElementById('mainApp');
 	// mainApp.classList.toggle('overflow-hidden', displayMenu.value);
 	// Bar 1
 	bar1.classList.toggle('rotate-45', displayMenu.value);

@@ -5,6 +5,18 @@
 
 <script setup>
 const display_particles = () => {
+    let particlesColor = "";
+    let savingMode = localStorage.getItem("dark-mode");
+
+	if (!savingMode) {
+        particlesColor = "#ffffff";
+	} else {
+        if (savingMode == 'true') {
+            particlesColor = "#ffffff";
+		} else {
+            particlesColor = "#EC00FF";
+		}
+	}
 	particlesJS("particles-js", {
         "particles": {
             "number": {
@@ -15,7 +27,7 @@ const display_particles = () => {
                 }
             },
             "color": {
-                "value": "#ffffff"
+                "value": particlesColor
             },
             "shape": {
                 "type": "circle",
