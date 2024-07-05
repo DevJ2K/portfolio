@@ -2,180 +2,163 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <title>Vite App</title>
+    <title>Vite App</title>
 </head>
 
 <body id="mainApp" class="dark font-Poppins relative">
-  <div id="app"></div>
-  <div id="particles-js" class="top-0 absolute size-full"></div>
-  <div class="fixed bottom-4 left-4 z-[2000]">
-    <span class="sm:hidden dark:text-white text-black">XS</span>
-    <span class="hidden sm:block md:hidden dark:text-white text-black">SM</span>
-    <span class="hidden md:block lg:hidden dark:text-white text-black">MD</span>
-    <span class="hidden lg:block xl:hidden dark:text-white text-black">LG</span>
-    <span class="hidden xl:block dark:text-white text-black">MORE</span>
-  </div>
-  <script type="module" src="/src/main.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-   <!-- stats.js lib -->
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <div id="app"></div>
+    <div id="particles-js" class="top-0 absolute size-full"></div>
+    <div class="fixed bottom-4 left-4 z-[2000]">
+        <span class="sm:hidden dark:text-white text-black">XS</span>
+        <span class="hidden sm:block md:hidden dark:text-white text-black">SM</span>
+        <span class="hidden md:block lg:hidden dark:text-white text-black">MD</span>
+        <span class="hidden lg:block xl:hidden dark:text-white text-black">LG</span>
+        <span class="hidden xl:block dark:text-white text-black">MORE</span>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
 
-  <script>
-    const display_particles = () => {
-    let particlesColor = "";
-    let savingMode = localStorage.getItem("dark-mode");
+    <script>
+        const display_particles = () => {
+            let particlesColor = "";
+            let savingMode = localStorage.getItem("dark-mode");
 
-	if (!savingMode) {
-        particlesColor = "#ffffff";
-	} else {
-        if (savingMode == 'true') {
-            particlesColor = "#ffffff";
-		} else {
-            particlesColor = "#EC00FF";
-		}
-	}
-  // console.log('HERE');
-	particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 200,
-                "density": {
-                    "enable": true,
-                    "value_area": 2000
-                }
-            },
-            "color": {
-                "value": particlesColor
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#000000"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
-                }
-            },
-            "opacity": {
-                "value": 1,
-                "random": true,
-                "anim": {
-                    "enable": true,
-                    "speed": 1,
-                    "opacity_min": 0,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 3,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 4,
-                    "size_min": 0.3,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": false,
-                "distance": 150,
-                "color": "#ffffff",
-                "opacity": 0.4,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 1,
-                "direction": "none",
-                "random": true,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 600
+            if (!savingMode) {
+                particlesColor = "#ffffff";
+            } else {
+                if (savingMode == 'true') {
+                    particlesColor = "#ffffff";
+                } else {
+                    particlesColor = "#EC00FF";
                 }
             }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": false,
-                    "mode": "bubble"
-                },
-                "onclick": {
-                    "enable": false,
-                    "mode": "repulse"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 400,
+            // console.log('HERE');
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 200,
+                        "density": {
+                            "enable": true,
+                            "value_area": 2000
+                        }
+                    },
+                    "color": {
+                        "value": particlesColor
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
+                    },
+                    "opacity": {
+                        "value": 1,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 4,
+                            "size_min": 0.3,
+                            "sync": false
+                        }
+                    },
                     "line_linked": {
-                        "opacity": 1
+                        "enable": false,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 600
+                        }
                     }
                 },
-                "bubble": {
-                    "distance": 250,
-                    "size": 0,
-                    "duration": 2,
-                    "opacity": 0,
-                    "speed": 3
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": false,
+                            "mode": "bubble"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "repulse"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 250,
+                            "size": 0,
+                            "duration": 2,
+                            "opacity": 0,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 400,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
                 },
-                "repulse": {
-                    "distance": 400,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    });
+                "retina_detect": true
+            });
+        }
+        window.addEventListener("load", display_particles);
 
-    // var count_particles, stats, update;
-    // stats = new Stats();
-    // stats.setMode(0);
-    // stats.domElement.style.position = 'absolute';
-    // stats.domElement.style.left = '0px';
-    // stats.domElement.style.top = '0px';
-    // document.body.appendChild(stats.domElement);
-    // count_particles = document.querySelector('.js-count-particles');
-    // update = function () {
-    //     stats.begin();
-    //     stats.end();
-    //     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    //         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    //     }
-    //     requestAnimationFrame(update);
-    // };
-    // requestAnimationFrame(update);
-}
-window.addEventListener("load", display_particles);
-  </script>
+    </script>
 
 
 
