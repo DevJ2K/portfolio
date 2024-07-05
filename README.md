@@ -9,7 +9,7 @@
 - [x] Add sphere or stars on background to create an atmosphere + gradient effect
 - [x] Add shiny effect on the background + simulate lights ( + try tiles background )
 - [ ] Add real text + redirection (href)
-- [ ] Find color theme + background color
+- [x] Find color theme + background color
 - [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
 - [x] Hover effects on each button

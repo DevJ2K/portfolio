@@ -162,8 +162,8 @@ export default {
       "hover-ui-bg": "#F8DAFB", // 4. Hovered UI element background
       "active-ui-bg": "#FCDEFF", // 5. Active / Selected UI element background
       "subtle-border": "#FBC7FF", // 6. Subtle borders and separators
-      "ui-border": "#F788FF", // 7. UI element border and focus ring
-      "hover-ui-border": "#F792FF", // 8. Hovered UI element border
+      "ui-border": "#FAB6FF", // 7. UI element border and focus ring
+      "hover-ui-border": "#F897FF", // 8. Hovered UI element border
       "accent-color": "#EC64F4", // 9. Solid backgrounds
       "hover-accent-color": "#DC40E5", // 10. Hovered solid backgrounds
       "low-contrast-text": "#83008A", // 11. Low-contrast text
@@ -171,6 +171,20 @@ export default {
 
 
         // Dark theme colors
+        // "d-app-bg": "#0B032D",
+        // "d-subtle-bg": "#1E0F45",
+        // "d-ui-bg": "#21104C",
+        // "d-hover-ui-bg": "#321775",
+        // "d-active-ui-bg": "#321775",
+        // "d-subtle-border": "#422475",
+        // "d-ui-border": "#532D90",
+        // "d-hover-ui-border": "#6A33AD",
+        // "d-accent-color": "#FF7CD5", //"#FF5F7E",
+        // "d-hover-accent-color": "#F26BC6", //"#FF4D7A",
+        // "d-low-contrast-text": "#FFD1DC",
+        // "d-high-contrast-text": "#FFE4F1"
+
+
         "d-app-bg": "#0B032D",
         "d-subtle-bg": "#1E0F45",
         "d-ui-bg": "#2B155D",
@@ -179,8 +193,8 @@ export default {
         "d-subtle-border": "#532E91",
         "d-ui-border": "#6A3DB1",
         "d-hover-ui-border": "#8546D4",
-        "d-accent-color": "#FF5F7E",
-        "d-hover-accent-color": "#FF4D7A",
+        "d-accent-color": "#EC64F4", // "#FF5F7E",
+        "d-hover-accent-color": "#DC40E5", // "#FF4D7A",
         "d-low-contrast-text": "#FFD1DC",
         "d-high-contrast-text": "#FFE4F1"
       }
