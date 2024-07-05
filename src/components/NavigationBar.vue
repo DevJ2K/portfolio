@@ -100,7 +100,7 @@
 
 <script setup>
 import { MoonIcon, SunIcon } from '@radix-icons/vue';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import NavHamburger from './NavHamburger.vue';
 
 const darkMode = ref(null);
@@ -125,7 +125,10 @@ const initMode = () => {
 	}
 }
 
-initMode();
+onMounted(() => {
+	initMode();
+})
+
 
 // window.addEventListener("load", function() {
 // 	updateOutlineText();

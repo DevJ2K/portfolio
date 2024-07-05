@@ -4,7 +4,7 @@
 
 		<div class="custom-shadow-lg flex max-w-xs flex-col justify-between overflow-hidden rounded-2xl border-ui-border bg-ui-bg dark:border-d-ui-border dark:bg-d-ui-bg  b_project_card:hidden">
 			<div>
-				<div>
+				<div class=" min-h-44 bg-black/10 dark:bg-white/10">
 					<img :src="previewImage" alt="" class="cursor-pointer"  v-on:click="openLink()">
 				</div>
 				<div class="flex flex-col gap-4 p-6">
