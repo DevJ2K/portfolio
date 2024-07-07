@@ -4,12 +4,12 @@
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-low-contrast-text dark:text-d-low-contrast-text ">
 			<h1 class="tab-title">Projects</h1>
-			<div v-if="isFetchingProjects" class="flex flex-col w-full gap-9">
+			<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 				<ProjectCardSkeleton/>
 				<ProjectCardSkeleton/>
 				<ProjectCardSkeleton/>
 			</div>
-			<div v-else v-for="project in projectList" :key="project">
+			<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
 				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"/>
 			</div>
 		</main>
