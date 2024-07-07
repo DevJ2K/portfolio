@@ -1,9 +1,9 @@
 <template>
-	<div class="relative flex min-h-screen w-full flex-col">
+	<div class="relative flex w-full flex-col">
 		<!-- <BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl"/> -->
 		<BgTab/>
 		<div class=" h-28 w-full"></div>
-		<main class=" container z-10 flex min-h-screen flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
+		<main class=" container z-10 flex flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
 			<h1 class="tab-title">Skills</h1>
 
 			<div class="flex flex-col gap-8">

@@ -17,7 +17,7 @@
 <script setup>
 import NavigationBar from '@/components/NavigationBar.vue';
 import PresentationView from './home/PresentationTab.vue'
-import AboutView from './home/AboutView.vue'
+import AboutView from './home/AboutTab.vue'
 import SkillView from './home/SkillTab.vue';
 import ProjectsView from './home/ProjectsTab.vue'
 import ContactView from './home/ContactTab.vue';
