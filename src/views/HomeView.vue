@@ -27,7 +27,7 @@ import BgStars from '@/components/background/BgStars.vue';
 import { onMounted } from 'vue';
 
 onMounted(() => {
-	console.log("Home is mounted !");
+	// console.log("HomeView is mounted !");
   if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
 		pJSDom[0].pJS.fn.particlesRefresh();
 	}
