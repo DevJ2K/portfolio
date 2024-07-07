@@ -13,7 +13,7 @@
 - [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
 - [x] Hover effects on each button
-- [ ] Adding Firebase
+- [x] Adding Firebase
 - [x] Suspense effect on project card
 - [ ] Contact page working + modal to indicate success or failure
 - [ ] Animation on appear
