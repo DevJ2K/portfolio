@@ -16,6 +16,7 @@
 - [x] Adding Firebase
 - [x] Suspense effect on project card
 - [ ] Contact page working + modal to indicate success or failure + lock fake prompt (wrong email, < 5 chars, ...)
+- [ ] Add Feedbacks / Experiences tab
 - [ ] Animation on appear
 
 ##
