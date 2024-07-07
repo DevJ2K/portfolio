@@ -16,9 +16,11 @@
 import NavigationBarProjects from '@/components/NavigationBarProjects.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
+import db from '@/firebase/init';
+import { collection, getDocs } from 'firebase/firestore/lite';
 import { onMounted } from 'vue';
 
-console.log(import.meta.env.VITE_FIREBASE_API_KEY)
+// console.log(db)
 onMounted(() => {
 	console.log("Project is mounted !");
 	// eslint-disable-next-line no-undef
@@ -27,4 +29,13 @@ onMounted(() => {
 		pJSDom[0].pJS.fn.particlesRefresh();
 	}
 })
+
+const getProjects = async () => {
+	const projectsCol = collection(db, 'projects');
+	const projectSnapshot = await getDocs(projectsCol);
+	const projectList = projectSnapshot.docs.map(doc => doc.data());
+	console.log(projectList);
+}
+
+getProjects();
 </script>
