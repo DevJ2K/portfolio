@@ -10,9 +10,10 @@
 				<ProjectCardSkeleton/>
 			</div>
 			<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
-				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"/>
+				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
 			</div>
 		</main>
+		<div class=" h-28 w-full"></div>
 	</main>
 </template>
 
@@ -35,6 +36,7 @@ onMounted(() => {
 		// eslint-disable-next-line no-undef
 		pJSDom[0].pJS.fn.particlesRefresh();
 	}
+	getProjects();
 })
 
 const useFirebase = false;
@@ -47,12 +49,9 @@ const getProjects = async () => {
 	} else {
 		projectList.value = localData.projects;
 	}
-	await new Promise((resolve) => setTimeout(resolve, 1000));
+	// await new Promise((resolve) => setTimeout(resolve, 1000));
 	isFetchingProjects.value = false;
 
 	console.log(projectList.value);
 }
-
-// console.log(localData.projects);
-getProjects();
 </script>
