@@ -18,6 +18,7 @@ import ProjectCard from '@/components/ProjectCard.vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
 import { onMounted } from 'vue';
 
+console.log(import.meta.env.VITE_FIREBASE_API_KEY)
 onMounted(() => {
 	console.log("Project is mounted !");
 	// eslint-disable-next-line no-undef
