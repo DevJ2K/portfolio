@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex min-h-screen w-full">
     <!-- <BackgroundSpotlight/> -->
-    <BgWithLights/>
+    <BgPresentation/>
     <main class=" container z-10 flex h-screen min-h-[740px] flex-col items-center justify-center gap-8 sm:gap-12">
 
         <div class="h-1/6 w-full max-sm:hidden"></div>
@@ -30,5 +30,5 @@ import GithubSvg from '../../components/logos/GithubSvg.vue'
 import EmailSvg from '../../components/logos/EmailSvg.vue'
 import LinkedinSvg from '../../components/logos/LinkedinSvg.vue'
 import SocialLogo from '@/components/SocialLogo.vue';
-import BgWithLights from '@/components/background/BgPresentation.vue';
+import BgPresentation from '@/components/background/BgPresentation.vue';
 </script>
