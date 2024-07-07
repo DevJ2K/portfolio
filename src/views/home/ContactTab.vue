@@ -26,22 +26,22 @@
 			<div class="flex w-3/4 flex-col items-end gap-6">
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">Name</h3>
-					<input class="form-input" type="text" maxlength="30">
+					<input id="form_name" class="form-input" type="text" maxlength="30">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">Email</h3>
-					<input  class="form-input" type="text">
+					<input id="form_email" class="form-input" type="text">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">Subject</h3>
-					<input class="form-input" type="text">
+					<input id="form_subject" class="form-input" type="text">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">How can I help you ?</h3>
-					<textarea class="form-input" rows="4" minlength="50" maxlength="2000"></textarea>
+					<textarea id="form_body" class="form-input" rows="4" minlength="50" maxlength="2000"></textarea>
 				</div>
 
-				<button class="flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-md border border-ui-border px-4 py-2 text-high-contrast-text shadow-lg  ring-accent-color ring-offset-2 ring-offset-subtle-bg transition-all hover:border-transparent hover:bg-hover-accent-color  hover:text-d-high-contrast-text  hover:shadow-xl focus:outline-2 focus:ring-2  dark:border-d-ui-border dark:text-d-high-contrast-text dark:ring-d-accent-color dark:ring-offset-d-subtle-bg hover:dark:border-transparent dark:hover:bg-d-hover-accent-color ">
+				<button @click="sendMessages" class="flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-md border border-ui-border px-4 py-2 text-high-contrast-text shadow-lg  ring-accent-color ring-offset-2 ring-offset-subtle-bg transition-all hover:border-transparent hover:bg-hover-accent-color  hover:text-d-high-contrast-text  hover:shadow-xl focus:outline-2 focus:ring-2  dark:border-d-ui-border dark:text-d-high-contrast-text dark:ring-d-accent-color dark:ring-offset-d-subtle-bg hover:dark:border-transparent dark:hover:bg-d-hover-accent-color ">
 					<i class="fa-regular fa-paper-plane"></i>
 					<h3>Send</h3>
 				</button>
@@ -63,4 +63,31 @@ import MaltSvg from '@/components/logos/MaltSvg.vue';
 import EmailSvg from '@/components/logos/EmailSvg.vue';
 import SocialLogo from '@/components/SocialLogo.vue';
 import BgTab from '@/components/background/BgTab.vue';
+
+import { addDoc, collection, doc } from 'firebase/firestore/lite';
+import db from '@/firebase/init';
+
+const sendMessages = async () => {
+	const form_name = document.getElementById("form_name").value;
+	const form_email = document.getElementById("form_email").value;
+	const form_subject = document.getElementById("form_subject").value;
+	const form_body = document.getElementById("form_body").value;
+
+	// console.log("Name : " + form_name);
+	// console.log("Email : " + form_email);
+	// console.log("Subject : " + form_subject);
+	// console.log("Body : " + form_body);
+
+	if (form_name && form_email && form_subject && form_body) {
+		await addDoc(collection(db, "contacts"), {
+			name: form_name,
+			email: form_email,
+			subject: form_subject,
+			body: form_body
+		});
+		console.log("Contact message has been added !");
+	} else {
+		console.log("Please fill all fields !");
+	}
+}
 </script>
