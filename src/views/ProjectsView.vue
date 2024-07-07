@@ -27,6 +27,21 @@ import { onMounted, ref } from 'vue';
 
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
+const useFirebase = false;
+
+const getProjects = async () => {
+	if (useFirebase) {
+		const projectsCol = collection(db, 'projects');
+		const projectSnapshot = await getDocs(projectsCol);
+		projectList.value = projectSnapshot.docs.map(doc => doc.data());
+	} else {
+		projectList.value = localData.projects;
+	}
+	await new Promise((resolve) => setTimeout(resolve, 1500));
+	isFetchingProjects.value = false;
+
+	console.log(projectList.value);
+}
 
 // console.log(db)
 onMounted(() => {
@@ -39,19 +54,4 @@ onMounted(() => {
 	getProjects();
 })
 
-const useFirebase = false;
-
-const getProjects = async () => {
-	if (useFirebase) {
-		const projectsCol = collection(db, 'projects');
-		const projectSnapshot = await getDocs(projectsCol);
-		projectList.value = projectSnapshot.docs.map(doc => doc.data());
-	} else {
-		projectList.value = localData.projects;
-	}
-	// await new Promise((resolve) => setTimeout(resolve, 1000));
-	isFetchingProjects.value = false;
-
-	console.log(projectList.value);
-}
 </script>
