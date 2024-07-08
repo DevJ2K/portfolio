@@ -4,8 +4,8 @@
 		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex flex-col items-center gap-9">
-			<h1 class="tab-title">Contact</h1>
-
+			<!-- <h1 class="tab-title">Contact</h1> -->
+			<TabTitleComponent title="Contact"/>
 
 			<SuccessModal :modal-active="successModalActive" @close-modal="toggleSuccessModal">
 				<div class=" text-black/70">
@@ -91,6 +91,7 @@ import db from '@/firebase/init';
 import SuccessModal from '@/components/modal/SuccessModal.vue';
 import { ref } from 'vue';
 import WarningModal from '@/components/modal/WarningModal.vue';
+import TabTitleComponent from '@/components/TabTitleComponent.vue';
 
 const warningModalActive = ref(false);
 const successModalActive = ref(false);

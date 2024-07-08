@@ -4,8 +4,7 @@
 		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
-			<h1 class="tab-title">Skills</h1>
-
+			<TabTitleComponent title="Skills"/>
 			<div class="flex flex-col gap-8">
 				<fieldset class="skill-fieldset">
 					<legend class="custom-legend">Technical Skills</legend> <!-- rounded-md border-->
@@ -87,5 +86,6 @@ import SeleniumSvg from '@/components/logos/skills/SeleniumSvg.vue';
 import FirebaseSvg from '@/components/logos/skills/FirebaseSvg.vue';
 import SqliteSvg from '@/components/logos/skills/SqliteSvg.vue';
 import BgTab from '@/components/background/BgTab.vue';
+import TabTitleComponent from '@/components/TabTitleComponent.vue';
 
 </script>

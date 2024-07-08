@@ -5,7 +5,8 @@
 		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class="container z-10 flex w-full flex-col items-center">
-			<h1 id="viewMoreScrollIntoView" class="tab-title">About</h1>
+			<!-- <h1 id="viewMoreScrollIntoView" class="tab-title">About</h1> -->
+			<TabTitleComponent id="viewMoreScrollIntoView" title="About"/>
 			<div class="h-12 w-full"></div>
 			<!-- <h3 class=" text-2xl text-high-contrast-text dark:text-d-high-contrast-text">Me</h3> -->
 			<div
@@ -39,6 +40,7 @@
 import AboutCard from '../../components/AboutCard.vue'
 import { ref } from 'vue';
 import BgTab from '@/components/background/BgTab.vue';
+import TabTitleComponent from '@/components/TabTitleComponent.vue';
 
 const viewMoreAbout = ref(null);
 

@@ -4,7 +4,7 @@
 		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex flex-col items-center gap-9 text-low-contrast-text dark:text-d-low-contrast-text ">
-			<h1 class="tab-title">Projects</h1>
+			<TabTitleComponent title="Projects"/>
 
 			<div class="flex w-full flex-col items-center justify-center">
 				<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Featured Projects</h3> -->
@@ -37,6 +37,7 @@ import db from '@/firebase/init';
 import { collection, query, getDocs, where } from 'firebase/firestore/lite';
 import { onMounted, ref } from 'vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
+import TabTitleComponent from '@/components/TabTitleComponent.vue';
 
 const router = useRouter();
 const highlightedProjects = ref([]);

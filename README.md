@@ -16,8 +16,8 @@
 - [x] Adding Firebase
 - [x] Suspense effect on project card
 - [x] Contact page working + modal to indicate success or failure
-- [ ] Add Feedbacks / Experiences tab
 - [ ] Animation on appear
+<!-- - [ ] Add Feedbacks / Experiences tab -->
 
 ##
 This template should help get you started developing with Vue 3 in Vite.
