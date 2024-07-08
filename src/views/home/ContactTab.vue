@@ -19,6 +19,12 @@
 				</div>
 			</WarningModal>
 
+			<WarningModal :modal-active="waitModalActive" @close-modal="toggleWaitModal">
+				<div class=" text-black/70">
+					<p>Please wait before sending another message.</p>
+				</div>
+			</WarningModal>
+
 
 
 			<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3> -->
@@ -88,14 +94,16 @@ import WarningModal from '@/components/modal/WarningModal.vue';
 
 const warningModalActive = ref(false);
 const successModalActive = ref(false);
+const waitModalActive = ref(false);
 
 const toggleSuccessModal = () => {
-	warningModalActive.value = false;
 	successModalActive.value = !successModalActive.value;
 };
 const toggleWarningModal = () => {
-	successModalActive.value = false;
 	warningModalActive.value = !warningModalActive.value;
+};
+const toggleWaitModal = () => {
+	waitModalActive.value = !waitModalActive.value;
 };
 
 const clearFields = () => {
@@ -133,27 +141,53 @@ const highlightedEmptyField = () => {
 	}
 }
 
+const compareLastDateSent = () => {
+	const lastDateString = localStorage.getItem("last-date-sent");
+	if (!lastDateString) {
+		return (true);
+	}
+	const lastDate = new Date(lastDateString);
+	const currentDate = new Date();
+
+	const diffInMs = Math.abs(currentDate.getTime() - lastDate.getTime());
+	const fiveMinutesInMs = 1 * 60 * 1000;
+
+	if (diffInMs <= fiveMinutesInMs) {
+		return (false);
+	} else {
+		return (true);
+	}
+}
+
+const saveDateSent = () => {
+	const currentDate = new Date();
+	const stringDate = currentDate.toString();
+	localStorage.setItem("last-date-sent", stringDate);
+}
+
 const sendMessages = async () => {
 	let form_name = document.getElementById("form_name").value;
 	let form_email = document.getElementById("form_email").value;
 	let form_subject = document.getElementById("form_subject").value;
 	let form_body = document.getElementById("form_body").value;
 
-	// console.log("Name : " + form_name);
-	// console.log("Email : " + form_email);
-	// console.log("Subject : " + form_subject);
-	// console.log("Body : " + form_body);
-
 	if (form_name && form_email && form_subject && form_body) {
-		// await addDoc(collection(db, "contacts"), {
-		// 	name: form_name,
-		// 	email: form_email,
-		// 	subject: form_subject,
-		// 	body: form_body
-		// });
-		clearFields();
-		toggleSuccessModal();
-		console.log("Contact message has been added !");
+		if (compareLastDateSent() == false) {
+			toggleWaitModal();
+			console.log("Please wait before sending new messages...");
+		} else {
+			// await addDoc(collection(db, "contacts"), {
+			// name: form_name,
+			// email: form_email,
+			// subject: form_subject,
+			// body: form_body
+			// });
+
+			clearFields();
+			toggleSuccessModal();
+			saveDateSent();
+			console.log("Contact message has been added !");
+		}
 	} else {
 		highlightedEmptyField();
 		toggleWarningModal();
