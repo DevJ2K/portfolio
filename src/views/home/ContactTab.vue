@@ -5,6 +5,22 @@
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex flex-col items-center gap-9">
 			<h1 class="tab-title">Contact</h1>
+
+
+			<SuccessModal :modal-active="successModalActive" @close-modal="toggleSuccessModal">
+				<div class=" text-black">
+					<p>The contact message has been sent successfully !</p>
+				</div>
+			</SuccessModal>
+
+			<WarningModal :modal-active="warningModalActive" @close-modal="toggleWarningModal">
+				<div class=" text-black/70">
+					<p>Please fill out all fields.</p>
+				</div>
+			</WarningModal>
+
+
+
 			<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3> -->
 			<fieldset class="flex w-full flex-row items-center justify-around rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
 				<legend class="custom-legend">Social Networks</legend>
@@ -26,19 +42,19 @@
 			<div class="flex w-3/4 flex-col items-end gap-6">
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">Name</h3>
-					<input id="form_name" class="form-input" type="text" maxlength="30">
+					<input id="form_name" class="form-input form-input-border" type="text" maxlength="30">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">Email</h3>
-					<input id="form_email" class="form-input" type="text">
+					<input id="form_email" class="form-input form-input-border" type="text">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">Subject</h3>
-					<input id="form_subject" class="form-input" type="text">
+					<input id="form_subject" class="form-input form-input-border" type="text">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
 					<h3 class="form-input-name">How can I help you ?</h3>
-					<textarea id="form_body" class="form-input" rows="4" minlength="50" maxlength="2000"></textarea>
+					<textarea id="form_body" class="form-input form-input-border" rows="4" minlength="50" maxlength="2000"></textarea>
 				</div>
 
 				<button @click="sendMessages" class="flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-md border border-ui-border px-4 py-2 text-high-contrast-text shadow-lg  ring-accent-color ring-offset-2 ring-offset-subtle-bg transition-all hover:border-transparent hover:bg-hover-accent-color  hover:text-d-high-contrast-text  hover:shadow-xl focus:outline-2 focus:ring-2  dark:border-d-ui-border dark:text-d-high-contrast-text dark:ring-d-accent-color dark:ring-offset-d-subtle-bg hover:dark:border-transparent dark:hover:bg-d-hover-accent-color ">
@@ -66,12 +82,62 @@ import BgTab from '@/components/background/BgTab.vue';
 
 import { addDoc, collection, doc } from 'firebase/firestore/lite';
 import db from '@/firebase/init';
+import SuccessModal from '@/components/modal/SuccessModal.vue';
+import { ref } from 'vue';
+import WarningModal from '@/components/modal/WarningModal.vue';
+
+const warningModalActive = ref(true);
+const successModalActive = ref(false);
+
+const toggleSuccessModal = () => {
+	warningModalActive.value = false;
+	successModalActive.value = !successModalActive.value;
+};
+const toggleWarningModal = () => {
+	successModalActive.value = false;
+	warningModalActive.value = !warningModalActive.value;
+};
+
+const clearFields = () => {
+	const fields = [
+		document.getElementById("form_name"),
+		document.getElementById("form_email"),
+		document.getElementById("form_subject"),
+		document.getElementById("form_body")
+	];
+	for (let i = 0; i < fields.length; i++) {
+		const element = fields[i];
+		element.value = null;
+		element.classList.add('form-input-border');
+		element.classList.remove('form-input-empty');
+	}
+}
+
+const highlightedEmptyField = () => {
+
+	const fields = [
+		document.getElementById("form_name"),
+		document.getElementById("form_email"),
+		document.getElementById("form_subject"),
+		document.getElementById("form_body")
+	];
+	for (let i = 0; i < fields.length; i++) {
+		const element = fields[i];
+		if (!element.value) {
+			element.classList.remove('form-input-border');
+			element.classList.add('form-input-empty');
+		} else {
+			element.classList.add('form-input-border');
+			element.classList.remove('form-input-empty');
+		}
+	}
+}
 
 const sendMessages = async () => {
-	const form_name = document.getElementById("form_name").value;
-	const form_email = document.getElementById("form_email").value;
-	const form_subject = document.getElementById("form_subject").value;
-	const form_body = document.getElementById("form_body").value;
+	let form_name = document.getElementById("form_name").value;
+	let form_email = document.getElementById("form_email").value;
+	let form_subject = document.getElementById("form_subject").value;
+	let form_body = document.getElementById("form_body").value;
 
 	// console.log("Name : " + form_name);
 	// console.log("Email : " + form_email);
@@ -79,14 +145,17 @@ const sendMessages = async () => {
 	// console.log("Body : " + form_body);
 
 	if (form_name && form_email && form_subject && form_body) {
-		await addDoc(collection(db, "contacts"), {
-			name: form_name,
-			email: form_email,
-			subject: form_subject,
-			body: form_body
-		});
+		// await addDoc(collection(db, "contacts"), {
+		// 	name: form_name,
+		// 	email: form_email,
+		// 	subject: form_subject,
+		// 	body: form_body
+		// });
+		clearFields();
 		console.log("Contact message has been added !");
 	} else {
+		highlightedEmptyField();
+		warningModalActive.value = true;
 		console.log("Please fill all fields !");
 	}
 }
