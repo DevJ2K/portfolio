@@ -176,12 +176,12 @@ const sendMessages = async () => {
 			toggleWaitModal();
 			console.log("Please wait before sending new messages...");
 		} else {
-			// await addDoc(collection(db, "contacts"), {
-			// name: form_name,
-			// email: form_email,
-			// subject: form_subject,
-			// body: form_body
-			// });
+			await addDoc(collection(db, "contacts"), {
+			name: form_name,
+			email: form_email,
+			subject: form_subject,
+			body: form_body
+			});
 
 			clearFields();
 			toggleSuccessModal();

@@ -2,9 +2,9 @@
   <main class="relative flex size-full flex-col items-center">
     <NavigationBar/>
     <PresentationView/>
-    <AboutView id="about"/>
     <SkillView id="skills"/>
     <ProjectsView id="projects"/>
+    <AboutView id="about"/>
     <ContactView id="contact"/>
     <CustomFooter/>
     <BgStars/>

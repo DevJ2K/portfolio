@@ -7,6 +7,7 @@
 		<main class="container z-10 flex w-full flex-col items-center">
 			<h1 id="viewMoreScrollIntoView" class="tab-title">About</h1>
 			<div class="h-12 w-full"></div>
+			<!-- <h3 class=" text-2xl text-high-contrast-text dark:text-d-high-contrast-text">Me</h3> -->
 			<div
 				:class="'relative before:absolute before:inset-0 before:ml-6 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text md:before:mx-auto md:before:translate-x-0' + (!viewMoreAbout ? ' before:to-transparent' : ' before:to-low-contrast-text dark:before:to-d-low-contrast-text')">
 
