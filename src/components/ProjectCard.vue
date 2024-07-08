@@ -10,7 +10,6 @@
 				<div class="flex flex-col gap-4 p-6">
 					<h1 class=" text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text sm:text-xl">{{ title }}</h1>
 
-
 					<p class=" text-sm font-normal  text-high-contrast-text dark:text-d-high-contrast-text">{{ description }}</p>
 
 

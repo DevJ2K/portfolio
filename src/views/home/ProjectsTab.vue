@@ -46,7 +46,10 @@ const useFirebase = false;
 
 function viewProjects() {
 	router.push({
-		name: 'projects'
+		name: 'projects',
+
+	}).then(() => {
+		window.scrollTo(0, 0);
 	});
 }
 

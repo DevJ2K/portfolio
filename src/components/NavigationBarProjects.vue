@@ -57,13 +57,37 @@
 			</a>
 			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">Highlighted</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured')">Featured</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('skills')">Others</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal')">Personal</a>
+					<span
+						class="animate-underline"></span>
+
+				</li>
+				<li class="group relative w-max">
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus')">42Cursus</a>
+					<span
+					class="animate-underline"></span>
+
+				</li>
+				<!-- <li class="group relative w-max">
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">Mobile</a>
+					<span
+						class="animate-underline"></span>
+
+				</li> -->
+				<!-- <li class="group relative w-max">
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('skills')">Algorithms</a>
+					<span
+						class="animate-underline"></span>
+
+				</li> -->
+				<li class="group relative w-max">
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others')">Others</a>
 					<span
 						class="animate-underline"></span>
 
@@ -207,6 +231,8 @@ const router = useRouter();
 function backToHome() {
 	router.push({
 		name: 'home'
+	}).then(() => {
+		window.scrollTo(0, 0);
 	});
 }
 

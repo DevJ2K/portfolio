@@ -3,27 +3,74 @@
 		<NavigationBarProjects/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-low-contrast-text dark:text-d-low-contrast-text ">
-			<h1 class="tab-title">Projects</h1>
-			<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
-				<ProjectCardSkeleton/>
-				<ProjectCardSkeleton/>
-				<ProjectCardSkeleton/>
+			<div class="relative flex w-full">
+				<input class="form-input-border block w-full rounded-full border bg-ui-bg p-3 outline-none" placeholder="Search by tag" type="text">
+
+				<svg class="absolute right-0 top-1/2 mr-2 size-5 -translate-y-1/2 rounded-full border border-low-contrast-text dark:border-d-low-contrast-text" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
 			</div>
-			<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
-				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+			<!-- <h1 class="tab-title">Projects</h1> -->
+			<div class="h-6 w-full"></div>
+			<div class="flex w-full flex-col items-center gap-40">
+				<div class="flex w-full flex-col items-center gap-8">
+					<TabTitleComponent id="p_featured" title="Featured"/>
+					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+					</div>
+					<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
+						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+					</div>
+				</div>
+				<div class="flex w-full flex-col items-center gap-9">
+					<TabTitleComponent id="p_personal" title="Personal"/>
+					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+					</div>
+					<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
+						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+					</div>
+				</div>
+				<div class="flex w-full flex-col items-center gap-9">
+					<TabTitleComponent id="p_42cursus" title="42Cursus"/>
+					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+					</div>
+					<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
+						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+					</div>
+				</div>
+				<div class="flex w-full flex-col items-center gap-9">
+					<TabTitleComponent id="p_others" title="Others"/>
+					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+						<ProjectCardSkeleton/>
+					</div>
+					<div v-else v-for="project in projectList" :key="project" class="flex w-full flex-col items-center gap-9">
+						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+					</div>
+				</div>
 			</div>
 		</main>
 		<div class=" h-28 w-full"></div>
+		<CustomFooter/>
 	</main>
 </template>
 
 <script setup>
 import NavigationBarProjects from '@/components/NavigationBarProjects.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
+import TabTitleComponent from '@/components/TabTitleComponent.vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
 import db from '@/firebase/init';
 import { collection, getDocs } from 'firebase/firestore/lite';
 import { onMounted, ref } from 'vue';
+import CustomFooter from './home/CustomFooter.vue';
 
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
