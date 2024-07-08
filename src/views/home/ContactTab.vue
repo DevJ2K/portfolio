@@ -8,7 +8,7 @@
 
 
 			<SuccessModal :modal-active="successModalActive" @close-modal="toggleSuccessModal">
-				<div class=" text-black">
+				<div class=" text-black/70">
 					<p>The contact message has been sent successfully !</p>
 				</div>
 			</SuccessModal>
@@ -86,7 +86,7 @@ import SuccessModal from '@/components/modal/SuccessModal.vue';
 import { ref } from 'vue';
 import WarningModal from '@/components/modal/WarningModal.vue';
 
-const warningModalActive = ref(true);
+const warningModalActive = ref(false);
 const successModalActive = ref(false);
 
 const toggleSuccessModal = () => {
@@ -152,10 +152,11 @@ const sendMessages = async () => {
 		// 	body: form_body
 		// });
 		clearFields();
+		toggleSuccessModal();
 		console.log("Contact message has been added !");
 	} else {
 		highlightedEmptyField();
-		warningModalActive.value = true;
+		toggleWarningModal();
 		console.log("Please fill all fields !");
 	}
 }
