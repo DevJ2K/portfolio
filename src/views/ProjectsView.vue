@@ -108,11 +108,18 @@ import db from '@/firebase/init';
 import { collection, getDocs } from 'firebase/firestore/lite';
 import { onMounted, onUnmounted, ref } from 'vue';
 import CustomFooter from './home/CustomFooter.vue';
+import { useRoute } from 'vue-router';
 
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
 const searchText = ref("");
 const useFirebase = false;
+const route = useRoute();
+
+if (route.query.tag != null) {
+	searchText.value = route.query.tag;
+}
+
 
 const getProjects = async () => {
 	if (useFirebase) {
@@ -120,6 +127,7 @@ const getProjects = async () => {
 		const projectSnapshot = await getDocs(projectsCol);
 		projectList.value = projectSnapshot.docs.map(doc => doc.data());
 	} else {
+		// eslint-disable-next-line no-undef
 		projectList.value = localData.projects;
 	}
 	await new Promise((resolve) => setTimeout(resolve, 1500));

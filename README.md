@@ -17,6 +17,7 @@
 - [x] Suspense effect on project card
 - [x] Contact page working + modal to indicate success or failure
 - [ ] Animation on appear
+- [ ] Filter project by categories in ProjectsView
 <!-- - [ ] Add Feedbacks / Experiences tab -->
 
 ##
