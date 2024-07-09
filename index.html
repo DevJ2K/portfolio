@@ -157,14 +157,14 @@
                 "retina_detect": true
             });
         }
-        const refresh_particles = () => {
-            console.log("Is resizing !")
-            // eslint-disable-next-line no-undef
-            if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
-                // eslint-disable-next-line no-undef
-                pJSDom[0].pJS.fn.particlesRefresh();
-            }
-        }
+        // const refresh_particles = () => {
+        //     console.log("Is resizing !")
+        //     // eslint-disable-next-line no-undef
+        //     if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
+        //         // eslint-disable-next-line no-undef
+        //         pJSDom[0].pJS.fn.particlesRefresh();
+        //     }
+        // }
 
         window.addEventListener("load", display_particles);
         // window.addEventListener("resize", refresh_particles);
