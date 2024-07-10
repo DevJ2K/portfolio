@@ -11,29 +11,32 @@
 			<ul
 				class=" flex size-full flex-col items-center justify-center gap-16 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
 
+				<li class="flex items-center justify-center">
+					<a @click="navigateTo('search-by-tag-field')" class="cursor-pointer">
+					<i class="fa-solid fa-magnifying-glass text-xl "></i>
+				</a>
+			</li>
+
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">About</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured')">Featured</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('skills')">Skills</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal')">Personal</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('projects')">Projects</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus')">42Cursus</a>
 					<span
-						class="animate-underline"></span>
+					class="animate-underline"></span>
 
 				</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('contact')">Contact</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others')">Others</a>
 					<span
 						class="animate-underline"></span>
 
@@ -56,54 +59,35 @@
 				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
 			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
+				<li  class="flex w-full items-center justify-center">
+					<a @click="navigateTo('search-by-tag-field', false)" class=" cursor-pointer">
+						<i class="fa-solid fa-magnifying-glass text-base "></i>
+					</a>
+				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured')">Featured</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured', false)">Featured</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal')">Personal</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal', false)">Personal</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus')">42Cursus</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus', false)">42Cursus</a>
 					<span
 					class="animate-underline"></span>
 
 				</li>
-				<!-- <li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('about')">Mobile</a>
-					<span
-						class="animate-underline"></span>
-
-				</li> -->
-				<!-- <li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('skills')">Algorithms</a>
-					<span
-						class="animate-underline"></span>
-
-				</li> -->
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others')">Others</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others', false)">Others</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
-				<!-- <li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('projects')">Projects</a>
-					<span
-						class="animate-underline"></span>
-
-				</li>
-				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('contact')">Contact</a>
-					<span
-						class="animate-underline"></span>
-
-				</li> -->
 				<li  class="flex size-6 items-center justify-center">
 					<a @click="switchColorMode">
 						<!-- <i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
@@ -123,7 +107,7 @@
 </template>
 
 <script setup>
-import { MoonIcon, SunIcon } from '@radix-icons/vue';
+import { MagnifyingGlassIcon, MoonIcon, SunIcon } from '@radix-icons/vue';
 import { onMounted, ref } from 'vue';
 import NavHamburger from './NavHamburger.vue';
 import { useRouter } from 'vue-router';

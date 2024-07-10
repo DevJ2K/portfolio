@@ -62,25 +62,25 @@
 				class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
 					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('skills')">Skills</a>
+						@click="navigateTo('skills', false)">Skills</a>
 					<span class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
 					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('projects')">Projects</a>
+						@click="navigateTo('projects', false)">Projects</a>
 					<span class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
 					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('about')">About</a>
+						@click="navigateTo('about', false)">About</a>
 					<span class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
 					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('contact')">Contact</a>
+						@click="navigateTo('contact', false)">Contact</a>
 					<span class="animate-underline"></span>
 
 				</li>

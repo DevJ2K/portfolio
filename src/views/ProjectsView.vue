@@ -9,7 +9,7 @@
 			class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-low-contrast-text dark:text-d-low-contrast-text ">
 			<div class="relative flex w-full">
 				<input id="search-by-tag-field" v-model="searchText"
-					class="block w-full  rounded-3xl border-2 border-ui-border bg-ui-bg p-3 pr-9 text-high-contrast-text outline-none hover:border-hover-ui-border focus:border-accent-color focus:bg-active-ui-bg dark:border-d-ui-border  dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:border-d-hover-ui-border dark:focus:border-d-accent-color dark:focus:bg-d-active-ui-bg"
+					class="block  w-full scroll-mt-28  rounded-3xl border-2 border-ui-border bg-ui-bg p-3 pr-9 text-high-contrast-text outline-none hover:border-hover-ui-border focus:border-accent-color focus:bg-active-ui-bg dark:border-d-ui-border  dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:border-d-hover-ui-border dark:focus:border-d-accent-color dark:focus:bg-d-active-ui-bg"
 					placeholder="Search by tag" type="text" maxlength="30">
 
 				<svg @click="clearSearchField();"
