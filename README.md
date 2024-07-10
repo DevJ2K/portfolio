@@ -18,6 +18,7 @@
 - [x] Contact page working + modal to indicate success or failure
 - [ ] Animation on appear
 - [ ] Filter project by categories in ProjectsView
+- [ ] Search project animation
 - [ ] Protect firebase request + Rules in Firebase
 <!-- - [ ] Add Feedbacks / Experiences tab -->
 
