@@ -30,7 +30,7 @@
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
 					</div>
-					<div v-else v-for="project in projectList" :key="project"
+					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Featured'))" :key="project"
 						class="flex w-full flex-col items-center gap-9">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
@@ -43,7 +43,7 @@
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
 					</div>
-					<div v-else v-for="project in projectList" :key="project"
+					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Personal'))" :key="project"
 						class="flex w-full flex-col items-center gap-9">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
@@ -56,7 +56,7 @@
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
 					</div>
-					<div v-else v-for="project in projectList" :key="project"
+					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, '42Cursus'))" :key="project"
 						class="flex w-full flex-col items-center gap-9">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
@@ -69,20 +69,37 @@
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
 					</div>
-					<div v-else v-for="project in projectList" :key="project"
+					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Others'))" :key="project"
 						class="flex w-full flex-col items-center gap-9">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>
 				</div>
 			</div>
-			<div v-else-if="projectList.filter((project) => containsSearch(project)).length > 0"
-				v-for="project in projectList.filter((project) => containsSearch(project))" :key="project"
+			<div v-else-if="projectList.filter((project) => containsSearchTag(project)).length > 0"
+				v-for="project in projectList.filter((project) => containsSearchTag(project))" :key="project"
 				class="flex w-full flex-col items-center gap-8">
 				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 					:github-link="project.github" :project-link="project.link" />
 
 			</div>
+
+			<!-- <TransitionGroup v-else-if="projectList.filter((project) => containsSearchTag(project)).length > 0"
+				tag="div"
+				@before-enter="onBeforeEnter"
+				@enter="onEnter"
+				@leave="onLeave"
+				>
+				<div
+				v-for="(project, index) in projectList.filter((project) => containsSearchTag(project))"
+				:key="project.name"
+				:data-index="index"
+				>
+				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+					:github-link="project.github" :project-link="project.link" />
+			</div>
+			</TransitionGroup> -->
+
 			<div v-else
 				class="flex size-full flex-col items-center justify-center gap-2 text-high-contrast-text dark:text-d-high-contrast-text">
 				<svg class="size-14 md:size-20" width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -154,7 +171,7 @@ const refreshBackground = () => {
 	}
 }
 
-const containsSearch = (project) => {
+const containsSearchTag = (project) => {
 	let tags = [];
 	for (let i = 0; i < project.tags.length; i++) {
 		tags.push(project.tags[i].toLowerCase());
@@ -163,6 +180,16 @@ const containsSearch = (project) => {
 		if (tags[i] == searchText.value.toLowerCase()) {
 			return (true)
 		} else if (tags[i].startsWith(searchText.value.toLowerCase())) {
+			return (true);
+		}
+		// Utiliser .includes || item.msg.toLowerCase().includes(this.query))
+	}
+	return (false);
+}
+
+const containsCategory = (project, category) => {
+	for (let i = 0; i < project.categories.length; i++) {
+		if (category.toLowerCase() == project.categories[i].toLowerCase()) {
 			return (true);
 		}
 	}
@@ -190,6 +217,41 @@ onUnmounted(() => {
 		resizeObserver.disconnect();
 	}
 });
+
+
+
+
+
+// import gsap from 'gsap/all';
+
+// const list = [
+//   { msg: 'Bruce Lee' },
+//   { msg: 'Jackie Chan' },
+//   { msg: 'Chuck Norris' },
+//   { msg: 'Jet Li' },
+//   { msg: 'Kung Fury' }
+// ]
+
+// function onBeforeEnter(el) {
+//       el.style.opacity = 0
+//       el.style.height = 0
+//     }
+// function onEnter(el, done) {
+//       gsap.to(el, {
+//         opacity: 1,
+//         height: '1.6em',
+//         delay: el.dataset.index * 0.15,
+//         onComplete: done
+//       })
+//     }
+// function onLeave(el, done) {
+//       gsap.to(el, {
+//         opacity: 0,
+//         height: 0,
+//         delay: el.dataset.index * 0.15,
+//         onComplete: done
+//       })
+//     }
 
 
 

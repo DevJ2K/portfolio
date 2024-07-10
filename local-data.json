@@ -13,6 +13,9 @@
 				"JavaScript",
 				"Responsive"
 			],
+			"categories": [
+				"Featured"
+			],
 			"highlighted": true
 		},
 		{
@@ -24,6 +27,9 @@
 				"Python",
 				"Flask",
 				"Firebase"
+			],
+			"categories": [
+				"Featured"
 			],
 			"highlighted": true
 		},
@@ -37,6 +43,9 @@
 				"Shell",
 				"TeamWork"
 			],
+			"categories": [
+				"Personal"
+			],
 			"highlighted": true
 		},
 		{
@@ -49,6 +58,39 @@
 				"HTML",
 				"JavaScript",
 				"CSS"
+			],
+			"categories": [
+				"42Cursus"
+			]
+		},
+		{
+			"name": "Project5",
+			"miniature": null,
+			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
+			"tags": [
+				"Vue",
+				"tailwindCSS",
+				"HTML",
+				"JavaScript",
+				"CSS"
+			],
+			"categories": [
+				"42Cursus"
+			]
+		},
+		{
+			"name": "Project6",
+			"miniature": null,
+			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
+			"tags": [
+				"Vue",
+				"tailwindCSS",
+				"HTML",
+				"JavaScript",
+				"CSS"
+			],
+			"categories": [
+				"Others"
 			]
 		}
 	]

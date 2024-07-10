@@ -17,9 +17,9 @@
 - [x] Suspense effect on project card
 - [x] Contact page working + modal to indicate success or failure
 - [ ] Animation on appear
-- [ ] Filter project by categories in ProjectsView
-- [ ] Search project animation
+- [x] Filter project by categories in ProjectsView
 - [ ] Protect firebase request + Rules in Firebase
+<!-- - [ ] Search project animation -->
 <!-- - [ ] Add Feedbacks / Experiences tab -->
 
 ##
