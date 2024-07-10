@@ -59,7 +59,7 @@
 				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
 			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
-				<li  class="flex w-full items-center justify-center">
+				<li  class="flex size-2 items-center justify-center">
 					<a @click="navigateTo('search-by-tag-field', false)" class=" cursor-pointer">
 						<i class="fa-solid fa-magnifying-glass text-base "></i>
 					</a>
