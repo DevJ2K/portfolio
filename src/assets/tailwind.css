@@ -3,8 +3,8 @@
 @tailwind components;
 
 .my-scroll-nav {
-	@apply fixed;
-	@apply top-0;
+	/* @apply fixed; */
+	/* @apply top-0; */
 	@apply h-32;
 	@apply w-full;
 	@apply flex;

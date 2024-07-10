@@ -16,10 +16,11 @@
 - [x] Adding Firebase
 - [x] Suspense effect on project card
 - [x] Contact page working + modal to indicate success or failure
-- [ ] Animation on appear
+- [x] Animation on appear
 - [x] Filter project by categories in ProjectsView
 - [ ] Protect firebase request + Rules in Firebase
 - [x] Adding custom console.log
+- [ ] Add smooth animation AboutView ( Better between v-if & v-show ? )
 <!-- - [ ] Search project animation -->
 <!-- - [ ] Add Feedbacks / Experiences tab -->
 

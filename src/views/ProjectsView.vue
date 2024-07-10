@@ -46,7 +46,7 @@
 						<ProjectCardSkeleton />
 					</div>
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Personal'))" :key="project"
-						class="flex w-full flex-col items-center gap-9">
+						class="flex w-full flex-col items-center gap-9" data-aos-offset="200" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>
@@ -59,7 +59,7 @@
 						<ProjectCardSkeleton />
 					</div>
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, '42Cursus'))" :key="project"
-						class="flex w-full flex-col items-center gap-9">
+						class="flex w-full flex-col items-center gap-9" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>
@@ -72,7 +72,7 @@
 						<ProjectCardSkeleton />
 					</div>
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Others'))" :key="project"
-						class="flex w-full flex-col items-center gap-9">
+						class="flex w-full flex-col items-center gap-9" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>

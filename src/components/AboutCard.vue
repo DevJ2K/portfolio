@@ -1,5 +1,5 @@
 <template>
-	<div class="group relative mb-6 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse md:even:text-right">
+	<div class="group relative mb-6 flex items-center justify-between md:justify-normal md:odd:flex-row-reverse md:even:text-right" data-aos="fade-up" data-aos-offset="200" data-aos-delay="0" data-aos-duration="400">
 		<!-- Icon -->
 		<div class=" flex size-10 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
 

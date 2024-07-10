@@ -5,7 +5,7 @@
 
 
 
-	<div id="navBar" class="my-scroll-nav">
+	<div id="navBar" class="my-scroll-nav my-scroll-nav-active">
 
 		<div id="navMenu" class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
 			<ul
@@ -108,7 +108,7 @@
 
 <script setup>
 import { MagnifyingGlassIcon, MoonIcon, SunIcon } from '@radix-icons/vue';
-import { onMounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import NavHamburger from './NavHamburger.vue';
 import { useRouter } from 'vue-router';
 
@@ -136,7 +136,12 @@ const initMode = () => {
 
 onMounted(() => {
 	initMode();
-})
+	// window.addEventListener("scroll", updateNavbar);
+});
+
+onUnmounted(() => {
+	// window.removeEventListener("scroll", updateNavbar);
+});
 
 const replaceParticlesColor = (newHex) => {
 	// eslint-disable-next-line no-undef
@@ -221,7 +226,7 @@ function backToHome() {
 	});
 }
 
-window.addEventListener("scroll", updateNavbar);
+// window.addEventListener("scroll", updateNavbar);
 
 // updateNavbar();
 

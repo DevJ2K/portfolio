@@ -4,6 +4,7 @@
 	<!-- <div id="navBar" class="fixed top-0 z-50 flex w-full transition duration-1000 ease-in-out"> -->
 
 
+<div class="w-full fixed top-0 z-50"  data-aos="fade-down" data-aos-delay="0" data-aos-duration="350">
 
 	<div id="navBar" class="my-scroll-nav">
 
@@ -102,11 +103,12 @@
 			<!-- </div> -->
 		</div>
 	</div>
+</div>
 </template>
 
 <script setup>
 import { MoonIcon, SunIcon } from '@radix-icons/vue';
-import { onMounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import NavHamburger from './NavHamburger.vue';
 
 const darkMode = ref(null);
@@ -132,7 +134,12 @@ const initMode = () => {
 
 onMounted(() => {
 	initMode();
+	window.addEventListener("scroll", updateNavbar);
 });
+
+onUnmounted(() => {
+	window.removeEventListener("scroll", updateNavbar);
+})
 
 const replaceParticlesColor = (newHex) => {
 	// eslint-disable-next-line no-undef
@@ -205,8 +212,6 @@ const navigateTo = (id, hideMenu = true) => {
 		});
 	}
 }
-
-window.addEventListener("scroll", updateNavbar);
 
 // updateNavbar();
 

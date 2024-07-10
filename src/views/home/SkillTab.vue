@@ -1,15 +1,17 @@
 <template>
 	<div class="relative flex w-full flex-col">
 		<!-- <BackgroundSpotlight color="bg-blue-500" rotate="bg-gradient-to-bl"/> -->
-		<BgTab/>
+		<BgTab />
 		<div class=" h-28 w-full"></div>
-		<main class=" container z-10 flex flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
-			<TabTitleComponent title="Skills"/>
+		<main
+			class=" container z-10 flex flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
+			<TabTitleComponent title="Skills" />
 			<div class="flex flex-col gap-8">
-				<fieldset class="skill-fieldset">
-					<legend class="custom-legend">Technical Skills</legend> <!-- rounded-md border-->
+				<div class=" z-20 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
+					<fieldset class="skill-fieldset">
+						<legend class="custom-legend">Technical Skills</legend> <!-- rounded-md border-->
 
-					<div class=" flex w-full flex-col items-center justify-center gap-4">
+						<div class=" flex w-full flex-col items-center justify-center gap-4">
 							<div class=" grid w-full grid-cols-3 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
 								<SkillCard skill="API" icon="fa-solid fa-cube" />
 								<SkillCard skill="Unit Test" icon="fa-solid fa-vials" />
@@ -29,37 +31,43 @@
 								<SkillCard skill="Problem solving" icon="fa-solid fa-square-check" />
 								<!-- Search by Apple -->
 							</div>
-					</div>
-				</fieldset>
+						</div>
+					</fieldset>
+				</div>
+				<div class=" z-10 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
+					<fieldset class=" skill-fieldset">
+						<legend class="custom-legend">Programming Languages</legend>
+						<div class="flex w-full flex-wrap justify-center gap-6">
+							<LogoSkill :logo="SwiftSvg" tech-name="Swift" />
+							<LogoSkill :logo="PythonSvg" tech-name="Python" />
+							<LogoSkill :logo="CSvg" tech-name="C" />
+							<LogoSkill :logo="CplusplusSvg" tech-name="C++" />
+							<LogoSkill :logo="JavascriptSvg" tech-name="Javascript" />
+						</div>
+					</fieldset>
+				</div>
 
-				<fieldset class="skill-fieldset">
-					<legend class="custom-legend">Programming Languages</legend>
-					<div class="flex w-full flex-wrap justify-center gap-6">
-						<LogoSkill :logo="SwiftSvg" tech-name="Swift" />
-						<LogoSkill :logo="PythonSvg" tech-name="Python" />
-						<LogoSkill :logo="CSvg" tech-name="C" />
-						<LogoSkill :logo="CplusplusSvg" tech-name="C++" />
-						<LogoSkill :logo="JavascriptSvg" tech-name="Javascript" />
-					</div>
-				</fieldset>
+				<div class=" z-10 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
+					<fieldset class="skill-fieldset">
+						<legend class="custom-legend">Frameworks & Librairies</legend>
+						<div class="flex w-full flex-wrap justify-center gap-6">
+							<LogoSkill :logo="FlutterSvg" tech-name="Flutter" />
+							<LogoSkill :logo="VueSvg" tech-name="Vue" />
+							<LogoSkill :logo="TailwindSvg" tech-name="Tailwind" />
+							<LogoSkill :logo="SeleniumSvg" tech-name="Selenium" />
+						</div>
+					</fieldset>
+				</div>
 
-				<fieldset class="skill-fieldset">
-					<legend class="custom-legend">Frameworks & Librairies</legend>
-					<div class="flex w-full flex-wrap justify-center gap-6">
-						<LogoSkill :logo="FlutterSvg" tech-name="Flutter" />
-						<LogoSkill :logo="VueSvg" tech-name="Vue" />
-						<LogoSkill :logo="TailwindSvg" tech-name="Tailwind" />
-						<LogoSkill :logo="SeleniumSvg" tech-name="Selenium" />
-					</div>
-				</fieldset>
-
-				<fieldset class="skill-fieldset">
-					<legend class="custom-legend">Databases</legend>
-					<div class="flex w-full flex-wrap justify-center gap-6">
-						<LogoSkill :logo="FirebaseSvg" tech-name="Firebase" />
-						<LogoSkill :logo="SqliteSvg" tech-name="Sqlite" />
-					</div>
-				</fieldset>
+				<div class=" z-10 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
+					<fieldset class="skill-fieldset">
+						<legend class="custom-legend">Databases</legend>
+						<div class="flex w-full flex-wrap justify-center gap-6">
+							<LogoSkill :logo="FirebaseSvg" tech-name="Firebase" />
+							<LogoSkill :logo="SqliteSvg" tech-name="Sqlite" />
+						</div>
+					</fieldset>
+				</div>
 			</div>
 
 		</main>

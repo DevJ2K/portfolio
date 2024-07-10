@@ -11,13 +11,19 @@
 				<!-- <div class="grid grid-cols-3 flex-row gap-3 sm:flex"> -->
 
 				<div v-if="isFetchingProjects" class="flex w-full flex-wrap justify-center gap-6">
+					<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCardSkeleton/>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCardSkeleton/>
+					</div>
+					<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCardSkeleton/>
+					</div>
 				</div>
 
 				<div v-else class="flex flex-wrap justify-center gap-6">
-					<div v-for="project in highlightedProjects" :key="project">
+					<div v-for="project in highlightedProjects" :key="project" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
 					</div>
 				</div>

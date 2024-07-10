@@ -34,20 +34,31 @@
 
 
 			<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3> -->
-			<fieldset class="flex w-full flex-row items-center justify-around rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
-				<legend class="custom-legend">Social Networks</legend>
-			<!-- <div class="flex w-3/4 flex-row justify-between"> -->
-				<SocialLogo :logo="GithubSvg" name="DevJ2K" size="contact-view-logo"/>
-				<SocialLogo :logo="LinkedinSvg" name="Théo Ajavon" size="contact-view-logo"/>
-				<SocialLogo :logo="InstagramSvg" name="devj2k" size="contact-view-logo"/>
-				<SocialLogo :logo="MaltSvg" name="theoajavon" size="contact-view-logo"/>
-				<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="contact-view-logo"/>
-			<!-- </div> -->
-			</fieldset>
+			<div class="w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
+				<fieldset class="flex w-full flex-row items-center justify-around rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
+					<legend class="custom-legend">Social Networks</legend>
+
+					<div data-aos="fade" data-aos-delay="350" data-aos-duration="250">
+						<SocialLogo :logo="GithubSvg" name="DevJ2K" size="contact-view-logo"/>
+					</div>
+					<div data-aos="fade" data-aos-delay="500" data-aos-duration="250">
+						<SocialLogo :logo="LinkedinSvg" name="Théo Ajavon" size="contact-view-logo"/>
+					</div>
+					<div data-aos="fade" data-aos-delay="650" data-aos-duration="250">
+						<SocialLogo :logo="InstagramSvg" name="devj2k" size="contact-view-logo"/>
+					</div>
+					<div data-aos="fade" data-aos-delay="800" data-aos-duration="250">
+						<SocialLogo :logo="MaltSvg" name="theoajavon" size="contact-view-logo"/>
+					</div>
+					<div data-aos="fade" data-aos-delay="950" data-aos-duration="250">
+						<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="contact-view-logo"/>
+					</div>
+				</fieldset>
+			</div>
 
 			<!-- <div class="w-1/2 border-t  opacity-30"></div> -->
 
-
+			<div class="w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="200" data-aos-duration="350">
 			<fieldset class="flex w-full flex-col items-center justify-center gap-6 rounded-lg border border-subtle-border bg-subtle-bg py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
 					<legend class="custom-legend">Get In Touch</legend>
 
@@ -77,6 +88,7 @@
 
 
 			</fieldset>
+			</div>
 
 		</main>
 		<div class=" h-64 w-full"></div>
@@ -92,7 +104,7 @@ import EmailSvg from '@/components/logos/EmailSvg.vue';
 import SocialLogo from '@/components/SocialLogo.vue';
 import BgTab from '@/components/background/BgTab.vue';
 
-import { addDoc, collection, doc } from 'firebase/firestore/lite';
+import { addDoc, collection } from 'firebase/firestore/lite';
 import db from '@/firebase/init';
 import SuccessModal from '@/components/modal/SuccessModal.vue';
 import { ref } from 'vue';
@@ -188,7 +200,7 @@ const sendMessages = async () => {
 			console.log("%c[Warning] : " + "%cPlease wait before sending new messages.", 'color: #FF5A1A;', 'color: #FFA100;');
 		} else {
 			try {
-				await addDoc(collection(null, "contacts"), {
+				await addDoc(collection(db, "contacts"), {
 				name: form_name,
 				email: form_email,
 				subject: form_subject,
