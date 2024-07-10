@@ -23,17 +23,19 @@
 			<!-- <h1 class="tab-title">Projects</h1> -->
 			<div class="h-6 w-full"></div>
 			<div v-if="searchText.length == 0" class="flex w-full flex-col items-center gap-40">
-				<div class="flex w-full flex-col items-center gap-8">
+				<div class="flex w-full flex-col items-center justify-center gap-8">
 					<TabTitleComponent id="p_featured" title="Featured" />
-					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
+					<div v-if="isFetchingProjects" class="flex w-full flex-wrap items-center justify-center gap-6">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
 					</div>
-					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Featured'))" :key="project"
-						class="flex w-full flex-col items-center gap-9">
-						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
-							:github-link="project.github" :project-link="project.link" />
+					<div v-else class="flex flex-wrap justify-center gap-6">
+
+						<div v-for="project in projectList.filter((project) => containsCategory(project, 'Featured'))" :key="project">
+							<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+								:github-link="project.github" :project-link="project.link" />
+						</div>
 					</div>
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
@@ -163,7 +165,7 @@ const clearSearchField = () => {
 }
 
 const refreshBackground = () => {
-	// console.log("Is refreshing background !");
+	console.log("Is refreshing background !");
 	// eslint-disable-next-line no-undef
 	if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
 		// eslint-disable-next-line no-undef

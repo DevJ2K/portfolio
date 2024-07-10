@@ -34,6 +34,20 @@
 			"highlighted": true
 		},
 		{
+			"name": "Project2B",
+			"miniature": null,
+			"github": "https://github.com/DevJ2K",
+			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
+			"tags": [
+				"Python",
+				"Flask",
+				"Firebase"
+			],
+			"categories": [
+				"Featured"
+			]
+		},
+		{
 			"name": "Project3",
 			"miniature": null,
 			"link": "https://github.com/DevJ2K",

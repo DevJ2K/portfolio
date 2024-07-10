@@ -2,7 +2,7 @@
 	<!-- <a class="select-none" :href="projectLink" target="_blank"> -->
 
 
-		<div class="custom-shadow-lg flex max-w-xs flex-col justify-between overflow-hidden rounded-2xl border-ui-border bg-ui-bg dark:border-d-ui-border dark:bg-d-ui-bg  b_project_card:hidden">
+		<div class="custom-shadow-lg flex h-full max-w-xs flex-col justify-between overflow-hidden rounded-2xl border-ui-border bg-ui-bg dark:border-d-ui-border dark:bg-d-ui-bg  b_project_card:hidden">
 			<div>
 				<div class=" min-h-44 bg-black/10 dark:bg-white/10">
 					<img :src="previewImage" :alt="title + '_img'" class=" size-full object-cover" :class="projectLink != null ? 'cursor-pointer' : 'cursor-default'" @click="if (projectLink != null){openProjectLink()};">
