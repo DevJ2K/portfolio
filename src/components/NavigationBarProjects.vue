@@ -120,7 +120,7 @@ const initMode = () => {
 	let appPage = document.getElementById("mainApp");
 
 	if (!savingMode) {
-		console.log("Aucun mode par defaut !");
+		// console.log("Aucun mode par defaut !");
 		localStorage.setItem("dark-mode", "true");
 		darkMode.value = true;
 	} else {
@@ -158,8 +158,11 @@ const switchColorMode = () => {
 		replaceParticlesColor('#ffffff');
 	}
 	darkMode.value = !darkMode.value;
-	// updateOutlineText();
-	console.log("Current mode => " + darkMode.value);
+	if (darkMode.value) {
+		console.log("%c[Info] : "+"%cSwitching color theme to "+"%c[DARK]", 'color: #9097FF;', 'color: #FFEBC8;', 'color: #0B032D;');
+	} else {
+		console.log("%c[Info] : "+"%cSwitching color theme to "+"%c[LIGHT]", 'color: #9097FF;', 'color: #FFEBC8;', 'color: #FEECFF;');
+	}
 }
 
 const toggleMenu = () => {
@@ -186,9 +189,7 @@ const toggleMenu = () => {
 }
 
 const updateNavbar = () => {
-	// console.log("HEREEEEE");
 	var navBar = document.getElementById("navBar");
-	// console.log(navBar);
 	if (navBar == null) {
 		return ;
 	}
@@ -200,7 +201,7 @@ const navigateTo = (id, hideMenu = true) => {
 	if (hideMenu) {
 		toggleMenu();
 	}
-	console.log('Go to : ' + id);
+	// console.log('Go to : ' + id);
 	const view = document.getElementById(id);
 	if (view != null) {
 		view.scrollIntoView({

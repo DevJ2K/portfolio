@@ -19,6 +19,7 @@
 - [ ] Animation on appear
 - [x] Filter project by categories in ProjectsView
 - [ ] Protect firebase request + Rules in Firebase
+- [x] Adding custom console.log
 <!-- - [ ] Search project animation -->
 <!-- - [ ] Add Feedbacks / Experiences tab -->
 

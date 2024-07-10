@@ -117,7 +117,6 @@ const initMode = () => {
 	let appPage = document.getElementById("mainApp");
 
 	if (!savingMode) {
-		console.log("Aucun mode par defaut !");
 		localStorage.setItem("dark-mode", "true");
 		darkMode.value = true;
 	} else {
@@ -133,28 +132,7 @@ const initMode = () => {
 
 onMounted(() => {
 	initMode();
-})
-
-
-// window.addEventListener("load", function() {
-// 	updateOutlineText();
-// })
-
-// const updateOutlineText = () => {
-// 	initMode();
-// 	console.log('Displaying DevJ2K !');
-// 	let devj2kText = document.getElementById("devj2kText");
-// 	if (devj2kText == null) {
-// 		return ;
-// 	}
-// 	if (darkMode.value == true) {
-// 		devj2kText.classList.add('text-outline-dark');
-// 		devj2kText.classList.remove('text-outline-light');
-// 	} else {
-// 		devj2kText.classList.add('text-outline-light');
-// 		devj2kText.classList.remove('text-outline-dark');
-// 	}
-// }
+});
 
 const replaceParticlesColor = (newHex) => {
 	// eslint-disable-next-line no-undef
@@ -176,8 +154,11 @@ const switchColorMode = () => {
 		replaceParticlesColor('#ffffff');
 	}
 	darkMode.value = !darkMode.value;
-	// updateOutlineText();
-	console.log("Current mode => " + darkMode.value);
+	if (darkMode.value) {
+		console.log("%c[Info] : "+"%cSwitching color theme to "+"%c[DARK]", 'color: #9097FF;', 'color: #FFEBC8;', 'color: #0B032D;');
+	} else {
+		console.log("%c[Info] : "+"%cSwitching color theme to "+"%c[LIGHT]", 'color: #9097FF;', 'color: #FFEBC8;', 'color: #FEECFF;');
+	}
 }
 
 const toggleMenu = () => {
@@ -204,9 +185,7 @@ const toggleMenu = () => {
 }
 
 const updateNavbar = () => {
-	// console.log("HEREEEEE");
 	var navBar = document.getElementById("navBar");
-	// console.log(navBar);
 	if (navBar == null) {
 		return;
 	}
@@ -218,7 +197,7 @@ const navigateTo = (id, hideMenu = true) => {
 	if (hideMenu) {
 		toggleMenu();
 	}
-	console.log('Go to : ' + id);
+	// console.log('Go to : ' + id);
 	const view = document.getElementById(id);
 	if (view != null) {
 		view.scrollIntoView({

@@ -151,8 +151,6 @@ const getProjects = async () => {
 	}
 	await new Promise((resolve) => setTimeout(resolve, 1500));
 	isFetchingProjects.value = false;
-
-	// console.log(projectList.value);
 }
 
 const clearSearchField = () => {
@@ -160,12 +158,9 @@ const clearSearchField = () => {
 	if (searchText.value != "") {
 		searchText.value = "";
 	}
-	console.log("Rebuild !");
-	// refreshBackground();
 }
 
 const refreshBackground = () => {
-	console.log("Is refreshing background !");
 	// eslint-disable-next-line no-undef
 	if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
 		// eslint-disable-next-line no-undef
@@ -200,10 +195,8 @@ const containsCategory = (project, category) => {
 
 let resizeObserver;
 
-
-// console.log(db)
 onMounted(() => {
-	console.log("ProjectsView is mounted !");
+	// console.log("ProjectsView is mounted !");
 	const projectContainer = document.getElementById("line-height-for-resize-proj");
 
 	resizeObserver = new ResizeObserver(refreshBackground);

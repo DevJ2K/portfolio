@@ -25,6 +25,12 @@
 				</div>
 			</WarningModal>
 
+			<WarningModal :modal-active="errorModalActive" @close-modal="toggleErrorModal">
+				<div class=" text-black/70">
+					<p>Unable to send message, please try again later.</p>
+				</div>
+			</WarningModal>
+
 
 
 			<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3> -->
@@ -96,6 +102,7 @@ import TabTitleComponent from '@/components/TabTitleComponent.vue';
 const warningModalActive = ref(false);
 const successModalActive = ref(false);
 const waitModalActive = ref(false);
+const errorModalActive = ref(false);
 
 const toggleSuccessModal = () => {
 	successModalActive.value = !successModalActive.value;
@@ -105,6 +112,9 @@ const toggleWarningModal = () => {
 };
 const toggleWaitModal = () => {
 	waitModalActive.value = !waitModalActive.value;
+};
+const toggleErrorModal = () => {
+	errorModalActive.value = !errorModalActive.value;
 };
 
 const clearFields = () => {
@@ -175,24 +185,29 @@ const sendMessages = async () => {
 	if (form_name && form_email && form_subject && form_body) {
 		if (compareLastDateSent() == false) {
 			toggleWaitModal();
-			console.log("Please wait before sending new messages...");
+			console.log("%c[Warning] : " + "%cPlease wait before sending new messages.", 'color: #FF5A1A;', 'color: #FFA100;');
 		} else {
-			await addDoc(collection(db, "contacts"), {
-			name: form_name,
-			email: form_email,
-			subject: form_subject,
-			body: form_body
-			});
+			try {
+				await addDoc(collection(null, "contacts"), {
+				name: form_name,
+				email: form_email,
+				subject: form_subject,
+				body: form_body
+				});
 
-			clearFields();
-			toggleSuccessModal();
-			saveDateSent();
-			console.log("Contact message has been added !");
+				clearFields();
+				toggleSuccessModal();
+				saveDateSent();
+				console.log("%c[Success] : " + "%The message was sent successfully !", 'color: #1CFE25;', 'color: #FFEBC8;');
+			} catch (error) {
+				toggleErrorModal();
+				console.log("%c[Error] : " + "%cUnable to send message, please try again later.", 'color: #FF0000;', 'color: #FFA100;')
+			}
 		}
 	} else {
 		highlightedEmptyField();
 		toggleWarningModal();
-		console.log("Please fill all fields !");
+		console.log("%c[Warning] : " + "%cPlease fill all fields.", 'color: #FF5A1A;', 'color: #FFA100;');
 	}
 }
 </script>

@@ -28,13 +28,11 @@ const props = defineProps({
 });
 
 const displaySkillParagraph = () => {
-	// console.log("Display paragraph !");
 	document.getElementById(props.skill + '_tooltip').style.visibility = 'visible';
 	document.getElementById(props.skill + '_tooltip').style.opacity = 1;
 }
 
 const hideSkillParagraph = () => {
-	// console.log("Hide paragraph !");
 	document.getElementById(props.skill + '_tooltip').style.opacity = 0;
 	document.getElementById(props.skill + '_tooltip').style.visibility = 'hidden';
 }

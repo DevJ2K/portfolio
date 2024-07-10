@@ -26,13 +26,11 @@ const props = defineProps({
 });
 
 const displayLogoParagraph = () => {
-	// console.log("Display paragraph !");
 	document.getElementById(props.techName + '_tooltip').style.visibility = 'visible';
 	document.getElementById(props.techName + '_tooltip').style.opacity = 1;
 }
 
 const hideLogoParagraph = () => {
-	// console.log("Hide paragraph !");
 	document.getElementById(props.techName + '_tooltip').style.opacity = 0;
 	document.getElementById(props.techName + '_tooltip').style.visibility = 'hidden';
 }

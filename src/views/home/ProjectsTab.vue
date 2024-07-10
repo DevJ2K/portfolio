@@ -64,11 +64,11 @@ const getHighlightedProjects = async () => {
 	}
 	await new Promise((resolve) => setTimeout(resolve, 1000));
 	isFetchingProjects.value = false;
-	console.log(highlightedProjects.value);
+	// console.log(highlightedProjects.value);
 }
 
 onMounted(() => {
-	console.log("ProjectsTab is mounted !");
+	// console.log("ProjectsTab is mounted !");
 	getHighlightedProjects();
 })
 
