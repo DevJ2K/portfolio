@@ -20,8 +20,9 @@
 - [x] Filter project by categories in ProjectsView
 - [x] Protect firebase request + Rules in Firebase
 - [x] Adding custom console.log
-- [ ] Add smooth animation AboutView ( Better between v-if & v-show ? )
+- [ ] Add videos from storage in AboutView
 - [ ] Optimize App
+<!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
 <!-- - [ ] Search project animation -->
 <!-- - [ ] Add Feedbacks / Experiences tab -->
 

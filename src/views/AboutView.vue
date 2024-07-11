@@ -49,14 +49,19 @@ import NavigationBarAbout from '@/components/navbar/NavigationBarAbout.vue';
 import { onMounted, ref } from 'vue';
 import ExperienceCard from './about/ExperienceCard.vue';
 import FeedbackCard from './about/FeedbackCard.vue';
+import firebaseApp from '@/firebase/init';
+import { getStorage } from "firebase/storage";
 
 const aboutList = ref([]);
 const experiencesList = ref([]);
 const feedbacksList = ref([]);
 
+const bucket = getStorage(firebaseApp);
+
 aboutList.value = aboutData.about;
 experiencesList.value = aboutData.experiences;
 feedbacksList.value = aboutData.feedbacks;
+
 
 
 const refreshBackground = () => {
