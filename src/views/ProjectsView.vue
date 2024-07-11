@@ -86,22 +86,6 @@
 
 			</div>
 
-			<!-- <TransitionGroup v-else-if="projectList.filter((project) => containsSearchTag(project)).length > 0"
-				tag="div"
-				@before-enter="onBeforeEnter"
-				@enter="onEnter"
-				@leave="onLeave"
-				>
-				<div
-				v-for="(project, index) in projectList.filter((project) => containsSearchTag(project))"
-				:key="project.name"
-				:data-index="index"
-				>
-				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
-					:github-link="project.github" :project-link="project.link" />
-			</div>
-			</TransitionGroup> -->
-
 			<div v-else
 				class="flex size-full flex-col items-center justify-center gap-2 text-high-contrast-text dark:text-d-high-contrast-text">
 				<svg class="size-14 md:size-20" width="15" height="15" viewBox="0 0 15 15" fill="none"

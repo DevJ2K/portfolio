@@ -137,7 +137,7 @@
 }
 
 .tab-title {
-	@apply text-3xl;
+	@apply text-2xl sm:text-3xl;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
 	@apply underline underline-offset-8;
 	@apply decoration-accent-color dark:decoration-d-accent-color;
