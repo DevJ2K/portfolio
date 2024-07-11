@@ -40,18 +40,18 @@
 	"experiences": [
 		{
 			"name":"Lorem Ipsum",
+			"company": "Google",
+			"expType": "Internship",
+			"technos": ["Tech1", "Tech2", "Tech3"],
+			"date": "2021 - 2022"
+		},
+		{
+			"name":"Lorem Ipsum",
 			"description": "Culpa veniam occaecat consequat Lorem mollit labore fugiat id. Commodo eiusmod elit aliquip exercitation occaecat consequat do velit sint. Qui laborum est aliquip ullamco in exercitation enim occaecat duis. Et pariatur minim cillum incididunt. Do nulla amet reprehenderit nulla anim reprehenderit laboris magna non. Sunt qui sunt officia elit enim consequat consectetur consequat pariatur aliquip duis pariatur irure. Consectetur commodo sunt sit anim dolor excepteur dolore nostrud id labore deserunt non veniam.",
 			"company": "Company",
 			"expType": "Freelance",
 			"technos": ["Tech1", "Tech2", "Tech3", "Tech4", "Tech5"],
 			"date": "September 2020"
-		},
-		{
-			"name":"Lorem Ipsum",
-			"company": "Google",
-			"expType": "Internship",
-			"technos": ["Tech1", "Tech2", "Tech3"],
-			"date": "2021 - 2022"
 		}
 	],
 	"feedbacks": [

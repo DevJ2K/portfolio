@@ -104,8 +104,8 @@ import EmailSvg from '@/components/logos/EmailSvg.vue';
 import SocialLogo from '@/components/SocialLogo.vue';
 import BgTab from '@/components/background/BgTab.vue';
 
-import { addDoc, collection } from 'firebase/firestore/lite';
-import db from '@/firebase/init';
+import { addDoc, collection, getFirestore } from 'firebase/firestore/lite';
+import firebaseApp from '@/firebase/init';
 import SuccessModal from '@/components/modal/SuccessModal.vue';
 import { ref } from 'vue';
 import WarningModal from '@/components/modal/WarningModal.vue';
@@ -115,6 +115,8 @@ const warningModalActive = ref(false);
 const successModalActive = ref(false);
 const waitModalActive = ref(false);
 const errorModalActive = ref(false);
+
+const db = getFirestore(firebaseApp);
 
 const toggleSuccessModal = () => {
 	successModalActive.value = !successModalActive.value;

@@ -12,18 +12,17 @@ const firebaseConfig = {
 	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
-let db;
+let firebaseApp;
 try {
 	// init firebase
-	const firebaseApp = initializeApp(firebaseConfig);
-	// init firestore
-	db = getFirestore(firebaseApp);
-	console.log("%c[Success] : " + "%cFirestore is fire !", 'color: #1CFE25;', 'color: #FFEBC8;')
+	firebaseApp = initializeApp(firebaseConfig);
+	console.log("%c[Success] : " + "%cFirebaseApp is fire !", 'color: #1CFE25;', 'color: #FFEBC8;')
 } catch (error) {
-	console.log("%c[Error] : " + "%cUnable to init firestore !", 'color: #FF0000;', 'color: #FFA100;')
+	console.log("%c[Error] : " + "%cUnable to init firebaseApp !", 'color: #FF0000;', 'color: #FFA100;')
 	// console.log("%c[Error] : " + "%c" + error, 'color: #FF0000;', 'color: #FFA100;')
 
 }
-export default db;
+
+export default firebaseApp;
 
 // export default firebaseApp;

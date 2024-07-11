@@ -39,8 +39,8 @@
 import BgTab from '@/components/background/BgTab.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import { useRouter } from 'vue-router';
-import db from '@/firebase/init';
-import { collection, query, getDocs, where } from 'firebase/firestore/lite';
+import firebaseApp from '@/firebase/init';
+import { collection, query, getDocs, where, getFirestore } from 'firebase/firestore/lite';
 import { onMounted, ref } from 'vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
@@ -49,6 +49,7 @@ const router = useRouter();
 const highlightedProjects = ref([]);
 const isFetchingProjects = ref(true);
 const useFirebase = false;
+const db = getFirestore(firebaseApp);
 
 function viewProjects() {
 	router.push({

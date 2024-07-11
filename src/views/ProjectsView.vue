@@ -107,8 +107,8 @@ import NavigationBarProjects from '@/components/navbar/NavigationBarProjects.vue
 import ProjectCard from '@/components/ProjectCard.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
-import db from '@/firebase/init';
-import { collection, getDocs } from 'firebase/firestore/lite';
+import firebaseApp from '@/firebase/init';
+import { collection, getDocs, getFirestore } from 'firebase/firestore/lite';
 import { onMounted, onUnmounted, ref } from 'vue';
 import CustomFooter from './home/CustomFooter.vue';
 import { useRoute } from 'vue-router';
@@ -118,6 +118,7 @@ const isFetchingProjects = ref(true);
 const searchText = ref("");
 const useFirebase = false;
 const route = useRoute();
+const db = getFirestore(firebaseApp);
 
 if (route.query.tag != null) {
 	searchText.value = route.query.tag;
