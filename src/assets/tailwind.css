@@ -125,6 +125,7 @@
 
 .custom-footer {
 	@apply flex h-32 w-full;
+	@apply justify-center items-center;
 	@apply border-t border-subtle-border dark:border-d-subtle-border;
 	@apply bg-app-bg dark:bg-d-app-bg;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
