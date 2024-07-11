@@ -59,31 +59,26 @@
 				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
 			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
-				<li  class="flex size-2 items-center justify-center">
-					<a @click="navigateTo('search-by-tag-field', false)" class=" cursor-pointer">
-						<i class="fa-solid fa-magnifying-glass text-base "></i>
-					</a>
-				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured', false)">Featured</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured', false)">Experiences</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal', false)">Personal</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal', false)">Feedbacks</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus', false)">42Cursus</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus', false)">About Me</a>
 					<span
 					class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others', false)">Others</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others', false)">3D</a>
 					<span
 						class="animate-underline"></span>
 

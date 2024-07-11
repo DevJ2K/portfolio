@@ -38,9 +38,28 @@
 		}
 	],
 	"experiences": [
-
+		{
+			"name":"Lorem Ipsum",
+			"description": "Culpa veniam occaecat consequat Lorem mollit labore fugiat id. Commodo eiusmod elit aliquip exercitation occaecat consequat do velit sint. Qui laborum est aliquip ullamco in exercitation enim occaecat duis. Et pariatur minim cillum incididunt. Do nulla amet reprehenderit nulla anim reprehenderit laboris magna non. Sunt qui sunt officia elit enim consequat consectetur consequat pariatur aliquip duis pariatur irure. Consectetur commodo sunt sit anim dolor excepteur dolore nostrud id labore deserunt non veniam.",
+			"date": "December 2022 - February 2023"
+		},
+		{
+			"name":"Lorem Ipsum",
+			"description": "Culpa veniam occaecat consequat Lorem mollit labore fugiat id. Commodo eiusmod elit aliquip exercitation occaecat consequat do velit sint. Qui laborum est aliquip ullamco in exercitation enim occaecat duis. Et pariatur minim cillum incididunt. Do nulla amet reprehenderit nulla anim reprehenderit laboris magna non. Sunt qui sunt officia elit enim consequat consectetur consequat pariatur aliquip duis pariatur irure. Consectetur commodo sunt sit anim dolor excepteur dolore nostrud id labore deserunt non veniam.",
+			"date": "June 2024"
+		}
 	],
 	"feedbacks": [
-		
+		{
+			"name": "Lorem Ipsum",
+			"job": "CEO",
+			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
+		},
+		{
+			"name": "Lorem Ipsum",
+			"job": "Independant",
+			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
+		},
+
 	]
 }

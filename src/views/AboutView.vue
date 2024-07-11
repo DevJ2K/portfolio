@@ -33,17 +33,25 @@ import NavigationBarAbout from '@/components/navbar/NavigationBarAbout.vue';
 import { onMounted, ref } from 'vue';
 
 const aboutList = ref([]);
+const experiencesList = ref([]);
+const feedbacksList = ref([]);
+
+aboutList.value = aboutData.about;
+experiencesList.value = aboutData.experiences;
+feedbacksList.value = aboutData.feedbacks;
+
 
 const refreshBackground = () => {
 	// eslint-disable-next-line no-undef
 	if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
 		// eslint-disable-next-line no-undef
 		pJSDom[0].pJS.fn.particlesRefresh();
+		// console.log("Background has been refreshed !")
 	}
 }
 
+
 onMounted(() => {
-	aboutList.value = aboutData.about;
 	refreshBackground();
 });
 
