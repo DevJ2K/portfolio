@@ -10,7 +10,7 @@
 		<!-- Card -->
 		<!-- <div class="w-[calc(100%-4rem)] p-4 md:w-[calc(50%-2.5rem)]"> -->
 
-		<div v-if="gradientText" class=" w-[calc(100%-4rem)] rounded-xl border border-ui-border bg-gradient-to-b from-ui-bg to-transparent p-4 shadow dark:border-d-ui-border dark:from-d-ui-bg md:w-[calc(50%-2.5rem)]">
+		<div v-if="gradientText" class=" w-[calc(100%-4rem)] rounded-xl border border-ui-border/60 bg-gradient-to-b from-ui-bg to-transparent p-4 shadow dark:border-d-ui-border/60 dark:from-d-ui-bg md:w-[calc(50%-2.5rem)]">
 
 
 			<!-- Line with dot -->

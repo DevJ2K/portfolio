@@ -6,9 +6,14 @@
 			class=" container z-10 flex min-h-screen flex-col items-center gap-9 text-low-contrast-text dark:text-d-low-contrast-text ">
 
 			<TabTitleComponent title="Experiences"/>
-
+			<div class="relative flex flex-col gap-8 w-full">
+				<div class=" absolute left-1/2 -z-10 h-full w-1 -translate-x-1/2 bg-low-contrast-text dark:bg-d-low-contrast-text"></div>
+				<ExperienceCard v-for="item in experiencesList" :key="item"/>
+			</div>
 			<TabTitleComponent title="Feedbacks"/>
-
+			<div class="flex flex-wrap justify-center gap-8">
+				<FeedbackCard v-for="item in feedbacksList" :key="item"/>
+			</div>
 			<TabTitleComponent title="About Me"/>
 			<div
 				class="relative before:absolute before:inset-0 before:ml-6 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  before:to-low-contrast-text dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text dark:before:to-d-low-contrast-text md:before:mx-auto md:before:translate-x-0">
@@ -31,6 +36,8 @@ import AboutCard from '@/components/AboutCard.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
 import NavigationBarAbout from '@/components/navbar/NavigationBarAbout.vue';
 import { onMounted, ref } from 'vue';
+import ExperienceCard from './about/ExperienceCard.vue';
+import FeedbackCard from './about/FeedbackCard.vue';
 
 const aboutList = ref([]);
 const experiencesList = ref([]);
