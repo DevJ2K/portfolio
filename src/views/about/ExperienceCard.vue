@@ -76,7 +76,7 @@ defineProps({
 	},
 	description: {
 		type: String,
-		default: "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse."
+		default: null
 	}
 })
 </script>

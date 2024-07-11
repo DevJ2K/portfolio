@@ -8,11 +8,11 @@
 			<TabTitleComponent title="Experiences"/>
 			<div class="relative flex flex-col gap-8 w-full">
 				<div class=" absolute left-1/2 -z-10 h-full w-1 -translate-x-1/2 bg-low-contrast-text dark:bg-d-low-contrast-text"></div>
-				<ExperienceCard v-for="item in experiencesList" :key="item"/>
+				<ExperienceCard v-for="item in experiencesList" :key="item" :name="item.name" :date="item.date" :company="item.company" :exp-type="item.expType" :technos="item.technos" :description="item.description"/>
 			</div>
 			<TabTitleComponent title="Feedbacks"/>
 			<div class="flex flex-wrap justify-center gap-8">
-				<FeedbackCard v-for="item in feedbacksList" :key="item"/>
+				<FeedbackCard v-for="item in feedbacksList" :key="item" :name="item.name" :job="item.job" :feedback="item.feedback"/>
 			</div>
 			<TabTitleComponent title="About Me"/>
 			<div
