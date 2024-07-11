@@ -4,112 +4,113 @@
 	<!-- <div id="navBar" class="fixed top-0 z-50 flex w-full transition duration-1000 ease-in-out"> -->
 
 
-<div class="w-full fixed top-0 z-50"  data-aos="fade-down" data-aos-delay="0" data-aos-duration="350">
 
-	<div id="navBar" class="my-scroll-nav">
+	<div id="navBar" class="my-scroll-nav my-scroll-nav-active fixed top-0">
 
-		<div id="navMenu"
-			class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
+		<div id="navMenu" class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
 			<ul
 				class=" flex size-full flex-col items-center justify-center gap-16 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
 
+				<li class="flex items-center justify-center">
+					<a @click="navigateTo('search-by-tag-field')" class="cursor-pointer">
+					<i class="fa-solid fa-magnifying-glass text-xl "></i>
+				</a>
+			</li>
+
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('skills')">Skills</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured')">Featured</a>
+					<span
+						class="animate-underline"></span>
 
 				</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('projects')">Projects</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal')">Personal</a>
+					<span
+						class="animate-underline"></span>
 
 				</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('about')">About</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus')">42Cursus</a>
+					<span
+					class="animate-underline"></span>
 
 				</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('contact')">Contact</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others')">Others</a>
+					<span
+						class="animate-underline"></span>
 
 				</li>
 
 				<li class="flex size-8 items-center justify-center">
 					<a @click="switchColorMode">
-						<SunIcon v-if="darkMode"
-							class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-7 " />
-						<MoonIcon v-else
-							class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear  hover:size-7" />
-					</a>
-				</li>
+					<SunIcon v-if="darkMode" class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-7 "/>
+					<MoonIcon v-else class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear  hover:size-7"/>
+				</a>
+			</li>
 			</ul>
 		</div>
 
 		<div class="container flex items-center justify-between">
-			<a class=" flex cursor-pointer flex-row items-center gap-4" @click="navigateTo('mainApp', false)">
+			<a class=" flex cursor-pointer flex-row items-center gap-4" @click="backToHome">
 				<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-400">
-					<img src="../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
+					<img src="../../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 				</div>
 				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h3>
 			</a>
-			<ul
-				class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
+			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
+				<li  class="flex size-2 items-center justify-center">
+					<a @click="navigateTo('search-by-tag-field', false)" class=" cursor-pointer">
+						<i class="fa-solid fa-magnifying-glass text-base "></i>
+					</a>
+				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('skills', false)">Skills</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured', false)">Featured</a>
+					<span
+						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('projects', false)">Projects</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal', false)">Personal</a>
+					<span
+						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('about', false)">About</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus', false)">42Cursus</a>
+					<span
+					class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('contact', false)">Contact</a>
-					<span class="animate-underline"></span>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others', false)">Others</a>
+					<span
+						class="animate-underline"></span>
 
 				</li>
-				<li class="flex size-6 items-center justify-center">
+				<li  class="flex size-6 items-center justify-center">
 					<a @click="switchColorMode">
 						<!-- <i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
 						<i v-else class="fa-regular fa-moon cursor-pointer"></i> -->
-						<SunIcon v-if="darkMode"
-							class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear  hover:size-5" />
-						<MoonIcon v-else
-							class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-5" />
+						<SunIcon v-if="darkMode" class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear  hover:size-5"/>
+						<MoonIcon v-else class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-5"/>
 					</a>
 				</li>
 			</ul>
 			<!-- <div class=" cursor-pointer text-2xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:hidden" @click="toggleMenu"> -->
 			<div class="z-[1] size-fit cursor-pointer md:hidden" @click="toggleMenu">
-				<NavHamburger />
+				<NavHamburger/>
 			</div>
 			<!-- </div> -->
 		</div>
 	</div>
-</div>
 </template>
 
 <script setup>
 import { MoonIcon, SunIcon } from '@radix-icons/vue';
 import { onMounted, onUnmounted, ref } from 'vue';
-import NavHamburger from './NavHamburger.vue';
+import NavHamburger from '../NavHamburger.vue';
+import { useRouter } from 'vue-router';
 
 const darkMode = ref(null);
 const displayMenu = ref(null);
@@ -119,6 +120,7 @@ const initMode = () => {
 	let appPage = document.getElementById("mainApp");
 
 	if (!savingMode) {
+		// console.log("Aucun mode par defaut !");
 		localStorage.setItem("dark-mode", "true");
 		darkMode.value = true;
 	} else {
@@ -134,12 +136,12 @@ const initMode = () => {
 
 onMounted(() => {
 	initMode();
-	window.addEventListener("scroll", updateNavbar);
+	// window.addEventListener("scroll", updateNavbar);
 });
 
 onUnmounted(() => {
-	window.removeEventListener("scroll", updateNavbar);
-})
+	// window.removeEventListener("scroll", updateNavbar);
+});
 
 const replaceParticlesColor = (newHex) => {
 	// eslint-disable-next-line no-undef
@@ -194,7 +196,7 @@ const toggleMenu = () => {
 const updateNavbar = () => {
 	var navBar = document.getElementById("navBar");
 	if (navBar == null) {
-		return;
+		return ;
 	}
 	navBar.classList.toggle("my-scroll-nav-active", window.scrollY > 0);
 	// navBar.classList.toggle("my-scroll-nav", window.scrollY <= 0);
@@ -212,6 +214,19 @@ const navigateTo = (id, hideMenu = true) => {
 		});
 	}
 }
+
+
+
+const router = useRouter();
+function backToHome() {
+	router.push({
+		name: 'home'
+	}).then(() => {
+		window.scrollTo(0, 0);
+	});
+}
+
+// window.addEventListener("scroll", updateNavbar);
 
 // updateNavbar();
 

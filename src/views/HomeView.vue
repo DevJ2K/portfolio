@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import NavigationBar from '@/components/NavigationBar.vue';
+import NavigationBar from '@/components/navbar/NavigationBar.vue';
 import PresentationView from './home/PresentationTab.vue'
 import AboutView from './home/AboutTab.vue'
 import SkillView from './home/SkillTab.vue';

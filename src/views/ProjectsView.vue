@@ -119,7 +119,7 @@
 </template>
 
 <script setup>
-import NavigationBarProjects from '@/components/NavigationBarProjects.vue';
+import NavigationBarProjects from '@/components/navbar/NavigationBarProjects.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
