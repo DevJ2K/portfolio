@@ -32,6 +32,18 @@
 			<div class="flex w-full flex-col items-center gap-9">
 				<TabTitleComponent title="3D"/>
 				<h1>In my free time, I love make 3D videos. So I share with you :)</h1>
+
+				<div>
+					<div class="border rounded-3xl overflow-hidden">
+						<video v-if="videoUrl" controls :src="videoUrl" autoplay="true"></video>
+					</div>
+					<div class="border rounded-3xl overflow-hidden">
+						<video v-if="videoUrl" controls :src="videoUrl" autoplay="true"></video>
+					</div>
+					<div class="border rounded-3xl overflow-hidden">
+						<video v-if="videoUrl" controls :src="videoUrl" autoplay="true"></video>
+					</div>
+				</div>
 			</div>
 
 
@@ -50,19 +62,34 @@ import { onMounted, ref } from 'vue';
 import ExperienceCard from './about/ExperienceCard.vue';
 import FeedbackCard from './about/FeedbackCard.vue';
 import firebaseApp from '@/firebase/init';
-import { getStorage } from "firebase/storage";
+import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
 
 const aboutList = ref([]);
 const experiencesList = ref([]);
 const feedbacksList = ref([]);
+const videoUrl = ref("");
 
-const bucket = getStorage(firebaseApp);
 
 aboutList.value = aboutData.about;
 experiencesList.value = aboutData.experiences;
 feedbacksList.value = aboutData.feedbacks;
 
+const storage = getStorage(firebaseApp);
+const getVideoUrl = async () => {
+	try {
+        // Créer une référence à la vidéo
+        const videoRef = StorageRef(storage, 'porsche.mp4');
 
+        // Obtenir l'URL de téléchargement
+        const url = await getDownloadURL(videoRef);
+		console.log(url);
+        // Mettre à jour l'URL de la vidéo dans le data
+        videoUrl.value = url;
+      } catch (error) {
+        console.error('Erreur lors de la récupération de la vidéo:', error);
+      }
+
+}
 
 const refreshBackground = () => {
 	// eslint-disable-next-line no-undef
@@ -76,6 +103,7 @@ const refreshBackground = () => {
 
 onMounted(() => {
 	refreshBackground();
+	getVideoUrl();
 });
 
 </script>
