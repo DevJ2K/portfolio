@@ -7,7 +7,7 @@
         <div class="h-1/6 w-full max-sm:hidden"></div>
         <div class="flex flex-col items-center justify-center gap-2 text-center">
           <h1 class="text-3xl font-extrabold text-high-contrast-text dark:text-d-high-contrast-text sm:text-4xl md:text-5xl" data-aos="zoom-in" data-aos-duration="1200">Hello, I'm Theo Ajavon</h1>
-          <h2 class="text-2xl font-bold text-accent-color dark:text-d-accent-color sm:text-3xl md:text-4xl" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1200">Software Engineer & Swift Developer</h2>
+          <h2 class="text-2xl font-bold text-accent-color dark:text-d-accent-color sm:text-3xl md:text-4xl" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1200">Software Engineer & Student</h2>
         </div>
         <p class="text-center text-base font-normal text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg md:text-xl" data-aos="zoom-in"  data-aos-delay="200" data-aos-duration="1200">Voluptate irure consectetur exercitation esse labore occaecat Lorem laborum
           occaecat nisi dolore sint ad ea. Quis voluptate sunt in ipsum eu est aute sunt sunt minim incididunt
