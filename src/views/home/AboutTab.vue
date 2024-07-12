@@ -11,7 +11,7 @@
 			<!-- <h3 class=" text-2xl text-high-contrast-text dark:text-d-high-contrast-text">Me</h3> -->
 
 			<div class=" flex grid-cols-2 flex-col gap-4 md:grid">
-				<div class=" custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-ui-bg p-4 dark:bg-d-ui-bg">
+				<div class=" about-tab-div">
 					<h3
 						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
 						Education</h3>
@@ -31,7 +31,7 @@
 							class=" underline decoration-accent-color decoration-2 underline-offset-[5px] dark:decoration-d-accent-color">Today</span>
 					</h3>
 				</div>
-				<div class=" custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-ui-bg p-4 dark:bg-d-ui-bg">
+				<div class=" about-tab-div">
 					<h3
 						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
 						Experience</h3>
@@ -61,12 +61,24 @@
 						</div>
 					</div>
 				</div>
-				<div class=" custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-ui-bg p-4 dark:bg-d-ui-bg">
+				<div class=" about-tab-div">
 					<h3
 						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
 						Last news</h3>
 
-					<div v-for="i in [0, 1]" :key="i">
+					<div class="lg:hidden" v-for="i in [0, 1]" :key="i">
+						<div class="flex flex-row items-center justify-center">
+							<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
+							<h3
+								class=" text-nowrap px-2 text-base font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">
+								{{ lastAboutme[i].itemDate }}</h3>
+							<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
+						</div>
+
+						<p class="text-sm text-low-contrast-text opacity-90 dark:text-d-low-contrast-text">{{ lastAboutme[i].content }}</p>
+					</div>
+
+					<div class="max-lg:hidden" v-for="i in [0, 1, 2]" :key="i">
 						<div class="flex flex-row items-center justify-center">
 							<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
 							<h3
@@ -77,14 +89,8 @@
 
 						<p class="text-sm text-low-contrast-text opacity-100 dark:text-d-low-contrast-text">{{ lastAboutme[i].content }}</p>
 					</div>
-
-
-
-
-
-
 				</div>
-				<div class=" custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-ui-bg p-4 dark:bg-d-ui-bg">
+				<div class=" about-tab-div">
 					<h3
 						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
 						Last 3D Video</h3>

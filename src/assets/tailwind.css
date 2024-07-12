@@ -166,6 +166,13 @@ body.dark {
 	@apply flex size-full flex-row items-center justify-center gap-1.5 rounded-xl cursor-pointer shadow-md hover:shadow-xl p-2 border transition-all;
 } */
 
+.about-tab-div {
+	@apply custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-ui-bg p-4 dark:bg-d-ui-bg;
+	@apply border border-ui-border dark:border-d-ui-border;
+	@apply hover:border-hover-ui-border dark:hover:border-d-hover-ui-border transition-all;
+	@apply cursor-default
+}
+
 .project-card-btn {
 	@apply flex flex-row items-center justify-center gap-1.5 rounded-2xl cursor-pointer custom-shadow-lg hover:shadow-lg py-2 px-3 border-2 transition-all font-medium;
 }
