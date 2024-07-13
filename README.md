@@ -22,6 +22,10 @@
 - [x] Adding custom console.log
 - [x] Add videos from storage in AboutView
 - [ ] Optimize App
+- [ ] Adjust dark mode color (Bg, border,...)
+- [ ] Navbar in AboutView at breakpoint <= Md
+- [ ] Same navbar for all tabs ?
+- [ ] AboutTab > AboutCard color are different
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
 <!-- - [ ] Search project animation -->
 <!-- - [ ] Add Feedbacks / Experiences tab -->
