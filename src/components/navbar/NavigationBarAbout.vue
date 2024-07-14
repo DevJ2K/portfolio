@@ -11,32 +11,32 @@
 			<ul
 				class=" flex size-full flex-col items-center justify-center gap-16 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
 
-				<li class="flex items-center justify-center">
-					<a @click="navigateTo('search-by-tag-field')" class="cursor-pointer">
-					<i class="fa-solid fa-magnifying-glass text-xl "></i>
-				</a>
-			</li>
-
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured')">Featured</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="backToHome">Home</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal')">Personal</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_experiences')">Experiences</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus')">42Cursus</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_feedbacks')">Feedbacks</a>
+					<span
+						class="animate-underline"></span>
+
+				</li>
+				<li class="group relative w-max">
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_aboutme')">About Me</a>
 					<span
 					class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others')">Others</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_3d')">3D</a>
 					<span
 						class="animate-underline"></span>
 
@@ -60,25 +60,25 @@
 			</a>
 			<ul class=" flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_featured', false)">Experiences</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_experiences', false)">Experiences</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_personal', false)">Feedbacks</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_feedbacks', false)">Feedbacks</a>
 					<span
 						class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_42cursus', false)">About Me</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_aboutme', false)">About Me</a>
 					<span
 					class="animate-underline"></span>
 
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('p_others', false)">3D</a>
+					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white" @click="navigateTo('a_3d', false)">3D</a>
 					<span
 						class="animate-underline"></span>
 
@@ -214,11 +214,18 @@ const navigateTo = (id, hideMenu = true) => {
 
 const router = useRouter();
 function backToHome() {
-	router.push({
-		name: 'home'
-	}).then(() => {
-		window.scrollTo(0, 0);
-	});
+	router
+		.push({
+			name: "home",
+		})
+		.then(() => {
+			const view = document.getElementById("about");
+			if (view != null) {
+				view.scrollIntoView();
+			} else {
+				window.scrollTo(0, 0);
+			}
+		});
 }
 
 // window.addEventListener("scroll", updateNavbar);

@@ -23,8 +23,8 @@
 - [x] Add videos from storage in AboutView
 - [ ] Optimize App
 - [ ] Adjust dark mode color (Bg, border,...)
-- [ ] Navbar in AboutView at breakpoint <= Md
-- [ ] Same navbar for all tabs ?
+- [x] Navbar in AboutView at breakpoint <= Md
+- [x] Same navbar for all tabs ? No
 - [x] AboutTab > AboutCard color are different
 - [ ] Animation left to right View More Btn
 - [ ] Fetch img for project from Storage
