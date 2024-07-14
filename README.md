@@ -28,6 +28,7 @@
 - [x] AboutTab > AboutCard color are different
 - [x] Animation left to right View More Btn
 - [x] Fetch img for project from Storage | Use a canva or default image instead
+- [ ] Turn on all fetch from Firebase
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
