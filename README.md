@@ -21,7 +21,7 @@
 - [x] Protect firebase request + Rules in Firebase
 - [x] Adding custom console.log
 - [x] Add videos from storage in AboutView
-- [ ] Optimize App
+- [ ] Optimize App + CSS
 - [x] Adjust dark mode color (Bg, border,...)
 - [x] Navbar in AboutView at breakpoint <= Md
 - [x] Same navbar for all tabs ? No
