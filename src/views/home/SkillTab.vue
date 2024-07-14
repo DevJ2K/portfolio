@@ -6,7 +6,7 @@
 		<main
 			class=" container z-10 flex flex-col items-center  gap-9 text-high-contrast-text dark:text-d-high-contrast-text">
 			<TabTitleComponent title="Skills" />
-			<div class="flex flex-col gap-8">
+			<div class="flex w-full flex-col gap-8">
 				<div class=" z-20 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
 					<fieldset class="skill-fieldset">
 						<legend class="custom-legend">Technical Skills</legend> <!-- rounded-md border-->
