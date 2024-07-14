@@ -31,22 +31,24 @@
 
 			<div class="flex w-full flex-col items-center gap-9">
 				<TabTitleComponent title="3D"/>
-				<h1>In my free time, I love make 3D videos. So I share with you :)</h1>
+				<h3>In my free time, I enjoy creating 3D videos. Here are some of my works that I'd like to share with you.</h3>
 
-				<div class=" grid grid-cols-2 flex-wrap justify-center gap-6">
-					<fieldset v-for="video in videosList" :key="video" class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
-						<legend class=" m-auto text-nowrap px-2 text-base font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:text-xl">{{ video.title }}</legend>
-						<video class="size-fit overflow-hidden rounded-xl border border-ui-border dark:border-d-subtle-border" v-if="video.url" controls :src="video.url" muted loop autoplay="true"></video>
-					</fieldset>
+				<div class=" flex grid-cols-2 flex-wrap justify-center gap-6 sm:grid">
+					<div v-for="video in videosList" :key="video" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="0" data-aos-duration="400">
+						<fieldset class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
+							<legend class=" m-auto text-nowrap px-2 text-base font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:text-xl">{{ video.title }}</legend>
+							<video class="size-fit overflow-hidden rounded-xl border border-ui-border dark:border-d-subtle-border" v-if="video.url" controls :src="video.url" muted loop autoplay="true"></video>
+						</fieldset>
+					</div>
 				</div>
 			</div>
 
 
 		</main>
+		<div class=" h-28 w-full"></div>
+		<CustomFooter />
 	</main>
-	<div>
 
-	</div>
 </template>
 
 <script setup>
@@ -58,6 +60,7 @@ import ExperienceCard from './about/ExperienceCard.vue';
 import FeedbackCard from './about/FeedbackCard.vue';
 import firebaseApp from '@/firebase/init';
 import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
+import CustomFooter from './home/CustomFooter.vue';
 
 const aboutList = ref([]);
 const experiencesList = ref([]);
@@ -72,6 +75,7 @@ experiencesList.value = aboutData.experiences;
 feedbacksList.value = aboutData.feedbacks;
 
 const storage = getStorage(firebaseApp);
+const useFirebase = true;
 
 const getVideosUrl = async () => {
 	for (let i = 0; i < aboutData.videos.length; i++) {
@@ -79,10 +83,12 @@ const getVideosUrl = async () => {
 
 		// console.log(element);
 		try {
-			const videoRef = StorageRef(storage, element.name);
-			const url = await getDownloadURL(videoRef);
-			element.url = url;
-			videosList.value.push(element);
+			if (useFirebase) {
+				const videoRef = StorageRef(storage, element.name);
+				const url = await getDownloadURL(videoRef);
+				element.url = url;
+				videosList.value.push(element);
+			}
 		} catch (error) {
 			console.error('Erreur lors de la récupération de la vidéo:', error);
 		}

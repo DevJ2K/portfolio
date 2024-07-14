@@ -149,7 +149,7 @@ const getLatestVideoUrl = async () => {
 
         // Obtenir l'URL de téléchargement
         const url = await getDownloadURL(videoRef);
-		console.log(url);
+		// console.log(url);
         // Mettre à jour l'URL de la vidéo dans le data
         lastVideo.value.url = url;
       } catch (error) {
