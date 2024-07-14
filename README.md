@@ -8,7 +8,7 @@
 - [x] Margin between each tab
 - [x] Add sphere or stars on background to create an atmosphere + gradient effect
 - [x] Add shiny effect on the background + simulate lights ( + try tiles background )
-- [ ] Add real text + redirection (href)
+- [ ] Add real text + redirection (href) + hide breakpoint indicator
 - [x] Find color theme + background color
 - [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
@@ -22,7 +22,7 @@
 - [x] Adding custom console.log
 - [x] Add videos from storage in AboutView
 - [ ] Optimize App
-- [ ] Adjust dark mode color (Bg, border,...)
+- [x] Adjust dark mode color (Bg, border,...)
 - [x] Navbar in AboutView at breakpoint <= Md
 - [x] Same navbar for all tabs ? No
 - [x] AboutTab > AboutCard color are different

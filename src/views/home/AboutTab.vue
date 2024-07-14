@@ -13,7 +13,7 @@
 			<div class=" flex grid-cols-2 flex-col gap-4 md:grid">
 				<div class=" about-tab-div">
 					<h3
-						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
+						class="about-tab-div-title">
 						Education</h3>
 
 					<div class="flex flex-row items-center justify-center">
@@ -33,7 +33,7 @@
 				</div>
 				<div class=" about-tab-div">
 					<h3
-						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
+						class="about-tab-div-title">
 						Experience</h3>
 
 					<div class=" flex h-full flex-col justify-between gap-3">
@@ -63,7 +63,7 @@
 				</div>
 				<div class=" about-tab-div">
 					<h3
-						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
+						class="about-tab-div-title">
 						Last news</h3>
 
 					<div class="lg:hidden" v-for="i in [0, 1]" :key="i">
@@ -92,7 +92,7 @@
 				</div>
 				<div class=" about-tab-div">
 					<h3
-						class=" custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text">
+						class="about-tab-div-title">
 						Last 3D Video</h3>
 
 					<div class="flex flex-row items-center justify-center">

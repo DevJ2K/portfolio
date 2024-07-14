@@ -168,10 +168,16 @@ body.dark {
 } */
 
 .about-tab-div {
-	@apply custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-subtle-bg p-4 dark:bg-d-ui-bg;
-	@apply border border-ui-border dark:border-d-ui-border;
+	@apply custom-shadow-sm flex flex-col gap-4 rounded-2xl border bg-subtle-bg p-4 dark:bg-d-subtle-bg;
+	@apply border border-ui-border dark:border-d-subtle-border;
 	@apply hover:border-hover-ui-border dark:hover:border-d-hover-ui-border transition-all;
 	@apply cursor-default
+}
+
+.about-tab-div-title {
+	@apply custom-shadow-sm w-fit rounded-md border-2 border-accent-color px-3 py-1 font-medium text-high-contrast-text dark:border-d-accent-color dark:text-d-high-contrast-text;
+
+	@apply bg-ui-bg dark:bg-d-ui-bg;
 }
 
 .project-card-btn {
