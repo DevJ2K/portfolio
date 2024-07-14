@@ -157,7 +157,7 @@ export default {
         // #FFD4CE | #FEECFF
 
       "app-bg": "#FEECFF", // 1. App background
-      "subtle-bg": "#FEF2FF", // 2. Subtle background
+      "subtle-bg": "#FEEFFF", // 2. Subtle background
       "ui-bg": "#FDEAFF", // 3. UI element background
       "hover-ui-bg": "#F8DAFB", // 4. Hovered UI element background
       "active-ui-bg": "#FCDEFF", // 5. Active / Selected UI element background

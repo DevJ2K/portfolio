@@ -167,7 +167,7 @@ body.dark {
 } */
 
 .about-tab-div {
-	@apply custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-ui-bg p-4 dark:bg-d-ui-bg;
+	@apply custom-shadow-sm flex flex-col gap-3 rounded-2xl border bg-subtle-bg p-4 dark:bg-d-ui-bg;
 	@apply border border-ui-border dark:border-d-ui-border;
 	@apply hover:border-hover-ui-border dark:hover:border-d-hover-ui-border transition-all;
 	@apply cursor-default
