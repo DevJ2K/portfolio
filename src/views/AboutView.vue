@@ -8,7 +8,7 @@
 			<div class="flex flex-col items-center gap-9">
 				<TabTitleComponent title="Experiences"/>
 				<div class="relative flex w-full flex-col gap-8">
-					<div class=" absolute left-1/2 -z-10 h-full w-1 -translate-x-1/2 bg-low-contrast-text dark:bg-d-low-contrast-text"></div>
+					<div class=" absolute left-1/2 -z-10 h-full w-1 -translate-x-1/2 bg-low-contrast-text dark:bg-d-low-contrast-text"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="400" data-aos-duration="400"></div>
 					<ExperienceCard v-for="item in experiencesList" :key="item" :name="item.name" :date="item.date" :company="item.company" :exp-type="item.expType" :technos="item.technos" :description="item.description"/>
 				</div>
 			</div>
