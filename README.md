@@ -27,7 +27,9 @@
 - [x] Same navbar for all tabs ? No
 - [x] AboutTab > AboutCard color are different
 - [x] Animation left to right View More Btn
-- [ ] Fetch img for project from Storage
+- [x] Fetch img for project from Storage | Use a canva or default image instead
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
+
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
 <!-- - [ ] Search project animation -->
 <!-- - [ ] Add Feedbacks / Experiences tab -->

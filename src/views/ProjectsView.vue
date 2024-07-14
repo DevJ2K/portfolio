@@ -33,7 +33,7 @@
 					<div v-else class="flex flex-wrap justify-center gap-6">
 
 						<div v-for="project in projectList.filter((project) => containsCategory(project, 'Featured'))" :key="project">
-							<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+							<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
 								:github-link="project.github" :project-link="project.link" />
 						</div>
 					</div>
@@ -47,7 +47,7 @@
 					</div>
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Personal'))" :key="project"
 						class="flex w-full flex-col items-center gap-9" data-aos-offset="200" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
-						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>
 				</div>
@@ -60,7 +60,7 @@
 					</div>
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, '42Cursus'))" :key="project"
 						class="flex w-full flex-col items-center gap-9" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
-						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 					</div>
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Others'))" :key="project"
 						class="flex w-full flex-col items-center gap-9" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
-						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
 							:github-link="project.github" :project-link="project.link" />
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 			<div v-else-if="projectList.filter((project) => containsSearchTag(project)).length > 0"
 				v-for="project in projectList.filter((project) => containsSearchTag(project))" :key="project"
 				class="flex w-full flex-col items-center gap-8">
-				<ProjectCard :title="project.name" :description="project.description" :tags="project.tags"
+				<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
 					:github-link="project.github" :project-link="project.link" />
 
 			</div>
@@ -109,6 +109,7 @@ import TabTitleComponent from '@/components/TabTitleComponent.vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
 import firebaseApp from '@/firebase/init';
 import { collection, getDocs, getFirestore } from 'firebase/firestore/lite';
+import { getDownloadURL, getStorage, ref as StorageRef } from 'firebase/storage';
 import { onMounted, onUnmounted, ref } from 'vue';
 import CustomFooter from './home/CustomFooter.vue';
 import { useRoute } from 'vue-router';
@@ -116,9 +117,11 @@ import { useRoute } from 'vue-router';
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
 const searchText = ref("");
-const useFirebase = false;
+const useFirebaseFirestore = false;
+const useFirebaseStorage = true;
 const route = useRoute();
 const db = getFirestore(firebaseApp);
+const storage = getStorage(firebaseApp);
 
 if (route.query.tag != null) {
 	searchText.value = route.query.tag;
@@ -126,7 +129,7 @@ if (route.query.tag != null) {
 
 
 const getProjects = async () => {
-	if (useFirebase) {
+	if (useFirebaseFirestore) {
 		const projectsCol = collection(db, 'projects');
 		const projectSnapshot = await getDocs(projectsCol);
 		projectList.value = projectSnapshot.docs.map(doc => doc.data());
@@ -134,6 +137,20 @@ const getProjects = async () => {
 		// eslint-disable-next-line no-undef
 		projectList.value = localData.projects;
 	}
+
+	for (let i = 0; i < projectList.value.length; i++) {
+		const element = projectList.value[i];
+		if (element.miniature) {
+			if (useFirebaseStorage) {
+				const videoRef = StorageRef(storage, element.miniature);
+				const url = await getDownloadURL(videoRef);
+				element.url = url;
+			}
+		}
+		// console.log(element);
+	}
+
+
 	await new Promise((resolve) => setTimeout(resolve, 1500));
 	isFetchingProjects.value = false;
 }

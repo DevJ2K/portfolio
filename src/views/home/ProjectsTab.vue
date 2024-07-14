@@ -24,7 +24,7 @@
 
 				<div v-else class="flex flex-wrap justify-center gap-6">
 					<div v-for="project in highlightedProjects" :key="project" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
-						<ProjectCard :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
 					</div>
 				</div>
 			</div>
@@ -44,12 +44,15 @@ import { collection, query, getDocs, where, getFirestore } from 'firebase/firest
 import { onMounted, ref } from 'vue';
 import ProjectCardSkeleton from '@/components/placeholder/ProjectCardSkeleton.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
+import { getDownloadURL, getStorage, ref as StorageRef } from 'firebase/storage';
 
 const router = useRouter();
 const highlightedProjects = ref([]);
 const isFetchingProjects = ref(true);
-const useFirebase = false;
+const useFirebaseFirestore = false;
+const useFirebaseStorage = true;
 const db = getFirestore(firebaseApp);
+const storage = getStorage(firebaseApp);
 
 function viewProjects() {
 	router.push({
@@ -61,13 +64,24 @@ function viewProjects() {
 }
 
 const getHighlightedProjects = async () => {
-	if (useFirebase) {
+	if (useFirebaseFirestore) {
 		const projectsCol = query(collection(db, 'projects'), where("highlighted", "==", true));
 		const projectSnapshot = await getDocs(projectsCol);
 		highlightedProjects.value = projectSnapshot.docs.map(doc => doc.data());
 	} else {
 		// eslint-disable-next-line no-undef
 		highlightedProjects.value = localData.projects.filter((project) => project.highlighted == true);
+	}
+	for (let i = 0; i < highlightedProjects.value.length; i++) {
+		const element = highlightedProjects.value[i];
+		if (element.miniature) {
+			if (useFirebaseStorage) {
+				const videoRef = StorageRef(storage, element.miniature);
+				const url = await getDownloadURL(videoRef);
+				element.url = url;
+			}
+		}
+		// console.log(element);
 	}
 	await new Promise((resolve) => setTimeout(resolve, 1000));
 	isFetchingProjects.value = false;

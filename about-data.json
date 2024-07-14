@@ -83,27 +83,27 @@
 	],
 	"videos": [
 		{
-			"name": "porsche.mp4",
+			"name": "3Dvideos/porsche.mp4",
 			"title": "CarChase"
 		},
 		{
-			"name": "trailer_transcendence.mp4",
+			"name": "3Dvideos/trailer_transcendence.mp4",
 			"title": "Trailer Transcendence"
 		},
 		{
-			"name": "porscheGT3cinematic.mp4",
+			"name": "3Dvideos/porscheGT3cinematic.mp4",
 			"title": "SFT-R - SpeedTest"
 		},
 		{
-			"name": "trailer_nike.mp4",
+			"name": "3Dvideos/trailer_nike.mp4",
 			"title": "Nike Shop"
 		},
 		{
-			"name": "trailer_samara.mp4",
+			"name": "3Dvideos/trailer_samara.mp4",
 			"title": "Trailer Samara"
 		},
 		{
-			"name": "my_dream_house.mp4",
+			"name": "3Dvideos/my_dream_house.mp4",
 			"title": "Dream House"
 		}
 	]
