@@ -33,16 +33,11 @@
 				<TabTitleComponent title="3D"/>
 				<h1>In my free time, I love make 3D videos. So I share with you :)</h1>
 
-				<div>
-					<div class="border rounded-3xl overflow-hidden">
-						<video v-if="videoUrl" controls :src="videoUrl" autoplay="true"></video>
-					</div>
-					<div class="border rounded-3xl overflow-hidden">
-						<video v-if="videoUrl" controls :src="videoUrl" autoplay="true"></video>
-					</div>
-					<div class="border rounded-3xl overflow-hidden">
-						<video v-if="videoUrl" controls :src="videoUrl" autoplay="true"></video>
-					</div>
+				<div class=" grid grid-cols-2 flex-wrap justify-center gap-6">
+					<fieldset v-for="video in videosList" :key="video" class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
+						<legend class=" m-auto text-nowrap px-2 text-base font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:text-xl">{{ video.title }}</legend>
+						<video class="size-fit overflow-hidden rounded-xl border border-ui-border dark:border-d-subtle-border" v-if="video.url" controls :src="video.url" muted loop autoplay="true"></video>
+					</fieldset>
 				</div>
 			</div>
 
@@ -69,27 +64,46 @@ const experiencesList = ref([]);
 const feedbacksList = ref([]);
 const videoUrl = ref("");
 
+const videosList = ref([]);
+
 
 aboutList.value = aboutData.about;
 experiencesList.value = aboutData.experiences;
 feedbacksList.value = aboutData.feedbacks;
 
 const storage = getStorage(firebaseApp);
-const getVideoUrl = async () => {
-	try {
-        // Créer une référence à la vidéo
-        const videoRef = StorageRef(storage, 'porsche.mp4');
 
-        // Obtenir l'URL de téléchargement
-        const url = await getDownloadURL(videoRef);
-		console.log(url);
-        // Mettre à jour l'URL de la vidéo dans le data
-        videoUrl.value = url;
-      } catch (error) {
-        console.error('Erreur lors de la récupération de la vidéo:', error);
-      }
+const getVideosUrl = async () => {
+	for (let i = 0; i < aboutData.videos.length; i++) {
+		const element = aboutData.videos[i];
 
+		// console.log(element);
+		try {
+			const videoRef = StorageRef(storage, element.name);
+			const url = await getDownloadURL(videoRef);
+			element.url = url;
+			videosList.value.push(element);
+		} catch (error) {
+			console.error('Erreur lors de la récupération de la vidéo:', error);
+		}
+	}
 }
+
+// const getVideoUrl = async () => {
+// 	try {
+//         // Créer une référence à la vidéo
+//         const videoRef = StorageRef(storage, 'porsche.mp4');
+
+//         // Obtenir l'URL de téléchargement
+//         const url = await getDownloadURL(videoRef);
+// 		console.log(url);
+//         // Mettre à jour l'URL de la vidéo dans le data
+//         videoUrl.value = url;
+//       } catch (error) {
+//         console.error('Erreur lors de la récupération de la vidéo:', error);
+//       }
+
+// }
 
 const refreshBackground = () => {
 	// eslint-disable-next-line no-undef
@@ -103,7 +117,8 @@ const refreshBackground = () => {
 
 onMounted(() => {
 	refreshBackground();
-	getVideoUrl();
+	// getVideoUrl();
+	getVideosUrl();
 });
 
 </script>
