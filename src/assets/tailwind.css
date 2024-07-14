@@ -57,55 +57,56 @@
 	-webkit-text-stroke-color: #fff;
 }
 
-.view-more-btn {
+.href-btn {
+	@apply relative;
 	@apply flex flex-row items-center justify-center gap-2;
 	@apply font-medium text-base;
 	@apply rounded-xl;
-	@apply border-2;
-	@apply px-4 py-2;
-	@apply text-high-contrast-text dark:text-d-high-contrast-text;
-	@apply hover:text-white;
 
-	@apply transition-all active:transition-none;
-
-	/* @apply bg-accent-color; */
-	@apply shadow-md hover:shadow-xl;
-
-	@apply hover:bg-hover-accent-color;
-	@apply dark:hover:bg-d-hover-accent-color;
-
-	@apply border-accent-color hover:border-hover-accent-color;
-	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
-
-	/* @apply focus:border-red-500; */
-}
-
-
-.view-more-project-btn {
-	/* @apply absolute bottom-0;
-	transform: translate(-0%, 50%); */
-	@apply flex flex-row items-center justify-center gap-2;
-	@apply font-medium text-base;
-	@apply rounded-xl;
-	@apply border-2;
-	@apply px-8 py-2;
+	@apply px-8 py-3;
 	@apply mt-6;
 	@apply shadow-md hover:shadow-xl;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
 	@apply hover:text-white;
-	/* @apply bg-app-bg dark:bg-d-app-bg; */
+
 	@apply transition-all active:transition-none;
+	@apply overflow-hidden;
 
-	/* @apply bg-accent-color; */
-
-	@apply hover:bg-hover-accent-color;
-	@apply dark:hover:bg-d-hover-accent-color;
-
-	@apply border-accent-color hover:border-hover-accent-color;
-	@apply dark:border-d-accent-color dark:hover:border-d-hover-accent-color;
-
-	/* @apply focus:border-red-500; */
+	@apply border-accent-color;
+	@apply dark:border-d-accent-color;
 }
+
+.href-btn::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	@apply bg-accent-color dark:bg-d-accent-color;
+	@apply transition-all;
+	@apply duration-500;
+}
+
+.href-btn:hover::after {
+	@apply w-full;
+}
+
+.href-btn::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	@apply rounded-xl;
+	@apply border-2;
+	@apply border-accent-color;
+	@apply dark:border-d-accent-color;
+}
+
 
 .form-input-name {
 	@apply text-sm font-semibold text-low-contrast-text dark:text-d-low-contrast-text;

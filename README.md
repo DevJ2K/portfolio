@@ -26,7 +26,7 @@
 - [x] Navbar in AboutView at breakpoint <= Md
 - [x] Same navbar for all tabs ? No
 - [x] AboutTab > AboutCard color are different
-- [ ] Animation left to right View More Btn
+- [x] Animation left to right View More Btn
 - [ ] Fetch img for project from Storage
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
 <!-- - [ ] Search project animation -->
