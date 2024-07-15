@@ -113,6 +113,7 @@ import { getDownloadURL, getStorage, ref as StorageRef } from 'firebase/storage'
 import { onMounted, onUnmounted, ref } from 'vue';
 import CustomFooter from './home/CustomFooter.vue';
 import { useRoute } from 'vue-router';
+import refreshBackground from '@/js/utils';
 
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
@@ -126,7 +127,6 @@ const storage = getStorage(firebaseApp);
 if (route.query.tag != null) {
 	searchText.value = route.query.tag;
 }
-
 
 const getProjects = async () => {
 	if (useFirebaseFirestore) {
@@ -150,7 +150,6 @@ const getProjects = async () => {
 		// console.log(element);
 	}
 
-
 	await new Promise((resolve) => setTimeout(resolve, 1500));
 	isFetchingProjects.value = false;
 }
@@ -159,14 +158,6 @@ const clearSearchField = () => {
 	// document.getElementById("search-by-tag-field").value = null;
 	if (searchText.value != "") {
 		searchText.value = "";
-	}
-}
-
-const refreshBackground = () => {
-	// eslint-disable-next-line no-undef
-	if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
-		// eslint-disable-next-line no-undef
-		pJSDom[0].pJS.fn.particlesRefresh();
 	}
 }
 
@@ -198,7 +189,6 @@ const containsCategory = (project, category) => {
 let resizeObserver;
 
 onMounted(() => {
-	// console.log("ProjectsView is mounted !");
 	const projectContainer = document.getElementById("line-height-for-resize-proj");
 
 	resizeObserver = new ResizeObserver(refreshBackground);
@@ -208,48 +198,9 @@ onMounted(() => {
 	getProjects();
 });
 
-
 onUnmounted(() => {
 	if (resizeObserver) {
 		resizeObserver.disconnect();
 	}
 });
-
-
-
-
-
-// import gsap from 'gsap/all';
-
-// const list = [
-//   { msg: 'Bruce Lee' },
-//   { msg: 'Jackie Chan' },
-//   { msg: 'Chuck Norris' },
-//   { msg: 'Jet Li' },
-//   { msg: 'Kung Fury' }
-// ]
-
-// function onBeforeEnter(el) {
-//       el.style.opacity = 0
-//       el.style.height = 0
-//     }
-// function onEnter(el, done) {
-//       gsap.to(el, {
-//         opacity: 1,
-//         height: '1.6em',
-//         delay: el.dataset.index * 0.15,
-//         onComplete: done
-//       })
-//     }
-// function onLeave(el, done) {
-//       gsap.to(el, {
-//         opacity: 0,
-//         height: 0,
-//         delay: el.dataset.index * 0.15,
-//         onComplete: done
-//       })
-//     }
-
-
-
 </script>

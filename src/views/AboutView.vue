@@ -61,6 +61,7 @@ import FeedbackCard from './about/FeedbackCard.vue';
 import firebaseApp from '@/firebase/init';
 import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
 import CustomFooter from './home/CustomFooter.vue';
+import refreshBackground from '@/js/utils';
 
 const aboutList = ref([]);
 const experiencesList = ref([]);
@@ -110,16 +111,6 @@ const getVideosUrl = async () => {
 //       }
 
 // }
-
-const refreshBackground = () => {
-	// eslint-disable-next-line no-undef
-	if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
-		// eslint-disable-next-line no-undef
-		pJSDom[0].pJS.fn.particlesRefresh();
-		// console.log("Background has been refreshed !")
-	}
-}
-
 
 onMounted(() => {
 	refreshBackground();
