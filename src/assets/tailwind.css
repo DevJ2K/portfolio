@@ -84,7 +84,7 @@
 	z-index: -2;
 	@apply bg-hover-accent-color dark:bg-d-hover-accent-color;
 	@apply transition-all;
-	@apply duration-[350ms];
+	@apply duration-[300ms];
 }
 
 .href-btn:hover::after {
