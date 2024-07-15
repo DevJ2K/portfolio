@@ -168,6 +168,7 @@ body.dark {
 } */
 
 .about-tab-div {
+	@apply size-full;
 	@apply custom-shadow-sm flex flex-col gap-4 rounded-2xl border bg-subtle-bg p-4 dark:bg-d-subtle-bg;
 	@apply border border-ui-border dark:border-d-subtle-border;
 	@apply hover:border-hover-ui-border dark:hover:border-d-hover-ui-border transition-all;

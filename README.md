@@ -29,7 +29,7 @@
 - [x] Animation left to right View More Btn
 - [x] Fetch img for project from Storage | Use a canva or default image instead
 - [ ] Turn on all fetch from Firebase
-- [ ] about-div-tab pop-up animation
+- [x] about-div-tab pop-up animation
 - [ ] Background for PresentationTab
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 

@@ -11,26 +11,29 @@
 			<!-- <h3 class=" text-2xl text-high-contrast-text dark:text-d-high-contrast-text">Me</h3> -->
 
 			<div class=" flex grid-cols-2 flex-col gap-4 md:grid">
-				<div class=" about-tab-div">
-					<h3
-						class="about-tab-div-title">
-						Education</h3>
-
-					<div class="flex flex-row items-center justify-center">
-						<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
+				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
+					<div class=" about-tab-div">
 						<h3
-							class=" text-nowrap px-2 text-lg font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">
-							42 Paris</h3>
-						<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
-					</div>
+							class="about-tab-div-title">
+							Education</h3>
 
-					<p class="text-sm text-low-contrast-text opacity-100 dark:text-d-low-contrast-text">Eiusmod nostrud
-						ipsum occaecat tempor ipsum eu amet minim et magna ex aliquip. Nisi sit consequat nisi aliquip
-						ut dolore ex ipsum.</p>
-					<h3 class=" font-semibold text-high-contrast-text dark:text-d-high-contrast-text">2023 - <span
-							class=" underline decoration-accent-color decoration-2 underline-offset-[5px] dark:decoration-d-accent-color">Today</span>
-					</h3>
+						<div class="flex flex-row items-center justify-center">
+							<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
+							<h3
+								class=" text-nowrap px-2 text-lg font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">
+								42 Paris</h3>
+							<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
+						</div>
+
+						<p class="text-sm text-low-contrast-text opacity-100 dark:text-d-low-contrast-text">Eiusmod nostrud
+							ipsum occaecat tempor ipsum eu amet minim et magna ex aliquip. Nisi sit consequat nisi aliquip
+							ut dolore ex ipsum.</p>
+						<h3 class=" font-semibold text-high-contrast-text dark:text-d-high-contrast-text">2023 - <span
+								class=" underline decoration-accent-color decoration-2 underline-offset-[5px] dark:decoration-d-accent-color">Today</span>
+						</h3>
+					</div>
 				</div>
+				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 				<div class=" about-tab-div">
 					<h3
 						class="about-tab-div-title">
@@ -61,6 +64,8 @@
 						</div>
 					</div>
 				</div>
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 				<div class=" about-tab-div">
 					<h3
 						class="about-tab-div-title">
@@ -90,6 +95,8 @@
 						<p class="text-sm text-low-contrast-text opacity-100 dark:text-d-low-contrast-text">{{ lastAboutme[i].content }}</p>
 					</div>
 				</div>
+				</div>
+				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 				<div class=" about-tab-div">
 					<h3
 						class="about-tab-div-title">
@@ -105,6 +112,7 @@
 						<video v-if="lastVideo.url" muted :src="lastVideo.url" autoplay="true" loop="true">
 						</video>
 					</div>
+				</div>
 				</div>
 			</div>
 
