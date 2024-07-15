@@ -5,91 +5,91 @@
 			<ul
 				class="flex size-full flex-col items-center justify-center gap-16 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="backToHome">Home</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="backToHome">Home</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="flex items-center justify-center">
-					<a @click="navigateTo('search-by-tag-field')" class="cursor-pointer">
+					<p @click="navigateTo('search-by-tag-field')" class="cursor-pointer">
 						<i class="fa-solid fa-magnifying-glass text-xl"></i>
-					</a>
+					</p>
 				</li>
 
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_featured')">Featured</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_featured')">Featured</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_personal')">Personal</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_personal')">Personal</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_42cursus')">42Cursus</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_42cursus')">42Cursus</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_others')">Others</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_others')">Others</p>
 					<span class="animate-underline"></span>
 				</li>
 
 				<li class="flex size-8 items-center justify-center">
-					<a @click="switchColorMode">
+					<p @click="switchColorMode">
 						<SunIcon v-if="darkMode"
 							class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-7" />
 						<MoonIcon v-else
 							class="size-6 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-7" />
-					</a>
+					</p>
 				</li>
 			</ul>
 		</div>
 
 		<div class="container flex items-center justify-between">
-			<a class="flex cursor-pointer flex-row items-center gap-4" @click="backToHome">
+			<div class="flex cursor-pointer flex-row items-center gap-4" @click="backToHome">
 				<div class="size-16 overflow-hidden rounded-full border-2 bg-blue-400">
 					<img src="../../assets/images/j2klogo.png" alt="" class="size-full object-cover" />
 				</div>
-				<h3 id="devj2kText" class="text-outline text-2xl font-black text-transparent">
+				<h1 id="devj2kText" class="text-outline text-2xl font-black text-transparent">
 					DevJ2K
-				</h3>
-			</a>
+				</h1>
+			</div>
 			<ul
 				class="flex flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
 				<li class="flex size-2 items-center justify-center">
-					<a @click="navigateTo('search-by-tag-field', false)" class="cursor-pointer">
+					<p @click="navigateTo('search-by-tag-field', false)" class="cursor-pointer">
 						<i class="fa-solid fa-magnifying-glass text-base"></i>
-					</a>
+					</p>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_featured', false)">Featured</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_featured', false)">Featured</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_personal', false)">Personal</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_personal', false)">Personal</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_42cursus', false)">42Cursus</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_42cursus', false)">42Cursus</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="group relative w-max">
-					<a class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
-						@click="navigateTo('p_others', false)">Others</a>
+					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
+						@click="navigateTo('p_others', false)">Others</p>
 					<span class="animate-underline"></span>
 				</li>
 				<li class="flex size-6 items-center justify-center">
-					<a @click="switchColorMode">
+					<p @click="switchColorMode">
 						<SunIcon v-if="darkMode"
 							class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-5" />
 						<MoonIcon v-else
 							class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-5" />
-					</a>
+					</p>
 				</li>
 			</ul>
 			<div class="z-[1] size-fit cursor-pointer md:hidden" @click="toggleMenu">
