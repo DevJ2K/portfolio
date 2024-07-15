@@ -13,15 +13,15 @@
 			<div class=" flex grid-cols-2 flex-col gap-4 md:grid">
 				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 					<div class=" about-tab-div">
-						<h3
+						<h1
 							class="about-tab-div-title">
-							Education</h3>
+							Education</h1>
 
 						<div class="flex flex-row items-center justify-center">
 							<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
-							<h3
+							<h2
 								class=" text-nowrap px-2 text-lg font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">
-								42 Paris</h3>
+								42 Paris</h2>
 							<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 						</div>
 
@@ -35,15 +35,15 @@
 				</div>
 				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 				<div class=" about-tab-div">
-					<h3
+					<h1
 						class="about-tab-div-title">
-						Experience</h3>
+						Experience</h1>
 
 					<div class=" flex h-full flex-col justify-between gap-3">
 						<div class=" text-high-contrast-text dark:text-d-high-contrast-text">
-							<h3 class=" text-xl font-bold">{{ lastExperience.name }}</h3>
-							<h3 class=" text-base">{{ lastExperience.company }} - {{ lastExperience.expType }}</h3>
-							<h3 class=" text-base">{{ lastExperience.date }}</h3>
+							<h2 class=" text-xl font-bold">{{ lastExperience.name }}</h2>
+							<h2 class=" text-base">{{ lastExperience.company }} - {{ lastExperience.expType }}</h2>
+							<h2 class=" text-base">{{ lastExperience.date }}</h2>
 						</div>
 
 						<div class="flex flex-col gap-2">
@@ -67,16 +67,16 @@
 				</div>
 				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 				<div class=" about-tab-div">
-					<h3
+					<h1
 						class="about-tab-div-title">
-						Last news</h3>
+						Last news</h1>
 
 					<div class="lg:hidden" v-for="i in [0, 1]" :key="i">
 						<div class="flex flex-row items-center justify-center">
 							<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
-							<h3
+							<h2
 								class=" text-nowrap px-2 text-base font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">
-								{{ lastAboutme[i].itemDate }}</h3>
+								{{ lastAboutme[i].itemDate }}</h2>
 							<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 						</div>
 
@@ -98,14 +98,14 @@
 				</div>
 				<div data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 				<div class=" about-tab-div">
-					<h3
+					<h1
 						class="about-tab-div-title">
-						Last 3D Video</h3>
+						Last 3D Video</h1>
 
 					<div class="flex flex-row items-center justify-center">
 						<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
-						<h3
-							class=" text-nowrap px-2 text-lg font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">{{ lastVideo.title }}</h3>
+						<h2
+							class=" text-nowrap px-2 text-lg font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">{{ lastVideo.title }}</h2>
 						<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 					</div>
 					<div class=" custom-shadow-sm w-fit overflow-hidden rounded-2xl">

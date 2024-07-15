@@ -1,37 +1,19 @@
 <template>
 	<div class="relative flex w-full flex-col">
-		<!-- <BackgroundSpotlight rotate="bg-gradient-to-bl"/> -->
 		<BgTab/>
 		<div class=" h-28 w-full"></div>
 		<main class=" container z-10 flex flex-col items-center gap-9">
-			<!-- <h1 class="tab-title">Contact</h1> -->
 			<TabTitleComponent title="Contact"/>
-
 			<SuccessModal :modal-active="successModalActive" @close-modal="toggleSuccessModal">
 				<div class=" text-black/70">
 					<p>The contact message has been sent successfully !</p>
 				</div>
 			</SuccessModal>
-
 			<WarningModal :modal-active="warningModalActive" @close-modal="toggleWarningModal">
 				<div class=" text-black/70">
-					<p>Please fill out all fields.</p>
+					<p>{{ warningModalContent }}</p>
 				</div>
 			</WarningModal>
-
-			<WarningModal :modal-active="waitModalActive" @close-modal="toggleWaitModal">
-				<div class=" text-black/70">
-					<p>Please wait before sending another message.</p>
-				</div>
-			</WarningModal>
-
-			<WarningModal :modal-active="errorModalActive" @close-modal="toggleErrorModal">
-				<div class=" text-black/70">
-					<p>Unable to send message, please try again later.</p>
-				</div>
-			</WarningModal>
-
-
 
 			<!-- <h3 class=" mb-4 text-center text-xl font-medium sm:text-2xl">Find me on my social networks or send me an email.</h3> -->
 			<div class="w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
@@ -64,25 +46,25 @@
 
 			<div class="flex w-3/4 flex-col items-end gap-6">
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">Name</h3>
+					<label for="form_name" class="form-input-name">Name</label>
 					<input id="form_name" class="form-input form-input-border" type="text" maxlength="60">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">Email</h3>
+					<label for="form_email" class="form-input-name">Email</label>
 					<input id="form_email" class="form-input form-input-border" type="text" maxlength="60">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">Subject</h3>
+					<label for="form_subject" class="form-input-name">Subject</label>
 					<input id="form_subject" class="form-input form-input-border" type="text" maxlength="100">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<h3 class="form-input-name">How can I help you ?</h3>
+					<label for="form_body" class="form-input-name">How can I help you ?</label>
 					<textarea id="form_body" class="form-input form-input-border" rows="4" minlength="50" maxlength="2000"></textarea>
 				</div>
 
 				<button @click="sendMessages" class="flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-md border border-ui-border px-4 py-2 text-high-contrast-text shadow-lg  ring-accent-color ring-offset-2 ring-offset-subtle-bg transition-all hover:border-transparent hover:bg-hover-accent-color  hover:text-d-high-contrast-text  hover:shadow-xl focus:outline-2 focus:ring-2  dark:border-d-ui-border dark:text-d-high-contrast-text dark:ring-d-accent-color dark:ring-offset-d-subtle-bg hover:dark:border-transparent dark:hover:bg-d-hover-accent-color ">
 					<i class="fa-regular fa-paper-plane"></i>
-					<h3>Send</h3>
+					<p>Send</p>
 				</button>
 			</div>
 
@@ -112,8 +94,7 @@ import TabTitleComponent from '@/components/TabTitleComponent.vue';
 
 const warningModalActive = ref(false);
 const successModalActive = ref(false);
-const waitModalActive = ref(false);
-const errorModalActive = ref(false);
+const warningModalContent = ref("");
 const db = getFirestore(firebaseApp);
 
 const toggleSuccessModal = () => {
@@ -121,12 +102,6 @@ const toggleSuccessModal = () => {
 };
 const toggleWarningModal = () => {
 	warningModalActive.value = !warningModalActive.value;
-};
-const toggleWaitModal = () => {
-	waitModalActive.value = !waitModalActive.value;
-};
-const toggleErrorModal = () => {
-	errorModalActive.value = !errorModalActive.value;
 };
 
 const clearFields = () => {
@@ -170,7 +145,6 @@ const compareLastDateSent = () => {
 	}
 	const lastDate = new Date(lastDateString);
 	const currentDate = new Date();
-
 	const diffInMs = Math.abs(currentDate.getTime() - lastDate.getTime());
 	const fiveMinutesInMs = 1 * 60 * 1000;
 
@@ -195,30 +169,32 @@ const sendMessages = async () => {
 
 	if (form_name && form_email && form_subject && form_body) {
 		if (compareLastDateSent() == false) {
-			toggleWaitModal();
-			console.log("%c[Warning] : " + "%cPlease wait before sending new messages.", 'color: #FF5A1A;', 'color: #FFA100;');
+			warningModalContent.value = "Please wait before sending another message.";
+			toggleWarningModal();
+			// console.log("%c[Warning] : " + "%cPlease wait before sending new messages.", 'color: #FF5A1A;', 'color: #FFA100;');
 		} else {
 			try {
 				await addDoc(collection(db, "contacts"), {
-				name: form_name,
-				email: form_email,
-				subject: form_subject,
-				body: form_body
+					name: form_name,
+					email: form_email,
+					subject: form_subject,
+					body: form_body
 				});
-
 				clearFields();
 				toggleSuccessModal();
 				saveDateSent();
-				console.log("%c[Success] : " + "%The message was sent successfully !", 'color: #1CFE25;', 'color: #FFEBC8;');
+				// console.log("%c[Success] : " + "%The message was sent successfully !", 'color: #1CFE25;', 'color: #FFEBC8;');
 			} catch (error) {
-				toggleErrorModal();
-				console.log("%c[Error] : " + "%cUnable to send message, please try again later.", 'color: #FF0000;', 'color: #FFA100;')
+				warningModalContent.value = "Unable to send message, please try again later.";
+				toggleWarningModal();
+				// console.log("%c[Error] : " + "%cUnable to send message, please try again later.", 'color: #FF0000;', 'color: #FFA100;')
 			}
 		}
 	} else {
+		warningModalContent.value = "Please fill out all fields.";
 		highlightedEmptyField();
 		toggleWarningModal();
-		console.log("%c[Warning] : " + "%cPlease fill all fields.", 'color: #FF5A1A;', 'color: #FFA100;');
+		// console.log("%c[Warning] : " + "%cPlease fill all fields.", 'color: #FF5A1A;', 'color: #FFA100;');
 	}
 }
 </script>

@@ -27,12 +27,12 @@
 				<div class="flex w-full flex-col items-center justify-center gap-2 p-3 md:flex-row">
 					<div v-if="githubLink" @click="openOnGithub" class="project-card-btn project-card-btn-outline group size-full rounded-xl">
 						<GithubSvg color="font-medium text-high-contrast-text dark:text-d-high-contrast-text h-4 w-4"/>
-						<h3 class=" text-nowrap text-sm font-medium text-high-contrast-text dark:text-d-high-contrast-text">Github</h3>
+						<h1 class=" text-nowrap text-sm font-medium text-high-contrast-text dark:text-d-high-contrast-text">Github</h1>
 					</div>
 
 					<div v-if="projectLink" @click="openProjectLink" class="project-card-btn project-card-btn-fill size-full rounded-xl">
 							<RedirectionSvg color="text-white dark:text-white h-4 w-4"/>
-							<h3 class="text-sm text-white dark:text-white">View Project</h3>
+							<h1 class="text-sm text-white dark:text-white">View Project</h1>
 					</div>
 				</div>
 			</div>
@@ -64,12 +64,12 @@
 
 					<div v-if="githubLink" @click="openOnGithub" class="project-card-btn project-card-btn-outline group h-full">
 						<GithubSvg color="font-medium text-high-contrast-text dark:text-d-high-contrast-text h-4 w-4"/>
-						<h3 class=" text-nowrap text-sm font-medium text-high-contrast-text dark:text-d-high-contrast-text">Github</h3>
+						<h1 class=" text-nowrap text-sm font-medium text-high-contrast-text dark:text-d-high-contrast-text">Github</h1>
 					</div>
 
 					<div v-if="projectLink" @click="openProjectLink" class="project-card-btn project-card-btn-fill h-full">
 							<RedirectionSvg color="text-white dark:text-white h-4 w-4"/>
-							<h3 class="text-sm text-white dark:text-white">View Project</h3>
+							<h1 class="text-sm text-white dark:text-white">View Project</h1>
 					</div>
 				</div>
 			</div>
