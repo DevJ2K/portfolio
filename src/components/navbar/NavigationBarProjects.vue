@@ -1,8 +1,4 @@
-<!-- LOGOS : https://www.radix-ui.com/icons -->
-
 <template>
-	<!-- <div id="navBar" class="fixed top-0 z-50 flex w-full transition duration-1000 ease-in-out"> -->
-
 	<div id="navBar" class="my-scroll-nav my-scroll-nav-active fixed top-0">
 		<div id="navMenu"
 			class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
@@ -89,8 +85,6 @@
 				</li>
 				<li class="flex size-6 items-center justify-center">
 					<a @click="switchColorMode">
-						<!-- <i v-if="darkMode" class="fa-regular fa-sun cursor-pointer"></i>
-						<i v-else class="fa-regular fa-moon cursor-pointer"></i> -->
 						<SunIcon v-if="darkMode"
 							class="size-4 cursor-pointer fill-current transition-all duration-75 ease-linear hover:size-5" />
 						<MoonIcon v-else
@@ -98,11 +92,9 @@
 					</a>
 				</li>
 			</ul>
-			<!-- <div class=" cursor-pointer text-2xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:hidden" @click="toggleMenu"> -->
 			<div class="z-[1] size-fit cursor-pointer md:hidden" @click="toggleMenu">
 				<NavHamburger />
 			</div>
-			<!-- </div> -->
 		</div>
 	</div>
 </template>
@@ -115,6 +107,7 @@ import { useRouter } from "vue-router";
 
 const darkMode = ref(null);
 const displayMenu = ref(null);
+const router = useRouter();
 
 const initMode = () => {
 	let savingMode = localStorage.getItem("dark-mode");
@@ -135,10 +128,7 @@ const initMode = () => {
 	}
 };
 
-onMounted(() => {
-	initMode();
-	// window.addEventListener("scroll", updateNavbar);
-});
+onMounted(() => {initMode();});
 
 onUnmounted(() => {
 	// window.removeEventListener("scroll", updateNavbar);
@@ -202,20 +192,10 @@ const toggleMenu = () => {
 	navMenu.classList.toggle("-translate-x-full", !displayMenu.value);
 };
 
-const updateNavbar = () => {
-	var navBar = document.getElementById("navBar");
-	if (navBar == null) {
-		return;
-	}
-	navBar.classList.toggle("my-scroll-nav-active", window.scrollY > 0);
-	// navBar.classList.toggle("my-scroll-nav", window.scrollY <= 0);
-};
-
 const navigateTo = (id, hideMenu = true) => {
 	if (hideMenu) {
 		toggleMenu();
 	}
-	// console.log('Go to : ' + id);
 	const view = document.getElementById(id);
 	if (view != null) {
 		view.scrollIntoView({
@@ -224,23 +204,17 @@ const navigateTo = (id, hideMenu = true) => {
 	}
 };
 
-const router = useRouter();
-function backToHome() {
-	router
-		.push({
-			name: "home",
-		})
-		.then(() => {
-			const view = document.getElementById("projects");
-			if (view != null) {
-				view.scrollIntoView();
-			} else {
-				window.scrollTo(0, 0);
-			}
-		});
+const backToHome = () => {
+	router.push({
+		name: "home",
+	})
+	.then(() => {
+		const view = document.getElementById("projects");
+		if (view != null) {
+			view.scrollIntoView();
+		} else {
+			window.scrollTo(0, 0);
+		}
+	});
 }
-
-// window.addEventListener("scroll", updateNavbar);
-
-// updateNavbar();
 </script>

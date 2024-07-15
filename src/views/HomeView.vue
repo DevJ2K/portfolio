@@ -23,7 +23,7 @@ import ProjectsView from './home/ProjectsTab.vue'
 import ContactView from './home/ContactTab.vue';
 import CustomFooter from './home/CustomFooter.vue';
 import BgStars from '@/components/background/BgStars.vue';
-import refreshBackground from '@/js/utils';
+import refreshBackground from '@/js/refreshBackground';
 
 import { onMounted } from 'vue';
 

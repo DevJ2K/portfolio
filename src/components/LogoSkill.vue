@@ -24,17 +24,6 @@ const props = defineProps({
 		default: "A language to build something, I don't know what but gamberge poto you know what I mean."
 	}
 });
-
-const displayLogoParagraph = () => {
-	document.getElementById(props.techName + '_tooltip').style.visibility = 'visible';
-	document.getElementById(props.techName + '_tooltip').style.opacity = 1;
-}
-
-const hideLogoParagraph = () => {
-	document.getElementById(props.techName + '_tooltip').style.opacity = 0;
-	document.getElementById(props.techName + '_tooltip').style.visibility = 'hidden';
-}
-
 const router = useRouter();
 function searchByTags() {
 	router.push({
@@ -47,5 +36,14 @@ function searchByTags() {
 		window.scrollTo(0, 0);
 	});
 }
+// const displayLogoParagraph = () => {
+// 	document.getElementById(props.techName + '_tooltip').style.visibility = 'visible';
+// 	document.getElementById(props.techName + '_tooltip').style.opacity = 1;
+// }
+// const hideLogoParagraph = () => {
+// 	document.getElementById(props.techName + '_tooltip').style.opacity = 0;
+// 	document.getElementById(props.techName + '_tooltip').style.visibility = 'hidden';
+// }
+
 
 </script>

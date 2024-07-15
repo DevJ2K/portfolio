@@ -1,9 +1,6 @@
 <!-- LOGOS : https://www.radix-ui.com/icons -->
 
 <template>
-	<!-- <div id="navBar" class="fixed top-0 z-50 flex w-full transition duration-1000 ease-in-out"> -->
-
-
 <div class="w-full fixed top-0 z-50"  data-aos="fade-down" data-aos-delay="0" data-aos-duration="350">
 
 	<div id="navBar" class="my-scroll-nav">

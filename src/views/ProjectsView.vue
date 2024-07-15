@@ -113,7 +113,7 @@ import { getDownloadURL, getStorage, ref as StorageRef } from 'firebase/storage'
 import { onMounted, onUnmounted, ref } from 'vue';
 import CustomFooter from './home/CustomFooter.vue';
 import { useRoute } from 'vue-router';
-import refreshBackground from '@/js/utils';
+import refreshBackground from '@/js/refreshBackground';
 
 const projectList = ref([]);
 const isFetchingProjects = ref(true);

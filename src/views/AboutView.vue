@@ -61,7 +61,7 @@ import FeedbackCard from './about/FeedbackCard.vue';
 import firebaseApp from '@/firebase/init';
 import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
 import CustomFooter from './home/CustomFooter.vue';
-import refreshBackground from '@/js/utils';
+import refreshBackground from '@/js/refreshBackground';
 
 const aboutList = ref([]);
 const experiencesList = ref([]);

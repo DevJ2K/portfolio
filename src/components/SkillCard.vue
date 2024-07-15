@@ -18,7 +18,6 @@ const props = defineProps({
 	},
 	description: {
 		type: String,
-		// default: "Ea reprehenderit nisi nostrud in officia commodo Lorem aliquip cillum nisi do eiusmod consectetur Lorem. Culpa minim in reprehenderit magna quis nisi dolor. Nisi velit ex cillum eu."
 		default: "Minim commodo cupidatat ipsum culpa adipisicing adipisicing proident ipsum ea duis duis id laboris incididunt. Officia proident dolore commodo aliquip ipsum. Minim anim pariatur qui do elit Lorem sit incididunt.",
 	},
 	icon: {
@@ -31,14 +30,9 @@ const displaySkillParagraph = () => {
 	document.getElementById(props.skill + '_tooltip').style.visibility = 'visible';
 	document.getElementById(props.skill + '_tooltip').style.opacity = 1;
 }
-
 const hideSkillParagraph = () => {
 	document.getElementById(props.skill + '_tooltip').style.opacity = 0;
 	document.getElementById(props.skill + '_tooltip').style.visibility = 'hidden';
 }
-
-// const myDiv = document.getElementById("myDiv");
-// myDiv.addEventListener("mouseover", displaySkillParagraph);
-// myDiv.addEventListener("mouseleave", hideSkillParagraph);
 </script>
 
