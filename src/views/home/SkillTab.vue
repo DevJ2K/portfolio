@@ -55,6 +55,7 @@
 							<LogoSkill :logo="VueSvg" tech-name="Vue" />
 							<LogoSkill :logo="TailwindSvg" tech-name="Tailwind" />
 							<LogoSkill :logo="SeleniumSvg" tech-name="Selenium" />
+							<LogoSkill :logo="DiscordSvg" tech-name="Discord.py"/>
 						</div>
 					</fieldset>
 				</div>
@@ -95,5 +96,6 @@ import FirebaseSvg from '@/components/logos/skills/FirebaseSvg.vue';
 import SqliteSvg from '@/components/logos/skills/SqliteSvg.vue';
 import BgTab from '@/components/background/BgTab.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
+import DiscordSvg from '@/components/logos/skills/DiscordSvg.vue';
 
 </script>

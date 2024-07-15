@@ -60,10 +60,10 @@
 .href-btn {
 	@apply relative;
 	@apply flex flex-row items-center justify-center gap-2;
-	@apply font-medium text-base;
+	@apply font-semibold text-lg;
 	@apply rounded-xl;
 
-	@apply px-8 py-3;
+	@apply px-8 py-4;
 	@apply mt-6;
 	@apply shadow-md hover:shadow-xl;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
@@ -72,8 +72,6 @@
 	@apply transition-all active:transition-none;
 	@apply overflow-hidden;
 
-	@apply border-accent-color;
-	@apply dark:border-d-accent-color;
 }
 
 .href-btn::after {
@@ -84,9 +82,9 @@
 	top: 0;
 	left: 0;
 	z-index: -2;
-	@apply bg-accent-color dark:bg-d-accent-color;
+	@apply bg-hover-accent-color dark:bg-d-hover-accent-color;
 	@apply transition-all;
-	@apply duration-500;
+	@apply duration-[350ms];
 }
 
 .href-btn:hover::after {
@@ -101,10 +99,12 @@
 	top: 0;
 	left: 0;
 	z-index: -1;
+	@apply transition-all;
+	@apply duration-500;
 	@apply rounded-xl;
 	@apply border-2;
-	@apply border-accent-color;
-	@apply dark:border-d-accent-color;
+	@apply border-hover-accent-color;
+	@apply dark:border-d-hover-accent-color;
 }
 
 

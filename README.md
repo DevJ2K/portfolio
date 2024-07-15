@@ -30,7 +30,7 @@
 - [x] Fetch img for project from Storage | Use a canva or default image instead
 - [ ] Turn on all fetch from Firebase
 - [x] about-div-tab pop-up animation
-- [ ] Background for PresentationTab
+- [x] Background for PresentationTab
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->

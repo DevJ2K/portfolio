@@ -11,13 +11,13 @@
 				<!-- <div class="grid grid-cols-3 flex-row gap-3 sm:flex"> -->
 
 				<div v-if="isFetchingProjects" class="flex w-full flex-wrap justify-center gap-6">
-					<div class="w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
+					<div class="b_project_card:w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCardSkeleton/>
 					</div>
-					<div class="w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
+					<div class="b_project_card:w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCardSkeleton/>
 					</div>
-					<div class="w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
+					<div class="b_project_card:w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
 						<ProjectCardSkeleton/>
 					</div>
 				</div>
