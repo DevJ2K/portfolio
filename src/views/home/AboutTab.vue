@@ -131,7 +131,6 @@
 </template>
 
 <script setup>
-import AboutCard from '../../components/AboutCard.vue'
 import { onMounted, ref } from 'vue';
 import BgTab from '@/components/background/BgTab.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
@@ -140,7 +139,6 @@ import firebaseApp from '@/firebase/init';
 import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
 
 const storage = getStorage(firebaseApp);
-const viewMoreAbout = ref(null);
 const lastExperience = ref(null);
 const lastAboutme = ref(null);
 const lastVideo = ref(null);
@@ -152,29 +150,14 @@ const router = useRouter();
 
 const getLatestVideoUrl = async () => {
 	try {
-        // Créer une référence à la vidéo
         const videoRef = StorageRef(storage, lastVideo.value.name);
-
-        // Obtenir l'URL de téléchargement
         const url = await getDownloadURL(videoRef);
-		// console.log(url);
-        // Mettre à jour l'URL de la vidéo dans le data
         lastVideo.value.url = url;
       } catch (error) {
         console.error('Erreur lors de la récupération de la vidéo:', error);
       }
 
 }
-
-const toggleViewMoreAbout = () => {
-	viewMoreAbout.value = !viewMoreAbout.value;
-	if (viewMoreAbout.value == false) {
-		document.getElementById("viewMoreScrollIntoView").scrollIntoView({
-			// behavior: 'smooth'
-		});
-	}
-};
-
 
 function goToAboutView() {
 	router.push({
@@ -184,9 +167,6 @@ function goToAboutView() {
 		window.scrollTo(0, 0);
 	});
 }
-
-onMounted(() => {
-	getLatestVideoUrl();
-})
+onMounted(() => {getLatestVideoUrl();});
 
 </script>

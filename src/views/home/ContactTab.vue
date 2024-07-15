@@ -103,7 +103,6 @@ import MaltSvg from '@/components/logos/MaltSvg.vue';
 import EmailSvg from '@/components/logos/EmailSvg.vue';
 import SocialLogo from '@/components/SocialLogo.vue';
 import BgTab from '@/components/background/BgTab.vue';
-
 import { addDoc, collection, getFirestore } from 'firebase/firestore/lite';
 import firebaseApp from '@/firebase/init';
 import SuccessModal from '@/components/modal/SuccessModal.vue';
@@ -115,7 +114,6 @@ const warningModalActive = ref(false);
 const successModalActive = ref(false);
 const waitModalActive = ref(false);
 const errorModalActive = ref(false);
-
 const db = getFirestore(firebaseApp);
 
 const toggleSuccessModal = () => {
@@ -147,7 +145,6 @@ const clearFields = () => {
 }
 
 const highlightedEmptyField = () => {
-
 	const fields = [
 		document.getElementById("form_name"),
 		document.getElementById("form_email"),

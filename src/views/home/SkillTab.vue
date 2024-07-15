@@ -80,7 +80,6 @@
 import LogoSkill from '@/components/LogoSkill.vue';
 import SkillCard from '@/components/SkillCard.vue';
 
-// Importing Svg \\
 import SwiftSvg from '@/components/logos/skills/SwiftSvg.vue';
 import PythonSvg from '@/components/logos/skills/PythonSvg.vue';
 import CSvg from '@/components/logos/skills/CSvg.vue';

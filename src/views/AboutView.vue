@@ -66,10 +66,7 @@ import refreshBackground from '@/js/utils';
 const aboutList = ref([]);
 const experiencesList = ref([]);
 const feedbacksList = ref([]);
-const videoUrl = ref("");
-
 const videosList = ref([]);
-
 
 aboutList.value = aboutData.about;
 experiencesList.value = aboutData.experiences;
@@ -81,8 +78,6 @@ const useFirebase = true;
 const getVideosUrl = async () => {
 	for (let i = 0; i < aboutData.videos.length; i++) {
 		const element = aboutData.videos[i];
-
-		// console.log(element);
 		try {
 			if (useFirebase) {
 				const videoRef = StorageRef(storage, element.name);
@@ -96,25 +91,8 @@ const getVideosUrl = async () => {
 	}
 }
 
-// const getVideoUrl = async () => {
-// 	try {
-//         // Créer une référence à la vidéo
-//         const videoRef = StorageRef(storage, 'porsche.mp4');
-
-//         // Obtenir l'URL de téléchargement
-//         const url = await getDownloadURL(videoRef);
-// 		console.log(url);
-//         // Mettre à jour l'URL de la vidéo dans le data
-//         videoUrl.value = url;
-//       } catch (error) {
-//         console.error('Erreur lors de la récupération de la vidéo:', error);
-//       }
-
-// }
-
 onMounted(() => {
 	refreshBackground();
-	// getVideoUrl();
 	getVideosUrl();
 });
 

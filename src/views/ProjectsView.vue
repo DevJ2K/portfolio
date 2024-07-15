@@ -147,15 +147,12 @@ const getProjects = async () => {
 				element.url = url;
 			}
 		}
-		// console.log(element);
 	}
-
 	await new Promise((resolve) => setTimeout(resolve, 1500));
 	isFetchingProjects.value = false;
 }
 
 const clearSearchField = () => {
-	// document.getElementById("search-by-tag-field").value = null;
 	if (searchText.value != "") {
 		searchText.value = "";
 	}

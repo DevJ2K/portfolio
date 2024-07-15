@@ -81,17 +81,10 @@ const getHighlightedProjects = async () => {
 				element.url = url;
 			}
 		}
-		// console.log(element);
 	}
 	await new Promise((resolve) => setTimeout(resolve, 1000));
 	isFetchingProjects.value = false;
-	// console.log(highlightedProjects.value);
 }
 
-onMounted(() => {
-	// console.log("ProjectsTab is mounted !");
-	getHighlightedProjects();
-})
-
-
+onMounted(() => {getHighlightedProjects();});
 </script>

@@ -23,16 +23,10 @@ import ProjectsView from './home/ProjectsTab.vue'
 import ContactView from './home/ContactTab.vue';
 import CustomFooter from './home/CustomFooter.vue';
 import BgStars from '@/components/background/BgStars.vue';
+import refreshBackground from '@/js/utils';
 
 import { onMounted } from 'vue';
 
-onMounted(() => {
-	// console.log("HomeView is mounted !");
-  // eslint-disable-next-line no-undef
-  if (pJSDom != null && pJSDom != [] && pJSDom[0] != null && pJSDom[0].pJS != null) {
-    // eslint-disable-next-line no-undef
-		pJSDom[0].pJS.fn.particlesRefresh();
-	}
-})
+onMounted(() => {refreshBackground();});
 </script>
 
