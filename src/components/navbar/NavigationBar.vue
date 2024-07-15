@@ -104,7 +104,8 @@
 </template>
 
 <script setup>
-import { MoonIcon, SunIcon } from '@radix-icons/vue';
+import SunIcon from '@/assets/radixIcons/SunIcon.vue';
+import MoonIcon from '@/assets/radixIcons/MoonIcon.vue';
 import { onMounted, onUnmounted, ref } from 'vue';
 import NavHamburger from '../NavHamburger.vue';
 

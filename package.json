@@ -10,7 +10,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@radix-icons/vue": "^1.0.0",
     "aos": "^3.0.0-beta.6",
     "firebase": "^10.12.3",
     "vue": "^3.4.21",
