@@ -31,8 +31,8 @@
 					</div>
 
 					<div v-if="projectLink" @click="openProjectLink" class="project-card-btn project-card-btn-fill size-full rounded-xl">
-							<RedirectionSvg color="text-d-high-contrast-text h-4 w-4"/>
-							<h1 class="text-sm font-medium text-d-high-contrast-text ">View Project</h1>
+							<RedirectionSvg color="text-white dark:text-black/80 h-4 w-4"/>
+							<h1 class="text-sm font-medium text-white dark:text-black/80">View Project</h1>
 					</div>
 				</div>
 			</div>
@@ -68,8 +68,8 @@
 					</div>
 
 					<div v-if="projectLink" @click="openProjectLink" class="project-card-btn project-card-btn-fill h-full">
-							<RedirectionSvg color="text-d-high-contrast-text h-4 w-4"/>
-							<h1 class="text-sm font-medium text-d-high-contrast-text">View Project</h1>
+							<RedirectionSvg color="text-white dark:text-black/80 h-4 w-4"/>
+							<h1 class="text-sm font-medium text-white dark:text-black/80">View Project</h1>
 					</div>
 				</div>
 			</div>
