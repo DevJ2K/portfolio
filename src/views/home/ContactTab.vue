@@ -21,19 +21,19 @@
 					<legend class="custom-legend">Social Networks</legend>
 
 					<div data-aos="fade" data-aos-delay="350" data-aos-duration="250">
-						<SocialLogo :logo="GithubSvg" name="DevJ2K" size="contact-view-logo"/>
+						<SocialLogo :logo="GithubSvg" name="DevJ2K" size="contact-view-logo" link="https://github.com/DevJ2K"/>
 					</div>
 					<div data-aos="fade" data-aos-delay="500" data-aos-duration="250">
-						<SocialLogo :logo="LinkedinSvg" name="Théo Ajavon" size="contact-view-logo"/>
+						<SocialLogo :logo="LinkedinSvg" name="Théo Ajavon" size="contact-view-logo" link="https://www.linkedin.com/in/devj2k/"/>
 					</div>
 					<div data-aos="fade" data-aos-delay="650" data-aos-duration="250">
-						<SocialLogo :logo="InstagramSvg" name="devj2k" size="contact-view-logo"/>
+						<SocialLogo :logo="InstagramSvg" name="devj2k" size="contact-view-logo" link="https://www.instagram.com/devj2k/"/>
 					</div>
 					<div data-aos="fade" data-aos-delay="800" data-aos-duration="250">
-						<SocialLogo :logo="MaltSvg" name="theoajavon" size="contact-view-logo"/>
+						<SocialLogo :logo="MaltSvg" name="theoajavon" size="contact-view-logo" link="https://www.malt.fr/profile/theoajavon"/>
 					</div>
 					<div data-aos="fade" data-aos-delay="950" data-aos-duration="250">
-						<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="contact-view-logo"/>
+						<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="contact-view-logo" link="mailto:ajavontheopro@gmail.com"/>
 					</div>
 				</fieldset>
 			</div>
