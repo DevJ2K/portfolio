@@ -39,46 +39,32 @@
 	],
 	"experiences": [
 		{
-			"name":"Lorem Ipsum",
-			"company": "Google",
-			"expType": "Internship",
-			"technos": ["Tech1", "Tech2", "Tech3"],
-			"date": "2021 - 2022"
+			"name":"Developer Swift",
+			"description": "My mission was to create a prototype using the ScreenTime API to manage screen time. I had to utilize Swift concepts such as FamilyControls and DeviceActivityMonitor to manage the device's applications and perform background actions.",
+			"company": "Fiverr",
+			"expType": "Freelance",
+			"technos": ["SwiftUI", "Swift", "Family Controls", "DeviceActivityMonitor", "ScreenTimeAPI"],
+			"date": "June 2024"
 		},
 		{
-			"name":"Lorem Ipsum",
-			"description": "Culpa veniam occaecat consequat Lorem mollit labore fugiat id. Commodo eiusmod elit aliquip exercitation occaecat consequat do velit sint. Qui laborum est aliquip ullamco in exercitation enim occaecat duis. Et pariatur minim cillum incididunt. Do nulla amet reprehenderit nulla anim reprehenderit laboris magna non. Sunt qui sunt officia elit enim consequat consectetur consequat pariatur aliquip duis pariatur irure. Consectetur commodo sunt sit anim dolor excepteur dolore nostrud id labore deserunt non veniam.",
-			"company": "Company",
+			"name":"Developer Swift",
+			"description": "As a former sneaker reseller, I identified a problem: the lack of a dedicated management application. I then contacted SamaraCG, the renowned private group specializing in sneaker reselling, to propose developing a management application for their members. My mission was to create this sneaker management application named WaveSpace.",
+			"company": "Samara",
 			"expType": "Freelance",
-			"technos": ["Tech1", "Tech2", "Tech3", "Tech4", "Tech5"],
-			"date": "September 2020"
+			"technos": ["SwiftUI", "Swift", "Firebase", "TestFlight"],
+			"date": "December 2022 - February 2023"
 		}
 	],
 	"feedbacks": [
 		{
-			"name": "Lorem Ipsum",
-			"job": "CEO",
-			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
+			"name": "Said Guidirne",
+			"job": "Independent - Fiverr",
+			"feedback": "I've had the pleasure of working with this freelancer and I'm extremely satisfied with the quality of his work. He demonstrated his professionalism by answering all my questions promptly and always being available to discuss the details of the project."
 		},
 		{
-			"name": "Lorem Ipsum",
-			"job": "Independant",
-			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
-		},
-		{
-			"name": "Lorem Ipsum",
-			"job": "Independant",
-			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
-		},
-		{
-			"name": "Lorem Ipsum",
-			"job": "Independant",
-			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
-		},
-		{
-			"name": "Lorem Ipsum",
-			"job": "Independant",
-			"feedback": "Amet nostrud cillum ullamco ex aliqua. Culpa mollit quis Lorem amet consequat ullamco occaecat magna velit. Est irure do quis quis ut mollit reprehenderit et reprehenderit. Reprehenderit voluptate anim quis esse. Laboris tempor cupidatat id irure aliqua esse pariatur. Ipsum do fugiat esse ipsum reprehenderit in ullamco ut enim ea incididunt do nulla et. Commodo duis consequat labore elit fugiat."
+			"name": "Walhan",
+			"job": "CEO - Samara",
+			"feedback": "To be honest, WaveSpace is one of the best projects I've done with Theo (out of the many we've worked on together). It was an accounting management application specifically designed for trainer retailers, and I have to say I'm absolutely delighted with the result. Théo was very responsive whenever I needed changes or adjustments (with follow-up even after the application was finished). He always listens to my requests and understands my needs perfectly. In terms of value for money, WaveSpace is more than reasonable. Théo offers very competitive rates without ever sacrificing quality of service. He is also very understanding when it comes to budget issues. Overall, I would highly recommend working with Theo as it has been a positive and rewarding experience."
 		}
 	],
 	"videos": [
