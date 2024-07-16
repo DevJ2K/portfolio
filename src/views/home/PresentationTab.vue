@@ -14,13 +14,13 @@
           reprehenderit. Ipsum aliquip id nostrud duis cupidatat.</p>
 
           <div  data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1200">
-            <button class="open-resume-btn">Open Resume</button>
+            <button class="open-resume-btn" @click="openCV">Open Resume</button>
           </div>
 
         <div class="flex w-full flex-row items-center justify-around sm:h-1/6" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0" data-aos-duration="1200">
-           <SocialLogo :logo="GithubSvg" name="DevJ2K" size="presentation-view-logo"/>
-           <SocialLogo :logo="LinkedinSvg" name="Theo Ajavon" size="presentation-view-logo"/>
-           <SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="presentation-view-logo"/>
+           <SocialLogo :logo="GithubSvg" name="DevJ2K" size="presentation-view-logo" link="https://github.com/DevJ2K"/>
+           <SocialLogo :logo="LinkedinSvg" name="Theo Ajavon" size="presentation-view-logo" link="https://www.linkedin.com/in/devj2k/"/>
+           <SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="presentation-view-logo" link="mailto:ajavontheopro@gmail.com"/>
 
         </div>
     </main>
@@ -33,4 +33,18 @@ import EmailSvg from '../../components/logos/EmailSvg.vue'
 import LinkedinSvg from '../../components/logos/LinkedinSvg.vue'
 import SocialLogo from '@/components/SocialLogo.vue';
 import BgPresentation from '@/components/background/BgPresentation.vue';
+import firebaseApp from '@/firebase/init';
+import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
+
+const storage = getStorage(firebaseApp);
+
+const openCV = async () => {
+      try {
+        const pdfRef = StorageRef(storage, aboutData.cv);
+        const pdfUrl = await getDownloadURL(pdfRef);
+        window.open(pdfUrl, '_blank');
+      } catch (error) {
+        console.error('Erreur lors de la récupération du PDF :', error);
+      }
+    }
 </script>

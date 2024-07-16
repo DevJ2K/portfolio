@@ -86,9 +86,9 @@
 					<div class="max-lg:hidden" v-for="i in [0, 1, 2]" :key="i">
 						<div class="flex flex-row items-center justify-center">
 							<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
-							<h3
+							<h1
 								class=" text-nowrap px-2 text-base font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">
-								{{ lastAboutme[i].itemDate }}</h3>
+								{{ lastAboutme[i].itemDate }}</h1>
 							<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 						</div>
 
