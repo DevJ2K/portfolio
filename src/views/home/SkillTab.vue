@@ -13,22 +13,24 @@
 
 						<div class=" flex w-full flex-col items-center justify-center gap-4">
 							<div class=" grid w-full grid-cols-3 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
-								<SkillCard skill="API" icon="fa-solid fa-cube" />
-								<SkillCard skill="Unit Test" icon="fa-solid fa-vials" />
-								<SkillCard skill="Peer To Peer Learning" icon="fa-solid fa-users" />
+								<SkillCard skill="API" icon="fa-solid fa-cube" description="APIs enable different software systems to communicate and interact. They are essential for integrating external services, accessing data, and ensuring interoperability between applications." />
+
+								<SkillCard skill="Unit Test" icon="fa-solid fa-vials" description="Unit tests are automated tests that check the functionality of small code units, like functions. They help catch bugs early, improve code quality, and ease maintenance by ensuring changes don’t introduce new issues."/>
+
+								<SkillCard skill="Peer To Peer Learning" icon="fa-solid fa-users" description="Peer-to-peer learning involves sharing knowledge among colleagues rather than through formal training. It fosters collaboration, knowledge sharing, and collective problem-solving in team environments." />
 							</div>
 
 							<div class=" grid w-full grid-cols-2 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
-								<SkillCard skill="Oriented Object Programming" icon="fa-solid fa-diagram-project" />
+								<SkillCard skill="Oriented Object Programming" icon="fa-solid fa-diagram-project" description="Object-Oriented Programming (OOP) organizes code into objects and classes. It promotes modularity, code reuse, and a structured approach to software development, which is crucial for building robust systems."/>
 								<!-- Search by Apple -->
-								<SkillCard skill="Data structures and algorithms" icon="fa-solid fa-database" />
+								<SkillCard skill="Data structures and algorithms" icon="fa-solid fa-database" description="Data structures organize and store data, while algorithms are sets of instructions for solving problems. Understanding them is vital for creating efficient solutions and optimizing performance in software development." />
 								<!-- Search by Apple -->
 							</div>
 
 							<div class=" grid w-full grid-cols-3 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
-								<SkillCard skill="Debugging" icon="fa-solid fa-bug" /> <!-- Search by Apple -->
-								<SkillCard skill="Clean Code" icon="fa-solid fa-spray-can-sparkles" />
-								<SkillCard skill="Problem solving" icon="fa-solid fa-square-check" />
+								<SkillCard skill="Debugging" icon="fa-solid fa-bug" description="Debugging involves finding and fixing errors in code. It is crucial for ensuring software reliability, improving code quality, and speeding up development by resolving issues promptly."/> <!-- Search by Apple -->
+								<SkillCard skill="Clean Code" icon="fa-solid fa-spray-can-sparkles" description="Clean code is well-organized, readable, and maintainable code. Writing clean code makes it easier for others to understand, maintain, and extend, reducing errors and enhancing software quality."/>
+								<SkillCard skill="Problem solving" icon="fa-solid fa-square-check" description="Problem-solving is the ability to identify, analyze, and resolve issues effectively. It is essential for tackling technical challenges, developing innovative solutions, and improving processes."/>
 								<!-- Search by Apple -->
 							</div>
 						</div>
