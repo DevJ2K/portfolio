@@ -69,7 +69,7 @@
 				<div class=" about-tab-div">
 					<h1
 						class="about-tab-div-title">
-						Last news</h1>
+						What's New</h1>
 
 					<div class="lg:hidden" v-for="i in [0, 1]" :key="i">
 						<div class="flex flex-row items-center justify-center">
@@ -100,7 +100,7 @@
 				<div class=" about-tab-div">
 					<h1
 						class="about-tab-div-title">
-						Last 3D Video</h1>
+						Latest 3D Showcase</h1>
 
 					<div class="flex flex-row items-center justify-center">
 						<div class="h-px w-4 bg-accent-color dark:bg-d-accent-color"></div>
