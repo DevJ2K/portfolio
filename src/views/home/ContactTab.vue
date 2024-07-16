@@ -58,7 +58,7 @@
 					<input id="form_subject" class="form-input form-input-border" type="text" maxlength="100">
 				</div>
 				<div class="flex w-full flex-col items-start gap-1">
-					<label for="form_body" class="form-input-name">How can I help you ?</label>
+					<label for="form_body" class="form-input-name">Your Message</label>
 					<textarea id="form_body" class="form-input form-input-border" rows="4" minlength="50" maxlength="2000"></textarea>
 				</div>
 

@@ -60,10 +60,10 @@
 .href-btn {
 	@apply relative;
 	@apply flex flex-row items-center justify-center gap-2;
-	@apply font-semibold text-lg;
+	@apply font-semibold text-base md:text-lg;
 	@apply rounded-xl;
 
-	@apply px-8 py-4;
+	@apply px-7 py-4;
 	@apply mt-6;
 	@apply shadow-md hover:shadow-xl;
 	@apply text-high-contrast-text dark:text-d-high-contrast-text;
