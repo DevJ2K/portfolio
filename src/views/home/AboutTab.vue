@@ -167,6 +167,6 @@ function goToAboutView() {
 		window.scrollTo(0, 0);
 	});
 }
-onMounted(() => {getLatestVideoUrl();});
+// onMounted(() => {getLatestVideoUrl();});
 
 </script>

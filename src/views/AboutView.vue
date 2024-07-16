@@ -95,7 +95,7 @@ const getVideosUrl = async () => {
 
 onMounted(() => {
 	refreshBackground();
-	getVideosUrl();
+	// getVideosUrl();
 });
 
 </script>
