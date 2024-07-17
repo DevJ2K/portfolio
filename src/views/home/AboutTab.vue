@@ -25,10 +25,8 @@
 							<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 						</div>
 
-						<p class="text-sm text-low-contrast-text opacity-100 dark:text-d-low-contrast-text">Eiusmod nostrud
-							ipsum occaecat tempor ipsum eu amet minim et magna ex aliquip. Nisi sit consequat nisi aliquip
-							ut dolore ex ipsum.</p>
-						<h3 class=" font-semibold text-high-contrast-text dark:text-d-high-contrast-text">2023 - <span
+						<p class="text-sm text-low-contrast-text opacity-100 dark:text-d-low-contrast-text">42 is a renowned institution in Paris, offering intensive training in programming and development. This school stands out for its innovative educational approach, without traditional classes, focusing on project-based learning and student collaboration.</p>
+						<h3 class=" font-semibold text-high-contrast-text dark:text-d-high-contrast-text">Nov. 2023 - <span
 								class=" underline decoration-accent-color decoration-2 underline-offset-[5px] dark:decoration-d-accent-color">Today</span>
 						</h3>
 					</div>
