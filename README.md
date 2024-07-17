@@ -31,6 +31,7 @@
 - [ ] Turn on all fetch from Firebase
 - [x] about-div-tab pop-up animation
 - [x] Background for PresentationTab
+- [ ] Highlight certain AboutCard
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
