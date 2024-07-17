@@ -48,7 +48,7 @@
 		},
 		{
 			"name":"Developer Swift",
-			"description": "As a former sneaker reseller, I identified a problem: the lack of a dedicated management application. I then contacted SamaraCG, the renowned private group specializing in sneaker reselling, to propose developing a management application for their members. My mission was to create this sneaker management application named WaveSpace.",
+			"description": "As a former sneaker reseller, I identified a problem : the lack of a dedicated management application. I then contacted SamaraCG, the renowned private group specializing in sneaker reselling, to propose developing a management application for their members. My mission was to create this sneaker management application named WaveSpace.",
 			"company": "Samara",
 			"expType": "Freelance",
 			"technos": ["SwiftUI", "Swift", "Firebase", "TestFlight"],
