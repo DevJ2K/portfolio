@@ -169,6 +169,19 @@ export default {
       "low-contrast-text": "#83008A", // 11. Low-contrast text
       "high-contrast-text": "#5B0060", // 12. High-contrast text
 
+      // "app-bg": "#FAFDFE", // 1. App background
+      // "subtle-bg": "#F2FAFB", // 2. Subtle background
+      // "ui-bg": "#DEF7F9", // 3. UI element background
+      // "hover-ui-bg": "#CAF1F6", // 4. Hovered UI element background
+      // "active-ui-bg": "#B5E9F0", // 5. Active / Selected UI element background
+      // "subtle-border": "#9DDDE7", // 6. Subtle borders and separators
+      // "ui-border": "#7DCEDC", // 7. UI element border and focus ring
+      // "hover-ui-border": "#3DB9CF", // 8. Hovered UI element border
+      // "accent-color": "#00A2C7", // 9. Solid backgrounds
+      // "hover-accent-color": "#0797B9", // 10. Hovered solid backgrounds
+      // "low-contrast-text": "#107D98", // 11. Low-contrast text
+      // "high-contrast-text": "#0D3C48", // 12. High-contrast text
+
 
         // Dark theme colors
         // "d-app-bg": "#0B032D",
