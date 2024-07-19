@@ -1,44 +1,82 @@
 {
 	"about": [
-		{
-			"itemDate": "Now",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore.",
-			"link": "https://www.github.com/DevJ2K"
-		},
-		{
-			"itemDate": "May 2024",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		},
-		{
-			"itemDate": "March 2024",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore.",
-			"link": "https://www.github.com/DevJ2K"
-		},
-		{
-			"itemDate": "November 2023",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		},
-		{
-			"itemDate": "September 2023",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		},
-		{
-			"itemDate": "Summer 2023",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		},
-		{
-			"itemDate": "End 2022",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		},
-		{
-			"itemDate": "2021",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		},
-		{
-			"itemDate": "2020",
-			"content": "Dolor aliquip in nulla id consectetur sunt est est nisi dolor eu fugiat voluptate. Laborum Lorem nostrud pariatur velit nostrud. Ipsum duis sunt ea excepteur consectetur Lorem irure ad labore."
-		}
-	],
+    {
+      "itemDate": "End of 2020",
+      "content": "I discovered programming in 10th grade (equivalent to \"seconde\" in France) with Python. I loved the idea of being able to create anything with just lines of code. This marked the beginning of a long adventure!",
+      "link": null
+    },
+    {
+      "itemDate": "Throughout 2021",
+      "content": "I worked on my first projects and discovered new languages: HTML, CSS, JavaScript, C#. At the same time, I also started learning 3D animation, a field I am passionate about.",
+      "link": null
+    },
+    {
+      "itemDate": "June 2022",
+      "content": "I completed my first concrete project, a game in Python with Tkinter for school. The project requirements were simple, but I enjoyed having no real limits other than my imagination and being able to implement the desired features.",
+      "link": "Cracklanders",
+	  "linkTitle": "Cracklanders"
+    },
+    {
+      "itemDate": "October 2022",
+      "content": "I noticed that many people at my school use Discord. This gave me the idea to create a Discord bot to provide students with various information from the school's intranet, such as their schedule, homework, grades, and more. So I started working on EntOnDiscord ! This project is one of my favorites because it allowed me to learn many concepts like OOP, scraping, database management, and more.",
+      "link": "EntOnDiscord",
+	  "linkTitle": "EntOnDiscord"
+    },
+    {
+      "itemDate": "December 2022",
+      "content": "I completed a second group project using HTML, CSS, JavaScript, and PHP. I really enjoyed this project because I was able to apply my 3D skills by creating all the images and videos and implementing 3D with Three.js.",
+      "link": "SFT-R",
+	  "linkTitle": "SFT-R"
+    },
+    {
+      "itemDate": "December 2022",
+      "content": "Being very interested in projects that require thinking, I tried to create my first AI dedicated to TicTacToe without external libraries. It records all the games it plays and uses them to anticipate potential defeats and create winning opportunities.",
+      "link": "TicTacToe IA",
+	  "linkTitle": "TicTacToe IA"
+    },
+    {
+      "itemDate": "December 2022 - February 2023",
+      "content": "I began learning mobile application development in Swift and completed my first mission as a mobile developer. This first experience taught me how to approach a client, establish requirements, and meet their needs.",
+      "link": null
+    },
+    {
+      "itemDate": "April 2023",
+      "content": "While continuing my projects, I passed my specialty exams (High School Diploma) and achieved a score of 20/20 in Computer Science and 18/20 in Mathematics !",
+      "link": null
+    },
+    {
+      "itemDate": "Summer 2023",
+      "content": "I traveled to the United States and had the opportunity to talk with several people in the IT field. I realized that this country best matched my expectations and offered the most opportunities to gain experience in IT. One of my goals is to work in the United States.",
+      "link": null
+    },
+    {
+      "itemDate": "September 2023",
+      "content": "I participated in the entrance exam for 42: La Piscine. This experience allowed me to meet new people, discover different learning methods, and challenge myself with increasingly difficult problems.",
+      "link": null
+    },
+    {
+      "itemDate": "November 6, 2023",
+      "content": "I joined 42 after passing the entrance exam. The curriculum is divided into two parts: the common core and the specialization. The common core, which usually takes about a year and a half, began for me.",
+      "link": null
+    },
+    {
+      "itemDate": "March 22, 2024",
+      "content": "After 4 months and 16 intensive days, I completed the common core in record time, a first at 42 Paris. I am proud that my skills and acquired discipline have paid off.",
+      "link": null
+    },
+    {
+      "itemDate": "June 2024",
+      "content": "I am now in the second part of my curriculum, the specialization. I continue working on projects to gain experience for the RNCP Level 7 (Master's Degree). At the same time, I secured my second freelance mission !",
+      "link": "ScreenTimeAPI",
+	  "linkTitle": "ScreenTimeAPI"
+    },
+    {
+      "itemDate": "Now",
+      "content": "I am currently working on my online presence by creating elements like this portfolio, my resume, and more. My next goal is to find an internship abroad, which is required for obtaining the RNCP Level 7 (Master's Degree).",
+      "link": "Portfolio",
+	  "linkTitle": "Portfolio"
+    }
+  ],
 	"experiences": [
 		{
 			"name":"Developer Swift",

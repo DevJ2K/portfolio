@@ -22,7 +22,7 @@
 
 			<div class="flex w-full flex-col items-center gap-9">
 				<TabTitleComponent id="a_aboutme" title="About Me"/>
-				<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Ullamco elit mollit ea anim nulla dolor anim in mollit dolor dolor adipisicing nulla. Ex veniam ea ex elit esse magna exercitation. Sunt anim pariatur exercitation ut irure reprehenderit ullamco velit ullamco culpa duis culpa proident.</h1>
+				<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Being quite young, it's natural to have questions about my skills. To clear any doubts, here is an overview of my journey, from my beginnings to today. I hope this helps to better understand who I am and, perhaps, inspire some.</h1>
 				<div
 					class="relative before:absolute before:inset-0 before:ml-6 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  before:to-low-contrast-text dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text dark:before:to-d-low-contrast-text md:before:mx-auto md:before:translate-x-0">
 
