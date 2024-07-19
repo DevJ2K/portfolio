@@ -31,7 +31,7 @@
 			</p>
 			<div v-if="link" :href="link" @click="openLink" class="mt-2 flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-xl border-2 border-accent-color bg-ui-bg px-3 py-2 text-xs font-medium text-high-contrast-text shadow-lg transition-all hover:bg-hover-ui-bg hover:shadow-md dark:border-d-accent-color dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:bg-d-hover-ui-bg sm:text-sm">
 				<RedirectionSvg color="text-high-contrast-text dark:text-d-high-contrast-text h-4 w-4"/>
-				{{ linkTitle }}
+				{{ linkTitle ? linkTitle : 'View Project' }}
 			</div>
 		</div>
 	</div>

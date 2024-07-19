@@ -142,7 +142,7 @@ const lastAboutme = ref(null);
 const lastVideo = ref(null);
 
 lastExperience.value = aboutData.experiences[0];
-lastAboutme.value = aboutData.about;
+lastAboutme.value = aboutData.about.toReversed();
 lastVideo.value = aboutData.videos[0];
 const router = useRouter();
 
