@@ -1,9 +1,10 @@
 {
-	"about": [
+  "about": [
     {
       "itemDate": "End of 2020",
       "content": "I discovered programming in 10th grade (equivalent to \"seconde\" in France) with Python. I loved the idea of being able to create anything with just lines of code. This marked the beginning of a long adventure!",
-      "link": null
+      "link": null,
+      "highlighted": true
     },
     {
       "itemDate": "Throughout 2021",
@@ -14,35 +15,38 @@
       "itemDate": "June 2022",
       "content": "I completed my first concrete project, a game in Python with Tkinter for school. The project requirements were simple, but I enjoyed having no real limits other than my imagination and being able to implement the desired features.",
       "link": "Cracklanders",
-	  "linkTitle": "Cracklanders"
+      "linkTitle": "Cracklanders"
     },
     {
       "itemDate": "October 2022",
       "content": "I noticed that many people at my school use Discord. This gave me the idea to create a Discord bot to provide students with various information from the school's intranet, such as their schedule, homework, grades, and more. So I started working on EntOnDiscord ! This project is one of my favorites because it allowed me to learn many concepts like OOP, scraping, database management, and more.",
       "link": "EntOnDiscord",
-	  "linkTitle": "EntOnDiscord"
+      "linkTitle": "EntOnDiscord",
+      "highlighted": true
     },
     {
       "itemDate": "December 2022",
       "content": "I completed a second group project using HTML, CSS, JavaScript, and PHP. I really enjoyed this project because I was able to apply my 3D skills by creating all the images and videos and implementing 3D with Three.js.",
       "link": "SFT-R",
-	  "linkTitle": "SFT-R"
+      "linkTitle": "SFT-R"
     },
     {
       "itemDate": "December 2022",
       "content": "Being very interested in projects that require thinking, I tried to create my first AI dedicated to TicTacToe without external libraries. It records all the games it plays and uses them to anticipate potential defeats and create winning opportunities.",
       "link": "TicTacToe IA",
-	  "linkTitle": "TicTacToe IA"
+      "linkTitle": "TicTacToe IA"
     },
     {
       "itemDate": "December 2022 - February 2023",
       "content": "I began learning mobile application development in Swift and completed my first mission as a mobile developer. This first experience taught me how to approach a client, establish requirements, and meet their needs.",
-      "link": null
+      "link": null,
+      "highlighted": true
     },
     {
       "itemDate": "April 2023",
       "content": "While continuing my projects, I passed my specialty exams (High School Diploma) and achieved a score of 20/20 in Computer Science and 18/20 in Mathematics !",
-      "link": null
+      "link": null,
+      "highlighted": true
     },
     {
       "itemDate": "Summer 2023",
@@ -62,76 +66,88 @@
     {
       "itemDate": "March 22, 2024",
       "content": "After 4 months and 16 intensive days, I completed the common core in record time, a first at 42 Paris. I am proud that my skills and acquired discipline have paid off.",
-      "link": null
+      "link": null,
+      "highlighted": true
     },
     {
       "itemDate": "June 2024",
       "content": "I am now in the second part of my curriculum, the specialization. I continue working on projects to gain experience for the RNCP Level 7 (Master's Degree). At the same time, I secured my second freelance mission !",
       "link": "ScreenTimeAPI",
-	  "linkTitle": "ScreenTimeAPI"
+      "linkTitle": "ScreenTimeAPI"
     },
     {
       "itemDate": "Now",
       "content": "I am currently working on my online presence by creating elements like this portfolio, my resume, and more. My next goal is to find an internship abroad, which is required for obtaining the RNCP Level 7 (Master's Degree).",
       "link": "Portfolio",
-	  "linkTitle": "Portfolio"
+      "linkTitle": "Portfolio"
     }
   ],
-	"experiences": [
-		{
-			"name":"Developer Swift",
-			"description": "My mission was to create a prototype using the ScreenTime API to manage screen time. I had to utilize Swift concepts such as FamilyControls and DeviceActivityMonitor to manage the device's applications and perform background actions.",
-			"company": "Fiverr",
-			"expType": "Freelance",
-			"technos": ["SwiftUI", "Swift", "Family Controls", "DeviceActivityMonitor", "ScreenTimeAPI"],
-			"date": "June 2024"
-		},
-		{
-			"name":"Developer Swift",
-			"description": "As a former sneaker reseller, I identified a problem : the lack of a dedicated management application. I then contacted SamaraCG, the renowned private group specializing in sneaker reselling, to propose developing a management application for their members. My mission was to create this sneaker management application named WaveSpace.",
-			"company": "Samara",
-			"expType": "Freelance",
-			"technos": ["SwiftUI", "Swift", "Firebase", "TestFlight"],
-			"date": "December 2022 - February 2023"
-		}
-	],
-	"feedbacks": [
-		{
-			"name": "Said Guidirne",
-			"job": "Independent - Fiverr",
-			"feedback": "I've had the pleasure of working with this freelancer and I'm extremely satisfied with the quality of his work. He demonstrated his professionalism by answering all my questions promptly and always being available to discuss the details of the project."
-		},
-		{
-			"name": "Walhan",
-			"job": "CEO - Samara",
-			"feedback": "To be honest, WaveSpace is one of the best projects I've done with Theo (out of the many we've worked on together). It was an accounting management application specifically designed for trainer retailers, and I have to say I'm absolutely delighted with the result. Théo was very responsive whenever I needed changes or adjustments (with follow-up even after the application was finished). He always listens to my requests and understands my needs perfectly. In terms of value for money, WaveSpace is more than reasonable. Théo offers very competitive rates without ever sacrificing quality of service. He is also very understanding when it comes to budget issues. Overall, I would highly recommend working with Theo as it has been a positive and rewarding experience."
-		}
-	],
-	"videos": [
-		{
-			"name": "3Dvideos/porsche.mp4",
-			"title": "CarChase"
-		},
-		{
-			"name": "3Dvideos/trailer_transcendence.mp4",
-			"title": "Trailer Transcendence"
-		},
-		{
-			"name": "3Dvideos/porscheGT3cinematic.mp4",
-			"title": "SFT-R - SpeedTest"
-		},
-		{
-			"name": "3Dvideos/trailer_nike.mp4",
-			"title": "Nike Shop"
-		},
-		{
-			"name": "3Dvideos/trailer_samara.mp4",
-			"title": "Trailer Samara"
-		},
-		{
-			"name": "3Dvideos/my_dream_house.mp4",
-			"title": "Dream House"
-		}
-	],
-	"cv": "CV/CV_theo_ajavon.pdf"
+  "experiences": [
+    {
+      "name": "Developer Swift",
+      "description": "My mission was to create a prototype using the ScreenTime API to manage screen time. I had to utilize Swift concepts such as FamilyControls and DeviceActivityMonitor to manage the device's applications and perform background actions.",
+      "company": "Fiverr",
+      "expType": "Freelance",
+      "technos": [
+        "SwiftUI",
+        "Swift",
+        "Family Controls",
+        "DeviceActivityMonitor",
+        "ScreenTimeAPI"
+      ],
+      "date": "June 2024"
+    },
+    {
+      "name": "Developer Swift",
+      "description": "As a former sneaker reseller, I identified a problem : the lack of a dedicated management application. I then contacted SamaraCG, the renowned private group specializing in sneaker reselling, to propose developing a management application for their members. My mission was to create this sneaker management application named WaveSpace.",
+      "company": "Samara",
+      "expType": "Freelance",
+      "technos": [
+        "SwiftUI",
+        "Swift",
+        "Firebase",
+        "TestFlight"
+      ],
+      "date": "December 2022 - February 2023"
+    }
+  ],
+  "feedbacks": [
+    {
+      "name": "Said Guidirne",
+      "job": "Independent - Fiverr",
+      "feedback": "I've had the pleasure of working with this freelancer and I'm extremely satisfied with the quality of his work. He demonstrated his professionalism by answering all my questions promptly and always being available to discuss the details of the project."
+    },
+    {
+      "name": "Walhan",
+      "job": "CEO - Samara",
+      "feedback": "To be honest, WaveSpace is one of the best projects I've done with Theo (out of the many we've worked on together). It was an accounting management application specifically designed for trainer retailers, and I have to say I'm absolutely delighted with the result. Théo was very responsive whenever I needed changes or adjustments (with follow-up even after the application was finished). He always listens to my requests and understands my needs perfectly. In terms of value for money, WaveSpace is more than reasonable. Théo offers very competitive rates without ever sacrificing quality of service. He is also very understanding when it comes to budget issues. Overall, I would highly recommend working with Theo as it has been a positive and rewarding experience."
+    }
+  ],
+  "videos": [
+    {
+      "name": "3Dvideos/porsche.mp4",
+      "title": "CarChase"
+    },
+    {
+      "name": "3Dvideos/trailer_transcendence.mp4",
+      "title": "Trailer Transcendence"
+    },
+    {
+      "name": "3Dvideos/porscheGT3cinematic.mp4",
+      "title": "SFT-R - SpeedTest"
+    },
+    {
+      "name": "3Dvideos/trailer_nike.mp4",
+      "title": "Nike Shop"
+    },
+    {
+      "name": "3Dvideos/trailer_samara.mp4",
+      "title": "Trailer Samara"
+    },
+    {
+      "name": "3Dvideos/my_dream_house.mp4",
+      "title": "Dream House"
+    }
+  ],
+  "cv": "CV/CV_theo_ajavon.pdf"
 }

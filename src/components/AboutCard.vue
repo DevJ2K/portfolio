@@ -24,8 +24,8 @@
 			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-xs text-transparent dark:from-d-low-contrast-text sm:text-sm">{{ content }}</p>
 		</div>
 
-		<div v-else class=" custom-shadow-lg flex w-[calc(100%-4rem)] flex-col gap-2 rounded-xl border border-subtle-border bg-ui-bg p-4 dark:border-d-subtle-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)] md:group-even:items-end">
-			<h2 class="font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
+		<div v-else class=" custom-shadow-lg relative flex w-[calc(100%-4rem)] flex-col gap-2 rounded-xl border border-subtle-border bg-ui-bg p-4 dark:border-d-subtle-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)] md:group-even:items-end">
+			<h2 class="font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg" :class="highlighted ? 'underline underline-offset-[6px] decoration-2 decoration-accent-color dark:decoration-d-accent-color': ''">{{ itemDate }}</h2>
 			<p class="text-xs text-low-contrast-text dark:text-d-low-contrast-text sm:text-sm">
 				{{ content }}
 			</p>
@@ -60,6 +60,10 @@ const props = defineProps({
 	linkTitle: {
 		type: String,
 		default: "View project"
+	},
+	highlighted: {
+		type: Boolean,
+		default: false
 	}
 })
 

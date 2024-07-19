@@ -26,7 +26,7 @@
 				<div
 					class="relative before:absolute before:inset-0 before:ml-6 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  before:to-low-contrast-text dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text dark:before:to-d-low-contrast-text md:before:mx-auto md:before:translate-x-0">
 
-					<AboutCard v-for="item in aboutList" :key="item" :item-date="item.itemDate" :content="item.content" :link="item.link" :link-title="item.linkTitle"/>
+					<AboutCard v-for="item in aboutList" :key="item" :item-date="item.itemDate" :content="item.content" :link="item.link" :link-title="item.linkTitle" :highlighted="item.highlighted"/>
 				</div>
 			</div>
 
