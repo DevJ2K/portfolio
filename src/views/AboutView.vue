@@ -72,7 +72,7 @@ const feedbacksList = ref([]);
 const videosList = ref([]);
 
 aboutList.value = aboutData.about;
-experiencesList.value = aboutData.experiences;
+experiencesList.value = aboutData.experiences.toReversed();
 feedbacksList.value = aboutData.feedbacks;
 
 const storage = getStorage(firebaseApp);
