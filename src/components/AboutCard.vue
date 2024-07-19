@@ -23,21 +23,24 @@
 			<h2 class=" mb-1 font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
 			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-xs text-transparent dark:from-d-low-contrast-text sm:text-sm">{{ content }}</p>
 		</div>
-		<!-- <div v-if="gradientText" class="w-[calc(100%-4rem)] rounded-xl border border-ui-border bg-gradient-to-b from-ui-bg to-transparent p-4 dark:border-d-ui-border dark:from-d-ui-bg md:w-[calc(50%-2.5rem)]">
-			<h2 class=" mb-1 text-xl font-bold text-high-contrast-text dark:text-d-high-contrast-text">{{ itemDate }}</h2>
-			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-transparent dark:from-d-low-contrast-text">{{ content }}</p>
-		</div> -->
+
 		<div v-else class=" custom-shadow-lg w-[calc(100%-4rem)] rounded-xl border border-subtle-border bg-ui-bg p-4 dark:border-d-subtle-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)]">
 			<h2 class=" mb-1 font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
 			<p class="text-xs text-low-contrast-text dark:text-d-low-contrast-text sm:text-sm">
 				{{ content }}
 			</p>
+			<div v-if="link" :href="link" @click="openLink" class="mt-2 flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-xl border-2 border-accent-color bg-ui-bg px-3 py-2 text-xs font-medium text-high-contrast-text shadow-lg transition-all hover:bg-hover-ui-bg hover:shadow-md dark:border-d-accent-color dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:bg-d-hover-ui-bg sm:text-sm">
+				<RedirectionSvg color="text-high-contrast-text dark:text-d-high-contrast-text h-4 w-4"/>
+				{{ linkTitle }}
+			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
-defineProps({
+import RedirectionSvg from './customSvg/RedirectionSvg.vue';
+
+const props = defineProps({
 	itemDate: {
 		type: String,
 		default: 'Month YYYY'
@@ -49,6 +52,20 @@ defineProps({
 	gradientText: {
 		type: Boolean,
 		default: false
+	},
+	link: {
+		type: String,
+		default: null
+	},
+	linkTitle: {
+		type: String,
+		default: "View project"
 	}
 })
+
+const openLink = () => {
+	if (props.link != null) {
+		window.open(props.link, 'blank');
+	}
+}
 </script>
