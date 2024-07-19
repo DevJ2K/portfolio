@@ -24,13 +24,13 @@
 			<p class="bg-gradient-to-b from-low-contrast-text bg-clip-text text-xs text-transparent dark:from-d-low-contrast-text sm:text-sm">{{ content }}</p>
 		</div>
 
-		<div v-else class=" custom-shadow-lg w-[calc(100%-4rem)] rounded-xl border border-subtle-border bg-ui-bg p-4 dark:border-d-subtle-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)]">
-			<h2 class=" mb-1 font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
+		<div v-else class=" custom-shadow-lg flex w-[calc(100%-4rem)] flex-col gap-2 rounded-xl border border-subtle-border bg-ui-bg p-4 dark:border-d-subtle-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)] md:group-even:items-end">
+			<h2 class="font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg">{{ itemDate }}</h2>
 			<p class="text-xs text-low-contrast-text dark:text-d-low-contrast-text sm:text-sm">
 				{{ content }}
 			</p>
-			<div v-if="link" :href="link" @click="openLink" class="mt-2 flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-xl border-2 border-accent-color bg-ui-bg px-3 py-2 text-xs font-medium text-high-contrast-text shadow-lg transition-all hover:bg-hover-ui-bg hover:shadow-md dark:border-d-accent-color dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:bg-d-hover-ui-bg sm:text-sm">
-				<RedirectionSvg color="text-high-contrast-text dark:text-d-high-contrast-text h-4 w-4"/>
+			<div v-if="link" :href="link" @click="openLink" class="group/redirection mt-4 flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-xl border-2 border-accent-color bg-ui-bg px-3 py-2 text-xs font-semibold text-high-contrast-text shadow-lg transition-all hover:border-hover-accent-color hover:bg-hover-accent-color hover:text-white hover:shadow-md dark:border-d-accent-color dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:border-d-hover-accent-color dark:hover:bg-d-hover-accent-color sm:text-sm">
+				<RedirectionSvg color="text-high-contrast-text dark:text-d-high-contrast-text h-4 w-4 group-hover/redirection:text-white transition-all"/>
 				{{ linkTitle ? linkTitle : 'View Project' }}
 			</div>
 		</div>
