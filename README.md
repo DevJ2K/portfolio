@@ -32,6 +32,7 @@
 - [x] about-div-tab pop-up animation
 - [x] Background for PresentationTab
 - [x] Highlight certain AboutCard + Possibility to add link in AboutCard
+- [ ] Little paragraph to explain Tab in ProjectsView
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
