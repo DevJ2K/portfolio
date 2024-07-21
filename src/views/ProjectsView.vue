@@ -25,6 +25,7 @@
 			<div v-if="searchText.length == 0" class="flex w-full flex-col items-center gap-40">
 				<div class="flex w-full flex-col items-center justify-center gap-8">
 					<TabTitleComponent id="p_featured" title="Featured" />
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Ullamco nisi cupidatat proident aute excepteur aliquip aliqua nostrud voluptate cupidatat aliqua. Exercitation eiusmod excepteur sit qui commodo aliquip culpa commodo. Magna non nostrud ex aliqua sit voluptate et dolore esse eu irure adipisicing pariatur labore.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-wrap items-center justify-center gap-6">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
@@ -40,6 +41,7 @@
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
 					<TabTitleComponent id="p_personal" title="Personal" />
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Nisi et mollit non ex ullamco id sint duis qui commodo cupidatat. Excepteur veniam laborum reprehenderit occaecat sit est culpa ad magna ullamco duis. Eu cupidatat aliqua cillum fugiat qui consequat irure consectetur amet incididunt. Commodo occaecat proident cillum cupidatat ea. Lorem quis sint sunt consectetur labore labore cupidatat do veniam excepteur adipisicing. Duis aliqua reprehenderit commodo fugiat. Pariatur laborum anim proident cupidatat labore minim fugiat exercitation mollit id officia magna mollit Lorem.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
@@ -53,6 +55,7 @@
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
 					<TabTitleComponent id="p_42cursus" title="42Cursus" />
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Ut consequat velit excepteur enim esse. Incididunt labore sunt nulla do ex magna et proident fugiat adipisicing tempor. Minim aliqua culpa non ullamco ipsum quis sit cupidatat cillum elit dolor. Exercitation pariatur commodo sint deserunt reprehenderit adipisicing est nisi elit dolore aute enim. Magna aliquip mollit esse sit exercitation ullamco esse tempor.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
@@ -66,6 +69,7 @@
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
 					<TabTitleComponent id="p_others" title="Others" />
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Amet dolor sunt duis et elit consectetur dolor eu quis. Ut fugiat eiusmod nisi et nostrud ullamco occaecat eu ea. Consectetur laboris cillum enim reprehenderit occaecat veniam. Id ut excepteur aliqua anim laboris proident est. Mollit veniam proident magna culpa et occaecat. Ex deserunt reprehenderit proident consectetur sit quis consequat nostrud enim mollit et. Sit culpa non enim exercitation culpa qui consequat consectetur.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
