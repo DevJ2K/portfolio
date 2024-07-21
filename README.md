@@ -33,7 +33,9 @@
 - [x] Background for PresentationTab
 - [x] Highlight certain AboutCard + Possibility to add link in AboutCard
 - [ ] Little paragraph to explain Tab in ProjectsView
+- [ ] Find solution about 3D videos because Storage is too expensive. Use iFrame instead.
 - [ ] Put all local-data.json & about-data.json on Firestore
+- [ ] Add date field on each data to order by Date
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 
 <!-- - [ ] Add smooth animation AboutView ( Better between v-if & v-show ? ) -->
