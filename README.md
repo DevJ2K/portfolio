@@ -40,7 +40,6 @@
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 <!-- - [ ] Search project animation -->
 
-
 ##
 This template should help get you started developing with Vue 3 in Vite.
 
