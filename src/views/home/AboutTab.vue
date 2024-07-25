@@ -106,9 +106,10 @@
 							class=" text-nowrap px-2 text-lg font-bold text-high-contrast-text underline-offset-4 dark:text-d-high-contrast-text">{{ lastVideo.title }}</h2>
 						<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 					</div>
-					<div class=" custom-shadow-sm w-fit overflow-hidden rounded-2xl">
-						<video v-if="lastVideo.url" muted :src="lastVideo.url" autoplay="true" loop="true">
-						</video>
+					<div class=" custom-shadow-sm size-full overflow-hidden rounded-2xl">
+						<!-- <video v-if="lastVideo.url" muted :src="lastVideo.url" autoplay="true" loop="true">
+						</video> -->
+						<iframe src="https://www.youtube.com/embed/wGudTKlWI_0?si=29zRF1GuRPEAIZpa" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 					</div>
 				</div>
 				</div>
@@ -165,6 +166,6 @@ function goToAboutView() {
 		window.scrollTo(0, 0);
 	});
 }
-// onMounted(() => {getLatestVideoUrl();});
+onMounted(() => {getLatestVideoUrl();});
 
 </script>
