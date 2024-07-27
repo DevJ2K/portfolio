@@ -3,7 +3,7 @@
 		<div id="navMenu"
 			class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
 			<ul
-				class="flex size-full flex-col items-center justify-center gap-16 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
+				class="flex size-full flex-col items-center justify-center gap-12 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
 				<li class="group relative w-max">
 					<p class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white"
 						@click="backToHome">Home</p>

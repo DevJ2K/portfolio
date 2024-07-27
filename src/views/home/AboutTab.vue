@@ -109,7 +109,12 @@
 					<div class=" custom-shadow-sm size-full overflow-hidden rounded-2xl">
 						<video v-if="lastVideo.url && useFirebaseStorage" muted :src="lastVideo.url" autoplay="true" loop="true">
 						</video>
-						<iframe v-else :src="lastVideo.ytbLink" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+
+
+
+						<div v-else class=" relative w-full overflow-hidden rounded-xl border-0 border-ui-border pt-[56.25%] shadow-md dark:border-d-subtle-border">
+							<iframe :src="lastVideo.ytbLink" class=" absolute left-0 top-0 size-full border-0"></iframe>
+						</div>
 					</div>
 				</div>
 				</div>
