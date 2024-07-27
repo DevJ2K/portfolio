@@ -35,7 +35,7 @@
 - [x] Little paragraph to explain Tab in ProjectsView
 - [x] Find solution about 3D videos because Storage is too expensive. Use iFrame instead.
 - [ ] Put all local-data.json & about-data.json on Firestore
-- [ ] Project link for aboutCard
+- [x] Project link for aboutCard
 - [x] Add date field on each data to order by Date
 - [x] Add Feedbacks / Experiences tab
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
