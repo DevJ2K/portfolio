@@ -16,11 +16,14 @@ with open('about-data.json', 'r') as f:
 # Fonction pour ajouter des données à Firestore
 def add_data_to_firestore(collection_name, data):
     collection_ref = db.collection(collection_name)
-    for doc_id, doc_data in data.items():
-        collection_ref.document(doc_id).set(doc_data)
-        print(f'Document {doc_id} ajouté avec succès.')
+    for item in data:
+        # collection_ref.document(doc_id).set(doc_data)
+        collection_ref.add(item)
+        # print(f"ITEM => {item}")
+    # print(f'Document {doc_id} ajouté avec succès.')
 
 # Ajouter les données du fichier JSON à la collection 'about'
-add_data_to_firestore('about', data)
+collection = 'about'
+add_data_to_firestore(collection, data[collection])
 
 print("Données ajoutées avec succès à Firestore.")
