@@ -28,7 +28,7 @@
 - [x] AboutTab > AboutCard color are different
 - [x] Animation left to right View More Btn
 - [x] Fetch img for project from Storage | Use a canva or default image instead
-- [ ] Turn on all fetch from Firebase
+- [x] Turn on all fetch from Firebase
 - [x] about-div-tab pop-up animation
 - [x] Background for PresentationTab
 - [x] Highlight certain AboutCard + Possibility to add link in AboutCard

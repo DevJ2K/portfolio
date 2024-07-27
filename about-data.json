@@ -14,26 +14,26 @@
     {
       "itemDate": "June 2022",
       "content": "I completed my first concrete project, a game in Python with Tkinter for school. The project requirements were simple, but I enjoyed having no real limits other than my imagination and being able to implement the desired features.",
-      "link": "Cracklanders",
+      "link": "https://github.com/DevJ2K/cracklanders",
       "linkTitle": "Cracklanders"
     },
     {
       "itemDate": "October 2022",
       "content": "I noticed that many people at my school use Discord. This gave me the idea to create a Discord bot to provide students with various information from the school's intranet, such as their schedule, homework, grades, and more. So I started working on EntOnDiscord ! This project is one of my favorites because it allowed me to learn many concepts like OOP, scraping, database management, and more.",
-      "link": "EntOnDiscord",
+      "link": "https://github.com/DevJ2K/ent-on-discord",
       "linkTitle": "EntOnDiscord",
       "highlighted": true
     },
     {
       "itemDate": "December 2022",
       "content": "I completed a second group project using HTML, CSS, JavaScript, and PHP. I really enjoyed this project because I was able to apply my 3D skills by creating all the images and videos and implementing 3D with Three.js.",
-      "link": "SFT-R",
+      "link": "https://github.com/DevJ2K/sft-r-website",
       "linkTitle": "SFT-R"
     },
     {
       "itemDate": "December 2022",
       "content": "Being very interested in projects that require thinking, I tried to create my first AI dedicated to TicTacToe without external libraries. It records all the games it plays and uses them to anticipate potential defeats and create winning opportunities.",
-      "link": "TicTacToe IA",
+      "link": "https://github.com/DevJ2K/tictactoe_ia",
       "linkTitle": "TicTacToe IA"
     },
     {
@@ -72,13 +72,13 @@
     {
       "itemDate": "June 2024",
       "content": "I am now in the second part of my curriculum, the specialization. I continue working on projects to gain experience for the RNCP Level 7 (Master's Degree). At the same time, I secured my second freelance mission !",
-      "link": "ScreenTimeAPI",
+      "link": "https://github.com/DevJ2K/ScreenTimeApp",
       "linkTitle": "ScreenTimeAPI"
     },
     {
       "itemDate": "Now",
       "content": "I am currently working on my online presence by creating elements like this portfolio, my resume, and more. My next goal is to find an internship abroad, which is required for obtaining the RNCP Level 7 (Master's Degree).",
-      "link": "Portfolio",
+      "link": "https://github.com/DevJ2K/portfolio",
       "linkTitle": "Portfolio"
     }
   ],

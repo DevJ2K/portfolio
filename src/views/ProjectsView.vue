@@ -122,7 +122,7 @@ import refreshBackground from '@/js/refreshBackground';
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
 const searchText = ref("");
-const useFirebaseFirestore = false;
+const useFirebaseFirestore = true;
 const useFirebaseStorage = true;
 const route = useRoute();
 const db = getFirestore(firebaseApp);
@@ -137,6 +137,7 @@ const getProjects = async () => {
 		const projectsCol = collection(db, 'projects');
 		const projectSnapshot = await getDocs(projectsCol);
 		projectList.value = projectSnapshot.docs.map(doc => doc.data());
+		console.log(projectList.value)
 	} else {
 		// eslint-disable-next-line no-undef
 		projectList.value = localData.projects;
@@ -163,6 +164,9 @@ const clearSearchField = () => {
 }
 
 const containsSearchTag = (project) => {
+	if (!project.tags) {
+		return (false);
+	}
 	let tags = [];
 	for (let i = 0; i < project.tags.length; i++) {
 		tags.push(project.tags[i].toLowerCase());
@@ -179,6 +183,9 @@ const containsSearchTag = (project) => {
 }
 
 const containsCategory = (project, category) => {
+	if (!project.categories) {
+		return (false);
+	}
 	for (let i = 0; i < project.categories.length; i++) {
 		if (category.toLowerCase() == project.categories[i].toLowerCase()) {
 			return (true);
