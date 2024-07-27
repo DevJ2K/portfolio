@@ -107,9 +107,9 @@
 						<div class="h-px w-full bg-accent-color dark:bg-d-accent-color"></div>
 					</div>
 					<div class=" custom-shadow-sm size-full overflow-hidden rounded-2xl">
-						<!-- <video v-if="lastVideo.url" muted :src="lastVideo.url" autoplay="true" loop="true">
-						</video> -->
-						<iframe src="https://www.youtube.com/embed/wGudTKlWI_0?si=29zRF1GuRPEAIZpa" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+						<video v-if="lastVideo.url && useFirebaseStorage" muted :src="lastVideo.url" autoplay="true" loop="true">
+						</video>
+						<iframe v-else :src="lastVideo.ytbLink" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 					</div>
 				</div>
 				</div>
@@ -141,6 +141,7 @@ const storage = getStorage(firebaseApp);
 const lastExperience = ref(null);
 const lastAboutme = ref(null);
 const lastVideo = ref(null);
+const useFirebaseStorage = ref(false);
 
 lastExperience.value = aboutData.experiences.toReversed()[0];
 lastAboutme.value = aboutData.about.toReversed();
@@ -166,6 +167,10 @@ function goToAboutView() {
 		window.scrollTo(0, 0);
 	});
 }
-onMounted(() => {getLatestVideoUrl();});
+onMounted(() => {
+	if (useFirebaseStorage.value) {
+		getLatestVideoUrl();
+	}
+});
 
 </script>

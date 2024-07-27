@@ -126,27 +126,33 @@
   "videos": [
     {
       "name": "3Dvideos/porsche.mp4",
-      "title": "CarChase"
+      "ytbLink": "https://www.youtube.com/embed/MHhoGCLEhlk?si=pOSy0zoaM_93tZSv",
+      "title": "Porsche - CarChase"
     },
     {
       "name": "3Dvideos/trailer_transcendence.mp4",
-      "title": "Trailer Transcendence"
+      "ytbLink": "https://www.youtube.com/embed/aLkMxFC3ZE8?si=2E43NmTx0hnP2zNR",
+      "title": "Trailer - Ft_transcendence"
     },
     {
       "name": "3Dvideos/porscheGT3cinematic.mp4",
+      "ytbLink": "https://www.youtube.com/embed/RbA7jwXtV38?si=3xgxhgPNzVJUXWyl",
       "title": "SFT-R - SpeedTest"
     },
     {
       "name": "3Dvideos/trailer_nike.mp4",
-      "title": "Nike Shop"
+      "ytbLink": "https://www.youtube.com/embed/rcI6-JMUR_Q?si=OOv_GyMcbLD1a4WV",
+      "title": "Trailer - Nike Shop"
     },
     {
       "name": "3Dvideos/trailer_samara.mp4",
-      "title": "Trailer Samara"
+      "ytbLink": "https://youtube.com/embed/4Kpe11UJn_k?si=fm6Q6dHqpuQowUNZ",
+      "title": "Trailer - CG_Samara"
     },
     {
       "name": "3Dvideos/my_dream_house.mp4",
-      "title": "Dream House"
+      "ytbLink": "https://youtube.com/embed/ocry9MhhGOE?si=OUlkINtjQDPx9M1t",
+      "title": "DevJ2K - Dream House"
     }
   ],
   "cv": "CV/CV_theo_ajavon.pdf"

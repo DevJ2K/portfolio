@@ -36,11 +36,15 @@
 
 				<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Since 2021, in addition to coding, I have enjoyed creating 3D videos in my free time. This allows me to visually express my ideas and I love seeing the final renders. Here are some of my works that I’d like to share with you !</h1>
 
-				<div class=" flex grid-cols-2 flex-wrap justify-center gap-6 sm:grid">
+				<div class=" flex w-full grid-cols-2 flex-wrap justify-center gap-6 sm:grid">
 					<div v-for="video in videosList" :key="video" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="0" data-aos-duration="400">
-						<fieldset class="flex w-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
+						<fieldset class="flex size-full items-center justify-center rounded-lg border border-subtle-border bg-subtle-bg px-6 py-4 shadow-md transition-all hover:border-hover-ui-border hover:shadow-lg dark:border-d-subtle-border dark:bg-d-subtle-bg dark:hover:border-d-hover-ui-border">
 							<legend class=" m-auto text-nowrap px-2 text-base font-semibold text-high-contrast-text dark:text-d-high-contrast-text md:text-xl">{{ video.title }}</legend>
-							<video class="size-fit overflow-hidden rounded-xl border border-ui-border dark:border-d-subtle-border" v-if="video.url" controls :src="video.url" muted loop autoplay="true"></video>
+
+
+							<video v-if="video.url && useFirebaseStorage"  class="size-fit overflow-hidden rounded-xl border border-ui-border dark:border-d-subtle-border" muted :src="video.url" autoplay="true" loop="true">
+							</video>
+							<iframe v-else :src="video.ytbLink" title="" class="size-full overflow-hidden rounded-xl border border-ui-border dark:border-d-subtle-border"  allowfullscreen  frameborder="0" height="100%" width="100%"></iframe>
 						</fieldset>
 					</div>
 				</div>
@@ -72,20 +76,31 @@ const experiencesList = ref([]);
 const feedbacksList = ref([]);
 const videosList = ref([]);
 
-const useFirebaseFirestore = false;
-const useFirebaseStorage = true;
+const useFirebaseFirestore = ref(false);
+const useFirebaseStorage = ref(false);
 const storage = getStorage(firebaseApp);
 const db = getFirestore(firebaseApp);
+
+if (useFirebaseFirestore.value == false) {
+	// eslint-disable-next-line no-undef
+	aboutList.value = aboutData.about;
+	// eslint-disable-next-line no-undef
+	experiencesList.value = aboutData.experiences.toReversed();
+	// eslint-disable-next-line no-undef
+	feedbacksList.value = aboutData.feedbacks;
+}
 
 const getVideosUrl = async () => {
 	for (let i = 0; i < aboutData.videos.length; i++) {
 		const element = aboutData.videos[i];
 		try {
-			if (useFirebaseStorage) {
+			if (useFirebaseStorage.value) {
 				const videoRef = StorageRef(storage, element.name);
 				const url = await getDownloadURL(videoRef);
 				element.url = url;
 				videosList.value.push(element);
+			} else {
+				videosList.value = aboutData.videos;
 			}
 		} catch (error) {
 			console.error('Erreur lors de la récupération de la vidéo:', error);
@@ -94,7 +109,7 @@ const getVideosUrl = async () => {
 }
 
 const getAbout = async () => {
-	if (useFirebaseFirestore) {
+	if (useFirebaseFirestore.value) {
 		const aboutCol = collection(db, 'about');
 		const experiencesCol = collection(db, 'experiences');
 		const feedbacksCol = collection(db, 'feedbacks');
@@ -105,21 +120,13 @@ const getAbout = async () => {
 		aboutList.value = aboutSnapshot.docs.map(doc => doc.data()).sort((a, b) => { return a.dateFilter - b.dateFilter;});
 		experiencesList.value = experiencesSnapshot.docs.map(doc => doc.data()).sort((a, b) => { return a.dateFilter - b.dateFilter;}).toReversed();
 		feedbacksList.value = feedbacksSnapshot.docs.map(doc => doc.data()).sort((a, b) => { return a.dateFilter - b.dateFilter;});
-
-	} else {
-		// eslint-disable-next-line no-undef
-		aboutList.value = aboutData.about;
-		// eslint-disable-next-line no-undef
-		experiencesList.value = aboutData.experiences.toReversed();
-		// eslint-disable-next-line no-undef
-		feedbacksList.value = aboutData.feedbacks;
 	}
 }
 
 onMounted(() => {
 	refreshBackground();
 	getAbout();
-	// getVideosUrl();
+	getVideosUrl();
 });
 
 </script>
