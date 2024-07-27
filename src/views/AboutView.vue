@@ -62,6 +62,7 @@ import { onMounted, ref } from 'vue';
 import ExperienceCard from './about/ExperienceCard.vue';
 import FeedbackCard from './about/FeedbackCard.vue';
 import firebaseApp from '@/firebase/init';
+import { collection, getDocs, getFirestore } from 'firebase/firestore/lite';
 import { getDownloadURL, getStorage, ref as StorageRef } from "firebase/storage";
 import CustomFooter from './home/CustomFooter.vue';
 import refreshBackground from '@/js/refreshBackground';
@@ -71,18 +72,20 @@ const experiencesList = ref([]);
 const feedbacksList = ref([]);
 const videosList = ref([]);
 
-aboutList.value = aboutData.about;
+// aboutList.value = aboutData.about;
 experiencesList.value = aboutData.experiences.toReversed();
 feedbacksList.value = aboutData.feedbacks;
 
+const useFirebaseFirestore = false;
+const useFirebaseStorage = true;
 const storage = getStorage(firebaseApp);
-const useFirebase = true;
+const db = getFirestore(firebaseApp);
 
 const getVideosUrl = async () => {
 	for (let i = 0; i < aboutData.videos.length; i++) {
 		const element = aboutData.videos[i];
 		try {
-			if (useFirebase) {
+			if (useFirebaseStorage) {
 				const videoRef = StorageRef(storage, element.name);
 				const url = await getDownloadURL(videoRef);
 				element.url = url;
@@ -94,8 +97,22 @@ const getVideosUrl = async () => {
 	}
 }
 
+const getAbout = async () => {
+	if (useFirebaseFirestore) {
+		const projectsCol = collection(db, 'about');
+		const projectSnapshot = await getDocs(projectsCol);
+		aboutList.value = projectSnapshot.docs.map(doc => doc.data());
+		aboutList.value.sort((a, b) => { return a.dateFilter - b.dateFilter;});
+
+	} else {
+		// eslint-disable-next-line no-undef
+		aboutList.value = aboutData.about;
+	}
+}
+
 onMounted(() => {
 	refreshBackground();
+	getAbout();
 	// getVideosUrl();
 });
 
