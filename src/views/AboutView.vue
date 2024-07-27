@@ -72,10 +72,6 @@ const experiencesList = ref([]);
 const feedbacksList = ref([]);
 const videosList = ref([]);
 
-// aboutList.value = aboutData.about;
-experiencesList.value = aboutData.experiences.toReversed();
-feedbacksList.value = aboutData.feedbacks;
-
 const useFirebaseFirestore = false;
 const useFirebaseStorage = true;
 const storage = getStorage(firebaseApp);
@@ -99,14 +95,24 @@ const getVideosUrl = async () => {
 
 const getAbout = async () => {
 	if (useFirebaseFirestore) {
-		const projectsCol = collection(db, 'about');
-		const projectSnapshot = await getDocs(projectsCol);
-		aboutList.value = projectSnapshot.docs.map(doc => doc.data());
-		aboutList.value.sort((a, b) => { return a.dateFilter - b.dateFilter;});
+		const aboutCol = collection(db, 'about');
+		const experiencesCol = collection(db, 'experiences');
+		const feedbacksCol = collection(db, 'feedbacks');
+
+		const aboutSnapshot = await getDocs(aboutCol);
+		const experiencesSnapshot = await getDocs(experiencesCol);
+		const feedbacksSnapshot = await getDocs(feedbacksCol);
+		aboutList.value = aboutSnapshot.docs.map(doc => doc.data()).sort((a, b) => { return a.dateFilter - b.dateFilter;});
+		experiencesList.value = experiencesSnapshot.docs.map(doc => doc.data()).sort((a, b) => { return a.dateFilter - b.dateFilter;}).toReversed();
+		feedbacksList.value = feedbacksSnapshot.docs.map(doc => doc.data()).sort((a, b) => { return a.dateFilter - b.dateFilter;});
 
 	} else {
 		// eslint-disable-next-line no-undef
 		aboutList.value = aboutData.about;
+		// eslint-disable-next-line no-undef
+		experiencesList.value = aboutData.experiences.toReversed();
+		// eslint-disable-next-line no-undef
+		feedbacksList.value = aboutData.feedbacks;
 	}
 }
 

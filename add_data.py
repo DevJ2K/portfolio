@@ -23,7 +23,7 @@ def add_data_to_firestore(collection_name, data):
     # print(f'Document {doc_id} ajouté avec succès.')
 
 # Ajouter les données du fichier JSON à la collection 'about'
-collection = 'about'
+collection = 'feedbacks'
 add_data_to_firestore(collection, data[collection])
 
 print("Données ajoutées avec succès à Firestore.")
