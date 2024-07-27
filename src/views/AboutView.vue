@@ -46,7 +46,7 @@
 							</video>
 
 							<div v-else class=" relative w-full overflow-hidden rounded-xl border-0 border-ui-border pt-[56.25%] shadow-md dark:border-d-subtle-border">
-								<iframe :src="video.ytbLink" class=" absolute left-0 top-0 size-full border-0"></iframe>
+								<iframe :src="video.ytbLink" :title="video.title" class=" absolute left-0 top-0 size-full border-0"></iframe>
 							</div>
 						</fieldset>
 					</div>

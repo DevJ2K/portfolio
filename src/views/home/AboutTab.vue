@@ -113,7 +113,7 @@
 
 
 						<div v-else class=" relative w-full overflow-hidden rounded-xl border-0 border-ui-border pt-[56.25%] shadow-md dark:border-d-subtle-border">
-							<iframe :src="lastVideo.ytbLink" class=" absolute left-0 top-0 size-full border-0"></iframe>
+							<iframe :src="lastVideo.ytbLink" :title="lastVideo.title" class=" absolute left-0 top-0 size-full border-0"></iframe>
 						</div>
 					</div>
 				</div>

@@ -6,8 +6,8 @@
 			<p class=" text-sm text-low-contrast-text dark:text-d-low-contrast-text">{{ feedback }}</p>
 			</div>
 			<div class=" flex w-full flex-col items-end gap-0 text-high-contrast-text dark:text-d-high-contrast-text">
-				<h3 class=" font-semibold">{{ name }}</h3>
-				<h3>{{ job }}</h3>
+				<h1 class=" font-semibold">{{ name }}</h1>
+				<h1>{{ job }}</h1>
 			</div>
 		</div>
 	</div>

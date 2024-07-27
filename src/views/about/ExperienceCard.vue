@@ -3,8 +3,8 @@
 		<div
 			class="custom-shadow-md flex w-full cursor-default flex-col gap-6 rounded-3xl border border-ui-border/50 bg-ui-bg p-6 transition-all hover:border-ui-border dark:border-d-ui-border/50 dark:bg-d-ui-bg dark:hover:border-d-ui-border/80">
 			<div class=" text-high-contrast-text dark:text-d-high-contrast-text">
-				<h3 class=" text-xl font-bold">{{ name }}</h3>
-				<h3 class=" text-base">{{ company }} - {{ expType }}</h3>
+				<h1 class=" text-xl font-bold">{{ name }}</h1>
+				<h2 class=" text-base">{{ company }} - {{ expType }}</h2>
 				<h3 class=" text-base">{{ date }}</h3>
 			</div>
 			<div v-if="description" class="flex flex-col gap-2">
