@@ -34,7 +34,7 @@
 - [x] Highlight certain AboutCard + Possibility to add link in AboutCard
 - [x] Little paragraph to explain Tab in ProjectsView
 - [x] Find solution about 3D videos because Storage is too expensive. Use iFrame instead.
-- [ ] Put all local-data.json & about-data.json on Firestore
+- [x] Put all local-data.json & about-data.json on Firestore
 - [x] Project link for aboutCard
 - [x] Add date field on each data to order by Date
 - [x] Add Feedbacks / Experiences tab
