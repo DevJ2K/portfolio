@@ -8,6 +8,7 @@ import aboutdata from './about-data.json'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/portfolio/',
   plugins: [
     vue(),
     viteCompression({
