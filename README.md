@@ -8,7 +8,7 @@
 - [x] Margin between each tab
 - [x] Add sphere or stars on background to create an atmosphere + gradient effect
 - [x] Add shiny effect on the background + simulate lights ( + try tiles background )
-- [ ] Add real text + redirection (href) + hide breakpoint indicator
+- [x] Add real text + redirection (href) + hide breakpoint indicator
 - [x] Find color theme + background color
 - [x] Navigation bar in < breakpoint Md
 - [x] Light and Dark Mode
