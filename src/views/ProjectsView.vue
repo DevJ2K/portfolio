@@ -25,7 +25,7 @@
 			<div v-if="searchText.length == 0" class="flex w-full flex-col items-center gap-40">
 				<div class="flex w-full flex-col items-center justify-center gap-8">
 					<TabTitleComponent id="p_featured" title="Featured" />
-					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">The projects that have provided me with the most knowledge and have been the most relevant in my career as a developer.</h1>
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg">The projects that have provided me with the most knowledge and have been the most relevant in my career as a developer.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-wrap items-center justify-center gap-6">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
@@ -41,7 +41,7 @@
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
 					<TabTitleComponent id="p_personal" title="Personal" />
-					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Personal projects developed out of passion, aiming to apply my knowledge or to acquire new skills.</h1>
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg">Personal projects developed out of passion, aiming to apply my knowledge or to acquire new skills.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
@@ -55,7 +55,7 @@
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
 					<TabTitleComponent id="p_42cursus" title="42Cursus" />
-					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Projects completed as part of my common core at 42.</h1>
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg">Projects completed as part of my common core at 42.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
@@ -69,7 +69,7 @@
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
 					<TabTitleComponent id="p_others" title="Others" />
-					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center dark:border-d-subtle-border dark:bg-d-subtle-bg">Other projects I’ve completed for various reasons, all of which are worth mentioning.</h1>
+					<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg">Other projects I’ve completed for various reasons, all of which are worth mentioning.</h1>
 					<div v-if="isFetchingProjects" class="flex w-full flex-col items-center gap-9">
 						<ProjectCardSkeleton />
 						<ProjectCardSkeleton />
