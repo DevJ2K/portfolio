@@ -30,6 +30,16 @@
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script src="/portfolio/particles.min.js"></script>
     <script>
+
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const maxArea = 16777216; // Maximum area limit
+
+        let densityArea = 2000; // Default value_area
+        if (screenWidth * screenHeight > maxArea) {
+            densityArea = maxArea / (screenWidth * screenHeight) * 2000;
+        }
+
         const display_particles = () => {
             let particlesColor = "";
             let savingMode = localStorage.getItem("dark-mode");
@@ -49,7 +59,7 @@
                         "value": 200,
                         "density": {
                             "enable": true,
-                            "value_area": 2000
+                            "value_area": densityArea
                         }
                     },
                     "color": {
