@@ -38,6 +38,7 @@
 - [x] Project link for aboutCard
 - [x] Add date field on each data to order by Date
 - [x] Add Feedbacks / Experiences tab
+- [ ] Fix z-index for max-md:navbar & footer
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 <!-- - [ ] Search project animation -->
 
