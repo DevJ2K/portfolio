@@ -39,6 +39,8 @@
 - [x] Add date field on each data to order by Date
 - [x] Add Feedbacks / Experiences tab
 - [ ] Fix z-index for max-md:navbar & footer
+- [ ] Fix stars background for mobileVersion
+- [ ] Add period to ProjectCard
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 <!-- - [ ] Search project animation -->
 
