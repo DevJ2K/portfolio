@@ -38,6 +38,7 @@
 - [x] Project link for aboutCard
 - [x] Add date field on each data to order by Date
 - [x] Add Feedbacks / Experiences tab
+- [x] Change index.html Title name + change logo
 - [ ] Fix z-index for max-md:navbar & footer
 - [ ] Fix stars background for mobileVersion
 - [ ] Add period to ProjectCard
