@@ -17,7 +17,11 @@
 
 <body id="mainApp" class="dark font-Poppins relative">
     <div id="app"></div>
-    <div id="particles-js" class="top-0 absolute size-full"></div>
+    <div id="particles-js" class="top-0 absolute size-full">
+        <!-- <canvas class="particles-js-canvas-el"></canvas> -->
+    </div>
+
+    <!-- <canvas class="particles-js-canvas-el"></canvas> -->
     <!-- <div class="fixed bottom-4 left-4 z-[2000]">
         <span class="sm:hidden dark:text-white text-black">XS</span>
         <span class="hidden sm:block md:hidden dark:text-white text-black">SM</span>
@@ -25,22 +29,25 @@
         <span class="hidden lg:block xl:hidden dark:text-white text-black">LG</span>
         <span class="hidden xl:block dark:text-white text-black">MORE</span>
     </div> -->
+    <!-- <canvas class="particles-js-canvas-el"></canvas> -->
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/firebase/init.js"></script>
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script src="/particles.min.js"></script>
+    <script type="module" src="/canvas-size.min.js"></script>
     <script>
-
         const screenWidth = window.innerWidth;
         const screenHeight = window.innerHeight;
         const maxArea = 16777216; // Maximum area limit
 
-        let densityArea = 2000; // Default value_area
-        if (screenWidth * screenHeight > maxArea) {
-            densityArea = maxArea / (screenWidth * screenHeight) * 2000;
-        }
+        const canva = document.getElementById("particles-js");
 
         const display_particles = () => {
+            // canva.style.maxWidth = document.getElementById("mainApp").offsetWidth / 3 + 'px';
+            // canva.style.maxHeight = document.getElementById("mainApp").offsetHeight / 3 + 'px';
+
+            console.log(canva);
+
             let particlesColor = "";
             let savingMode = localStorage.getItem("dark-mode");
 
@@ -59,7 +66,7 @@
                         "value": 200,
                         "density": {
                             "enable": true,
-                            "value_area": densityArea
+                            "value_area": 2000
                         }
                     },
                     "color": {
@@ -91,7 +98,7 @@
                         }
                     },
                     "size": {
-                        "value": 3,
+                        "value": 5,
                         "random": true,
                         "anim": {
                             "enable": false,
