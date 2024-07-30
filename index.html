@@ -36,20 +36,8 @@
     <script type="module" src="/src/firebase/init.js"></script>
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script src="/particles.min.js"></script>
-    <script type="module" src="/canvas-size.min.js"></script>
     <script>
-        const screenWidth = window.innerWidth;
-        const screenHeight = window.innerHeight;
-        const maxArea = 16777216; // Maximum area limit
-
-        const canva = document.getElementById("particles-js");
-
         const display_particles = () => {
-            // canva.style.maxWidth = document.getElementById("mainApp").offsetWidth / 3 + 'px';
-            // canva.style.maxHeight = document.getElementById("mainApp").offsetHeight / 3 + 'px';
-
-            console.log(canva);
-
             let particlesColor = "";
             let savingMode = localStorage.getItem("dark-mode");
 

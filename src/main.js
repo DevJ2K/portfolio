@@ -9,14 +9,13 @@ import canvasSize from 'canvas-size';
 
 
 const { success, width, height } = await canvasSize.maxArea();
-console.log(":" + success);
+// console.log(":" + success);
 if (success) {
 	// console.log(width);
 	// console.log(height);
 	document.getElementById("__maxWidth").innerHTML = width;
 	document.getElementById("__maxHeight").innerHTML = height;
 }
-// log(results.success ? '🟢' : '🔴', results);
 
 const app = createApp(App)
 
