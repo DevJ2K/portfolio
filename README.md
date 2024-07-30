@@ -43,7 +43,7 @@
 - [ ] Fix stars background for mobileVersion
 - [ ] Add period to ProjectCard
 - [x] Add CV to local route
-- [ ] Use localData instead Firestore
+- [x] Use localData instead Firestore
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 <!-- - [ ] Search project animation -->
 

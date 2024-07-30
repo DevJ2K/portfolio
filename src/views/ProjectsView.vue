@@ -122,7 +122,7 @@ import refreshBackground from '@/js/refreshBackground';
 const projectList = ref([]);
 const isFetchingProjects = ref(true);
 const searchText = ref("");
-const useFirebaseFirestore = true;
+const useFirebaseFirestore = false;
 const useFirebaseStorage = true;
 const route = useRoute();
 const db = getFirestore(firebaseApp);

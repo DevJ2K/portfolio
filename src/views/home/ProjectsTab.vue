@@ -49,7 +49,7 @@ import { getDownloadURL, getStorage, ref as StorageRef } from 'firebase/storage'
 const router = useRouter();
 const highlightedProjects = ref([]);
 const isFetchingProjects = ref(true);
-const useFirebaseFirestore = true;
+const useFirebaseFirestore = false;
 const useFirebaseStorage = true;
 const db = getFirestore(firebaseApp);
 const storage = getStorage(firebaseApp);
