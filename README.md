@@ -40,7 +40,7 @@
 - [x] Add Feedbacks / Experiences tab
 - [x] Change index.html Title name + change logo
 - [x] Fix z-index for max-md:navbar & footer
-- [ ] Fix stars background for mobileVersion
+- [x] Fix stars background for mobileVersion
 - [ ] Add period to ProjectCard
 - [x] Add CV to local route
 - [x] Use localData instead Firestore
