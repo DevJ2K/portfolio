@@ -25,8 +25,8 @@
 		</div>
 
 		<div v-else class=" custom-shadow-lg relative flex w-[calc(100%-4rem)] flex-col gap-2 rounded-xl border border-subtle-border bg-ui-bg p-4 dark:border-d-subtle-border dark:bg-d-ui-bg md:w-[calc(50%-2.5rem)] md:group-even:items-end">
-			<h2 class="font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg" :class="highlighted ? 'underline underline-offset-[6px] decoration-2 decoration-accent-color dark:decoration-d-accent-color': ''">{{ itemDate }}</h2>
-			<p class="text-xs text-low-contrast-text dark:text-d-low-contrast-text sm:text-sm">
+			<h2 class="font-bold text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg" :class="highlighted ? 'underline underline-offset-[6px] mb-2 decoration-2 decoration-accent-color dark:decoration-d-accent-color': ''">{{ itemDate }}</h2>
+			<p class="text-xs font-medium leading-5 text-low-contrast-text dark:text-d-low-contrast-text sm:text-sm">
 				{{ content }}
 			</p>
 			<div v-if="link" :href="link" @click="openLink" class="group/redirection mt-4 flex w-fit cursor-pointer flex-row items-center justify-center gap-2 rounded-xl border-2 border-accent-color bg-ui-bg px-3 py-2 text-xs font-semibold text-high-contrast-text shadow-lg transition-all hover:border-hover-accent-color hover:bg-hover-accent-color hover:text-white hover:shadow-md dark:border-d-accent-color dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:border-d-hover-accent-color dark:hover:bg-d-hover-accent-color sm:text-sm">

@@ -243,6 +243,9 @@ body.dark {
 	@apply bg-high-contrast-text dark:bg-d-high-contrast-text;
 }
 
+.paragraph-explain {
+	@apply text-sm md:text-base rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg;
+}
 
 
 /* ---- particles.js container ---- */

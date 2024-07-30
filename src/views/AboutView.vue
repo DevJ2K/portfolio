@@ -22,7 +22,7 @@
 
 			<div class="flex w-full flex-col items-center gap-9">
 				<TabTitleComponent id="a_aboutme" title="About Me"/>
-				<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg">Being quite young, it's natural to have questions about my skills. To clear any doubts, here is an overview of my journey, from my beginnings to today. I hope this helps to better understand who I am and, perhaps, inspire some.</h1>
+				<h1 class="paragraph-explain">Being quite young, it's natural to have questions about my skills. To clear any doubts, here is an overview of my journey, from my beginnings to today. I hope this helps to better understand who I am and, perhaps, inspire some.</h1>
 				<div
 					class="relative before:absolute before:inset-0 before:ml-6 before:h-full before:w-0.5 before:-translate-x-px before:rounded-lg before:bg-gradient-to-b before:from-low-contrast-text before:via-low-contrast-text  before:to-low-contrast-text dark:before:from-d-low-contrast-text dark:before:via-d-low-contrast-text dark:before:to-d-low-contrast-text md:before:mx-auto md:before:translate-x-0">
 
@@ -34,7 +34,7 @@
 				<TabTitleComponent id="a_3d" title="3D"/>
 				<!-- <h1 class=" text-center">In my free time, I enjoy creating 3D videos. Here are some of my works that I'd like to share with you !</h1> -->
 
-				<h1 class="rounded-xl border border-subtle-border bg-subtle-bg p-4 text-center shadow dark:border-d-subtle-border dark:bg-d-subtle-bg">Since 2021, in addition to coding, I have enjoyed creating 3D videos in my free time. This allows me to visually express my ideas and I love seeing the final renders. Here are some of my works that I’d like to share with you !</h1>
+				<h1 class="paragraph-explain">Since 2021, in addition to coding, I have enjoyed creating 3D videos in my free time. This allows me to visually express my ideas and I love seeing the final renders. Here are some of my works that I’d like to share with you !</h1>
 
 				<div class=" grid w-full grid-cols-1 flex-wrap justify-center gap-6 md:grid-cols-2">
 					<div v-for="video in videosList" :key="video" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="0" data-aos-duration="400">
