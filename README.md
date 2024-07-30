@@ -39,7 +39,7 @@
 - [x] Add date field on each data to order by Date
 - [x] Add Feedbacks / Experiences tab
 - [x] Change index.html Title name + change logo
-- [ ] Fix z-index for max-md:navbar & footer
+- [x] Fix z-index for max-md:navbar & footer
 - [ ] Fix stars background for mobileVersion
 - [ ] Add period to ProjectCard
 - [x] Add CV to local route
