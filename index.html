@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/portfolio/favicon.ico">
+    <link rel="icon" href="/portfolio/j2k.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DevJ2K | Home">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +12,20 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Vite App</title>
-  <script type="module" crossorigin src="/portfolio/assets/index-DJZckZpq.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-KvcwPEXg.css">
+    <title>DevJ2K - Portfolio</title>
+  <script type="module" crossorigin src="/portfolio/assets/index-CEFLrQOw.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-D2cI55fZ.css">
 </head>
 
 <body id="mainApp" class="dark font-Poppins relative">
     <div id="app"></div>
-    <div id="particles-js" class="top-0 absolute size-full"></div>
+    <div id="__maxWidth" hidden>4096</div>
+    <div id="__maxHeight" hidden>4096</div>
+    <div id="particles-js" class="top-0 absolute size-full">
+        <!-- <canvas class="particles-js-canvas-el"></canvas> -->
+    </div>
+
+    <!-- <canvas class="particles-js-canvas-el"></canvas> -->
     <!-- <div class="fixed bottom-4 left-4 z-[2000]">
         <span class="sm:hidden dark:text-white text-black">XS</span>
         <span class="hidden sm:block md:hidden dark:text-white text-black">SM</span>
@@ -27,19 +33,10 @@
         <span class="hidden lg:block xl:hidden dark:text-white text-black">LG</span>
         <span class="hidden xl:block dark:text-white text-black">MORE</span>
     </div> -->
+    <!-- <canvas class="particles-js-canvas-el"></canvas> -->
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <script src="/portfolio/particles.min.js"></script>
     <script>
-
-        const screenWidth = window.innerWidth;
-        const screenHeight = window.innerHeight;
-        const maxArea = 16777216; // Maximum area limit
-
-        let densityArea = 2000; // Default value_area
-        if (screenWidth * screenHeight > maxArea) {
-            densityArea = maxArea / (screenWidth * screenHeight) * 2000;
-        }
-
         const display_particles = () => {
             let particlesColor = "";
             let savingMode = localStorage.getItem("dark-mode");
@@ -59,7 +56,7 @@
                         "value": 200,
                         "density": {
                             "enable": true,
-                            "value_area": densityArea
+                            "value_area": 2000
                         }
                     },
                     "color": {
