@@ -12,7 +12,8 @@
         <p class="text-center text-base font-normal text-high-contrast-text dark:text-d-high-contrast-text sm:text-lg md:text-xl" data-aos="zoom-in"  data-aos-delay="200" data-aos-duration="1200">Based in Paris and studying at <a href="https://42.fr/en/homepage/" target="_blank" class=" cursor-pointer underline decoration-accent-color underline-offset-4 dark:decoration-d-accent-color">42</a>, I’m a 19 years old passionate about exploring cutting-edge technologies and mastering new skills. My goal is to drive impactful projects that challenge the mind and push boundaries.</p>
 
           <div  data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1200">
-            <button class="open-resume-btn" @click="openCV">Open Resume</button>
+            <!-- <button class="open-resume-btn" @click="openCV">Open Resume</button> -->
+            <a class="open-resume-btn" href="CV.pdf" target="_blank">Open Resume</a>
           </div>
 
         <div class="flex w-full flex-row items-center justify-around sm:h-1/6" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0" data-aos-duration="1200">
