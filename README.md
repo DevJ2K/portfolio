@@ -44,6 +44,7 @@
 - [ ] Add period to ProjectCard
 - [x] Add CV to local route
 - [x] Use localData instead Firestore
+- [ ] Add contact@devj2k.com
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 <!-- - [ ] Search project animation -->
 
