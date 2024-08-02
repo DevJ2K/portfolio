@@ -21,7 +21,7 @@
 							</div>
 
 							<div class=" grid w-full grid-cols-2 justify-center gap-3 max-sm:flex max-sm:flex-wrap">
-								<SkillCard skill="Oriented Object Programming" icon="fa-solid fa-diagram-project" description="Object-Oriented Programming (OOP) organizes code into objects and classes. It promotes modularity, code reuse, and a structured approach to software development, which is crucial for building robust systems."/>
+								<SkillCard skill="Object-Oriented Programming" icon="fa-solid fa-diagram-project" description="Object-Oriented Programming (OOP) organizes code into objects and classes. It promotes modularity, code reuse, and a structured approach to software development, which is crucial for building robust systems."/>
 								<!-- Search by Apple -->
 								<SkillCard skill="Data structures and algorithms" icon="fa-solid fa-database" description="Data structures organize and store data, while algorithms are sets of instructions for solving problems. Understanding them is vital for creating efficient solutions and optimizing performance in software development." />
 								<!-- Search by Apple -->
