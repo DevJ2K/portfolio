@@ -5,7 +5,7 @@
 		"miniature": null,
 		"date": "October 2022",
 		"description": "A bot that provides all the information from the ENT (Digital Workspace) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
-		"tags": ["Python", "Discord.py", "Selenium", "Scraping", "Parsing"],
+		"tags": ["Python", "Discord.py", "Selenium", "Sqlite", "Scraping", "Parsing"],
 		"categories": ["Featured"],
 		"github": "https://github.com/DevJ2K/ent-on-discord",
 		"link": null,
@@ -83,167 +83,167 @@
 	  {
 		"name": "Libft",
 		"miniature": null,
-		"date": null,
+		"date": "November 2023",
 		"description": "The very first project of the core curriculum. The goal of the project is to create our own library of functions in C, which we will reuse throughout our studies.",
-		"tags": [],
+		"tags": ["C", "Library"],
 		"categories": ["42Cursus"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/my_libft_c",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-11-11T00:00:00.000Z"
 	  },
 	  {
 		"name": "Get_next_line",
 		"miniature": null,
-		"date": null,
+		"date": "November 2023",
 		"description": "This project aimed to develop a function that returns a line read from a file descriptor in C.",
-		"tags": [],
+		"tags": ["C"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-11-15T00:00:00.000Z"
 	  },
 	  {
 		"name": "Ft_printf",
 		"miniature": null,
-		"date": null,
+		"date": "November 2023",
 		"description": "The goal of this project is to reproduce the printf() function. We learn to handle a variable number of arguments.",
-		"tags": [],
+		"tags": ["C"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-11-16T00:00:00.000Z"
 	  },
 	  {
 		"name": "Push_swap",
 		"miniature": null,
-		"date": null,
+		"date": "November 2023",
 		"description": "This project requires us to develop an algorithm to sort two stacks using a limited set of instructions while making the fewest moves possible. This was one of my favorite projects in the core curriculum because I enjoy the implementation and use of algorithms.",
-		"tags": [],
+		"tags": ["C", "Algorithm", "Sorting Algorithm"],
 		"categories": ["42Cursus"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/my_push_swap",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-11-29T00:00:00.000Z"
 	  },
 	  {
 		"name": "So_long",
 		"miniature": null,
-		"date": null,
+		"date": "December 2023",
 		"description": "A simple 2D game using the school's internal library, Minilibx. It is our first graphical project in C, where we learn to manage aspects such as textures, sprites, maps, and basic gameplay elements.",
-		"tags": [],
+		"tags": ["C", "Gaming"],
 		"categories": ["42Cursus"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/my_so_long_c",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-12-11T00:00:00.000Z"
 	  },
 	  {
 		"name": "Pipex",
 		"miniature": null,
-		"date": null,
+		"date": "December 2023",
 		"description": "This project aims to accurately reproduce the functionality of pipes in bash. We learn to use functions such as fork, dup2, pipe, and waitpid, which help us understand the concepts of the exercise.",
-		"tags": [],
+		"tags": ["C", "Unix"],
 		"categories": ["42Cursus"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/pipex_v2",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-12-04T00:00:00.000Z"
 	  },
 	  {
 		"name": "Minishell",
 		"miniature": null,
-		"date": null,
+		"date": "December 2023",
 		"description": "The goal of this project is to reproduce a shell in C. It is the first group project in the core curriculum, which helps us learn how to work in a team and divide the workload. The project is relatively complex, making teamwork essential for success. We also cover many concepts related to processes and file descriptor management.",
-		"tags": [],
+		"tags": ["C", "Unix", "Bash"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2023-12-20T00:00:00.000Z"
 	  },
 	  {
 		"name": "Philosophers",
 		"miniature": null,
-		"date": null,
+		"date": "December 2023",
 		"description": "This project explores the concept of multi-threading based on the \"dining philosophers problem.\" Multi-threading is a crucial concept as it allows for simultaneous task execution.",
-		"tags": [],
+		"tags": ["C", "Multi-threading"],
 		"categories": ["42Cursus"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/my_philosophers_c",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-12-22T00:00:00.000Z"
 	  },
 	  {
 		"name": "Cub3D",
 		"miniature": null,
-		"date": null,
+		"date": "January 2024",
 		"description": "A 3D game inspired by Wolfenstein 3D, considered the first FPS ever developed. This project introduces us to the concept of Raycasting. It is our second graphical and group project.",
-		"tags": [],
+		"tags": ["C", "Algorithm", "Raycasting", "3D"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-01-16T00:00:00.000Z"
 	  },
 	  {
 		"name": "CPP Modules",
 		"miniature": null,
-		"date": null,
+		"date": "January 2024",
 		"description": "A set of exercises covering C++ concepts. It introduces us to object-oriented programming and good practices.",
-		"tags": [],
+		"tags": ["C++", "Oriented-Object Programming"],
 		"categories": ["42Cursus"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/My_CPP_42",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-01-30T00:00:00.000Z"
 	  },
 	  {
 		"name": "Ft_irc",
 		"miniature": null,
-		"date": null,
+		"date": "February 2024",
 		"description": "The objective of this project is to reproduce the functionality of an IRC (Internet Relay Chat) server in C++ while adhering to various standards and protocols. We had to use a real IRC client to connect to and test our server.",
-		"tags": [],
+		"tags": ["C++", "Network", "IRC"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-02-14T00:00:00.000Z"
 	  },
 	  {
 		"name": "Inception",
 		"miniature": null,
-		"date": null,
+		"date": "February 2024",
 		"description": "This project aimed to deepen our knowledge by using Docker. We had to create our own images in a virtual machine and link them using docker-compose.",
-		"tags": [],
+		"tags": ["Docker", "Docker-compose", "MariaDB", "Nginx", "WordPress"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-02-06T00:00:00.000Z"
 	  },
 	  {
 		"name": "Ft_Transcendence",
 		"miniature": null,
-		"date": null,
+		"date": "February - 22 March 2024",
 		"description": "The final project of the core curriculum. The goal is to create a Pong game on a website, playable in multiplayer mode using WebSockets. We had a number of modules to implement to validate the project, but we were free to make our own choices. This project was to be done in groups of 3 to 5 people.",
-		"tags": [],
+		"tags": ["HTML", "CSS", "Javascript", "Python", "Django", "API", "Websocket"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-03-22T00:00:00.000Z"
 	  },
 	  {
 		"name": "ScreenTimeApp",
 		"miniature": null,
-		"date": null,
+		"date": "June 2024",
 		"description": "An application using ScreenTimeAPI to manage screen time, block applications, and schedule blocking periods.",
-		"tags": [],
+		"tags": ["SwiftUI", "Swift", "ScreenTimeAPI"],
 		"categories": ["Others"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/ScreenTimeApp",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-06-12T00:00:00.000Z"
 	  },
 	  {
 		"name": "Swifty-companion",
 		"miniature": null,
-		"date": null,
+		"date": "April - May 2024",
 		"description": "An application that provides information about students at the school using the 42 API.",
-		"tags": [],
+		"tags": ["SwiftUI", "Swift", "API"],
 		"categories": ["Others"],
-		"github": null,
+		"github": "https://github.com/DevJ2K/42-swifty-companion",
 		"link": null,
-		"dateFilter": "2024-08-02T00:00:00.000Z"
+		"dateFilter": "2024-05-06T00:00:00.000Z"
 	  }
 	]
   }
