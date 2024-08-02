@@ -10,7 +10,7 @@
 			<div class="relative flex w-full">
 				<input id="search-by-tag-field" v-model="searchText"
 					class="block  w-full scroll-mt-28  rounded-3xl border-2 border-ui-border bg-ui-bg p-3 pr-9 text-high-contrast-text outline-none hover:border-hover-ui-border focus:border-accent-color focus:bg-active-ui-bg dark:border-d-ui-border  dark:bg-d-ui-bg dark:text-d-high-contrast-text dark:hover:border-d-hover-ui-border dark:focus:border-d-accent-color dark:focus:bg-d-active-ui-bg"
-					placeholder="Search by tag" type="text" maxlength="30">
+					placeholder="Search by tags..." type="text" maxlength="30">
 
 				<svg @click="clearSearchField();"
 					class=" absolute right-0 top-1/2 ml-4 mr-2 size-6 -translate-y-1/2 cursor-pointer rounded-full border border-hover-ui-border bg-ui-bg text-hover-ui-border dark:border-d-hover-ui-border dark:bg-d-ui-bg dark:text-d-hover-ui-border"
@@ -82,8 +82,8 @@
 					</div>
 				</div>
 			</div>
-			<div v-else-if="projectList.filter((project) => containsSearchTag(project)).length > 0"
-				v-for="project in projectList.filter((project) => containsSearchTag(project))" :key="project"
+			<div v-else-if="projectList.filter((project) => containsSearchTags(project)).length > 0"
+				v-for="project in projectList.filter((project) => containsSearchTags(project))" :key="project"
 				class="flex w-full flex-col items-center gap-8">
 				<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
 					:github-link="project.github" :project-link="project.link" />
@@ -163,7 +163,7 @@ const clearSearchField = () => {
 	}
 }
 
-const containsSearchTag = (project) => {
+const containsSearchTag = (project, tag) => {
 	if (!project.tags) {
 		return (false);
 	}
@@ -172,14 +172,29 @@ const containsSearchTag = (project) => {
 		tags.push(project.tags[i].toLowerCase());
 	}
 	for (let i = 0; i < tags.length; i++) {
-		if (tags[i] == searchText.value.toLowerCase()) {
+		if (tags[i] == tag.toLowerCase()) {
 			return (true)
-		} else if (tags[i].startsWith(searchText.value.toLowerCase())) {
+		} else if (tags[i].startsWith(tag.toLowerCase())) {
 			return (true);
 		}
 		// Utiliser .includes || item.msg.toLowerCase().includes(this.query))
 	}
 	return (false);
+}
+
+const containsSearchTags = (project) => {
+	if (!project.tags) {
+		return (false);
+	}
+	let tags = searchText.value.split(' ');
+	tags = tags.filter((value) => value.length > 0)
+	// console.log(tags);
+	for (let i = 0; i < tags.length; i++) {
+		if (!containsSearchTag(project, tags[i])) {
+			return (false)
+		}
+	}
+	return (true);
 }
 
 const containsCategory = (project, category) => {
