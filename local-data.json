@@ -5,6 +5,7 @@
 			"miniature": "projects/WeatherApp_.png",
 			"github": "https://github.com/DevJ2K",
 			"link": "https://github.com/DevJ2K",
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"Vue",
@@ -22,6 +23,7 @@
 			"name": "Project2",
 			"miniature": null,
 			"github": "https://github.com/DevJ2K",
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"Python",
@@ -37,6 +39,7 @@
 			"name": "Project2B",
 			"miniature": null,
 			"github": "https://github.com/DevJ2K",
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"C++",
@@ -50,6 +53,7 @@
 			"name": "Project3",
 			"miniature": null,
 			"link": "https://github.com/DevJ2K",
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"C",
@@ -64,6 +68,7 @@
 		{
 			"name": "Project4",
 			"miniature": null,
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"Vue",
@@ -79,6 +84,7 @@
 		{
 			"name": "Project5",
 			"miniature": null,
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"Vue",
@@ -94,6 +100,7 @@
 		{
 			"name": "Project6",
 			"miniature": null,
+			"date": "June 2024",
 			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
 			"tags": [
 				"Vue",

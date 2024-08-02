@@ -24,7 +24,7 @@
 
 				<div v-else class="flex flex-wrap justify-center gap-6">
 					<div v-for="project in highlightedProjects" :key="project" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="350">
-						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link"/>
+						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags" :github-link="project.github" :project-link="project.link" :date="project.date"/>
 					</div>
 				</div>
 			</div>

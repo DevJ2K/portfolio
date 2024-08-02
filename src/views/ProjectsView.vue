@@ -35,7 +35,7 @@
 
 						<div v-for="project in projectList.filter((project) => containsCategory(project, 'Featured'))" :key="project">
 							<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
-								:github-link="project.github" :project-link="project.link" />
+								:github-link="project.github" :project-link="project.link" :date="project.date" />
 						</div>
 					</div>
 				</div>
@@ -50,7 +50,7 @@
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Personal'))" :key="project"
 						class="flex w-full flex-col items-center gap-9" data-aos-offset="200" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
 						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
-							:github-link="project.github" :project-link="project.link" />
+							:github-link="project.github" :project-link="project.link" :date="project.date" />
 					</div>
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
@@ -64,7 +64,7 @@
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, '42Cursus'))" :key="project"
 						class="flex w-full flex-col items-center gap-9" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
 						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
-							:github-link="project.github" :project-link="project.link" />
+							:github-link="project.github" :project-link="project.link" :date="project.date" />
 					</div>
 				</div>
 				<div class="flex w-full flex-col items-center gap-9">
@@ -78,7 +78,7 @@
 					<div v-else v-for="project in projectList.filter((project) => containsCategory(project, 'Others'))" :key="project"
 						class="flex w-full flex-col items-center gap-9" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="250">
 						<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
-							:github-link="project.github" :project-link="project.link" />
+							:github-link="project.github" :project-link="project.link" :date="project.date" />
 					</div>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 				v-for="project in projectList.filter((project) => containsSearchTags(project))" :key="project"
 				class="flex w-full flex-col items-center gap-8">
 				<ProjectCard :preview-image="project.url" :title="project.name" :description="project.description" :tags="project.tags"
-					:github-link="project.github" :project-link="project.link" />
+					:github-link="project.github" :project-link="project.link" :date="project.date" />
 
 			</div>
 
@@ -153,7 +153,7 @@ const getProjects = async () => {
 			}
 		}
 	}
-	await new Promise((resolve) => setTimeout(resolve, 1500));
+	await new Promise((resolve) => setTimeout(resolve, 1000));
 	isFetchingProjects.value = false;
 }
 

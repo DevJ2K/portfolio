@@ -8,8 +8,11 @@
 					<img :src="previewImage" :alt="title + '_img'" class=" size-full object-cover" :class="projectLink != null ? 'cursor-pointer' : 'cursor-default'" @click="if (projectLink != null){openProjectLink()};">
 				</div>
 				<div class="flex flex-col gap-4 p-6">
-					<h1 class=" text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text sm:text-xl">{{ title }}</h1>
-
+					<div class="flex flex-col gap-1">
+						<h1 class=" text-lg font-semibold text-high-contrast-text underline decoration-accent-color decoration-2 underline-offset-4 dark:text-d-high-contrast-text sm:text-xl">{{ title }}</h1>
+						<h2 class=" text-sm font-semibold text-high-contrast-text dark:text-d-high-contrast-text ">{{ date }}</h2>
+					</div>
+					<div class="h-px w-[150%] -translate-x-6 bg-ui-border/50 dark:bg-d-ui-border/30"></div>
 					<p class=" text-sm font-normal  text-high-contrast-text dark:text-d-high-contrast-text">{{ description }}</p>
 
 
@@ -45,9 +48,16 @@
 		<div class="flex flex-col items-start gap-4 p-4">
 			<div class="flex flex-col gap-4">
 
-				<h1 class=" text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text sm:text-2xl">{{ title }}</h1>
 
+				<div class="flex flex-col gap-1">
+					<h1 class=" text-lg font-semibold text-high-contrast-text underline decoration-accent-color  decoration-2 underline-offset-4 dark:text-d-high-contrast-text sm:text-2xl">{{ title }}</h1>
+					<h2 class=" text-sm font-semibold text-high-contrast-text dark:text-d-high-contrast-text ">{{ date }}</h2>
+				</div>
+				<div class="h-px w-[150%] -translate-x-4 bg-ui-border/50 dark:bg-d-ui-border/30"></div>
 				<p class=" text-sm font-normal  text-high-contrast-text dark:text-d-high-contrast-text">{{ description }}</p>
+
+
+
 
 				<div class="flex size-full flex-col items-start justify-start">
 						<div class="flex flex-wrap justify-start gap-2">
@@ -95,6 +105,10 @@ const props = defineProps({
 	tags: {
 		type: Array,
 		default: () => ["Tag-1", "Tag-2", "Tag-3", "Tag-4", "Tag-5"]
+	},
+	date: {
+		type: String,
+		default: "September 2020 - September 2021"
 	},
 	description: {
 		type: String,
