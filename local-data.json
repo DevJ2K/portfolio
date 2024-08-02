@@ -63,7 +63,7 @@
 		"miniature": null,
 		"date": "October 2023",
 		"description": "An algorithm that learns from its games. It uses its past experiences to avoid repeating mistakes. This algorithm is based on reinforcement learning.",
-		"tags": ["Python", "Algorithm"],
+		"tags": ["Python", "Algorithm", "AI"],
 		"categories": ["Personal"],
 		"github": "https://github.com/DevJ2K/tictactoe_ia",
 		"link": null,
@@ -166,7 +166,7 @@
 		"categories": ["42Cursus"],
 		"github": "https://github.com/DevJ2K/my_philosophers_c",
 		"link": null,
-		"dateFilter": "2024-12-22T00:00:00.000Z"
+		"dateFilter": "2023-12-22T00:00:00.000Z"
 	  },
 	  {
 		"name": "Cub3D",
@@ -217,7 +217,7 @@
 		"miniature": null,
 		"date": "February - 22 March 2024",
 		"description": "The final project of the core curriculum. The goal is to create a Pong game on a website, playable in multiplayer mode using WebSockets. We had a number of modules to implement to validate the project, but we were free to make our own choices. This project was to be done in groups of 3 to 5 people.",
-		"tags": ["HTML", "CSS", "Javascript", "Python", "Django", "API", "Websocket"],
+		"tags": ["HTML", "CSS", "Javascript", "Three.js", "3D", "Python", "Django", "API"],
 		"categories": ["42Cursus"],
 		"github": null,
 		"link": null,
@@ -244,6 +244,28 @@
 		"github": "https://github.com/DevJ2K/42-swifty-companion",
 		"link": null,
 		"dateFilter": "2024-05-06T00:00:00.000Z"
+	  },
+	  {
+		"name": "Cracklanders",
+		"miniature": null,
+		"date": "June 2022",
+		"description": "Cracklanders is the first concrete project I have completed. It is a game where the goal is to escape from prison.",
+		"tags": ["Python", "Tkinter", "Gaming"],
+		"categories": ["Others"],
+		"github": "https://github.com/DevJ2K/cracklanders",
+		"link": null,
+		"dateFilter": "2022-06-01T00:00:00.000Z"
+	  },
+	  {
+		"name": "SFT-R",
+		"miniature": null,
+		"date": "December 2022",
+		"description": "The requirements for this project included integrating an authentication system using PHP, linked to a database, and creating a website that utilizes this data. We decided to develop a car configurator.",
+		"tags": ["HTML", "CSS", "Javascript", "PHP", "3D", "Three.js"],
+		"categories": [],
+		"github": "https://github.com/DevJ2K/sft-r-website",
+		"link": null,
+		"dateFilter": "2022-12-01T00:00:00.000Z"
 	  }
 	]
   }
