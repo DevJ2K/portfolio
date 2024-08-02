@@ -1,117 +1,180 @@
 {
 	"projects": [
-		{
-			"name": "Project1",
-			"miniature": "projects/WeatherApp_.png",
-			"github": "https://github.com/DevJ2K",
-			"link": "https://github.com/DevJ2K",
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"Vue",
-				"tailwindCSS",
-				"Firebase",
-				"JavaScript",
-				"Responsive"
-			],
-			"categories": [
-				"Featured"
-			],
-			"highlighted": true
-		},
-		{
-			"name": "Project2",
-			"miniature": null,
-			"github": "https://github.com/DevJ2K",
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"Python",
-				"Flask",
-				"Firebase"
-			],
-			"categories": [
-				"Featured"
-			],
-			"highlighted": true
-		},
-		{
-			"name": "Project2B",
-			"miniature": null,
-			"github": "https://github.com/DevJ2K",
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"C++",
-				"Firebase"
-			],
-			"categories": [
-				"Featured"
-			]
-		},
-		{
-			"name": "Project3",
-			"miniature": null,
-			"link": "https://github.com/DevJ2K",
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"C",
-				"Shell",
-				"TeamWork"
-			],
-			"categories": [
-				"Personal"
-			],
-			"highlighted": true
-		},
-		{
-			"name": "Project4",
-			"miniature": null,
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"Vue",
-				"tailwindCSS",
-				"HTML",
-				"JavaScript",
-				"CSS"
-			],
-			"categories": [
-				"42Cursus"
-			]
-		},
-		{
-			"name": "Project5",
-			"miniature": null,
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"Vue",
-				"tailwindCSS",
-				"HTML",
-				"JavaScript",
-				"CSS"
-			],
-			"categories": [
-				"42Cursus"
-			]
-		},
-		{
-			"name": "Project6",
-			"miniature": null,
-			"date": "June 2024",
-			"description": "Deserunt amet tempor consequat excepteur. Reprehenderit sint cillum est deserunt excepteur minim. Sit Lorem ex in deserunt incididunt laboris. Consectetur laborum aute aliqua aliqua magna. Et proident occaecat aliqua incididunt quis est elit qui non Lorem.",
-			"tags": [
-				"Vue",
-				"tailwindCSS",
-				"HTML",
-				"JavaScript",
-				"CSS"
-			],
-			"categories": [
-				"Others"
-			]
-		}
+	  {
+		"name": "EntOnDiscord",
+		"miniature": null,
+		"date": null,
+		"description": "A bot that provides all the information from the ENT (Digital Workspace) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "WeatherApp",
+		"miniature": null,
+		"date": null,
+		"description": "A weather application with a friendly interface. The 3D models adapt according to the weather and the time of day.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "WaveSpace",
+		"miniature": null,
+		"date": null,
+		"description": "A mobile accounting application for shoe resellers. This was my first freelance assignment, where I learned about business concepts such as negotiation, creating a requirements specification, and more.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Portfolio",
+		"miniature": null,
+		"date": null,
+		"description": "My digital footprint, my signature, my creation. This is my personal portfolio, designed and built from scratch by myself.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "BSQ_in_python",
+		"miniature": null,
+		"date": null,
+		"description": "An algorithm that finds the largest square in a given map. This project was part of my school's entrance exam, but I didn't complete it due to time constraints. I decided to redo it to prove to myself that I could accomplish it!",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "TicTacToe AI",
+		"miniature": null,
+		"date": null,
+		"description": "An algorithm that learns from its games. It uses its past experiences to avoid repeating mistakes. This algorithm is based on reinforcement learning.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Tododev",
+		"miniature": null,
+		"date": null,
+		"description": "A collaborative to-do list application. The concept is to generate tasks based on each user's profile with the help of AI.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Libft",
+		"miniature": null,
+		"date": null,
+		"description": "The very first project of the core curriculum. The goal of the project is to create our own library of functions in C, which we will reuse throughout our studies.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Get_next_line",
+		"miniature": null,
+		"date": null,
+		"description": "This project aimed to develop a function that returns a line read from a file descriptor in C.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Ft_printf",
+		"miniature": null,
+		"date": null,
+		"description": "The goal of this project is to reproduce the printf() function. We learn to handle a variable number of arguments.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Push_swap",
+		"miniature": null,
+		"date": null,
+		"description": "This project requires us to develop an algorithm to sort two stacks using a limited set of instructions while making the fewest moves possible. This was one of my favorite projects in the core curriculum because I enjoy the implementation and use of algorithms.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "So_long",
+		"miniature": null,
+		"date": null,
+		"description": "A simple 2D game using the school's internal library, Minilibx. It is our first graphical project in C, where we learn to manage aspects such as textures, sprites, maps, and basic gameplay elements.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Pipex",
+		"miniature": null,
+		"date": null,
+		"description": "This project aims to accurately reproduce the functionality of pipes in bash. We learn to use functions such as fork, dup2, pipe, and waitpid, which help us understand the concepts of the exercise.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Minishell",
+		"miniature": null,
+		"date": null,
+		"description": "The goal of this project is to reproduce a shell in C. It is the first group project in the core curriculum, which helps us learn how to work in a team and divide the workload. The project is relatively complex, making teamwork essential for success. We also cover many concepts related to processes and file descriptor management.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Philosophers",
+		"miniature": null,
+		"date": null,
+		"description": "This project explores the concept of multi-threading based on the \"dining philosophers problem.\" Multi-threading is a crucial concept as it allows for simultaneous task execution.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Cub3D",
+		"miniature": null,
+		"date": null,
+		"description": "A 3D game inspired by Wolfenstein 3D, considered the first FPS ever developed. This project introduces us to the concept of Raycasting. It is our second graphical and group project.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "CPP Modules",
+		"miniature": null,
+		"date": null,
+		"description": "A set of exercises covering C++ concepts. It introduces us to object-oriented programming and good practices.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Ft_irc",
+		"miniature": null,
+		"date": null,
+		"description": "The objective of this project is to reproduce the functionality of an IRC (Internet Relay Chat) server in C++ while adhering to various standards and protocols. We had to use a real IRC client to connect to and test our server.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Inception",
+		"miniature": null,
+		"date": null,
+		"description": "This project aimed to deepen our knowledge by using Docker. We had to create our own images in a virtual machine and link them using docker-compose.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Ft_Transcendence",
+		"miniature": null,
+		"date": null,
+		"description": "The final project of the core curriculum. The goal is to create a Pong game on a website, playable in multiplayer mode using WebSockets. We had a number of modules to implement to validate the project, but we were free to make our own choices. This project was to be done in groups of 3 to 5 people.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "ScreenTimeApp",
+		"miniature": null,
+		"date": null,
+		"description": "An application using ScreenTimeAPI to manage screen time, block applications, and schedule blocking periods.",
+		"tags": [],
+		"categories": []
+	  },
+	  {
+		"name": "Swifty-companion",
+		"miniature": null,
+		"date": null,
+		"description": "An application that provides information about students at the school using the 42 API.",
+		"tags": [],
+		"categories": []
+	  }
 	]
-}
+  }
