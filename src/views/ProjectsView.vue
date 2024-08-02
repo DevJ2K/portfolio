@@ -142,7 +142,7 @@ const getProjects = async () => {
 		// eslint-disable-next-line no-undef
 		projectList.value = localData.projects;
 	}
-
+	projectList.value = projectList.value.sort((a, b) => (a.dateFilter < b.dateFilter) ? 1 : (a.dateFilter > b.dateFilter) ? -1 : 0);
 	for (let i = 0; i < projectList.value.length; i++) {
 		const element = projectList.value[i];
 		if (element.miniature) {

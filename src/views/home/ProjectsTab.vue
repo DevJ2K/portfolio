@@ -72,6 +72,7 @@ const getHighlightedProjects = async () => {
 		// eslint-disable-next-line no-undef
 		highlightedProjects.value = localData.projects.filter((project) => project.highlighted == true);
 	}
+	highlightedProjects.value = highlightedProjects.value.sort((a, b) => (a.dateFilter < b.dateFilter) ? 1 : (a.dateFilter > b.dateFilter) ? -1 : 0);
 	for (let i = 0; i < highlightedProjects.value.length; i++) {
 		const element = highlightedProjects.value[i];
 		if (element.miniature) {
