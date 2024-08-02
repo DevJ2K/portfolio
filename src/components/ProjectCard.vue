@@ -42,10 +42,10 @@
 		</div>
 
 	<div class="custom-shadow-lg hidden w-full flex-row overflow-hidden rounded-2xl border-subtle-border bg-subtle-bg dark:border-d-subtle-border dark:bg-d-ui-bg b_project_card:flex">
-		<div class="w-full">
+		<div class="w-full max-w-xs lg:max-w-sm">
 			<img :src="previewImage" :alt="title + '_img'" class=" size-full object-cover" :class="projectLink != null ? 'cursor-pointer' : 'cursor-default'" @click="if (projectLink != null){openProjectLink()};">
 		</div>
-		<div class="flex flex-col items-start gap-4 p-4">
+		<div class="flex flex-col items-start gap-4 p-4 w-3/4">
 			<div class="flex flex-col gap-4">
 
 
