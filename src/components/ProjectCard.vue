@@ -19,7 +19,7 @@
 					<div class="flex size-full flex-col items-start justify-start">
 						<div class="flex flex-wrap justify-start gap-2">
 							<div v-for="tag in tags" :key="tag"
-								class=" custom-shadow-sm cursor-default rounded-xl border-ui-border bg-ui-bg px-4 py-2 text-xs font-semibold capitalize text-low-contrast-text transition-colors duration-75 hover:border-hover-ui-border dark:border-d-ui-border dark:bg-d-hover-ui-bg dark:text-d-low-contrast-text dark:hover:border-d-hover-ui-border">{{ tag }}
+								class=" custom-shadow-sm cursor-default rounded-xl border-ui-border bg-ui-bg px-4 py-2 text-xs font-semibold text-low-contrast-text transition-colors duration-75 hover:border-hover-ui-border dark:border-d-ui-border dark:bg-d-hover-ui-bg dark:text-d-low-contrast-text dark:hover:border-d-hover-ui-border">{{ tag }}
 							</div>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 				<div class="flex size-full flex-col items-start justify-start">
 						<div class="flex flex-wrap justify-start gap-2">
 							<div v-for="tag in tags" :key="tag"
-								class=" custom-shadow-sm cursor-default rounded-xl border-ui-border bg-ui-bg px-4 py-2 text-xs font-semibold capitalize text-low-contrast-text transition-colors duration-75 hover:border-hover-ui-border dark:border-d-ui-border dark:bg-d-hover-ui-bg dark:text-d-low-contrast-text dark:hover:border-d-hover-ui-border">{{ tag }}
+								class=" custom-shadow-sm cursor-default rounded-xl border-ui-border bg-ui-bg px-4 py-2 text-xs font-semibold text-low-contrast-text transition-colors duration-75 hover:border-hover-ui-border dark:border-d-ui-border dark:bg-d-hover-ui-bg dark:text-d-low-contrast-text dark:hover:border-d-hover-ui-border">{{ tag }}
 							</div>
 						</div>
 				</div>
