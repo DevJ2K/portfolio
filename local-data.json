@@ -6,7 +6,9 @@
 		"date": null,
 		"description": "A bot that provides all the information from the ENT (Digital Workspace) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "WeatherApp",
@@ -14,7 +16,9 @@
 		"date": null,
 		"description": "A weather application with a friendly interface. The 3D models adapt according to the weather and the time of day.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "WaveSpace",
@@ -22,7 +26,9 @@
 		"date": null,
 		"description": "A mobile accounting application for shoe resellers. This was my first freelance assignment, where I learned about business concepts such as negotiation, creating a requirements specification, and more.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Portfolio",
@@ -30,7 +36,9 @@
 		"date": null,
 		"description": "My digital footprint, my signature, my creation. This is my personal portfolio, designed and built from scratch by myself.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "BSQ_in_python",
@@ -38,7 +46,9 @@
 		"date": null,
 		"description": "An algorithm that finds the largest square in a given map. This project was part of my school's entrance exam, but I didn't complete it due to time constraints. I decided to redo it to prove to myself that I could accomplish it!",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "TicTacToe AI",
@@ -46,7 +56,9 @@
 		"date": null,
 		"description": "An algorithm that learns from its games. It uses its past experiences to avoid repeating mistakes. This algorithm is based on reinforcement learning.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Tododev",
@@ -54,7 +66,9 @@
 		"date": null,
 		"description": "A collaborative to-do list application. The concept is to generate tasks based on each user's profile with the help of AI.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Libft",
@@ -62,7 +76,9 @@
 		"date": null,
 		"description": "The very first project of the core curriculum. The goal of the project is to create our own library of functions in C, which we will reuse throughout our studies.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Get_next_line",
@@ -70,7 +86,9 @@
 		"date": null,
 		"description": "This project aimed to develop a function that returns a line read from a file descriptor in C.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Ft_printf",
@@ -78,7 +96,9 @@
 		"date": null,
 		"description": "The goal of this project is to reproduce the printf() function. We learn to handle a variable number of arguments.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Push_swap",
@@ -86,7 +106,9 @@
 		"date": null,
 		"description": "This project requires us to develop an algorithm to sort two stacks using a limited set of instructions while making the fewest moves possible. This was one of my favorite projects in the core curriculum because I enjoy the implementation and use of algorithms.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "So_long",
@@ -94,7 +116,9 @@
 		"date": null,
 		"description": "A simple 2D game using the school's internal library, Minilibx. It is our first graphical project in C, where we learn to manage aspects such as textures, sprites, maps, and basic gameplay elements.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Pipex",
@@ -102,7 +126,9 @@
 		"date": null,
 		"description": "This project aims to accurately reproduce the functionality of pipes in bash. We learn to use functions such as fork, dup2, pipe, and waitpid, which help us understand the concepts of the exercise.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Minishell",
@@ -110,7 +136,9 @@
 		"date": null,
 		"description": "The goal of this project is to reproduce a shell in C. It is the first group project in the core curriculum, which helps us learn how to work in a team and divide the workload. The project is relatively complex, making teamwork essential for success. We also cover many concepts related to processes and file descriptor management.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Philosophers",
@@ -118,7 +146,9 @@
 		"date": null,
 		"description": "This project explores the concept of multi-threading based on the \"dining philosophers problem.\" Multi-threading is a crucial concept as it allows for simultaneous task execution.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Cub3D",
@@ -126,7 +156,9 @@
 		"date": null,
 		"description": "A 3D game inspired by Wolfenstein 3D, considered the first FPS ever developed. This project introduces us to the concept of Raycasting. It is our second graphical and group project.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "CPP Modules",
@@ -134,7 +166,9 @@
 		"date": null,
 		"description": "A set of exercises covering C++ concepts. It introduces us to object-oriented programming and good practices.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Ft_irc",
@@ -142,7 +176,9 @@
 		"date": null,
 		"description": "The objective of this project is to reproduce the functionality of an IRC (Internet Relay Chat) server in C++ while adhering to various standards and protocols. We had to use a real IRC client to connect to and test our server.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Inception",
@@ -150,7 +186,9 @@
 		"date": null,
 		"description": "This project aimed to deepen our knowledge by using Docker. We had to create our own images in a virtual machine and link them using docker-compose.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Ft_Transcendence",
@@ -158,7 +196,9 @@
 		"date": null,
 		"description": "The final project of the core curriculum. The goal is to create a Pong game on a website, playable in multiplayer mode using WebSockets. We had a number of modules to implement to validate the project, but we were free to make our own choices. This project was to be done in groups of 3 to 5 people.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "ScreenTimeApp",
@@ -166,7 +206,9 @@
 		"date": null,
 		"description": "An application using ScreenTimeAPI to manage screen time, block applications, and schedule blocking periods.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  },
 	  {
 		"name": "Swifty-companion",
@@ -174,7 +216,9 @@
 		"date": null,
 		"description": "An application that provides information about students at the school using the 42 API.",
 		"tags": [],
-		"categories": []
+		"categories": [],
+		"github": null,
+		"link": null
 	  }
 	]
-  }
+}
