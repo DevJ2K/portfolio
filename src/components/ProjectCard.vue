@@ -89,14 +89,14 @@
 </template>
 
 <script setup>
-import weatherAppImage from '../assets/projectsPreview/WeatherApp.png';
+import noPictureImage from '/projects/no_picture.png';
 import RedirectionSvg from './customSvg/RedirectionSvg.vue';
 import GithubSvg from './logos/GithubSvg.vue';
 
 const props = defineProps({
 	previewImage: {
 		type: String,
-		default: weatherAppImage
+		default: noPictureImage
 	},
 	title: {
 		type: String,
