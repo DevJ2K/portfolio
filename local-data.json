@@ -2,7 +2,7 @@
 	"projects": [
 	  {
 		"name": "EntOnDiscord",
-		"miniature": "projects/WeatherApp_.png",
+		"miniature": "projects/entondiscord.png",
 		"date": "October 2022",
 		"description": "A bot that provides various information such as schedule, homework, grades, and more from the ENT (school's intranet) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
 		"tags": ["Python", "Discord.py", "Selenium", "Sqlite", "Scraping", "Parsing"],
@@ -14,7 +14,7 @@
 	  },
 	  {
 		"name": "Weather3D",
-		"miniature": null,
+		"miniature": "projects/WeatherApp.png",
 		"date": "April 2024",
 		"description": "A weather application with a friendly interface. The 3D models adapt according to the weather and the time of day.",
 		"tags": ["SwiftUI", "Swift", "Blender", "3D", "API"],
@@ -25,7 +25,7 @@
 	  },
 	  {
 		"name": "WaveSpace",
-		"miniature": null,
+		"miniature": "projects/wavespace.png",
 		"date": "December 2022 - February 2023",
 		"description": "A mobile accounting application for shoe resellers. This was my first freelance assignment, where I learned about business concepts such as negotiation, creating a requirements specification, and more.",
 		"tags": ["SwiftUI", "Swift", "Firebase", "TestFlight"],
@@ -37,7 +37,7 @@
 	  },
 	  {
 		"name": "Portfolio",
-		"miniature": null,
+		"miniature": "projects/portfolio_blur.png",
 		"date": "May - August 2024",
 		"description": "My digital footprint, my signature, my creation. This is my personal portfolio, designed and built from scratch by myself.",
 		"tags": ["Vue", "TailwindCSS", "Firebase", "Javascript", "Python", "UI", "UX"],
@@ -49,7 +49,7 @@
 	  },
 	  {
 		"name": "BSQ (Biggest Square)",
-		"miniature": null,
+		"miniature": "projects/bsq.png",
 		"date": "October 2023",
 		"description": "An algorithm that finds the largest square in a given map. This project was part of my school's entrance exam, but I didn't complete it due to time constraints. I decided to redo it in Python to prove to myself that I could accomplish it!",
 		"tags": ["Python", "Algorithm"],
@@ -60,7 +60,7 @@
 	  },
 	  {
 		"name": "TicTacToe AI",
-		"miniature": null,
+		"miniature": "projects/tictactoe_ai.jpg",
 		"date": "October 2023",
 		"description": "An algorithm that learns from its games. It uses its past experiences to avoid repeating mistakes. This algorithm is based on reinforcement learning.",
 		"tags": ["Python", "Algorithm", "AI"],
@@ -71,7 +71,7 @@
 	  },
 	  {
 		"name": "Tododev",
-		"miniature": null,
+		"miniature": "projects/tododev.png",
 		"date": "October - November 2023",
 		"description": "A collaborative to-do list application. The concept is to generate tasks based on each user's profile with the help of AI.",
 		"tags": ["Dart", "Flutter", "Firebase", "Authentification", "Figma", "UI", "UX"],
@@ -82,7 +82,7 @@
 	  },
 	  {
 		"name": "Libft",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "November 2023",
 		"description": "The very first project of the common core. The goal of the project is to create our own library of functions in C, which we will reuse throughout our studies.",
 		"tags": ["C", "Library"],
@@ -93,7 +93,7 @@
 	  },
 	  {
 		"name": "Get_next_line",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "November 2023",
 		"description": "This project aimed to develop a function that returns a line read from a file descriptor in C.",
 		"tags": ["C"],
@@ -104,7 +104,7 @@
 	  },
 	  {
 		"name": "Ft_printf",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "November 2023",
 		"description": "The goal of this project is to reproduce the printf() function. We learn to handle a variable number of arguments.",
 		"tags": ["C"],
@@ -115,7 +115,7 @@
 	  },
 	  {
 		"name": "Push_swap",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "November 2023",
 		"description": "This project requires us to develop an algorithm to sort two stacks using a limited set of instructions while making the fewest moves possible. This was one of my favorite projects in the core curriculum because I enjoy the implementation and use of algorithms.",
 		"tags": ["C", "Algorithm", "Sorting Algorithm"],
@@ -126,7 +126,7 @@
 	  },
 	  {
 		"name": "So_long",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "December 2023",
 		"description": "A simple 2D game using the school's internal library, Minilibx. It is our first graphical project in C, where we learn to manage aspects such as textures, sprites, maps, and basic gameplay elements.",
 		"tags": ["C", "Gaming"],
@@ -137,7 +137,7 @@
 	  },
 	  {
 		"name": "Pipex",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "December 2023",
 		"description": "This project aims to accurately reproduce the functionality of pipes in bash. We learn to use functions such as fork, dup2, pipe, and waitpid, which help us understand the concepts of the exercise.",
 		"tags": ["C", "Unix"],
@@ -148,7 +148,7 @@
 	  },
 	  {
 		"name": "Minishell",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "December 2023",
 		"description": "The goal of this project is to reproduce a shell in C. It is the first group project in the core curriculum, which helps us learn how to work in a team and divide the workload. The project is relatively complex, making teamwork essential for success. We also cover many concepts related to processes and file descriptor management.",
 		"tags": ["C", "Unix", "Bash"],
@@ -159,7 +159,7 @@
 	  },
 	  {
 		"name": "Philosophers",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "December 2023",
 		"description": "This project explores the concept of multi-threading based on the \"dining philosophers problem.\" Multi-threading is a crucial concept as it allows for simultaneous task execution.",
 		"tags": ["C", "Multi-threading"],
@@ -170,7 +170,7 @@
 	  },
 	  {
 		"name": "Cub3D",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "January 2024",
 		"description": "A 3D game inspired by Wolfenstein 3D, considered the first FPS ever developed. This project introduces us to the concept of Raycasting. It is our second graphical and group project.",
 		"tags": ["C", "Algorithm", "Raycasting", "3D"],
@@ -181,7 +181,7 @@
 	  },
 	  {
 		"name": "CPP Modules",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "January 2024",
 		"description": "A set of exercises covering C++ concepts. It introduces us to object-oriented programming and good practices.",
 		"tags": ["C++", "Oriented-Object Programming"],
@@ -192,7 +192,7 @@
 	  },
 	  {
 		"name": "Ft_irc",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "February 2024",
 		"description": "The objective of this project is to reproduce the functionality of an IRC (Internet Relay Chat) server in C++ while adhering to various standards and protocols. We had to use a real IRC client to connect to and test our server.",
 		"tags": ["C++", "Network", "IRC"],
@@ -203,7 +203,7 @@
 	  },
 	  {
 		"name": "Inception",
-		"miniature": null,
+		"miniature": "projects/42cursus.png",
 		"date": "February 2024",
 		"description": "This project aimed to deepen our knowledge by using Docker. We had to create our own images in a virtual machine and link them using docker-compose.",
 		"tags": ["Docker", "Docker-compose", "MariaDB", "Nginx", "WordPress"],
@@ -214,7 +214,7 @@
 	  },
 	  {
 		"name": "Ft_Transcendence",
-		"miniature": null,
+		"miniature": "projects/ft_transcendence.png",
 		"date": "February - 22 March 2024",
 		"description": "The final project of the common core. The goal is to create a Pong game on a website, playable in multiplayer mode using WebSockets. We had a number of modules to implement to validate the project, but we were free to make our own choices. This project was to be done in groups of 3 to 5 people.",
 		"tags": ["HTML", "CSS", "Javascript", "Three.js", "3D", "Python", "Django", "API"],
@@ -225,10 +225,10 @@
 	  },
 	  {
 		"name": "ScreenTimeApp",
-		"miniature": null,
+		"miniature": "projects/screentimeapp.png",
 		"date": "June 2024",
 		"description": "An application using ScreenTimeAPI to manage screen time, block applications, and schedule blocking periods.",
-		"tags": ["SwiftUI", "Swift", "ScreenTimeAPI"],
+		"tags": ["SwiftUI", "Swift", "ScreenTimeAPI", "DeviceActivityMonitor", "FamilyControls"],
 		"categories": ["Others"],
 		"github": "https://github.com/DevJ2K/ScreenTimeApp",
 		"link": null,
@@ -236,7 +236,7 @@
 	  },
 	  {
 		"name": "Swifty-companion",
-		"miniature": null,
+		"miniature": "projects/swifty_companion.png",
 		"date": "April - May 2024",
 		"description": "An application that provides information about students at the school using the 42 API.",
 		"tags": ["SwiftUI", "Swift", "API"],
@@ -247,7 +247,7 @@
 	  },
 	  {
 		"name": "Cracklanders",
-		"miniature": null,
+		"miniature": "projects/cracklanders.png",
 		"date": "June 2022",
 		"description": "Cracklanders is the first concrete project I have completed. It is a game where the goal is to escape from prison.",
 		"tags": ["Python", "Tkinter", "Gaming"],
@@ -258,11 +258,11 @@
 	  },
 	  {
 		"name": "SFT-R",
-		"miniature": null,
+		"miniature": "projects/sftr1.png",
 		"date": "December 2022",
 		"description": "The requirements for this project included integrating an authentication system using PHP, linked to a database, and creating a website that utilizes this data. We decided to develop a car configurator.",
 		"tags": ["HTML", "CSS", "Javascript", "PHP", "3D", "Three.js"],
-		"categories": [],
+		"categories": ["Others"],
 		"github": "https://github.com/DevJ2K/sft-r-website",
 		"link": null,
 		"dateFilter": "2022-12-01T00:00:00.000Z"
