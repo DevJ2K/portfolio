@@ -50,7 +50,7 @@ const router = useRouter();
 const highlightedProjects = ref([]);
 const isFetchingProjects = ref(true);
 const useFirebaseFirestore = false;
-const useFirebaseStorage = true;
+const useFirebaseStorage = false;
 const db = getFirestore(firebaseApp);
 const storage = getStorage(firebaseApp);
 
@@ -80,6 +80,8 @@ const getHighlightedProjects = async () => {
 				const videoRef = StorageRef(storage, element.miniature);
 				const url = await getDownloadURL(videoRef);
 				element.url = url;
+			} else {
+				element.url = element.miniature;
 			}
 		}
 	}

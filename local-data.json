@@ -2,7 +2,7 @@
 	"projects": [
 	  {
 		"name": "EntOnDiscord",
-		"miniature": null,
+		"miniature": "projects/WeatherApp_.png",
 		"date": "October 2022",
 		"description": "A bot that provides various information such as schedule, homework, grades, and more from the ENT (school's intranet) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
 		"tags": ["Python", "Discord.py", "Selenium", "Sqlite", "Scraping", "Parsing"],

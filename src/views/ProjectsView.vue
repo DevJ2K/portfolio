@@ -123,7 +123,7 @@ const projectList = ref([]);
 const isFetchingProjects = ref(true);
 const searchText = ref("");
 const useFirebaseFirestore = false;
-const useFirebaseStorage = true;
+const useFirebaseStorage = false;
 const route = useRoute();
 const db = getFirestore(firebaseApp);
 const storage = getStorage(firebaseApp);
@@ -150,6 +150,8 @@ const getProjects = async () => {
 				const videoRef = StorageRef(storage, element.miniature);
 				const url = await getDownloadURL(videoRef);
 				element.url = url;
+			} else {
+				element.url = element.miniature;
 			}
 		}
 	}
