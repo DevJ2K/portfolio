@@ -19,7 +19,7 @@
         <div class="flex w-full flex-row items-center justify-around sm:h-1/6" data-aos="zoom-in" data-aos-delay="400" data-aos-offset="0" data-aos-duration="1200">
            <SocialLogo :logo="GithubSvg" name="DevJ2K" size="presentation-view-logo" link="https://github.com/DevJ2K"/>
            <SocialLogo :logo="LinkedinSvg" name="Theo Ajavon" size="presentation-view-logo" link="https://www.linkedin.com/in/devj2k/"/>
-           <SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="presentation-view-logo" link="mailto:ajavontheopro@gmail.com"/>
+           <SocialLogo :logo="EmailSvg" name="contact@devj2k.com" size="presentation-view-logo" link="mailto:contact@devj2k.com"/>
 
         </div>
     </main>

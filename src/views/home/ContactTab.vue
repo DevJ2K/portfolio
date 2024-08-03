@@ -33,7 +33,7 @@
 						<SocialLogo :logo="MaltSvg" name="theoajavon" size="contact-view-logo" link="https://www.malt.fr/profile/theoajavon"/>
 					</div>
 					<div data-aos="fade" data-aos-delay="950" data-aos-duration="250">
-						<SocialLogo :logo="EmailSvg" name="ajavontheopro@gmail.com" size="contact-view-logo" link="mailto:ajavontheopro@gmail.com"/>
+						<SocialLogo :logo="EmailSvg" name="contact@devj2k.com" size="contact-view-logo" link="mailto:contact@devj2k.com"/>
 					</div>
 				</fieldset>
 			</div>
