@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url=/" />
+  <script>
+    // Ceci redirige vers la route appropriée
+    (function() {
+      var currentPath = window.location.pathname;
+      var newPath = window.location.origin + '/#' + currentPath;
+      window.location.replace(newPath);
+    })();
+  </script>
+</head>
+<body>
+</body>
+</html>
