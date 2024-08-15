@@ -43,7 +43,7 @@
 		"tags": ["Vue", "TailwindCSS", "Firebase", "Javascript", "Python", "UI", "UX"],
 		"categories": ["Featured"],
 		"github": "https://github.com/DevJ2K/portfolio",
-		"link": "https://devj2k.com/",
+		"link": null,
 		"dateFilter": "2024-08-02T00:00:00.000Z",
 		"highlighted": true
 	  },
