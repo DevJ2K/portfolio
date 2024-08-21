@@ -71,6 +71,15 @@
 						</div>
 					</fieldset>
 				</div>
+
+				<div class=" z-10 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
+					<fieldset class="skill-fieldset">
+						<legend class="custom-legend">DevOps</legend>
+						<div class="flex w-full flex-wrap justify-center gap-6">
+							<LogoSkill :logo="DockerSvg" tech-name="Docker"/>
+						</div>
+					</fieldset>
+				</div>
 			</div>
 
 		</main>
@@ -98,5 +107,6 @@ import SqliteSvg from '@/components/logos/skills/SqliteSvg.vue';
 import BgTab from '@/components/background/BgTab.vue';
 import TabTitleComponent from '@/components/TabTitleComponent.vue';
 import DiscordSvg from '@/components/logos/skills/DiscordSvg.vue';
+import DockerSvg from '@/components/logos/skills/DockerSvg.vue';
 
 </script>
