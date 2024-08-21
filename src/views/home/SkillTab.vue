@@ -51,7 +51,7 @@
 
 				<div class=" z-10 w-full" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="400">
 					<fieldset class="skill-fieldset">
-						<legend class="custom-legend">Frameworks & Librairies</legend>
+						<legend class="custom-legend">Frameworks & Libraries</legend>
 						<div class="flex w-full flex-wrap justify-center gap-6">
 							<LogoSkill :logo="FlutterSvg" tech-name="Flutter" />
 							<LogoSkill :logo="VueSvg" tech-name="Vue" />
