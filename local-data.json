@@ -6,7 +6,7 @@
 		"date": "October 2022",
 		"description": "A bot that provides various information such as schedule, homework, grades, and more from the ENT (school's intranet) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
 		"tags": ["Python", "Discord.py", "Selenium", "Sqlite", "Scraping", "Parsing"],
-		"categories": ["Featured", "Personal"],
+		"categories": ["Featured"],
 		"github": "https://github.com/DevJ2K/ent-on-discord",
 		"link": null,
 		"dateFilter": "2022-10-02T00:00:00.000Z",
@@ -45,6 +45,18 @@
 		"github": "https://github.com/DevJ2K/portfolio",
 		"link": null,
 		"dateFilter": "2024-08-02T00:00:00.000Z",
+		"highlighted": true
+	  },
+	  {
+		"name": "WebApp Template",
+		"miniature": "projects/template_webapp.png",
+		"date": "August 2024",
+		"description": "Welcome to my development template for running a Python project as a web application. This template combines a Python backend with a Vue.js frontend, providing a solid foundation to kickstart your projects.",
+		"tags": ["Docker", "Vue", "Python", "API", "FullStack"],
+		"categories": ["Personal"],
+		"github": "https://github.com/DevJ2K/template_webapp",
+		"link": null,
+		"dateFilter": "2024-08-21T00:00:00.000Z",
 		"highlighted": true
 	  },
 	  {
