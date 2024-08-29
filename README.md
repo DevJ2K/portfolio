@@ -1,5 +1,4 @@
-# Portfolio
-
+<!--
 ## Todo
 - [x] Responsive font size
 - [x] Add dots on timeline AboutView + change line width
@@ -45,40 +44,46 @@
 - [x] Add CV to local route
 - [x] Use localData instead Firestore
 - [x] Add contact@devj2k.com
+-->
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text -->
 <!-- - [ ] Search project animation -->
 
-##
-This template should help get you started developing with Vue 3 in Vite.
+# My Portfolio
 
-## Recommended IDE Setup
+[![Website](https://img.shields.io/badge/Website-Visit-blue?style=for-the-badge)](https://devj2k.com)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Portfolio Preview](./public/projects/portfolio_blur.png)
 
-## Customize configuration
+## 🌟 About the Project
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This portfolio was **designed and conceptualized by me** using **Figma**. It was brought to life with a strong focus on detail and user experience, leveraging modern technologies like **Tailwind CSS** and **Vue.js** to ensure a sleek and responsive interface.
 
-## Project Setup
+## 🌐 Check It Out
 
-```sh
-npm install
-```
+> **[devj2k.com](https://devj2k.com)**
 
-### Compile and Hot-Reload for Development
+Visit my website to explore my projects, see my skills, and learn more about me.
 
-```sh
-npm run dev
-```
+## 🚀 Built With
 
-### Compile and Minify for Production
+- **Figma** for design and prototyping.
+- **Tailwind CSS** for fast and custom styling.
+- **Vue.js** for a dynamic and responsive user interface.
 
-```sh
-npm run build
-```
+## 📸 Preview
 
-### Lint with [ESLint](https://eslint.org/)
+Here's a sneak peek at my portfolio:
 
-```sh
-npm run lint
-```
+![Portfolio Screenshot](./public/projects/portfolio.png)
+
+## 🔗 Useful Links
+
+- **Website**: [devj2k.com](https://devj2k.com)
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/devj2k)
+- **GitHub**: [My GitHub](https://github.com/DevJ2K)
+
+<!--
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+-->
