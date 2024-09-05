@@ -25,6 +25,7 @@ export default defineConfig({
     })
   ],
   define: {
+    'downloadProject': JSON.stringify("https://download-directory.github.io/?url=https://github.com/DevJ2K/app_computorv1/tree/main/backend/computorv1"),
     'localData': localdata,
     'aboutData': aboutdata
   },

@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import AboutView from '@/views/AboutView.vue'
 
+import ComputorV1Page from '../projects/computorv1/App.vue'
+
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
@@ -29,6 +31,21 @@ const router = createRouter({
       meta: {
         title: 'DevJ2K | About'
       }
+    },
+    {
+      path: '/computorv1',
+      name: 'computorv1',
+      component: ComputorV1Page
+    },
+    {
+      path: '/computorv1/learn-math',
+      name: 'computorv1/learn-math',
+      component: ComputorV1Page
+    },
+    {
+      path: '/computorv1/playground',
+      name: 'computorv1/playground',
+      component: ComputorV1Page
     }
   ]
 })
