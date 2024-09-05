@@ -209,7 +209,22 @@ export default {
         "d-accent-color": "#EC64F4", // "#FF5F7E",
         "d-hover-accent-color": "#DC40E5", // "#FF4D7A",
         "d-low-contrast-text": "#FFD1DC",
-        "d-high-contrast-text": "#FFE4F1"
+        "d-high-contrast-text": "#FFE4F1",
+
+
+        // COMPUTORV1 COLORS
+        "computorv1-app-bg": "#0E1512", // 1. App background
+        "computorv1-subtle-bg": "#121B17", // 2. Subtle background
+        "computorv1-ui-bg": "#132D21", // 3. UI element background
+        "computorv1-hover-ui-bg": "#113B29", // 4. Hovered UI element background
+        "computorv1-active-ui-bg": "#174933", // 5. Active / Selected UI element background
+        "computorv1-subtle-border": "#20573E", // 6. Subtle borders and separators
+        "computorv1-ui-border": "#28684A", // 7. UI element border and focus ring
+        "computorv1-hover-ui-border": "#2F7C57", // 8. Hovered UI element border
+        "computorv1-accent-color": "#30A46C", // 9. Solid backgrounds
+        "computorv1-hover-accent-color": "#33B074", // 10. Hovered solid backgrounds
+        "computorv1-low-contrast-text": "#3DD68C", // 11. Low-contrast text
+        "computorv1-high-contrast-text": "#B1F1CB", // 12. High-contrast text
       }
 
 

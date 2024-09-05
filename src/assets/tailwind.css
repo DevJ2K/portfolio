@@ -35,6 +35,17 @@
 	/* color: #000; */
 }
 
+.my-scroll-nav-active-computorv1 {
+	@apply h-24;
+	/* background: #fff; */
+	@apply backdrop-blur-xl;
+	@apply bg-computorv1-app-bg/60;
+	/* @apply dark:bg-d-app-bg/60; */
+	@apply shadow-lg;
+	@apply dark:shadow-2xl;
+	/* color: #000; */
+}
+
 .open-resume-btn {
 	@apply rounded-2xl;
 	@apply shadow-lg;
@@ -61,6 +72,10 @@
 	-webkit-text-stroke-color: #000;
 }
 .dark .text-outline {
+	-webkit-text-stroke-color: #fff;
+}
+.text-outline-computorv1 {
+	-webkit-text-stroke-width: 0.6px;
 	-webkit-text-stroke-color: #fff;
 }
 
@@ -240,6 +255,10 @@ body.dark {
 
 .animate-underline {
 	@apply absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-color transition-all group-hover:w-full dark:bg-d-accent-color;
+}
+
+.animate-underline-computorv1 {
+	@apply absolute -bottom-1 left-0 h-0.5 w-0 bg-computorv1-accent-color transition-all group-hover:w-full;
 }
 
 /* HAMBURGER MENU */

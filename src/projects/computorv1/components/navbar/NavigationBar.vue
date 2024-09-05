@@ -1,38 +1,38 @@
 <template>
 	<div class=" fixed top-0 z-50 w-full">
-		<div id="navBar" class="my-scroll-nav my-scroll-nav-active">
+		<div id="navBar" class="my-scroll-nav my-scroll-nav-active-computorv1">
 			<div id="navMenu"
 				class="absolute top-0 h-screen w-full -translate-x-full transition-transform duration-500 md:hidden">
 				<ul
-					class=" flex size-full flex-col items-center justify-center gap-14 bg-app-bg py-4 text-xl font-semibold text-high-contrast-text dark:bg-d-app-bg dark:text-d-high-contrast-text">
+					class=" flex size-full flex-col items-center justify-center gap-14 bg-computorv1-app-bg py-4 text-xl font-semibold text-computorv1-high-contrast-text">
 
 					<li class="group relative w-max">
 						<p @click="routerTo('/computorv1')"
-							class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white">
+							class="cursor-pointer transition-all  group-hover:text-white">
 							Home</p>
-						<span class="animate-underline"></span>
+						<span class="animate-underline-computorv1"></span>
 
 					</li>
 					<li class="group relative w-max">
 						<p @click="routerTo('/computorv1/learn-math')"
-							class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white">
+							class="cursor-pointer transition-all  group-hover:text-white">
 							Learn the Math</p>
-						<span class="animate-underline"></span>
+						<span class="animate-underline-computorv1"></span>
 
 					</li>
 					<li class="group relative w-max">
 						<p @click="routerTo('/computorv1/playground')"
-							class="cursor-pointer transition-all group-hover:text-black dark:group-hover:text-white">
+							class="cursor-pointer transition-all  group-hover:text-white">
 							Try It Out</p>
-						<span class="animate-underline"></span>
+						<span class="animate-underline-computorv1"></span>
 
 					</li>
 					<a :href="downloadLink" target="_blank"
-						class="group flex flex-row items-center gap-1.5 rounded-full border-2 border-accent-color px-6 py-2 text-high-contrast-text transition-colors hover:bg-accent-color hover:text-white dark:border-d-accent-color dark:text-d-high-contrast-text dark:hover:bg-d-accent-color dark:hover:text-white">
+						class="group flex flex-row items-center gap-1.5 rounded-full border-2 border-computorv1-accent-color px-6 py-2 text-computorv1-high-contrast-text transition-colors hover:bg-computorv1-accent-color hover:text-white  dark:text-d-high-contrast-text dark:hover:text-white">
 						<DownloadSvg
-							svg-class="text-high-contrast-text dark:text-d-high-contrast-text size-5 group-hover:text-white dark:group-hover:text-white transition-colors" />
+							svg-class="text-computorv1-high-contrast-text size-5 group-hover:text-white group-hover:text-white transition-colors" />
 						<span
-							class="font-semibold transition-colors group-hover:text-white dark:group-hover:text-white">Download</span>
+							class="font-semibold transition-colors group-hover:text-white group-hover:text-white">Download</span>
 					</a>
 
 				</ul>
@@ -44,40 +44,40 @@
 						<div class=" size-16 overflow-hidden rounded-full border-2 bg-blue-50">
 							<img src="../../assets/images/j2klogo.png" alt="" class=" size-full object-cover">
 						</div>
-						<h1 id="devj2kText" class="text-outline text-2xl font-black text-transparent">DevJ2K</h1>
+						<h1 id="devj2kText" class="text-outline-computorv1 text-2xl font-black text-transparent">DevJ2K</h1>
 					</div>
 				</div>
 				<ul
-					class=" flex w-1/3 flex-row items-center justify-center gap-8 text-lg font-semibold text-high-contrast-text dark:text-d-high-contrast-text max-md:hidden">
+					class=" flex w-1/3 flex-row items-center justify-center gap-8 text-lg font-semibold text-computorv1-high-contrast-text max-md:hidden">
 					<li class="group relative w-max">
 						<p @click="routerTo('/computorv1')"
-							class="cursor-pointer text-nowrap transition-all group-hover:text-black dark:group-hover:text-white">
+							class="cursor-pointer text-nowrap transition-all  group-hover:text-white">
 							Home</p>
-						<span class="animate-underline"></span>
+						<span class="animate-underline-computorv1"></span>
 
 					</li>
 					<li class="group relative w-max">
 						<p @click="routerTo('/computorv1/learn-math')"
-							class="cursor-pointer text-nowrap transition-all group-hover:text-black dark:group-hover:text-white">
+							class="cursor-pointer text-nowrap transition-all  group-hover:text-white">
 							Learn the Math</p>
-						<span class="animate-underline"></span>
+						<span class="animate-underline-computorv1"></span>
 
 					</li>
 					<li class="group relative w-max">
 						<p @click="routerTo('/computorv1/playground')"
-							class="cursor-pointer text-nowrap transition-all group-hover:text-black dark:group-hover:text-white">
+							class="cursor-pointer text-nowrap transition-all  group-hover:text-white">
 							Try It Out</p>
-						<span class="animate-underline"></span>
+						<span class="animate-underline-computorv1"></span>
 
 					</li>
 				</ul>
 				<div class="flex w-1/3 justify-end max-md:hidden">
 					<a :href="downloadLink" target="_blank"
-						class="group flex flex-row items-center gap-1.5 rounded-full border-2 border-accent-color px-6 py-2 text-high-contrast-text transition-colors hover:bg-accent-color hover:text-white dark:border-d-accent-color dark:text-d-high-contrast-text dark:hover:bg-d-accent-color dark:hover:text-white">
+						class="group flex flex-row items-center gap-1.5 rounded-full border-2 border-computorv1-accent-color px-6 py-2 text-white transition-colors hover:bg-computorv1-accent-color hover:text-white">
 						<DownloadSvg
-							svg-class="text-high-contrast-text dark:text-d-high-contrast-text size-5 group-hover:text-white dark:group-hover:text-white transition-colors" />
+							svg-class="text-high-contrast-text dark:text-d-high-contrast-text size-5 group-hover:text-white group-hover:text-white transition-colors" />
 						<span
-							class="font-semibold transition-colors group-hover:text-white dark:group-hover:text-white">Download</span>
+							class="font-semibold transition-colors group-hover:text-white group-hover:text-white">Download</span>
 					</a>
 				</div>
 

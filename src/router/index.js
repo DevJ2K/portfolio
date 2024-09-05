@@ -35,17 +35,26 @@ const router = createRouter({
     {
       path: '/computorv1',
       name: 'computorv1',
-      component: ComputorV1Page
+      component: ComputorV1Page,
+      meta: {
+        title: 'Computorv1 | Home'
+      }
     },
     {
       path: '/computorv1/learn-math',
       name: 'computorv1/learn-math',
-      component: ComputorV1Page
+      component: ComputorV1Page,
+      meta: {
+        title: 'Computorv1 | Learn the Math'
+      }
     },
     {
       path: '/computorv1/playground',
       name: 'computorv1/playground',
-      component: ComputorV1Page
+      component: ComputorV1Page,
+      meta: {
+        title: 'Computorv1 | Playground'
+      }
     }
   ]
 })
