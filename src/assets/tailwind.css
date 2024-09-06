@@ -177,11 +177,11 @@
 	@apply m-auto px-2 text-lg md:text-xl font-semibold text-high-contrast-text dark:text-d-high-contrast-text text-nowrap;
 }
 
-body {
+#mainApp {
 	@apply bg-app-bg;
 }
 
-body.dark {
+#mainApp.dark {
 	@apply bg-d-app-bg;
 }
 
