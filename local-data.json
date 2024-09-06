@@ -64,7 +64,7 @@
 		"miniature": "projects/app_computorv1.png",
 		"date": "August - September 2024",
 		"description": "Computorv1 is a project aimed at building a simple equation-solving program. The program will focus on solving polynomial equations of the second degree or lower, using only exponents.",
-		"tags": ["Docker", "Vue", "TailwindCSS", "Python", "API", "FullStack", "RegEx", "PyTest", "Math"],
+		"tags": ["Docker", "Vue", "TailwindCSS", "Python", "API", "FullStack", "RegEx", "PyTest", "Mathematics"],
 		"categories": ["Featured", "42Cursus"],
 		"github": "https://github.com/DevJ2K/app_computorv1",
 		"link": "#/computorv1",

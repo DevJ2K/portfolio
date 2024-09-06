@@ -231,6 +231,7 @@ export default {
     },
     fontFamily: {
       Poppins: ["Poppins, sans-serif"],
+      Roboto: ["Roboto, sans-serif"]
     },
     container: {
       marginLeft: "auto",

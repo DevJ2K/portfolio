@@ -1,6 +1,6 @@
 <template>
 	<NavigationBar/>
-	<main class="dark relative z-10 flex size-full min-h-screen flex-col items-center bg-computorv1-app-bg">
+	<main class="dark relative z-10 flex size-full min-h-screen flex-col items-center bg-computorv1-app-bg font-Roboto">
 		<div class="h-24"></div>
 		<HomeView v-if="$route.name === 'computorv1'"/>
 		<LearnMathView v-if="$route.name === 'computorv1/learn-math'"/>
