@@ -25,6 +25,13 @@ import refreshBackground from '@/js/refreshBackground';
 
 import { onMounted } from 'vue';
 
-onMounted(() => {refreshBackground();});
+
+
+
+onMounted(() => {
+  const mainApp = document.getElementById("mainApp");
+  mainApp.classList.add("app-background");
+	mainApp.classList.remove("bg-computorv1-app-bg");
+  refreshBackground();});
 </script>
 

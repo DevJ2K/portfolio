@@ -17,18 +17,16 @@ import LearnMathView from './views/LearnMathView.vue';
 import TestView from './views/TestView.vue';
 
 onMounted(() => {
-	console.log("Monter")
+	// console.log("Monter")
 	const mainApp = document.getElementById("mainApp");
-	console.log(mainApp)
-	mainApp.classList.remove("bg-app-bg");
-	mainApp.classList.remove("bg-d-app-bg");
+	// console.log(mainApp)
+	mainApp.classList.remove("app-background");
 	mainApp.classList.add("bg-computorv1-app-bg");
 })
 
 onUnmounted(() => {
 	const mainApp = document.getElementById("mainApp");
-	mainApp.classList.add("bg-app-bg");
-	mainApp.classList.add("bg-d-app-bg");
+	mainApp.classList.add("app-background");
 	mainApp.classList.remove("bg-computorv1-app-bg");
 	// console.log("Demonter")
 })
