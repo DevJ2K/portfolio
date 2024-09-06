@@ -17,7 +17,7 @@
       </div>
 
       <!-- Boutons d'action -->
-      <div class="mt-6 flex flex-row items-center gap-4">
+      <div class="mt-6 flex flex-col md:flex-row items-center gap-4">
         <a href="#/computorv1/learn-math"
            class=" group flex flex-row items-center gap-1.5 rounded-full border-2 border-computorv1-accent-color bg-gray-900 px-8 py-4 font-semibold text-computorv1-high-contrast-text shadow-md transition-colors hover:bg-computorv1-accent-color hover:text-white">
           Learn the Math
