@@ -75,7 +75,7 @@
 					<a :href="downloadLink" target="_blank"
 						class="group flex flex-row items-center gap-1.5 rounded-full border-2 border-computorv1-accent-color px-6 py-2 text-white transition-colors hover:bg-computorv1-accent-color hover:text-white">
 						<DownloadSvg
-							svg-class="text-high-contrast-text dark:text-d-high-contrast-text size-5 group-hover:text-white group-hover:text-white transition-colors" />
+							svg-class="text-computorv1-high-contrast-text size-5 group-hover:text-white group-hover:text-white transition-colors" />
 						<span
 							class="font-semibold transition-colors group-hover:text-white group-hover:text-white">Download</span>
 					</a>
@@ -145,7 +145,10 @@ const routerTo = (link, hideMenu = true) => {
 	if (hideMenu && displayMenu.value == true) {
 		toggleMenu();
 	}
-	router.push(`${link}`);
+	router.push(`${link}`)
+	.then(() => {
+		window.scrollTo(0, 0);
+	});
 }
 
 </script>

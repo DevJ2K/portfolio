@@ -6,7 +6,7 @@
     </div>
 
     <!-- Introduction -->
-    <section class="mb-12">
+    <section class="my-12">
       <h2 class="mb-4 text-2xl font-semibold text-computorv1-high-contrast-text ">Introduction</h2>
       <p class="text-lg text-computorv1-low-contrast-text">
         Understanding the basics of algebra and equations is essential to solving problems with Computorv1. In this section, we will cover key concepts such as quadratic equations and linear equations, along with methods to solve them.
