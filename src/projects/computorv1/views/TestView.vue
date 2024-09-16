@@ -17,7 +17,7 @@
 
     <!-- Input and Button -->
     <section class="mb-12 flex flex-col items-center gap-4">
-      <input id="test-input" type="text" placeholder="Enter your equation (e.g., 2x^2 - 4x - 6)"
+      <input id="test-input" type="text" placeholder="Enter your equation (e.g., 2x^2 - 4x - 6 = 0)"
         class="border-computorv1-ui-border text-computorv1-high-contrast-text focus:ring-computorv1-accent-color w-full max-w-md rounded-lg border-2 bg-gray-800 px-4 py-2 text-lg focus:outline-none focus:ring-2"
         :disabled="isLoading" />
       <button @click="makeRequests"
