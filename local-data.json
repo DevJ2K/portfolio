@@ -33,7 +33,7 @@
 		"github": null,
 		"link": null,
 		"dateFilter": "2023-02-01T00:00:00.000Z",
-		"highlighted": true
+		"highlighted": false
 	  },
 	  {
 		"name": "Portfolio",
@@ -69,6 +69,18 @@
 		"github": "https://github.com/DevJ2K/app_computorv1",
 		"link": "#/computorv1",
 		"dateFilter": "2024-09-01T00:00:00.000Z",
+		"highlighted": true
+	  },
+	  {
+		"name": "Rubik",
+		"miniature": "projects/app_computorv1.png",
+		"date": "September 2024",
+		"description": "Rubik is a team project to learn to solve a rubik...",
+		"tags": ["Docker", "Vue", "TailwindCSS", "Python", "API", "Three.js", "BFS(Breadth First Search)", "Data Structures"],
+		"categories": ["Featured", "42Cursus"],
+		"github": "https://github.com/DevJ2K/app_rubik",
+		"link": "https://rubik3d.netlify.app/",
+		"dateFilter": "2024-09-29T00:00:00.000Z",
 		"highlighted": true
 	  },
 	  {
