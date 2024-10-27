@@ -6,11 +6,11 @@
 		"date": "October 2022",
 		"description": "A bot that provides various information such as schedule, homework, grades, and more from the ENT (school's intranet) on Discord. This project was one of my favorites because I discovered concepts such as scraping, OOP, database management, and more.",
 		"tags": ["Python", "Discord.py", "Selenium", "Sqlite", "Scraping", "Parsing"],
-		"categories": ["Featured"],
+		"categories": ["Personal"],
 		"github": "https://github.com/DevJ2K/ent-on-discord",
 		"link": null,
 		"dateFilter": "2022-10-02T00:00:00.000Z",
-		"highlighted": true
+		"highlighted": false
 	  },
 	  {
 		"name": "Weather3D",
@@ -53,11 +53,11 @@
 		"date": "May - August 2024",
 		"description": "My digital footprint, my signature, my creation. This is my personal portfolio, designed and built from scratch by myself.",
 		"tags": ["Vue", "TailwindCSS", "Firebase", "Javascript", "Python", "UI", "UX"],
-		"categories": ["Featured"],
+		"categories": ["Personal"],
 		"github": "https://github.com/DevJ2K/portfolio",
 		"link": null,
 		"dateFilter": "2024-08-02T00:00:00.000Z",
-		"highlighted": true
+		"highlighted": false
 	  },
 	  {
 		"name": "WebApp Template",
