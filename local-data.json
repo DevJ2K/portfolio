@@ -24,6 +24,18 @@
 		"dateFilter": "2024-04-18T00:00:00.000Z"
 	  },
 	  {
+		"name": "Ft_linear_regression",
+		"miniature": "projects/ft_linear_regression.png",
+		"date": "October 2024",
+		"description": "The goal of this project is to introduce basic machine learning concepts. I've created a program to predict car prices using a simple linear regression model trained with a gradient descent algorithm.",
+		"tags": ["Python", "Machine Learning", "Data Processing", "Gradient Descent", "Linear Regression", "Data Visualization", "Numpy", "Matplotlib"],
+		"categories": ["Featured"],
+		"github": "https://github.com/DevJ2K/ft_linear_regression",
+		"link": null,
+		"dateFilter": "2024-10-27T00:00:00.000Z",
+		"highlighted": true
+	  },
+	  {
 		"name": "WaveSpace",
 		"miniature": "projects/wavespace.png",
 		"date": "December 2022 - February 2023",
