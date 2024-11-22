@@ -28,11 +28,23 @@
 		"miniature": "projects/ft_linear_regression.png",
 		"date": "October 2024",
 		"description": "The goal of this project is to introduce basic machine learning concepts. I created a program to predict car prices using a simple linear regression model trained with a gradient descent algorithm.",
-		"tags": ["Python", "Machine Learning", "Data Processing", "Gradient Descent", "Linear Regression", "Data Visualization", "Numpy", "Matplotlib"],
+		"tags": ["Python", "Artificial Intelligence", "Machine Learning", "Data Processing", "Gradient Descent", "Linear Regression", "Data Visualization", "Numpy", "Matplotlib"],
 		"categories": ["Featured", "42Cursus"],
 		"github": "https://github.com/DevJ2K/ft_linear_regression",
 		"link": null,
 		"dateFilter": "2024-10-27T00:00:00.000Z",
+		"highlighted": true
+	  },
+	  {
+		"name": "Gomoku AI",
+		"miniature": "projects/app_gomoku.png",
+		"date": "November 2024",
+		"description": " The goal of this project is to make an AI capable of beating human players at Gomoku.",
+		"tags": ["Python", "Artificial Intelligence", "Mini-max", "Alpha Beta Pruning", "Optimization", "Game Design", "Vue"],
+		"categories": ["Featured", "42Cursus"],
+		"github": "https://github.com/DevJ2K/app_gomoku",
+		"link": null,
+		"dateFilter": "2024-11-22T00:00:00.000Z",
 		"highlighted": true
 	  },
 	  {
