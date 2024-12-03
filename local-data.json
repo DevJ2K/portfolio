@@ -43,7 +43,7 @@
 		"tags": ["Python", "Artificial Intelligence", "Mini-max", "Alpha Beta Pruning", "Optimization", "Game Design", "Vue"],
 		"categories": ["Featured", "42Cursus"],
 		"github": "https://github.com/DevJ2K/app_gomoku",
-		"link": null,
+		"link": "http://164.90.229.9:4001/",
 		"dateFilter": "2024-11-22T00:00:00.000Z",
 		"highlighted": true
 	  },
