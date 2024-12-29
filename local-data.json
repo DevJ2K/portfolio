@@ -36,10 +36,22 @@
 		"highlighted": true
 	  },
 	  {
+		"name": "SnakeAI",
+		"miniature": "projects/snake_ai.png",
+		"date": "December 2024",
+		"description": "The goal of this project is to introduce basic of reinforcement learning with a snake game. The snake has to reach a minimum length of 10.",
+		"tags": ["Python", "PyGame", "Reinforcement Learning", "Game Design", "Computor Vision", "Matplotlib", "UI"],
+		"categories": ["Featured", "42Cursus"],
+		"github": "https://github.com/DevJ2K/snakeAI",
+		"link": null,
+		"dateFilter": "2024-12-12T00:00:00.000Z",
+		"highlighted": true
+	  },
+	  {
 		"name": "Gomoku AI",
 		"miniature": "projects/app_gomoku.png",
 		"date": "November 2024",
-		"description": " The goal of this project is to make an AI capable of beating human players at Gomoku.",
+		"description": "The goal of this project is to make an AI capable of beating human players at Gomoku.",
 		"tags": ["Python", "Artificial Intelligence", "Mini-max", "Alpha Beta Pruning", "Optimization", "Game Design", "Vue"],
 		"categories": ["Featured", "42Cursus"],
 		"github": "https://github.com/DevJ2K/app_gomoku",
@@ -93,7 +105,7 @@
 		"github": "https://github.com/DevJ2K/app_computorv1",
 		"link": "#/computorv1",
 		"dateFilter": "2024-09-01T00:00:00.000Z",
-		"highlighted": true
+		"highlighted": false
 	  },
 	  {
 		"name": "Rubik's Cube Solver",
